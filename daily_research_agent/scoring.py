@@ -52,6 +52,15 @@ def has_robotics_relevance(paper: Paper) -> bool:
         r"\bmodular[- ]robot",
         r"\breconfigurable[- ]robot",
         r"\bself[- ]reconfigurable[- ]robot",
+        r"\bbiomimetic\b",
+        r"\bbio[- ]inspired\b",
+        r"\bbioinspired\b",
+        r"\bbionic\b",
+        r"\bnature[- ]inspired\b",
+        r"\bswarm intelligence\b",
+        r"\bant colony\b",
+        r"\bparticle swarm\b",
+        r"\bbee colony\b",
     ]
     return any(re.search(pattern, text) for pattern in robotics_patterns)
 

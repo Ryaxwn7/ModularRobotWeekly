@@ -22,6 +22,10 @@ Preferred query pack:
    `swarm robotics collective intelligence multi-robot distributed control Nature Communications Science Robotics year:2024-2026`
 3. Engineering/system design:
    `multi robot system engineering co-design modular robot hardware architecture Autonomous Robots IJRR year:2024-2026`
+4. Biomimetic structure design:
+   `biomimetic robot structure design bio-inspired robotic mechanism soft robot Science Robotics Nature Communications year:2024-2026`
+5. Bio-inspired swarm algorithms:
+   `bio-inspired swarm robotics algorithm ant colony particle swarm multi-robot coordination year:2024-2026`
 
 Monthly budget planning:
 

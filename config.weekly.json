@@ -37,6 +37,26 @@
         "modular robot hardware architecture"
       ],
       "weight": 1.0
+    },
+    {
+      "name": "biomimetic_structure_design",
+      "queries": [
+        "biomimetic robot structure design",
+        "bio-inspired robotic mechanism design",
+        "bionic robot morphology design",
+        "bioinspired soft robot structure"
+      ],
+      "weight": 1.1
+    },
+    {
+      "name": "bioinspired_swarm_algorithms",
+      "queries": [
+        "bio-inspired swarm robotics algorithm",
+        "biomimetic swarm intelligence robot coordination",
+        "ant colony particle swarm multi-robot planning",
+        "nature-inspired swarm algorithm robot control"
+      ],
+      "weight": 1.05
     }
   ],
   "sources": {
@@ -99,7 +119,15 @@
       "prototype",
       "self-reconfiguration",
       "co-design",
-      "multiagent reinforcement learning"
+      "multiagent reinforcement learning",
+      "biomimetic",
+      "bio-inspired",
+      "bioinspired",
+      "bionic",
+      "nature-inspired",
+      "ant colony",
+      "particle swarm",
+      "bee colony"
     ]
   },
   "consensus": {

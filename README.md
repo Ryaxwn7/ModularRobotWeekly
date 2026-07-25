@@ -8,6 +8,8 @@
 - 自重构机器人与形态重组
 - 群体智能与群体机器人
 - 多机器人系统工程、协同控制、结构设计、算法与理论
+- 仿生结构设计与仿生机器人机构
+- 仿生群体算法、蚁群/粒子群等自然启发式多机器人协同方法
 
 网站地址：
 
@@ -112,4 +114,3 @@ prompts/weekly_consensus_report.md
 - 发布 `site/` 到 GitHub Pages
 
 需要在 GitHub 仓库设置中启用 Pages，并选择 GitHub Actions 作为发布源。
-

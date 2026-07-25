@@ -54,6 +54,14 @@ class ScoringTests(unittest.TestCase):
 
         self.assertTrue(has_robotics_relevance(paper))
 
+    def test_biomimetic_structure_topics_are_accepted(self) -> None:
+        paper = Paper(
+            title="Bio-inspired soft robot structure design",
+            abstract="A biomimetic morphology improves locomotion and adaptive contact.",
+        )
+
+        self.assertTrue(has_robotics_relevance(paper))
+
 
 if __name__ == "__main__":
     unittest.main()
