@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-07-25T18:25:00",
+  "updated_at": "2026-07-25T10:22:39",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
+    {
+      "id": "arxiv:title:distributed multi robot lunar cargo transportation via phase decomposed reinforcement learning",
+      "report_id": "robotics_research_20260725_181745",
+      "title": "Distributed Multi Robot Lunar Cargo Transportation via Phase Decomposed Reinforcement Learning",
+      "url": "http://arxiv.org/abs/2607.00160v1",
+      "doi": "",
+      "doi_url": "",
+      "summary": "A phase-decomposed reinforcement learning framework for cooperative lunar cargo transport with distributed robot units, evaluated in simulation and hardware experiments.",
+      "abstract": "Modular reconfigurable robotic systems provide a scalable solution for cooperative surface operations in future lunar missions.",
+      "figure_url": "",
+      "figure_alt": "Main figure for distributed multi robot lunar cargo transportation",
+      "authors": [
+        "Ashutosh Mishra",
+        "Elian Neppel",
+        "Shreya Santra",
+        "Antoine Jonquieres",
+        "Muhammad Athallah Naufal",
+        "Kentaro Uno",
+        "Kazuya Yoshida"
+      ],
+      "published": "2026-06-30",
+      "venue": "arXiv",
+      "publisher": "",
+      "source": "arxiv",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "reinforcement_learning",
+        "control",
+        "system"
+      ],
+      "score": 4.5
+    },
     {
       "id": "consensus:10ee28fd3a6f587587233f4de125b5da",
       "report_id": "seed_20260725",
@@ -13,54 +49,26 @@
       "abstract": "This review discusses modular reconfigurable robot systems from an application-oriented perspective.",
       "figure_url": "",
       "figure_alt": "Main figure for Modular reconfigurable robots",
-      "authors": ["Guanqi Liang", "A. Ijspeert", "Mark Yim", "T. Lam"],
+      "authors": [
+        "Guanqi Liang",
+        "A. Ijspeert",
+        "Mark Yim",
+        "T. Lam"
+      ],
       "published": "2026",
       "venue": "Science Robotics",
       "publisher": "Science",
       "source": "consensus",
-      "topics": ["modular_reconfigurable_robotics"],
-      "tags": ["review", "structure", "system", "reconfiguration"],
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "review",
+        "structure",
+        "system",
+        "reconfiguration"
+      ],
       "score": 8.8
-    },
-    {
-      "id": "consensus:7dc27f96507057e19a2c2d6b77205bfa",
-      "report_id": "seed_20260725",
-      "title": "Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
-      "url": "https://consensus.app/papers/hexagonal-electrohydraulic-modules-for-rapidly-yoder-rumley/7dc27f96507057e19a2c2d6b77205bfa/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
-      "summary": "Introduces HEXEL electrohydraulic modules with high-speed, high-strain actuation and reversible magnetic connections, making it a strong reference for biomimetic and soft reconfigurable structure design.",
-      "abstract": "The paper introduces hexagonal electrohydraulic modules with high-speed and high-strain actuation.",
-      "figure_url": "",
-      "figure_alt": "Main figure for HEXEL modules",
-      "authors": ["Zachary Yoder", "Ellen H. Rumley", "I. Schmidt", "Philipp Rothemund", "C. Keplinger"],
-      "published": "2024",
-      "venue": "Science Robotics",
-      "publisher": "Science",
-      "source": "consensus",
-      "topics": ["biomimetic_structure_design", "modular_reconfigurable_robotics"],
-      "tags": ["structure", "soft_robotics", "mechanism", "reconfiguration"],
-      "score": 8.7
-    },
-    {
-      "id": "consensus:a49d138836ed53988e74634c1828f84e",
-      "report_id": "seed_20260725",
-      "title": "Snail-inspired robotic swarms: a hybrid connector drives collective adaptation in unstructured outdoor environments",
-      "url": "https://consensus.app/papers/snailinspired-robotic-swarms-a-hybrid-connector-drives-zhao-luo/a49d138836ed53988e74634c1828f84e/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
-      "summary": "A Nature Communications paper on snail-inspired robotic swarms with a hybrid connector that balances free mobility and strong adhesion for outdoor unstructured environments.",
-      "abstract": "This work presents a snail-inspired robotic swarm system with a two-mode connector.",
-      "figure_url": "",
-      "figure_alt": "Main figure for snail-inspired robotic swarms",
-      "authors": ["Da Zhao", "Haobo Luo", "Yuxiao Tu", "Chongxi Meng", "T. Lam"],
-      "published": "2024",
-      "venue": "Nature Communications",
-      "publisher": "Nature",
-      "source": "consensus",
-      "topics": ["biomimetic_structure_design", "swarm_intelligence_robotics"],
-      "tags": ["biomimetic", "swarm", "structure", "system"],
-      "score": 8.6
     },
     {
       "id": "consensus:90ffb9422d8456ef9816d185c6ab45d4",
@@ -73,34 +81,27 @@
       "abstract": "The paper proposes a swarm cooperation model merging meta-heuristics and consensus theory.",
       "figure_url": "",
       "figure_alt": "Main figure for collective intelligence model",
-      "authors": ["A. Nitti", "M. D. de Tullio", "I. Federico", "G. Carbone"],
+      "authors": [
+        "A. Nitti",
+        "M. D. de Tullio",
+        "I. Federico",
+        "G. Carbone"
+      ],
       "published": "2025",
       "venue": "Nature Communications",
       "publisher": "Nature",
       "source": "consensus",
-      "topics": ["bioinspired_swarm_algorithms", "swarm_intelligence_robotics"],
-      "tags": ["algorithm", "swarm", "control", "theory"],
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "control",
+        "theory"
+      ],
       "score": 8.4
-    },
-    {
-      "id": "consensus:86a6742a99715132a4910a76f5f1c788",
-      "report_id": "seed_20260725",
-      "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
-      "url": "https://consensus.app/papers/counterfactual-rewards-promote-collective-transport-heuthe-panizon/86a6742a99715132a4910a76f5f1c788/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
-      "summary": "Uses multi-agent reinforcement learning with counterfactual rewards to solve credit assignment for up to 200 microrobots performing collective cargo transport.",
-      "abstract": "This Science Robotics paper uses multi-agent reinforcement learning with counterfactual rewards.",
-      "figure_url": "",
-      "figure_alt": "Main figure for swarm microrobot transport",
-      "authors": ["Veit-Lorenz Heuthe", "Emanuele Panizon", "Hongri Gu", "C. Bechinger"],
-      "published": "2024",
-      "venue": "Science Robotics",
-      "publisher": "Science",
-      "source": "consensus",
-      "topics": ["bioinspired_swarm_algorithms", "swarm_intelligence_robotics"],
-      "tags": ["algorithm", "reinforcement_learning", "swarm", "microrobotics"],
-      "score": 8.3
     },
     {
       "id": "consensus:282ec1be92585050bbdeaa601e6478a0",
@@ -113,13 +114,29 @@
       "abstract": "The paper presents a modular self-reconfigurable soft continuum robotic system.",
       "figure_url": "",
       "figure_alt": "Main figure for modular self-reconfigurable continuum robot",
-      "authors": ["Yilin Cai", "Haokai Xu", "Yifan Wang", "Desai Chen", "Wojciech Matusik", "Wan Shou", "Yue Chen"],
+      "authors": [
+        "Yilin Cai",
+        "Haokai Xu",
+        "Yifan Wang",
+        "Desai Chen",
+        "Wojciech Matusik",
+        "Wan Shou",
+        "Yue Chen"
+      ],
       "published": "2025",
       "venue": "IEEE Robotics and Automation Letters",
       "publisher": "IEEE",
       "source": "consensus",
-      "topics": ["modular_reconfigurable_robotics", "biomimetic_structure_design"],
-      "tags": ["soft_robotics", "structure", "control", "reconfiguration"],
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "soft_robotics",
+        "structure",
+        "control",
+        "reconfiguration"
+      ],
       "score": 8.1
     },
     {
@@ -133,34 +150,132 @@
       "abstract": "RS-ModCubes is a reconfigurable underwater robot system with scalable multi-robot configurations.",
       "figure_url": "",
       "figure_alt": "Main figure for RS-ModCubes",
-      "authors": ["Jiaxi Zheng", "Guangmin Dai", "Botao He", "Zhaoyang Mu", "Zhaochen Meng", "Tianyi Zhang", "Weiming Zhi", "Dixia Fan"],
+      "authors": [
+        "Jiaxi Zheng",
+        "Guangmin Dai",
+        "Botao He",
+        "Zhaoyang Mu",
+        "Zhaochen Meng",
+        "Tianyi Zhang",
+        "Weiming Zhi",
+        "Dixia Fan"
+      ],
       "published": "2025",
       "venue": "IEEE Robotics and Automation Letters",
       "publisher": "IEEE",
       "source": "consensus",
-      "topics": ["modular_reconfigurable_robotics", "engineering_system_design"],
-      "tags": ["underwater_robotics", "structure", "control", "system"],
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "underwater_robotics",
+        "structure",
+        "control",
+        "system"
+      ],
       "score": 8.0
     },
     {
-      "id": "arxiv:title:distributed multi robot lunar cargo transportation via phase decomposed reinforcement learning",
-      "report_id": "robotics_research_20260725_181745",
-      "title": "Distributed Multi Robot Lunar Cargo Transportation via Phase Decomposed Reinforcement Learning",
-      "url": "http://arxiv.org/abs/2607.00160v1",
+      "id": "consensus:7dc27f96507057e19a2c2d6b77205bfa",
+      "report_id": "seed_20260725",
+      "title": "Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
+      "url": "https://consensus.app/papers/hexagonal-electrohydraulic-modules-for-rapidly-yoder-rumley/7dc27f96507057e19a2c2d6b77205bfa/?utm_source=chatgpt",
       "doi": "",
       "doi_url": "",
-      "summary": "A phase-decomposed reinforcement learning framework for cooperative lunar cargo transport with distributed robot units, evaluated in simulation and hardware experiments.",
-      "abstract": "Modular reconfigurable robotic systems provide a scalable solution for cooperative surface operations in future lunar missions.",
+      "summary": "Introduces HEXEL electrohydraulic modules with high-speed, high-strain actuation and reversible magnetic connections, making it a strong reference for biomimetic and soft reconfigurable structure design.",
+      "abstract": "The paper introduces hexagonal electrohydraulic modules with high-speed and high-strain actuation.",
       "figure_url": "",
-      "figure_alt": "Main figure for distributed multi robot lunar cargo transportation",
-      "authors": ["Ashutosh Mishra", "Elian Neppel", "Shreya Santra", "Antoine Jonquieres", "Muhammad Athallah Naufal", "Kentaro Uno", "Kazuya Yoshida"],
-      "published": "2026-06-30",
-      "venue": "arXiv",
-      "publisher": "",
-      "source": "arxiv",
-      "topics": ["modular_reconfigurable_robotics", "swarm_intelligence_robotics"],
-      "tags": ["algorithm", "reinforcement_learning", "control", "system"],
-      "score": 4.5
+      "figure_alt": "Main figure for HEXEL modules",
+      "authors": [
+        "Zachary Yoder",
+        "Ellen H. Rumley",
+        "I. Schmidt",
+        "Philipp Rothemund",
+        "C. Keplinger"
+      ],
+      "published": "2024",
+      "venue": "Science Robotics",
+      "publisher": "Science",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design",
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "structure",
+        "soft_robotics",
+        "mechanism",
+        "reconfiguration"
+      ],
+      "score": 8.7
+    },
+    {
+      "id": "consensus:a49d138836ed53988e74634c1828f84e",
+      "report_id": "seed_20260725",
+      "title": "Snail-inspired robotic swarms: a hybrid connector drives collective adaptation in unstructured outdoor environments",
+      "url": "https://consensus.app/papers/snailinspired-robotic-swarms-a-hybrid-connector-drives-zhao-luo/a49d138836ed53988e74634c1828f84e/?utm_source=chatgpt",
+      "doi": "",
+      "doi_url": "",
+      "summary": "A Nature Communications paper on snail-inspired robotic swarms with a hybrid connector that balances free mobility and strong adhesion for outdoor unstructured environments.",
+      "abstract": "This work presents a snail-inspired robotic swarm system with a two-mode connector.",
+      "figure_url": "",
+      "figure_alt": "Main figure for snail-inspired robotic swarms",
+      "authors": [
+        "Da Zhao",
+        "Haobo Luo",
+        "Yuxiao Tu",
+        "Chongxi Meng",
+        "T. Lam"
+      ],
+      "published": "2024",
+      "venue": "Nature Communications",
+      "publisher": "Nature",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "biomimetic",
+        "swarm",
+        "structure",
+        "system"
+      ],
+      "score": 8.6
+    },
+    {
+      "id": "consensus:86a6742a99715132a4910a76f5f1c788",
+      "report_id": "seed_20260725",
+      "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
+      "url": "https://consensus.app/papers/counterfactual-rewards-promote-collective-transport-heuthe-panizon/86a6742a99715132a4910a76f5f1c788/?utm_source=chatgpt",
+      "doi": "",
+      "doi_url": "",
+      "summary": "Uses multi-agent reinforcement learning with counterfactual rewards to solve credit assignment for up to 200 microrobots performing collective cargo transport.",
+      "abstract": "This Science Robotics paper uses multi-agent reinforcement learning with counterfactual rewards.",
+      "figure_url": "",
+      "figure_alt": "Main figure for swarm microrobot transport",
+      "authors": [
+        "Veit-Lorenz Heuthe",
+        "Emanuele Panizon",
+        "Hongri Gu",
+        "C. Bechinger"
+      ],
+      "published": "2024",
+      "venue": "Science Robotics",
+      "publisher": "Science",
+      "source": "consensus",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "reinforcement_learning",
+        "swarm",
+        "microrobotics"
+      ],
+      "score": 8.3
     }
   ]
 }
