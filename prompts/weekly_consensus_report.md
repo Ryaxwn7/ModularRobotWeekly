@@ -39,14 +39,19 @@ After Consensus search:
 
 1. Run the local project command:
    `python -m daily_research_agent --config config.weekly.json --days 4`
-2. Combine the local report with the Consensus findings.
-3. Update `consensus_usage.json` with the month, date, purpose, and number of Consensus search calls used.
-4. Prioritize Science Robotics, Nature, IEEE RA-L, IEEE T-RO, IJRR, Autonomous Robots, Advanced Intelligent Systems, and Elsevier robotics venues.
-5. Downgrade low-signal venues, generic reviews, and papers without clear robotics validation.
-6. Write a concise Chinese weekly report with:
+2. Merge the Consensus findings into `site/data/papers.json`, preserving existing high-quality items and updating or inserting new papers by stable id or DOI.
+3. Combine the local report with the Consensus findings.
+4. Update `consensus_usage.json` with the month, date, purpose, and number of Consensus search calls used.
+5. Prioritize Science Robotics, Nature, IEEE RA-L, IEEE T-RO, IJRR, Autonomous Robots, Advanced Intelligent Systems, and Elsevier robotics venues.
+6. Downgrade low-signal venues, generic reviews, and papers without clear robotics validation.
+7. Write a concise Chinese weekly report with:
    - executive summary
    - top 8-12 papers
    - algorithm / structure / system / theory tags
    - why each paper matters
    - links and citation metadata
    - next-week tracking suggestions
+8. Publish the updated local Codex results to GitHub by running:
+   `powershell -ExecutionPolicy Bypass -File .\scripts\publish_site_data.ps1 -Message "Update site data from Codex weekly report"`
+
+Important: GitHub Actions must only deploy the existing `site/` directory. Do not rely on GitHub Actions to run the paper search, because it cannot access the Codex Consensus connector.

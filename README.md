@@ -106,11 +106,11 @@ prompts/weekly_consensus_report.md
 .github/workflows/research-site.yml
 ```
 
-默认计划：
+发布逻辑：
 
-- 周一运行一次
-- 周四运行一次
-- 生成最新 `site/data/papers.json`
-- 发布 `site/` 到 GitHub Pages
+- 本地 Codex 周报自动化负责搜索、总结并更新 `site/data/papers.json`。
+- 本地脚本 `scripts/publish_site_data.ps1` 负责把 Codex 周报结果提交并推送到 GitHub。
+- GitHub Actions 只负责把仓库里的 `site/` 目录部署到 GitHub Pages。
+- GitHub Actions 不再执行论文搜索，避免覆盖本地 Codex/Consensus 周报结果。
 
 需要在 GitHub 仓库设置中启用 Pages，并选择 GitHub Actions 作为发布源。
