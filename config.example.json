@@ -1,0 +1,112 @@
+{
+  "agent": {
+    "name": "Robotics Daily Research Agent",
+    "language": "zh-CN",
+    "lookback_days": 14,
+    "max_results_per_query": 15,
+    "max_report_items": 25,
+    "min_score": 4.0
+  },
+  "topics": [
+    {
+      "name": "modular_reconfigurable_robotics",
+      "queries": [
+        "modular self-reconfigurable robot",
+        "modular reconfigurable robotics",
+        "self-reconfigurable modular robot",
+        "morphological reconfiguration robot"
+      ],
+      "weight": 1.25
+    },
+    {
+      "name": "swarm_intelligence_robotics",
+      "queries": [
+        "swarm robotics collective intelligence",
+        "multi-robot swarm coordination",
+        "distributed control swarm robot",
+        "collective robotic systems"
+      ],
+      "weight": 1.15
+    },
+    {
+      "name": "engineering_system_design",
+      "queries": [
+        "robotic swarm system design",
+        "modular robot hardware architecture",
+        "multi robot system engineering",
+        "reconfigurable robot mechanism design"
+      ],
+      "weight": 1.0
+    }
+  ],
+  "sources": {
+    "arxiv": {
+      "enabled": true
+    },
+    "crossref": {
+      "enabled": true,
+      "mailto": ""
+    },
+    "semantic_scholar": {
+      "enabled": true
+    },
+    "ieee": {
+      "enabled": false
+    },
+    "elsevier": {
+      "enabled": false
+    }
+  },
+  "ranking": {
+    "preferred_venues": [
+      "IEEE Transactions on Robotics",
+      "IEEE Robotics and Automation Letters",
+      "International Journal of Robotics Research",
+      "Science Robotics",
+      "Nature Machine Intelligence",
+      "Nature Communications",
+      "Science Advances",
+      "Robotics and Autonomous Systems",
+      "Autonomous Robots",
+      "Soft Robotics",
+      "Swarm Intelligence"
+    ],
+    "publisher_keywords": [
+      "IEEE",
+      "Nature",
+      "Science",
+      "Elsevier",
+      "Springer",
+      "Wiley",
+      "Cell"
+    ],
+    "method_keywords": [
+      "algorithm",
+      "control",
+      "optimization",
+      "learning",
+      "planning",
+      "distributed",
+      "coordination",
+      "mechanism",
+      "hardware",
+      "architecture",
+      "theory",
+      "proof",
+      "experiment",
+      "prototype"
+    ]
+  },
+  "summarizer": {
+    "provider": "template",
+    "model": "",
+    "base_url": "",
+    "temperature": 0.2
+  },
+  "storage": {
+    "state_file": "outputs/state/papers.json",
+    "report_dir": "outputs/reports",
+    "site_data_file": "site/data/papers.json",
+    "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly"
+  }
+}

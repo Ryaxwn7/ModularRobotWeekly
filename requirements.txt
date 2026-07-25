@@ -1,0 +1,3 @@
+# The core agent uses only the Python standard library.
+# Add provider SDKs here only if you decide to replace the built-in HTTP adapters.
+

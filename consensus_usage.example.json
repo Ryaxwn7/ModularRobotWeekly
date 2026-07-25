@@ -1,0 +1,14 @@
+{
+  "monthly_limit": 30,
+  "entries": [
+    {
+      "month": "2026-07",
+      "date": "2026-07-13",
+      "purpose": "initial interactive trial",
+      "search_calls": 3,
+      "reported_left_after_use": 27,
+      "resets": "2026-08-01",
+      "notes": "Manual Consensus test for modular robotics, swarm intelligence, and multi-robot systems."
+    }
+  ]
+}

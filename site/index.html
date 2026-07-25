@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robotics Research Weekly</title>
+    <meta name="description" content="机器人领域周报：模块化可重构机器人、群体智能、多机器人系统工程。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Robotics Research Weekly</p>
+        <h1>机器人科研进展周报</h1>
+        <p class="subtitle">模块化可重构机器人、群体智能、多机器人系统工程、结构设计、算法与理论。</p>
+      </div>
+      <a class="repo-link" href="https://github.com/" data-repo-link>GitHub</a>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="筛选">
+        <label class="search-box">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="标题、摘要、期刊、标签" />
+        </label>
+        <label>
+          <span>主题</span>
+          <select id="topicFilter">
+            <option value="">全部主题</option>
+          </select>
+        </label>
+        <label>
+          <span>排序</span>
+          <select id="sortSelect">
+            <option value="date">最新优先</option>
+            <option value="score">评分优先</option>
+            <option value="title">标题 A-Z</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="summary-strip" aria-label="概览">
+        <div>
+          <strong id="paperCount">0</strong>
+          <span>论文</span>
+        </div>
+        <div>
+          <strong id="reportCount">0</strong>
+          <span>周报批次</span>
+        </div>
+        <div>
+          <strong id="updatedAt">-</strong>
+          <span>最近更新</span>
+        </div>
+      </section>
+
+      <section id="paperList" class="paper-list" aria-live="polite"></section>
+    </main>
+
+    <template id="paperTemplate">
+      <article class="paper-card">
+        <a class="figure-link" target="_blank" rel="noreferrer">
+          <img class="paper-figure" alt="" loading="lazy" />
+        </a>
+        <div class="paper-body">
+          <div class="paper-meta">
+            <span class="paper-date"></span>
+            <span class="paper-venue"></span>
+            <span class="paper-score"></span>
+          </div>
+          <h2><a class="paper-title" target="_blank" rel="noreferrer"></a></h2>
+          <p class="paper-summary"></p>
+          <div class="paper-tags"></div>
+          <div class="paper-actions">
+            <a class="paper-link" target="_blank" rel="noreferrer">原文链接</a>
+            <a class="doi-link" target="_blank" rel="noreferrer">DOI</a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+

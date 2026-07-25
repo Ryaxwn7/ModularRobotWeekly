@@ -1,0 +1,125 @@
+{
+  "agent": {
+    "name": "Robotics Weekly Research Agent",
+    "language": "zh-CN",
+    "lookback_days": 4,
+    "max_results_per_query": 20,
+    "max_report_items": 30,
+    "min_score": 4.0
+  },
+  "topics": [
+    {
+      "name": "modular_reconfigurable_robotics",
+      "queries": [
+        "modular self-reconfigurable robot",
+        "modular reconfigurable robotics",
+        "self-reconfigurable modular robot",
+        "reconfigurable robot mechanism design"
+      ],
+      "weight": 1.25
+    },
+    {
+      "name": "swarm_intelligence_robotics",
+      "queries": [
+        "swarm robotics collective intelligence",
+        "multi-robot swarm coordination",
+        "distributed control robot swarm",
+        "collective robotic systems"
+      ],
+      "weight": 1.15
+    },
+    {
+      "name": "engineering_system_design",
+      "queries": [
+        "multi robot system engineering",
+        "robot swarm system design",
+        "heterogeneous multi-robot co-design",
+        "modular robot hardware architecture"
+      ],
+      "weight": 1.0
+    }
+  ],
+  "sources": {
+    "arxiv": {
+      "enabled": true
+    },
+    "crossref": {
+      "enabled": true,
+      "mailto": ""
+    },
+    "semantic_scholar": {
+      "enabled": true
+    },
+    "ieee": {
+      "enabled": false
+    },
+    "elsevier": {
+      "enabled": false
+    }
+  },
+  "ranking": {
+    "preferred_venues": [
+      "Science Robotics",
+      "Nature Communications",
+      "Nature Machine Intelligence",
+      "Science Advances",
+      "IEEE Transactions on Robotics",
+      "IEEE Robotics and Automation Letters",
+      "The International Journal of Robotics Research",
+      "International Journal of Robotics Research",
+      "Autonomous Robots",
+      "Robotics and Autonomous Systems",
+      "Soft Robotics",
+      "Swarm Intelligence",
+      "Advanced Intelligent Systems"
+    ],
+    "publisher_keywords": [
+      "IEEE",
+      "Nature",
+      "Science",
+      "Elsevier",
+      "Springer",
+      "Wiley",
+      "Cell"
+    ],
+    "method_keywords": [
+      "algorithm",
+      "control",
+      "optimization",
+      "learning",
+      "planning",
+      "distributed",
+      "coordination",
+      "mechanism",
+      "hardware",
+      "architecture",
+      "theory",
+      "proof",
+      "experiment",
+      "prototype",
+      "self-reconfiguration",
+      "co-design",
+      "multiagent reinforcement learning"
+    ]
+  },
+  "consensus": {
+    "enabled_in_codex_automation": true,
+    "monthly_search_limit": 30,
+    "weekly_search_budget": 4,
+    "per_report_search_budget": 2,
+    "searches_are_counted": true,
+    "policy": "Generate reports twice per week. Use at most 2 Consensus searches per report by default, for about 16-20 uses per month. The free tier has 30 uses per month across connected tools. Make each query broad, include year filters, request maximum available results, rotate topic focus across reports, and fetch full records only for the highest-value papers before citing."
+  },
+  "summarizer": {
+    "provider": "template",
+    "model": "",
+    "base_url": "",
+    "temperature": 0.2
+  },
+  "storage": {
+    "state_file": "outputs/state/weekly_papers.json",
+    "report_dir": "outputs/weekly_reports",
+    "site_data_file": "site/data/papers.json",
+    "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly"
+  }
+}

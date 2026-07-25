@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Paper figure placeholder</title>
+  <desc id="desc">A stylized robotics research figure placeholder.</desc>
+  <rect width="640" height="420" fill="#e9edf2"/>
+  <rect x="42" y="48" width="556" height="324" rx="8" fill="#ffffff" stroke="#c9d3df" stroke-width="2"/>
+  <path d="M96 306 C158 244 184 270 234 216 C276 172 314 198 352 156 C402 102 470 124 538 86" fill="none" stroke="#2364aa" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="156" cy="246" r="20" fill="#16806a"/>
+  <circle cx="300" cy="190" r="20" fill="#16806a"/>
+  <circle cx="456" cy="118" r="20" fill="#16806a"/>
+  <g fill="#102033">
+    <rect x="96" y="326" width="144" height="10" rx="5"/>
+    <rect x="96" y="344" width="232" height="10" rx="5" opacity=".5"/>
+  </g>
+  <g transform="translate(416 260)" fill="none" stroke="#102033" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="42" r="30"/>
+    <path d="M42 12V0M42 84v12M12 42H0M84 42h12M20 20l-9-9M64 64l9 9M64 20l9-9M20 64l-9 9"/>
+  </g>
+</svg>
+
