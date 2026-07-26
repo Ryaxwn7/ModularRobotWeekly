@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25T10:22:39",
+  "updated_at": "2026-07-27T07:12:41",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
@@ -72,15 +72,15 @@
     },
     {
       "id": "consensus:90ffb9422d8456ef9816d185c6ab45d4",
-      "report_id": "seed_20260725",
+      "report_id": "robotics_weekly_research_20260727",
       "title": "A collective intelligence model for swarm robotics applications",
       "url": "https://consensus.app/papers/a-collective-intelligence-model-for-swarm-robotics-nitti-tullio/90ffb9422d8456ef9816d185c6ab45d4/?utm_source=chatgpt",
       "doi": "",
       "doi_url": "",
-      "summary": "Combines meta-heuristic ideas with consensus theory to build a swarm cooperation model that can act as both optimizer and controller for small robot groups.",
-      "abstract": "The paper proposes a swarm cooperation model merging meta-heuristics and consensus theory.",
+      "summary": "A 2025 Nature Communications paper combining meta-heuristic search and consensus theory into a compact swarm cooperation model for small robot groups and AUV contaminant localization.",
+      "abstract": "A swarm cooperation model merges meta-heuristic methods and consensus theory, showing competitive success on benchmark landscapes with small groups and demonstrating autonomous underwater contaminant localization.",
       "figure_url": "",
-      "figure_alt": "Main figure for collective intelligence model",
+      "figure_alt": "Main figure for A collective intelligence model for swarm robotics applications",
       "authors": [
         "A. Nitti",
         "M. D. de Tullio",
@@ -92,28 +92,28 @@
       "publisher": "Nature",
       "source": "consensus",
       "topics": [
-        "bioinspired_swarm_algorithms",
         "swarm_intelligence_robotics"
       ],
       "tags": [
-        "algorithm",
-        "swarm",
-        "control",
-        "theory"
+        "collective_intelligence",
+        "distributed_control",
+        "optimization",
+        "auv"
       ],
-      "score": 8.4
+      "score": 9.0,
+      "citation_count": 12
     },
     {
       "id": "consensus:282ec1be92585050bbdeaa601e6478a0",
-      "report_id": "seed_20260725",
+      "report_id": "robotics_weekly_research_20260727",
       "title": "Modular Self-Reconfigurable Continuum Robot for General Purpose Loco-Manipulation",
       "url": "https://consensus.app/papers/modular-selfreconfigurable-continuum-robot-for-general-cai-xu/282ec1be92585050bbdeaa601e6478a0/?utm_source=chatgpt",
       "doi": "",
       "doi_url": "",
-      "summary": "Combines soft continuum robotics with active self-reconfiguration through a continuum backbone and omnidirectional docking mechanism for loco-manipulation.",
-      "abstract": "The paper presents a modular self-reconfigurable soft continuum robotic system.",
+      "summary": "A 2025 RA-L system that combines a soft continuum backbone with omnidirectional docking so single and connected modules can locomote, manipulate, and self-reconfigure.",
+      "abstract": "A modular self-reconfigurable soft continuum robotic system uses a continuum backbone and omnidirectional docking mechanism, with kinetostatic modeling and docking-range analysis supporting loco-manipulation experiments.",
       "figure_url": "",
-      "figure_alt": "Main figure for modular self-reconfigurable continuum robot",
+      "figure_alt": "Main figure for Modular Self-Reconfigurable Continuum Robot for General Purpose Loco-Manipulatio",
       "authors": [
         "Yilin Cai",
         "Haokai Xu",
@@ -128,16 +128,16 @@
       "publisher": "IEEE",
       "source": "consensus",
       "topics": [
-        "modular_reconfigurable_robotics",
-        "biomimetic_structure_design"
+        "modular_reconfigurable_robotics"
       ],
       "tags": [
         "soft_robotics",
-        "structure",
-        "control",
-        "reconfiguration"
+        "continuum_robot",
+        "docking",
+        "loco_manipulation"
       ],
-      "score": 8.1
+      "score": 8.5,
+      "citation_count": 4
     },
     {
       "id": "consensus:c75a52cbb6d15245aaf872d02b048130",
@@ -178,15 +178,15 @@
     },
     {
       "id": "consensus:7dc27f96507057e19a2c2d6b77205bfa",
-      "report_id": "seed_20260725",
+      "report_id": "robotics_weekly_research_20260727",
       "title": "Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
       "url": "https://consensus.app/papers/hexagonal-electrohydraulic-modules-for-rapidly-yoder-rumley/7dc27f96507057e19a2c2d6b77205bfa/?utm_source=chatgpt",
       "doi": "",
       "doi_url": "",
-      "summary": "Introduces HEXEL electrohydraulic modules with high-speed, high-strain actuation and reversible magnetic connections, making it a strong reference for biomimetic and soft reconfigurable structure design.",
-      "abstract": "The paper introduces hexagonal electrohydraulic modules with high-speed and high-strain actuation.",
+      "summary": "A Science Robotics hardware platform introducing HEXEL electrohydraulic modules with high-speed actuation and reversible magnetic mechanical/electrical connections.",
+      "abstract": "Electrically actuated hexagonal electrohydraulic modules combine soft actuators with rigid exoskeleton amplification, delivering high-speed and high-strain actuation plus reversible magnetic connections for rapidly reconfigurable robots.",
       "figure_url": "",
-      "figure_alt": "Main figure for HEXEL modules",
+      "figure_alt": "Main figure for Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
       "authors": [
         "Zachary Yoder",
         "Ellen H. Rumley",
@@ -199,16 +199,16 @@
       "publisher": "Science",
       "source": "consensus",
       "topics": [
-        "biomimetic_structure_design",
         "modular_reconfigurable_robotics"
       ],
       "tags": [
-        "structure",
+        "hardware",
         "soft_robotics",
-        "mechanism",
-        "reconfiguration"
+        "reconfiguration",
+        "actuation"
       ],
-      "score": 8.7
+      "score": 9.2,
+      "citation_count": 60
     },
     {
       "id": "consensus:a49d138836ed53988e74634c1828f84e",
@@ -246,15 +246,15 @@
     },
     {
       "id": "consensus:86a6742a99715132a4910a76f5f1c788",
-      "report_id": "seed_20260725",
+      "report_id": "robotics_weekly_research_20260727",
       "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
       "url": "https://consensus.app/papers/counterfactual-rewards-promote-collective-transport-heuthe-panizon/86a6742a99715132a4910a76f5f1c788/?utm_source=chatgpt",
       "doi": "",
       "doi_url": "",
-      "summary": "Uses multi-agent reinforcement learning with counterfactual rewards to solve credit assignment for up to 200 microrobots performing collective cargo transport.",
-      "abstract": "This Science Robotics paper uses multi-agent reinforcement learning with counterfactual rewards.",
+      "summary": "A 2024 Science Robotics study using counterfactual rewards for credit assignment so up to 200 individually controlled microrobots can learn robust collective transport.",
+      "abstract": "Multi-agent reinforcement learning with counterfactual rewards assigns credit to individually controlled microrobots, enabling collective cargo transport under group-size changes, failed units, and environmental noise.",
       "figure_url": "",
-      "figure_alt": "Main figure for swarm microrobot transport",
+      "figure_alt": "Main figure for Counterfactual rewards promote collective transport using individually controlle",
       "authors": [
         "Veit-Lorenz Heuthe",
         "Emanuele Panizon",
@@ -266,16 +266,89 @@
       "publisher": "Science",
       "source": "consensus",
       "topics": [
-        "bioinspired_swarm_algorithms",
         "swarm_intelligence_robotics"
       ],
       "tags": [
-        "algorithm",
-        "reinforcement_learning",
-        "swarm",
-        "microrobotics"
+        "multi_agent_rl",
+        "microrobotics",
+        "collective_transport",
+        "distributed_control"
       ],
-      "score": 8.3
+      "score": 8.9,
+      "citation_count": 41
+    },
+    {
+      "id": "consensus:89be485bf3185b62b2570007c08687d1",
+      "title": "Design of a Multi-Environmentally Adaptable Modular Self-Reconfigurable Robot",
+      "url": "https://consensus.app/papers/design-of-a-multienvironmentally-adaptable-modular-yang-zhao/89be485bf3185b62b2570007c08687d1/?utm_source=chatgpt",
+      "summary": "A 2024 RA-L amphibious modular self-reconfigurable robot with sealed modules and electro-permanent-magnet faces for coupling, power sharing, sensing, and configuration identification.",
+      "abstract": "An amphibious modular self-reconfigurable robot customizes sealing, circuitry, electro-permanent-magnet connection faces, and two-DOF cubic modules to operate across aquatic and terrestrial environments.",
+      "authors": [
+        "Zhiyuan Yang",
+        "Sikai Zhao",
+        "Kai Han",
+        "Jian Qi",
+        "Ning Zhao",
+        "Xin Sui",
+        "Jizhuang Fan",
+        "Jie Zhao",
+        "Yanhe Zhu"
+      ],
+      "published": "2024",
+      "venue": "IEEE Robotics and Automation Letters",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "hardware",
+        "connector",
+        "amphibious",
+        "reconfiguration"
+      ],
+      "score": 8.7,
+      "citation_count": 12,
+      "report_id": "robotics_weekly_research_20260727",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design of a Multi-Environmentally Adaptable Modular Self-Reconfigurable Robot",
+      "publisher": ""
+    },
+    {
+      "id": "consensus:64a6d774e4c1501ebc5c0a3ec0f59d2c",
+      "title": "Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
+      "url": "https://consensus.app/papers/selfreconfiguration-planning-for-deformable-gu-gao/64a6d774e4c1501ebc5c0a3ec0f59d2c/?utm_source=chatgpt",
+      "summary": "A 2026 RA-L planning method that uses a virtual graph and Dependence-based Reverse Tree to order feasible connect/disconnect actions for deformable quadrilateral MSRRs.",
+      "abstract": "The method builds feasible connect and disconnect actions with a virtual graph, then orders them through a Dependence-based Reverse Tree; physical deployment validates feasibility for deformable quadrilateral MSRRs.",
+      "authors": [
+        "Jie Gu",
+        "Hong Gao",
+        "Zhihao Xia",
+        "Yirun Sun",
+        "Chunxu Tian",
+        "Dan Zhang"
+      ],
+      "published": "2026",
+      "venue": "IEEE Robotics and Automation Letters",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "planning",
+        "algorithm",
+        "reconfiguration",
+        "graph"
+      ],
+      "score": 8.3,
+      "citation_count": 0,
+      "report_id": "robotics_weekly_research_20260727",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
+      "publisher": ""
     }
   ]
 }
