@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T07:12:41",
+  "updated_at": "2026-07-27T23:13:12+08:00",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
@@ -348,6 +348,40 @@
       "doi_url": "",
       "figure_url": "",
       "figure_alt": "Main figure for Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
+      "publisher": ""
+    },
+    {
+      "id": "consensus:52ebaa689ac5530f96fe9bb10968a1d5",
+      "title": "Linear-time quasi-static stability detection for modular self-reconfigurable robots",
+      "url": "https://consensus.app/papers/lineartime-quasistatic-stability-detection-for-modular-wu-liang/52ebaa689ac5530f96fe9bb10968a1d5/?utm_source=chatgpt",
+      "summary": "An IJRR method that detects quasi-static instability in modular self-reconfigurable robots with linear scaling in module count, using connection, contact, and environmental constraints.",
+      "abstract": "A linear-time quasi-static stability detection method models internal connections, non-connected contacts, and environmental contacts as a second-order cone program, then validates stability margins on FreeSN configurations.",
+      "authors": [
+        "Di Wu",
+        "Guanqi Liang",
+        "Yuxiao Tu",
+        "Lijun Zong",
+        "T. Lam"
+      ],
+      "published": "2024",
+      "venue": "The International Journal of Robotics Research",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "stability",
+        "planning",
+        "optimization",
+        "reconfiguration"
+      ],
+      "score": 8.4,
+      "citation_count": 3,
+      "report_id": "robotics_weekly_research_20260727",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "publisher": ""
     }
   ]
