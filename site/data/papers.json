@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T23:13:12+08:00",
+  "updated_at": "2026-07-30T15:14:43",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
@@ -69,6 +69,41 @@
         "reconfiguration"
       ],
       "score": 8.8
+    },
+    {
+      "id": "consensus:64a6d774e4c1501ebc5c0a3ec0f59d2c",
+      "title": "Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
+      "url": "https://consensus.app/papers/selfreconfiguration-planning-for-deformable-gu-gao/64a6d774e4c1501ebc5c0a3ec0f59d2c/?utm_source=chatgpt",
+      "summary": "A 2026 RA-L planning method that uses a virtual graph and Dependence-based Reverse Tree to order feasible connect/disconnect actions for deformable quadrilateral MSRRs.",
+      "abstract": "The method builds feasible connect and disconnect actions with a virtual graph, then orders them through a Dependence-based Reverse Tree; physical deployment validates feasibility for deformable quadrilateral MSRRs.",
+      "authors": [
+        "Jie Gu",
+        "Hong Gao",
+        "Zhihao Xia",
+        "Yirun Sun",
+        "Chunxu Tian",
+        "Dan Zhang"
+      ],
+      "published": "2026",
+      "venue": "IEEE Robotics and Automation Letters",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "planning",
+        "algorithm",
+        "reconfiguration",
+        "graph"
+      ],
+      "score": 8.3,
+      "citation_count": 0,
+      "report_id": "robotics_weekly_research_20260727",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
+      "publisher": ""
     },
     {
       "id": "consensus:90ffb9422d8456ef9816d185c6ab45d4",
@@ -211,40 +246,6 @@
       "citation_count": 60
     },
     {
-      "id": "consensus:a49d138836ed53988e74634c1828f84e",
-      "report_id": "seed_20260725",
-      "title": "Snail-inspired robotic swarms: a hybrid connector drives collective adaptation in unstructured outdoor environments",
-      "url": "https://consensus.app/papers/snailinspired-robotic-swarms-a-hybrid-connector-drives-zhao-luo/a49d138836ed53988e74634c1828f84e/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
-      "summary": "A Nature Communications paper on snail-inspired robotic swarms with a hybrid connector that balances free mobility and strong adhesion for outdoor unstructured environments.",
-      "abstract": "This work presents a snail-inspired robotic swarm system with a two-mode connector.",
-      "figure_url": "",
-      "figure_alt": "Main figure for snail-inspired robotic swarms",
-      "authors": [
-        "Da Zhao",
-        "Haobo Luo",
-        "Yuxiao Tu",
-        "Chongxi Meng",
-        "T. Lam"
-      ],
-      "published": "2024",
-      "venue": "Nature Communications",
-      "publisher": "Nature",
-      "source": "consensus",
-      "topics": [
-        "biomimetic_structure_design",
-        "swarm_intelligence_robotics"
-      ],
-      "tags": [
-        "biomimetic",
-        "swarm",
-        "structure",
-        "system"
-      ],
-      "score": 8.6
-    },
-    {
       "id": "consensus:86a6742a99715132a4910a76f5f1c788",
       "report_id": "robotics_weekly_research_20260727",
       "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
@@ -316,39 +317,38 @@
       "publisher": ""
     },
     {
-      "id": "consensus:64a6d774e4c1501ebc5c0a3ec0f59d2c",
-      "title": "Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
-      "url": "https://consensus.app/papers/selfreconfiguration-planning-for-deformable-gu-gao/64a6d774e4c1501ebc5c0a3ec0f59d2c/?utm_source=chatgpt",
-      "summary": "A 2026 RA-L planning method that uses a virtual graph and Dependence-based Reverse Tree to order feasible connect/disconnect actions for deformable quadrilateral MSRRs.",
-      "abstract": "The method builds feasible connect and disconnect actions with a virtual graph, then orders them through a Dependence-based Reverse Tree; physical deployment validates feasibility for deformable quadrilateral MSRRs.",
-      "authors": [
-        "Jie Gu",
-        "Hong Gao",
-        "Zhihao Xia",
-        "Yirun Sun",
-        "Chunxu Tian",
-        "Dan Zhang"
-      ],
-      "published": "2026",
-      "venue": "IEEE Robotics and Automation Letters",
-      "source": "consensus",
-      "topics": [
-        "modular_reconfigurable_robotics"
-      ],
-      "tags": [
-        "planning",
-        "algorithm",
-        "reconfiguration",
-        "graph"
-      ],
-      "score": 8.3,
-      "citation_count": 0,
-      "report_id": "robotics_weekly_research_20260727",
+      "id": "consensus:a49d138836ed53988e74634c1828f84e",
+      "report_id": "seed_20260725",
+      "title": "Snail-inspired robotic swarms: a hybrid connector drives collective adaptation in unstructured outdoor environments",
+      "url": "https://consensus.app/papers/snailinspired-robotic-swarms-a-hybrid-connector-drives-zhao-luo/a49d138836ed53988e74634c1828f84e/?utm_source=chatgpt",
       "doi": "",
       "doi_url": "",
+      "summary": "A Nature Communications paper on snail-inspired robotic swarms with a hybrid connector that balances free mobility and strong adhesion for outdoor unstructured environments.",
+      "abstract": "This work presents a snail-inspired robotic swarm system with a two-mode connector.",
       "figure_url": "",
-      "figure_alt": "Main figure for Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
-      "publisher": ""
+      "figure_alt": "Main figure for snail-inspired robotic swarms",
+      "authors": [
+        "Da Zhao",
+        "Haobo Luo",
+        "Yuxiao Tu",
+        "Chongxi Meng",
+        "T. Lam"
+      ],
+      "published": "2024",
+      "venue": "Nature Communications",
+      "publisher": "Nature",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "biomimetic",
+        "swarm",
+        "structure",
+        "system"
+      ],
+      "score": 8.6
     },
     {
       "id": "consensus:52ebaa689ac5530f96fe9bb10968a1d5",
@@ -383,6 +383,124 @@
       "figure_url": "",
       "figure_alt": "Main figure for Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "publisher": ""
+    },
+    {
+      "id": "consensus:6abc7842f1b8503dab45ba89c0c03302",
+      "title": "Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
+      "url": "https://consensus.app/papers/taskdriven-codesign-of-heterogeneous-multirobot-systems-stralz-alharbi/6abc7842f1b8503dab45ba89c0c03302/?utm_source=chatgpt",
+      "summary": "A 2026 formal co-design framework for heterogeneous multi-robot systems that jointly optimizes robot design, fleet composition, and planning under task-specific constraints.",
+      "abstract": "The framework models robots, fleets, planners, executors, and evaluators as interconnected design problems, enabling joint optimization with optimality guarantees across case studies.",
+      "authors": [
+        "Maximilian Stralz",
+        "Meshal Alharbi",
+        "Yujun Huang",
+        "Gioele Zardini"
+      ],
+      "published": "2026",
+      "venue": "ArXiv",
+      "source": "consensus",
+      "topics": [
+        "engineering_system_design",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "co_design",
+        "multi_robot_system",
+        "planning",
+        "optimization"
+      ],
+      "score": 8.1,
+      "citation_count": 2,
+      "report_id": "robotics_weekly_research_20260730",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
+      "publisher": ""
+    },
+    {
+      "id": "consensus:51ca5b50bdf75409826c83917926e48f",
+      "title": "A framework for soft mechanism driven robots",
+      "url": "https://consensus.app/papers/a-framework-for-soft-mechanism-driven-robots-aygl-gven/51ca5b50bdf75409826c83917926e48f/?utm_source=chatgpt",
+      "summary": "A 2025 Nature Communications design and 3D-printing framework that blends soft and rigid materials to create mechanism-driven legged soft robots with closed-loop control.",
+      "abstract": "The work extends classical mechanism design to soft robotics through multi-material printing, biomimetic joint-like structures, electronics, encoders, and terrain experiments on sand, soil, and rock.",
+      "authors": [
+        "Cem Aygul",
+        "Can Guven",
+        "Sara A Frunzi",
+        "Brian Katz",
+        "Markus P. Nemitz"
+      ],
+      "published": "2025",
+      "venue": "Nature Communications",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "soft_robotics",
+        "mechanism_design",
+        "biomimetic",
+        "closed_loop_control"
+      ],
+      "score": 8.8,
+      "citation_count": 38,
+      "report_id": "robotics_weekly_research_20260730",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A framework for soft mechanism driven robots",
+      "publisher": "Nature"
+    },
+    {
+      "id": "consensus:9fc2bc6155c15d13ba37eb21c607114f",
+      "title": "Skin-inspired, sensory robots for electronic implants",
+      "url": "https://consensus.app/papers/skininspired-sensory-robots-for-electronic-implants-zhang-xing/9fc2bc6155c15d13ba37eb21c607114f/?utm_source=chatgpt",
+      "summary": "A 2024 Nature Communications platform for bio-inspired implantable soft robots that integrate electronic skin, artificial muscle, wireless operation, sensing, and on-demand actuation.",
+      "abstract": "The system demonstrates soft robotic cuffs, grippers, ingestible devices, and cardiac patches that combine multifunctional sensing with adaptive tissue contact and therapeutic functions.",
+      "authors": [
+        "Lin Zhang",
+        "Sicheng Xing",
+        "Haifeng Yin",
+        "Hannah Weisbecker",
+        "Hiep Thanh Tran",
+        "Ziheng Guo",
+        "Tianhong Han",
+        "Yihang Wang",
+        "Yihan Liu",
+        "Yizhang Wu",
+        "Wanrong Xie",
+        "Chuqi Huang",
+        "Wei Luo",
+        "Michael Demaesschalck",
+        "Collin McKinney",
+        "Samuel Hankley",
+        "Amber Huang",
+        "Brynn Brusseau",
+        "Jett Messenger",
+        "Yici Zou",
+        "Wubin Bai"
+      ],
+      "published": "2024",
+      "venue": "Nature Communications",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "soft_robotics",
+        "biomimetic",
+        "sensing",
+        "implantable_robot"
+      ],
+      "score": 8.7,
+      "citation_count": 132,
+      "report_id": "robotics_weekly_research_20260730",
+      "doi": "",
+      "doi_url": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Skin-inspired sensory robots for electronic implants",
+      "publisher": "Nature"
     }
   ]
 }
