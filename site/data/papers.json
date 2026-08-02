@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-07-30T15:14:43",
+  "updated_at": "2026-08-03T07:14:21",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
+    {
+      "id": "consensus:d243fb857f9f581ea259d68ba0afa9f0",
+      "report_id": "robotics_research_20260803_071255",
+      "title": "A Self-Reconfiguration Algorithm for Sliding Triangular Modular Robots",
+      "url": "https://consensus.app/papers/a-selfreconfiguration-algorithm-for-sliding-triangular-odem-medina/d243fb857f9f581ea259d68ba0afa9f0/?utm_source=chatgpt",
+      "doi": "",
+      "doi_url": "",
+      "summary": "A 2024 RA-L algorithm for 2D sliding triangular modular robots that improves self-reconfiguration planning without forcing a flat-n intermediate configuration.",
+      "abstract": "The method proves connectivity among horizontally convex configurations and demonstrates obstacle-aware self-reconfiguration on a 1000-module STRIMOR planning example.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Self-Reconfiguration Algorithm for Sliding Triangular Modular Robots",
+      "authors": [
+        "Shlomo Odem",
+        "Oded Medina"
+      ],
+      "published": "2024",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "reconfiguration",
+        "planning",
+        "scalability"
+      ],
+      "score": 7.6
+    },
+    {
+      "id": "consensus:0313242084205447980d7385dd714a6a",
+      "report_id": "robotics_research_20260803_071255",
+      "title": "Design and Control of Rapid In-Air Reconfiguration for Modular Quadrotors With Full Controllable Degrees of Freedom",
+      "url": "https://consensus.app/papers/design-and-control-of-rapid-inair-reconfiguration-for-zhang-li/0313242084205447980d7385dd714a6a/?utm_source=chatgpt",
+      "doi": "",
+      "doi_url": "",
+      "summary": "A 2024 RA-L modular aerial robot that combines vector-tilting modules, active electromagnetic undocking, full-DoF control, and rapid in-air reconfiguration.",
+      "abstract": "The system uses vector tilting and active undocking to perform in-air self-disassembly, with real-world experiments reporting stable full-DoF hovering and reconfiguration under three seconds.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design and Control of Rapid In-Air Reconfiguration for Modular Quadrotors",
+      "authors": [
+        "Jihuai Zhang",
+        "Fusheng Li",
+        "Xin Lu",
+        "Chao Zhang",
+        "Yuling Xin",
+        "Ruqing Zhao",
+        "Shubin Lyu"
+      ],
+      "published": "2024",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "hardware",
+        "control",
+        "aerial_robot",
+        "reconfiguration"
+      ],
+      "score": 8.0
+    },
     {
       "id": "arxiv:title:distributed multi robot lunar cargo transportation via phase decomposed reinforcement learning",
       "report_id": "robotics_research_20260725_181745",
