@@ -44,4 +44,7 @@ class PipelineResult:
     unique_count: int
     selected_count: int
     report_path: str
-
+    search_since: str
+    search_until: str
+    cursor_advanced: bool
+    source_error_count: int

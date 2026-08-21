@@ -12,6 +12,8 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "name": "Robotics Daily Research Agent",
         "language": "zh-CN",
         "lookback_days": 14,
+        "cursor_overlap_days": 2,
+        "date_chunk_days": 14,
         "max_results_per_query": 15,
         "max_report_items": 25,
         "min_score": 4.0,
@@ -31,6 +33,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
     "storage": {
         "state_file": "outputs/state/papers.json",
+        "cursor_file": "outputs/state/collection_cursor.json",
         "report_dir": "outputs/reports",
     },
 }

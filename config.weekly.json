@@ -3,6 +3,8 @@
     "name": "Robotics Weekly Research Agent",
     "language": "zh-CN",
     "lookback_days": 21,
+    "cursor_overlap_days": 2,
+    "date_chunk_days": 14,
     "max_results_per_query": 50,
     "max_venue_results": 40,
     "max_report_items": 40,
@@ -264,6 +266,7 @@
   },
   "storage": {
     "state_file": "outputs/state/weekly_papers.json",
+    "cursor_file": "outputs/state/collection_cursor.json",
     "report_dir": "outputs/weekly_reports",
     "site_data_file": "site/data/papers.json",
     "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly"

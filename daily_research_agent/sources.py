@@ -45,18 +45,22 @@ def first(value: Any, default: str = "") -> str:
 class SourceClient:
     name = "source"
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         raise NotImplementedError
 
-    def search_venue(self, venue: str, since: date, limit: int) -> Iterable[Paper]:
+    def search_venue(self, venue: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         return []
 
 
 class ArxivSource(SourceClient):
     name = "arxiv"
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
-        encoded = urllib.parse.quote(f'all:"{query}"')
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
+        date_range = (
+            f"submittedDate:[{since.strftime('%Y%m%d')}0000 TO "
+            f"{until.strftime('%Y%m%d')}2359]"
+        )
+        encoded = urllib.parse.quote(f'all:"{query}" AND {date_range}')
         url = (
             "https://export.arxiv.org/api/query?"
             f"search_query={encoded}&sortBy=submittedDate&sortOrder=descending&max_results={limit}"
@@ -65,7 +69,7 @@ class ArxivSource(SourceClient):
         ns = {"atom": "http://www.w3.org/2005/Atom"}
         for entry in root.findall("atom:entry", ns):
             published = entry.findtext("atom:published", default="", namespaces=ns)
-            if published[:10] and published[:10] < since.isoformat():
+            if published[:10] and not since.isoformat() <= published[:10] <= until.isoformat():
                 continue
             title = strip_markup(entry.findtext("atom:title", default="", namespaces=ns))
             abstract = strip_markup(entry.findtext("atom:summary", default="", namespaces=ns))
@@ -151,11 +155,11 @@ class CrossrefSource(SourceClient):
                 papers[paper.identity] = paper
         return list(papers.values())
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         common = {
             "filter": (
                 f"from-pub-date:{since.isoformat()},"
-                f"until-pub-date:{date.today().isoformat()},type:journal-article"
+                f"until-pub-date:{until.isoformat()},type:journal-article"
             ),
             "rows": str(limit),
         }
@@ -173,11 +177,11 @@ class CrossrefSource(SourceClient):
         time.sleep(0.2)
         return self._dedupe_items(item for result in result_sets for item in result)
 
-    def search_venue(self, venue: str, since: date, limit: int) -> Iterable[Paper]:
+    def search_venue(self, venue: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         params = {
             "filter": (
                 f"from-pub-date:{since.isoformat()},"
-                f"until-pub-date:{date.today().isoformat()},"
+                f"until-pub-date:{until.isoformat()},"
                 f"type:journal-article,container-title:{venue}"
             ),
             "sort": "published",
@@ -209,10 +213,13 @@ class OpenAlexSource(SourceClient):
     def __init__(self, mailto: str = "") -> None:
         self.mailto = mailto
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         params = {
             "search": query,
-            "filter": f"from_publication_date:{since.isoformat()},type:article",
+            "filter": (
+                f"from_publication_date:{since.isoformat()},"
+                f"to_publication_date:{until.isoformat()},type:article"
+            ),
             "sort": "relevance_score:desc",
             "per-page": str(min(limit, 100)),
             "select": (
@@ -265,12 +272,12 @@ class OpenAlexSource(SourceClient):
 class SemanticScholarSource(SourceClient):
     name = "semantic_scholar"
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         params = {
             "query": query,
             "limit": str(min(limit, 100)),
             "fields": "title,abstract,year,publicationDate,authors,venue,url,externalIds,publicationTypes",
-            "year": f"{since.year}-",
+            "year": f"{since.year}-{until.year}",
         }
         headers = {"User-Agent": USER_AGENT}
         api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY")
@@ -280,7 +287,7 @@ class SemanticScholarSource(SourceClient):
         data = fetch_json(url, headers=headers)
         for item in data.get("data", []):
             published = item.get("publicationDate") or ""
-            if published and published[:10] < since.isoformat():
+            if published and not since.isoformat() <= published[:10] <= until.isoformat():
                 continue
             yield Paper(
                 title=strip_markup(item.get("title", "")),
@@ -300,7 +307,7 @@ class SemanticScholarSource(SourceClient):
 class IEEESource(SourceClient):
     name = "ieee"
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         api_key = os.getenv("IEEE_API_KEY")
         if not api_key:
             return []
@@ -318,7 +325,10 @@ class IEEESource(SourceClient):
         papers = []
         for item in data.get("articles", []):
             year = item.get("publication_year")
-            if year and int(year) < since.year:
+            published = item.get("publication_date", "")
+            if published and not since.isoformat() <= published[:10] <= until.isoformat():
+                continue
+            if not published and year and not since.year <= int(year) <= until.year:
                 continue
             papers.append(
                 Paper(
@@ -326,7 +336,7 @@ class IEEESource(SourceClient):
                     abstract=strip_markup(item.get("abstract", "")),
                     authors=[a.get("full_name", "") for a in item.get("authors", {}).get("authors", [])],
                     year=int(year) if str(year).isdigit() else None,
-                    published=item.get("publication_date", ""),
+                    published=published,
                     venue=item.get("publication_title", ""),
                     publisher="IEEE",
                     doi=item.get("doi", ""),
@@ -341,13 +351,13 @@ class IEEESource(SourceClient):
 class ElsevierSource(SourceClient):
     name = "elsevier"
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+    def search(self, query: str, since: date, until: date, limit: int) -> Iterable[Paper]:
         api_key = os.getenv("ELSEVIER_API_KEY")
         if not api_key:
             return []
         params = {
             "query": f'TITLE-ABS-KEY("{query}")',
-            "date": str(since.year),
+            "date": f"{since.year}-{until.year}",
             "count": str(limit),
             "sort": "-coverDate",
         }
@@ -356,14 +366,17 @@ class ElsevierSource(SourceClient):
         data = fetch_json(url, headers=headers)
         papers = []
         for item in data.get("search-results", {}).get("entry", []):
+            published = item.get("prism:coverDate", "")
+            if published and not since.isoformat() <= published[:10] <= until.isoformat():
+                continue
             papers.append(
                 Paper(
                     title=strip_markup(item.get("dc:title", "")),
                     abstract="",
                     authors=[item.get("dc:creator", "")] if item.get("dc:creator") else [],
-                    published=item.get("prism:coverDate", ""),
-                    year=int(item.get("prism:coverDate", "0000")[:4])
-                    if item.get("prism:coverDate", "")[:4].isdigit()
+                    published=published,
+                    year=int(published[:4])
+                    if published[:4].isdigit()
                     else None,
                     venue=item.get("prism:publicationName", ""),
                     publisher="Elsevier",

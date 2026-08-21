@@ -27,6 +27,7 @@ class SourceTests(unittest.TestCase):
                 CrossrefSource().search(
                     "modular self-reconfigurable robot",
                     since=date(2026, 7, 1),
+                    until=date(2026, 7, 31),
                     limit=50,
                 )
             )
@@ -35,6 +36,8 @@ class SourceTests(unittest.TestCase):
         self.assertEqual(len(papers), 1)
         self.assertEqual(papers[0].published, "2026-07-09")
         self.assertEqual(papers[0].doi, "10.1038/s41467-026-74527-6")
+        requested_urls = [call.args[0] for call in mocked_fetch.call_args_list]
+        self.assertTrue(all("until-pub-date%3A2026-07-31" in url for url in requested_urls))
 
     def test_openalex_result_is_converted_to_paper(self) -> None:
         response = {
@@ -64,7 +67,11 @@ class SourceTests(unittest.TestCase):
         }
 
         with patch("daily_research_agent.sources.fetch_json", return_value=response):
-            papers = list(OpenAlexSource().search("robot learning", date(2026, 7, 1), 50))
+            papers = list(
+                OpenAlexSource().search(
+                    "robot learning", date(2026, 7, 1), date(2026, 7, 31), 50
+                )
+            )
 
         self.assertEqual(len(papers), 1)
         self.assertEqual(papers[0].doi, "10.0000/example")

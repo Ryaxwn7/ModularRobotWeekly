@@ -53,5 +53,7 @@ def main() -> None:
     print(f"Collected: {result.collected_count}")
     print(f"After dedupe: {result.unique_count}")
     print(f"Selected: {result.selected_count}")
+    print(f"Search window: {result.search_since} through {result.search_until}")
+    print(f"Source errors: {result.source_error_count}")
+    print(f"Cursor advanced: {'yes' if result.cursor_advanced else 'no (range will be retried)'}")
     print(f"Report: {result.report_path}")
-

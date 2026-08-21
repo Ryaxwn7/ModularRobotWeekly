@@ -26,7 +26,8 @@ https://github.com/Ryaxwn7/ModularRobotWeekly
 ## 功能
 
 - 从 arXiv、Crossref、Semantic Scholar、OpenAlex 等公开源采集论文。
-- 使用 21 天重叠回采窗口，补偿数据库延迟收录、任务中断和电脑离线。
+- 自动读取上次成功更新时间，从该时间持续补采到当前日期；额外回退 2 天以补偿数据库延迟收录。
+- 长时间离线后的日期范围按 14 天自动分片，减少单次检索结果上限造成的漏检。
 - 对 Nature、Science、IEEE、ACM 及机器人、AI、计算机视觉、机器学习高水平期刊进行定向巡检和分级加权。
 - 可选接入 IEEE、Elsevier、Gemini、DeepSeek、豆包等 API。
 - 按期刊来源、主题相关性、算法/结构/系统/理论标签评分。
@@ -37,11 +38,15 @@ https://github.com/Ryaxwn7/ModularRobotWeekly
 
 ## 本地运行
 
-按配置生成最近 21 天的重叠回采周报和网站数据：
+按配置生成增量周报和网站数据：
 
 ```powershell
 python -m daily_research_agent --config config.weekly.json
 ```
+
+程序优先读取 `outputs/state/collection_cursor.json` 中的上次成功时间。如果本地游标不存在，
+则读取 `site/data/papers.json` 的 `updated_at`；两者都不存在时，才使用 21 天首次回采窗口。
+只有所有数据源均成功完成时才会更新网站、历史库和游标；失败区间会在下次运行时重试。
 
 报告输出目录：
 

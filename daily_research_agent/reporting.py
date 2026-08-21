@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from .models import Paper
@@ -31,13 +31,27 @@ def paper_markdown(paper: Paper, index: int) -> str:
     return "\n".join(lines)
 
 
-def write_report(report_dir: Path, papers: list[Paper], executive_summary: str) -> Path:
+def write_report(
+    report_dir: Path,
+    papers: list[Paper],
+    executive_summary: str,
+    search_since: date | None = None,
+    search_until: date | None = None,
+) -> Path:
     report_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.now()
     path = report_dir / f"robotics_research_{now.strftime('%Y%m%d_%H%M%S')}.md"
 
     content = [
         f"# Robotics Research Brief - {now.strftime('%Y-%m-%d')}",
+        "",
+        "## Collection Window",
+        "",
+        (
+            f"{search_since.isoformat()} through {search_until.isoformat()}"
+            if search_since and search_until
+            else "Not recorded"
+        ),
         "",
         "## Executive Summary",
         "",
@@ -65,4 +79,3 @@ def write_report(report_dir: Path, papers: list[Paper], executive_summary: str) 
     )
     path.write_text("\n".join(content), encoding="utf-8")
     return path
-
