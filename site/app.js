@@ -18,6 +18,21 @@ function topicLabel(topic) {
   return topic.replaceAll("_", " ");
 }
 
+function isConsensusUrl(value) {
+  try {
+    const host = new URL(value).hostname.toLowerCase();
+    return host === "consensus.app" || host.endsWith(".consensus.app");
+  } catch {
+    return false;
+  }
+}
+
+function originalPaperUrl(paper) {
+  if (paper.doi) return `https://doi.org/${String(paper.doi).replace(/^https?:\/\/doi\.org\//i, "")}`;
+  return [paper.doi_url, paper.url, paper.original_url]
+    .find((value) => value && !isConsensusUrl(value)) || "";
+}
+
 function renderTopicOptions(papers) {
   const select = document.querySelector("#topicFilter");
   const topics = new Set();
@@ -79,16 +94,23 @@ function renderPapers() {
     const original = node.querySelector(".paper-link");
     const doi = node.querySelector(".doi-link");
 
-    const url = paper.url || paper.doi_url || "#";
+    const url = originalPaperUrl(paper);
     figure.src = paper.figure_url || fallbackFigure;
     figure.alt = paper.figure_alt || `论文主图：${paper.title}`;
-    figureLink.href = url;
 
     node.querySelector(".paper-date").textContent = formatDate(paper.published);
     node.querySelector(".paper-venue").textContent = paper.venue || paper.source || "Unknown venue";
     node.querySelector(".paper-score").textContent = paper.score ? `Score ${paper.score}` : "";
     title.textContent = paper.title;
-    title.href = url;
+    if (url) {
+      figureLink.href = url;
+      title.href = url;
+      original.href = url;
+    } else {
+      figureLink.removeAttribute("href");
+      title.removeAttribute("href");
+      original.remove();
+    }
     node.querySelector(".paper-summary").textContent = paper.summary || paper.abstract || "暂无摘要。";
 
     const tags = node.querySelector(".paper-tags");
@@ -99,9 +121,8 @@ function renderPapers() {
       tags.appendChild(item);
     });
 
-    original.href = url;
     if (paper.doi) {
-      doi.href = paper.doi_url || `https://doi.org/${paper.doi}`;
+      doi.href = `https://doi.org/${String(paper.doi).replace(/^https?:\/\/doi\.org\//i, "")}`;
     } else {
       doi.remove();
     }
@@ -134,4 +155,3 @@ async function init() {
 init().catch((error) => {
   document.querySelector("#paperList").innerHTML = `<div class="empty">数据加载失败：${error.message}</div>`;
 });
-

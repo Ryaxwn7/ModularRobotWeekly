@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T15:27:00",
+  "updated_at": "2026-08-21T15:38:20",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
@@ -42,9 +42,9 @@
       "id": "consensus:10ee28fd3a6f587587233f4de125b5da",
       "report_id": "seed_20260725",
       "title": "Modular reconfigurable robots: Toward on-demand multifunctional applications",
-      "url": "https://consensus.app/papers/modular-reconfigurable-robots-toward-ondemand-liang-ijspeert/10ee28fd3a6f587587233f4de125b5da/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1126/scirobotics.adz1999",
+      "doi": "10.1126/scirobotics.adz1999",
+      "doi_url": "https://doi.org/10.1126/scirobotics.adz1999",
       "summary": "A Science Robotics review that frames modular reconfigurable robots around real application needs, covering locomotion, manipulation, construction, hardware gaps, software gaps, and practical deployment challenges.",
       "abstract": "This review discusses modular reconfigurable robot systems from an application-oriented perspective.",
       "figure_url": "",
@@ -73,7 +73,7 @@
     {
       "id": "consensus:64a6d774e4c1501ebc5c0a3ec0f59d2c",
       "title": "Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
-      "url": "https://consensus.app/papers/selfreconfiguration-planning-for-deformable-gu-gao/64a6d774e4c1501ebc5c0a3ec0f59d2c/?utm_source=chatgpt",
+      "url": "https://doi.org/10.1109/LRA.2026.3685902",
       "summary": "A 2026 RA-L planning method that uses a virtual graph and Dependence-based Reverse Tree to order feasible connect/disconnect actions for deformable quadrilateral MSRRs.",
       "abstract": "The method builds feasible connect and disconnect actions with a virtual graph, then orders them through a Dependence-based Reverse Tree; physical deployment validates feasibility for deformable quadrilateral MSRRs.",
       "authors": [
@@ -99,8 +99,8 @@
       "score": 8.3,
       "citation_count": 0,
       "report_id": "robotics_weekly_research_20260727",
-      "doi": "",
-      "doi_url": "",
+      "doi": "10.1109/LRA.2026.3685902",
+      "doi_url": "https://doi.org/10.1109/LRA.2026.3685902",
       "figure_url": "",
       "figure_alt": "Main figure for Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
       "publisher": ""
@@ -108,7 +108,7 @@
     {
       "id": "consensus:6abc7842f1b8503dab45ba89c0c03302",
       "title": "Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
-      "url": "https://consensus.app/papers/taskdriven-codesign-of-heterogeneous-multirobot-systems-stralz-alharbi/6abc7842f1b8503dab45ba89c0c03302/?utm_source=chatgpt",
+      "url": "https://arxiv.org/abs/2604.21894",
       "summary": "A 2026 formal co-design framework for heterogeneous multi-robot systems that jointly optimizes robot design, fleet composition, and planning under task-specific constraints.",
       "abstract": "The framework models robots, fleets, planners, executors, and evaluators as interconnected design problems, enabling joint optimization with optimality guarantees across case studies.",
       "authors": [
@@ -143,9 +143,9 @@
       "id": "consensus:90ffb9422d8456ef9816d185c6ab45d4",
       "report_id": "robotics_weekly_research_20260727",
       "title": "A collective intelligence model for swarm robotics applications",
-      "url": "https://consensus.app/papers/a-collective-intelligence-model-for-swarm-robotics-nitti-tullio/90ffb9422d8456ef9816d185c6ab45d4/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1038/s41467-025-61985-7",
+      "doi": "10.1038/s41467-025-61985-7",
+      "doi_url": "https://doi.org/10.1038/s41467-025-61985-7",
       "summary": "A 2025 Nature Communications paper combining meta-heuristic search and consensus theory into a compact swarm cooperation model for small robot groups and AUV contaminant localization.",
       "abstract": "A swarm cooperation model merges meta-heuristic methods and consensus theory, showing competitive success on benchmark landscapes with small groups and demonstrating autonomous underwater contaminant localization.",
       "figure_url": "",
@@ -175,7 +175,7 @@
     {
       "id": "consensus:51ca5b50bdf75409826c83917926e48f",
       "title": "A framework for soft mechanism driven robots",
-      "url": "https://consensus.app/papers/a-framework-for-soft-mechanism-driven-robots-aygl-gven/51ca5b50bdf75409826c83917926e48f/?utm_source=chatgpt",
+      "url": "https://doi.org/10.1038/s41467-025-56025-3",
       "summary": "A 2025 Nature Communications design and 3D-printing framework that blends soft and rigid materials to create mechanism-driven legged soft robots with closed-loop control.",
       "abstract": "The work extends classical mechanism design to soft robotics through multi-material printing, biomimetic joint-like structures, electronics, encoders, and terrain experiments on sand, soil, and rock.",
       "authors": [
@@ -200,8 +200,8 @@
       "score": 8.8,
       "citation_count": 38,
       "report_id": "robotics_weekly_research_20260730",
-      "doi": "",
-      "doi_url": "",
+      "doi": "10.1038/s41467-025-56025-3",
+      "doi_url": "https://doi.org/10.1038/s41467-025-56025-3",
       "figure_url": "",
       "figure_alt": "Main figure for A framework for soft mechanism driven robots",
       "publisher": "Nature"
@@ -210,9 +210,9 @@
       "id": "consensus:282ec1be92585050bbdeaa601e6478a0",
       "report_id": "robotics_weekly_research_20260727",
       "title": "Modular Self-Reconfigurable Continuum Robot for General Purpose Loco-Manipulation",
-      "url": "https://consensus.app/papers/modular-selfreconfigurable-continuum-robot-for-general-cai-xu/282ec1be92585050bbdeaa601e6478a0/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1109/LRA.2025.3526560",
+      "doi": "10.1109/LRA.2025.3526560",
+      "doi_url": "https://doi.org/10.1109/LRA.2025.3526560",
       "summary": "A 2025 RA-L system that combines a soft continuum backbone with omnidirectional docking so single and connected modules can locomote, manipulate, and self-reconfigure.",
       "abstract": "A modular self-reconfigurable soft continuum robotic system uses a continuum backbone and omnidirectional docking mechanism, with kinetostatic modeling and docking-range analysis supporting loco-manipulation experiments.",
       "figure_url": "",
@@ -246,9 +246,9 @@
       "id": "consensus:c75a52cbb6d15245aaf872d02b048130",
       "report_id": "seed_20260725",
       "title": "RS-ModCubes: Self-Reconfigurable, Scalable, Modular Cubic Robots for Underwater Operations",
-      "url": "https://consensus.app/papers/rsmodcubes-selfreconfigurable-scalable-modular-cubic-zheng-dai/c75a52cbb6d15245aaf872d02b048130/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1109/LRA.2025.3543139",
+      "doi": "10.1109/LRA.2025.3543139",
+      "doi_url": "https://doi.org/10.1109/LRA.2025.3543139",
       "summary": "An underwater modular self-reconfigurable robot system with 6-DoF modules, electromagnetic docking, hydrodynamic modeling, and real-world validation.",
       "abstract": "RS-ModCubes is a reconfigurable underwater robot system with scalable multi-robot configurations.",
       "figure_url": "",
@@ -283,9 +283,9 @@
       "id": "consensus:7dc27f96507057e19a2c2d6b77205bfa",
       "report_id": "robotics_weekly_research_20260727",
       "title": "Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
-      "url": "https://consensus.app/papers/hexagonal-electrohydraulic-modules-for-rapidly-yoder-rumley/7dc27f96507057e19a2c2d6b77205bfa/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1126/scirobotics.adl3546",
+      "doi": "10.1126/scirobotics.adl3546",
+      "doi_url": "https://doi.org/10.1126/scirobotics.adl3546",
       "summary": "A Science Robotics hardware platform introducing HEXEL electrohydraulic modules with high-speed actuation and reversible magnetic mechanical/electrical connections.",
       "abstract": "Electrically actuated hexagonal electrohydraulic modules combine soft actuators with rigid exoskeleton amplification, delivering high-speed and high-strain actuation plus reversible magnetic connections for rapidly reconfigurable robots.",
       "figure_url": "",
@@ -317,9 +317,9 @@
       "id": "consensus:86a6742a99715132a4910a76f5f1c788",
       "report_id": "robotics_weekly_research_20260727",
       "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
-      "url": "https://consensus.app/papers/counterfactual-rewards-promote-collective-transport-heuthe-panizon/86a6742a99715132a4910a76f5f1c788/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1126/scirobotics.ado5888",
+      "doi": "10.1126/scirobotics.ado5888",
+      "doi_url": "https://doi.org/10.1126/scirobotics.ado5888",
       "summary": "A 2024 Science Robotics study using counterfactual rewards for credit assignment so up to 200 individually controlled microrobots can learn robust collective transport.",
       "abstract": "Multi-agent reinforcement learning with counterfactual rewards assigns credit to individually controlled microrobots, enabling collective cargo transport under group-size changes, failed units, and environmental noise.",
       "figure_url": "",
@@ -349,7 +349,7 @@
     {
       "id": "consensus:89be485bf3185b62b2570007c08687d1",
       "title": "Design of a Multi-Environmentally Adaptable Modular Self-Reconfigurable Robot",
-      "url": "https://consensus.app/papers/design-of-a-multienvironmentally-adaptable-modular-yang-zhao/89be485bf3185b62b2570007c08687d1/?utm_source=chatgpt",
+      "url": "https://doi.org/10.1109/LRA.2024.3447460",
       "summary": "A 2024 RA-L amphibious modular self-reconfigurable robot with sealed modules and electro-permanent-magnet faces for coupling, power sharing, sensing, and configuration identification.",
       "abstract": "An amphibious modular self-reconfigurable robot customizes sealing, circuitry, electro-permanent-magnet connection faces, and two-DOF cubic modules to operate across aquatic and terrestrial environments.",
       "authors": [
@@ -378,8 +378,8 @@
       "score": 8.7,
       "citation_count": 12,
       "report_id": "robotics_weekly_research_20260727",
-      "doi": "",
-      "doi_url": "",
+      "doi": "10.1109/LRA.2024.3447460",
+      "doi_url": "https://doi.org/10.1109/LRA.2024.3447460",
       "figure_url": "",
       "figure_alt": "Main figure for Design of a Multi-Environmentally Adaptable Modular Self-Reconfigurable Robot",
       "publisher": ""
@@ -387,7 +387,7 @@
     {
       "id": "consensus:9fc2bc6155c15d13ba37eb21c607114f",
       "title": "Skin-inspired, sensory robots for electronic implants",
-      "url": "https://consensus.app/papers/skininspired-sensory-robots-for-electronic-implants-zhang-xing/9fc2bc6155c15d13ba37eb21c607114f/?utm_source=chatgpt",
+      "url": "https://doi.org/10.1038/s41467-024-48903-z",
       "summary": "A 2024 Nature Communications platform for bio-inspired implantable soft robots that integrate electronic skin, artificial muscle, wireless operation, sensing, and on-demand actuation.",
       "abstract": "The system demonstrates soft robotic cuffs, grippers, ingestible devices, and cardiac patches that combine multifunctional sensing with adaptive tissue contact and therapeutic functions.",
       "authors": [
@@ -428,8 +428,8 @@
       "score": 8.7,
       "citation_count": 132,
       "report_id": "robotics_weekly_research_20260730",
-      "doi": "",
-      "doi_url": "",
+      "doi": "10.1038/s41467-024-48903-z",
+      "doi_url": "https://doi.org/10.1038/s41467-024-48903-z",
       "figure_url": "",
       "figure_alt": "Main figure for Skin-inspired sensory robots for electronic implants",
       "publisher": "Nature"
@@ -438,9 +438,9 @@
       "id": "consensus:a49d138836ed53988e74634c1828f84e",
       "report_id": "seed_20260725",
       "title": "Snail-inspired robotic swarms: a hybrid connector drives collective adaptation in unstructured outdoor environments",
-      "url": "https://consensus.app/papers/snailinspired-robotic-swarms-a-hybrid-connector-drives-zhao-luo/a49d138836ed53988e74634c1828f84e/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1038/s41467-024-47788-2",
+      "doi": "10.1038/s41467-024-47788-2",
+      "doi_url": "https://doi.org/10.1038/s41467-024-47788-2",
       "summary": "A Nature Communications paper on snail-inspired robotic swarms with a hybrid connector that balances free mobility and strong adhesion for outdoor unstructured environments.",
       "abstract": "This work presents a snail-inspired robotic swarm system with a two-mode connector.",
       "figure_url": "",
@@ -471,7 +471,7 @@
     {
       "id": "consensus:52ebaa689ac5530f96fe9bb10968a1d5",
       "title": "Linear-time quasi-static stability detection for modular self-reconfigurable robots",
-      "url": "https://consensus.app/papers/lineartime-quasistatic-stability-detection-for-modular-wu-liang/52ebaa689ac5530f96fe9bb10968a1d5/?utm_source=chatgpt",
+      "url": "https://doi.org/10.1177/02783649241286491",
       "summary": "An IJRR method that detects quasi-static instability in modular self-reconfigurable robots with linear scaling in module count, using connection, contact, and environmental constraints.",
       "abstract": "A linear-time quasi-static stability detection method models internal connections, non-connected contacts, and environmental contacts as a second-order cone program, then validates stability margins on FreeSN configurations.",
       "authors": [
@@ -496,8 +496,8 @@
       "score": 8.4,
       "citation_count": 3,
       "report_id": "robotics_weekly_research_20260727",
-      "doi": "",
-      "doi_url": "",
+      "doi": "10.1177/02783649241286491",
+      "doi_url": "https://doi.org/10.1177/02783649241286491",
       "figure_url": "",
       "figure_alt": "Main figure for Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "publisher": ""
@@ -506,9 +506,9 @@
       "id": "consensus:0313242084205447980d7385dd714a6a",
       "report_id": "robotics_research_20260803_071255",
       "title": "Design and Control of Rapid In-Air Reconfiguration for Modular Quadrotors With Full Controllable Degrees of Freedom",
-      "url": "https://consensus.app/papers/design-and-control-of-rapid-inair-reconfiguration-for-zhang-li/0313242084205447980d7385dd714a6a/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1109/LRA.2024.3416797",
+      "doi": "10.1109/LRA.2024.3416797",
+      "doi_url": "https://doi.org/10.1109/LRA.2024.3416797",
       "summary": "A 2024 RA-L modular aerial robot that combines vector-tilting modules, active electromagnetic undocking, full-DoF control, and rapid in-air reconfiguration.",
       "abstract": "The system uses vector tilting and active undocking to perform in-air self-disassembly, with real-world experiments reporting stable full-DoF hovering and reconfiguration under three seconds.",
       "figure_url": "",
@@ -542,9 +542,9 @@
       "id": "consensus:d243fb857f9f581ea259d68ba0afa9f0",
       "report_id": "robotics_research_20260803_071255",
       "title": "A Self-Reconfiguration Algorithm for Sliding Triangular Modular Robots",
-      "url": "https://consensus.app/papers/a-selfreconfiguration-algorithm-for-sliding-triangular-odem-medina/d243fb857f9f581ea259d68ba0afa9f0/?utm_source=chatgpt",
-      "doi": "",
-      "doi_url": "",
+      "url": "https://doi.org/10.1109/LRA.2024.3355756",
+      "doi": "10.1109/LRA.2024.3355756",
+      "doi_url": "https://doi.org/10.1109/LRA.2024.3355756",
       "summary": "A 2024 RA-L algorithm for 2D sliding triangular modular robots that improves self-reconfiguration planning without forcing a flat-n intermediate configuration.",
       "abstract": "The method proves connectivity among horizontally convex configurations and demonstrates obstacle-aware self-reconfiguration on a 1000-module STRIMOR planning example.",
       "figure_url": "",
@@ -576,7 +576,7 @@
         "control"
       ],
       "id": "consensus:bcecf9d9bd11529eb6a671c5d97a9b4c",
-      "doi_url": "",
+      "doi_url": "https://doi.org/10.3390/s25051353",
       "figure_url": "",
       "abstract": "The review surveys recent advances in multi-robot systems and soft robotics, with emphasis on their integration for adaptive collaborative robots across manipulation, navigation, transportation, sensing, actuation, modeling, and simulation.",
       "title": "A Review of Multi-Robot Systems and Soft Robotics: Challenges and Opportunities",
@@ -594,13 +594,13 @@
         "D. Sanin-Villa"
       ],
       "source": "consensus",
-      "doi": "",
+      "doi": "10.3390/s25051353",
       "summary": "A 2025 Sensors review connecting multi-robot coordination with soft robotics, highlighting locomotion, manipulation, simulation, nonlinear dynamics, hyper-redundancy, and adaptive control challenges.",
       "publisher": "",
       "score": 8.1,
       "venue": "Sensors",
       "figure_alt": "Main figure for multi-robot systems and soft robotics review",
-      "url": "https://consensus.app/papers/a-review-of-multirobot-systems-and-soft-robotics-tejada-toro-ossaba/bcecf9d9bd11529eb6a671c5d97a9b4c/?utm_source=chatgpt"
+      "url": "https://doi.org/10.3390/s25051353"
     },
     {
       "tags": [
@@ -610,7 +610,7 @@
         "embodied_ai"
       ],
       "id": "consensus:9d0c1ad9700c571da132eda51b112476",
-      "doi_url": "",
+      "doi_url": "https://doi.org/10.1038/s41467-025-63881-6",
       "figure_url": "",
       "abstract": "Flexible Electronic Robots use programmable flexible electronic components and setae modules for multimodal locomotion, environmental perception, hazard avoidance, thermal tracking, and adaptive behavior in small-scale soft robotics.",
       "title": "AI-embodied multi-modal flexible electronic robots with programmable sensing, actuating and self-learning",
@@ -634,13 +634,13 @@
         "YongAn Huang"
       ],
       "source": "consensus",
-      "doi": "",
+      "doi": "10.1038/s41467-025-63881-6",
       "summary": "A 2025 Nature Communications platform for small flexible electronic robots that combines modular soft structures, multimodal sensing, actuation, embedded computing, and adaptive decision-making.",
       "publisher": "Nature Portfolio",
       "score": 8.7,
       "venue": "Nature Communications",
       "figure_alt": "Main figure for AI-embodied flexible electronic robots",
-      "url": "https://consensus.app/papers/aiembodied-multimodal-flexible-electronic-robots-with-li-xu/9d0c1ad9700c571da132eda51b112476/?utm_source=chatgpt"
+      "url": "https://doi.org/10.1038/s41467-025-63881-6"
     },
     {
       "tags": [
@@ -650,7 +650,7 @@
         "control"
       ],
       "id": "consensus:b233c5088db550bfa981c93afa5569d3",
-      "doi_url": "",
+      "doi_url": "https://doi.org/10.1002/advs.202506296",
       "figure_url": "",
       "abstract": "The review covers biomimetic actuation, programmable morphology and mechanics, heterogeneous fabrication, embodied intelligence, and practical challenges such as actuation efficiency, material durability, nonlinear control, and robust sensing.",
       "title": "Bioinspired Intelligent Soft Robotics: From Multidisciplinary Integration to Next-Generation Intelligence",
@@ -670,13 +670,13 @@
         "Guozhen Shen"
       ],
       "source": "consensus",
-      "doi": "",
+      "doi": "10.1002/advs.202506296",
       "summary": "A 2025 Advanced Science review organizing intelligent soft robotics around bioinspired actuation, programmable materials, multiscale manufacturing, and AI-enabled closed-loop control.",
       "publisher": "Wiley-VCH",
       "score": 8.4,
       "venue": "Advanced Science",
       "figure_alt": "Main figure for bioinspired intelligent soft robotics review",
-      "url": "https://consensus.app/papers/bioinspired-intelligent-soft-robotics-from-wang-wei/b233c5088db550bfa981c93afa5569d3/?utm_source=chatgpt"
+      "url": "https://doi.org/10.1002/advs.202506296"
     },
     {
       "tags": [
@@ -686,7 +686,7 @@
         "soft_robotics"
       ],
       "id": "consensus:d003526bf0605ab59a02a484868d5b07",
-      "doi_url": "",
+      "doi_url": "https://doi.org/10.1088/1361-665X/ae3a5f",
       "figure_url": "",
       "abstract": "The review summarizes flexible materials such as elastomers, liquid crystal elastomers, liquid metals, kirigami metamaterials, dielectric elastomers, ionic polymer-metal composites, and hydrogels, then links them to bionic soft robot structures and fabrication methods.",
       "title": "A review of the structural design of bionic soft robots based on flexible materials",
@@ -701,13 +701,13 @@
         "Zhizeng Zhang"
       ],
       "source": "consensus",
-      "doi": "",
+      "doi": "10.1088/1361-665X/ae3a5f",
       "summary": "A 2026 Smart Materials and Structures review focused on flexible materials and structural designs for bionic crawling, manipulation, underwater, and amphibious soft robots.",
       "publisher": "IOP Publishing",
       "score": 7.9,
       "venue": "Smart Materials and Structures",
       "figure_alt": "Main figure for bionic soft robot structural design review",
-      "url": "https://consensus.app/papers/a-review-of-the-structural-design-of-bionic-soft-robots-liu-liu/d003526bf0605ab59a02a484868d5b07/?utm_source=chatgpt"
+      "url": "https://doi.org/10.1088/1361-665X/ae3a5f"
     }
   ]
 }

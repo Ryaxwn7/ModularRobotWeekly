@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 from .models import Paper
 
@@ -25,14 +26,74 @@ def figure_url(paper: Paper) -> str:
     return ""
 
 
+def normalize_doi(value: str) -> str:
+    doi = str(value or "").strip()
+    for prefix in ("https://doi.org/", "http://doi.org/", "doi:"):
+        if doi.lower().startswith(prefix):
+            doi = doi[len(prefix) :]
+            break
+    return doi
+
+
+def is_consensus_url(value: str) -> bool:
+    try:
+        host = (urlparse(str(value or "")).hostname or "").lower()
+    except ValueError:
+        return False
+    return host == "consensus.app" or host.endswith(".consensus.app")
+
+
+def original_paper_url(paper: Paper) -> str:
+    doi = normalize_doi(paper.doi)
+    if doi:
+        return f"https://doi.org/{doi}"
+
+    raw = paper.raw or {}
+    candidates = (
+        paper.url,
+        raw.get("original_url"),
+        raw.get("paper_url"),
+        raw.get("landing_page_url"),
+        raw.get("external_url"),
+        raw.get("source_url"),
+    )
+    return next(
+        (
+            value.strip()
+            for value in candidates
+            if isinstance(value, str) and value.strip() and not is_consensus_url(value)
+        ),
+        "",
+    )
+
+
+def sanitize_site_item(item: dict[str, Any]) -> dict[str, Any]:
+    doi = normalize_doi(item.get("doi", ""))
+    doi_url = f"https://doi.org/{doi}" if doi else ""
+    item["doi"] = doi
+    item["doi_url"] = doi_url
+
+    candidates = (doi_url, item.get("url", ""), item.get("original_url", ""))
+    item["url"] = next(
+        (
+            value.strip()
+            for value in candidates
+            if isinstance(value, str) and value.strip() and not is_consensus_url(value)
+        ),
+        "",
+    )
+    return item
+
+
 def paper_to_site_item(paper: Paper, report_id: str) -> dict[str, Any]:
-    doi_url = f"https://doi.org/{paper.doi}" if paper.doi else ""
-    return {
+    doi = normalize_doi(paper.doi)
+    doi_url = f"https://doi.org/{doi}" if doi else ""
+    return sanitize_site_item({
         "id": paper.identity,
         "report_id": report_id,
         "title": paper.title,
-        "url": paper.url or doi_url,
-        "doi": paper.doi,
+        "url": original_paper_url(paper),
+        "doi": doi,
         "doi_url": doi_url,
         "summary": paper_summary(paper),
         "abstract": paper.abstract,
@@ -46,7 +107,7 @@ def paper_to_site_item(paper: Paper, report_id: str) -> dict[str, Any]:
         "topics": paper.topics,
         "tags": paper.tags,
         "score": paper.score,
-    }
+    })
 
 
 def load_site_data(path: Path) -> dict[str, Any]:
@@ -76,9 +137,8 @@ def upsert_site_papers(
     if repository_url:
         data["repository_url"] = repository_url
     data["papers"] = sorted(
-        existing.values(),
+        (sanitize_site_item(item) for item in existing.values()),
         key=lambda item: (item.get("published") or "", item.get("score") or 0),
         reverse=True,
     )
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-

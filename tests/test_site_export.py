@@ -24,9 +24,30 @@ class SiteExportTests(unittest.TestCase):
         item = paper_to_site_item(paper, "report")
 
         self.assertEqual(item["title"], "Modular robot paper")
-        self.assertEqual(item["url"], "https://example.com/paper")
+        self.assertEqual(item["url"], "https://doi.org/10.0000/example")
         self.assertEqual(item["figure_url"], "https://example.com/figure.png")
         self.assertTrue(item["summary"])
+
+    def test_consensus_url_is_not_exported_as_original_paper(self) -> None:
+        paper = Paper(
+            title="Consensus result",
+            url="https://consensus.app/papers/example/123",
+            raw={"original_url": "https://arxiv.org/abs/2604.21894"},
+        )
+
+        item = paper_to_site_item(paper, "report")
+
+        self.assertEqual(item["url"], "https://arxiv.org/abs/2604.21894")
+
+    def test_consensus_only_url_is_removed(self) -> None:
+        paper = Paper(
+            title="Consensus-only result",
+            url="https://consensus.app/papers/example/123",
+        )
+
+        item = paper_to_site_item(paper, "report")
+
+        self.assertEqual(item["url"], "")
 
     def test_upsert_site_papers_dedupes_by_identity(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -42,4 +63,3 @@ class SiteExportTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

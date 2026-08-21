@@ -40,6 +40,9 @@ After Consensus search:
 1. Run the local project command:
    `python -m daily_research_agent --config config.weekly.json --days 4`
 2. Merge the Consensus findings into `site/data/papers.json`, preserving existing high-quality items and updating or inserting new papers by stable id or DOI.
+   - Treat Consensus only as a discovery source. Never use a `consensus.app` URL as the paper's original link.
+   - Resolve and verify the version-of-record DOI from Crossref or the publisher when available, then store `url` and `doi_url` as `https://doi.org/<DOI>`.
+   - For papers without a DOI, use the official arXiv abstract page or the publisher's article page. If no original source can be verified, leave `url` empty.
 3. Combine the local report with the Consensus findings.
 4. Update `consensus_usage.json` with the month, date, purpose, and number of Consensus search calls used.
 5. Prioritize Science Robotics, Nature, IEEE RA-L, IEEE T-RO, IJRR, Autonomous Robots, Advanced Intelligent Systems, and Elsevier robotics venues.
