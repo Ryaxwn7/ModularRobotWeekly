@@ -74,5 +74,8 @@ def load_config(path: Path) -> dict[str, Any]:
     if crossref_mailto and "crossref" in config["sources"]:
         config["sources"]["crossref"]["mailto"] = crossref_mailto
 
-    return config
+    openalex_mailto = os.getenv("OPENALEX_MAILTO")
+    if openalex_mailto and "openalex" in config["sources"]:
+        config["sources"]["openalex"]["mailto"] = openalex_mailto
 
+    return config

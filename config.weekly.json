@@ -2,9 +2,10 @@
   "agent": {
     "name": "Robotics Weekly Research Agent",
     "language": "zh-CN",
-    "lookback_days": 4,
-    "max_results_per_query": 20,
-    "max_report_items": 30,
+    "lookback_days": 21,
+    "max_results_per_query": 50,
+    "max_venue_results": 40,
+    "max_report_items": 40,
     "min_score": 4.0
   },
   "topics": [
@@ -12,9 +13,8 @@
       "name": "modular_reconfigurable_robotics",
       "queries": [
         "modular self-reconfigurable robot",
-        "modular reconfigurable robotics",
-        "self-reconfigurable modular robot",
-        "reconfigurable robot mechanism design"
+        "self-reconfiguring modular robotic systems",
+        "modular robot self-assembly docking mechanism"
       ],
       "weight": 1.25
     },
@@ -23,8 +23,7 @@
       "queries": [
         "swarm robotics collective intelligence",
         "multi-robot swarm coordination",
-        "distributed control robot swarm",
-        "collective robotic systems"
+        "distributed control collective robotic systems"
       ],
       "weight": 1.15
     },
@@ -32,9 +31,7 @@
       "name": "engineering_system_design",
       "queries": [
         "multi robot system engineering",
-        "robot swarm system design",
-        "heterogeneous multi-robot co-design",
-        "modular robot hardware architecture"
+        "heterogeneous multi-robot co-design architecture"
       ],
       "weight": 1.0
     },
@@ -42,9 +39,7 @@
       "name": "biomimetic_structure_design",
       "queries": [
         "biomimetic robot structure design",
-        "bio-inspired robotic mechanism design",
-        "bionic robot morphology design",
-        "bioinspired soft robot structure"
+        "bio-inspired bionic soft robot mechanism morphology"
       ],
       "weight": 1.1
     },
@@ -52,11 +47,34 @@
       "name": "bioinspired_swarm_algorithms",
       "queries": [
         "bio-inspired swarm robotics algorithm",
-        "biomimetic swarm intelligence robot coordination",
-        "ant colony particle swarm multi-robot planning",
-        "nature-inspired swarm algorithm robot control"
+        "ant colony particle swarm multi-robot planning coordination"
       ],
       "weight": 1.05
+    },
+    {
+      "name": "robot_learning_embodied_ai",
+      "queries": [
+        "robot learning embodied intelligence foundation model",
+        "vision language action robotic manipulation",
+        "reinforcement learning autonomous robot control"
+      ],
+      "weight": 1.15
+    },
+    {
+      "name": "robot_perception_navigation",
+      "queries": [
+        "robot perception computer vision navigation SLAM",
+        "3D vision localization mapping robotic manipulation"
+      ],
+      "weight": 1.0
+    },
+    {
+      "name": "soft_medical_field_robotics",
+      "queries": [
+        "soft medical wearable micro robot",
+        "field aquatic aerial autonomous robotics"
+      ],
+      "weight": 1.0
     }
   ],
   "sources": {
@@ -70,6 +88,10 @@
     "semantic_scholar": {
       "enabled": true
     },
+    "openalex": {
+      "enabled": true,
+      "mailto": ""
+    },
     "ieee": {
       "enabled": false
     },
@@ -80,18 +102,114 @@
   "ranking": {
     "preferred_venues": [
       "Science Robotics",
+      "Nature",
+      "Science",
       "Nature Communications",
       "Nature Machine Intelligence",
+      "Nature Computational Science",
+      "Nature Electronics",
+      "Nature Biomedical Engineering",
+      "Communications AI & Computing",
+      "npj Robotics",
       "Science Advances",
       "IEEE Transactions on Robotics",
       "IEEE Robotics and Automation Letters",
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "IEEE Transactions on Neural Networks and Learning Systems",
+      "IEEE Transactions on Cybernetics",
+      "IEEE Transactions on Automation Science and Engineering",
+      "IEEE/ASME Transactions on Mechatronics",
+      "IEEE Transactions on Artificial Intelligence",
+      "IEEE Transactions on Intelligent Transportation Systems",
       "The International Journal of Robotics Research",
       "International Journal of Robotics Research",
       "Autonomous Robots",
       "Robotics and Autonomous Systems",
+      "Journal of Field Robotics",
+      "Robotics and Computer-Integrated Manufacturing",
       "Soft Robotics",
       "Swarm Intelligence",
-      "Advanced Intelligent Systems"
+      "Advanced Intelligent Systems",
+      "Journal of Machine Learning Research",
+      "International Journal of Computer Vision",
+      "Artificial Intelligence",
+      "Pattern Recognition",
+      "ACM Computing Surveys",
+      "ACM Transactions on Human-Robot Interaction"
+    ],
+    "venue_tiers": [
+      {
+        "name": "flagship",
+        "bonus": 4.0,
+        "venues": [
+          "Nature",
+          "Science",
+          "Nature Machine Intelligence",
+          "Science Robotics"
+        ]
+      },
+      {
+        "name": "top_tier",
+        "bonus": 3.5,
+        "venues": [
+          "Nature Communications",
+          "Science Advances",
+          "Nature Computational Science",
+          "Nature Electronics",
+          "Nature Biomedical Engineering",
+          "IEEE Transactions on Robotics",
+          "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+          "The International Journal of Robotics Research",
+          "International Journal of Robotics Research",
+          "Journal of Machine Learning Research",
+          "International Journal of Computer Vision"
+        ]
+      },
+      {
+        "name": "strong_specialist",
+        "bonus": 2.5,
+        "venues": [
+          "IEEE Robotics and Automation Letters",
+          "IEEE Transactions on Neural Networks and Learning Systems",
+          "IEEE Transactions on Cybernetics",
+          "IEEE Transactions on Automation Science and Engineering",
+          "IEEE/ASME Transactions on Mechatronics",
+          "IEEE Transactions on Artificial Intelligence",
+          "Autonomous Robots",
+          "Robotics and Autonomous Systems",
+          "Journal of Field Robotics",
+          "Robotics and Computer-Integrated Manufacturing",
+          "Soft Robotics",
+          "Swarm Intelligence",
+          "Advanced Intelligent Systems",
+          "Artificial Intelligence",
+          "Pattern Recognition",
+          "ACM Computing Surveys",
+          "ACM Transactions on Human-Robot Interaction",
+          "Communications AI & Computing",
+          "npj Robotics"
+        ]
+      }
+    ],
+    "venue_watch": [
+      "Nature",
+      "Nature Communications",
+      "Nature Machine Intelligence",
+      "Nature Computational Science",
+      "Nature Electronics",
+      "Nature Biomedical Engineering",
+      "Science",
+      "Science Robotics",
+      "Science Advances",
+      "IEEE Transactions on Robotics",
+      "IEEE Robotics and Automation Letters",
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "The International Journal of Robotics Research",
+      "Autonomous Robots",
+      "Soft Robotics",
+      "Robotics and Autonomous Systems",
+      "Journal of Field Robotics",
+      "International Journal of Computer Vision"
     ],
     "publisher_keywords": [
       "IEEE",

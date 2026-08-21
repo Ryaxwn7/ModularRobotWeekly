@@ -98,6 +98,35 @@ class ResearchPipeline:
                                 reasons=["source request failed"],
                             )
                         )
+        venue_watch = self.config.get("ranking", {}).get("venue_watch", [])
+        venue_limit = int(self.config.get("agent", {}).get("max_venue_results", limit))
+        for venue in venue_watch:
+            for source in sources:
+                try:
+                    results = source.search_venue(venue=venue, since=since, limit=venue_limit)
+                    for paper in results:
+                        if not paper.title or is_future_paper(paper, report_date):
+                            continue
+                        published = parse_published_date(paper.published)
+                        if published is not None and published < since:
+                            continue
+                        if not has_robotics_relevance(paper):
+                            continue
+                        papers.append(
+                            score_paper(paper, self.config, "high_impact_venue_watch", 1.2)
+                        )
+                except Exception as exc:
+                    papers.append(
+                        Paper(
+                            title=f"[source error] {source.name}: venue {venue}",
+                            abstract=str(exc),
+                            source=source.name,
+                            topics=["high_impact_venue_watch"],
+                            tags=["source_error"],
+                            score=0.0,
+                            reasons=["source request failed"],
+                        )
+                    )
         return papers
 
     @staticmethod

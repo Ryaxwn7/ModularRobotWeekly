@@ -38,7 +38,9 @@ Topic rotation:
 After Consensus search:
 
 1. Run the local project command:
-   `python -m daily_research_agent --config config.weekly.json --days 4`
+   `python -m daily_research_agent --config config.weekly.json`
+   - Keep the configured 21-day overlapping lookback so delayed indexing, missed runs, and temporary source failures are backfilled automatically.
+   - Search arXiv, Crossref, Semantic Scholar, and OpenAlex, including the configured high-impact journal watch list.
 2. Merge the Consensus findings into `site/data/papers.json`, preserving existing high-quality items and updating or inserting new papers by stable id or DOI.
    - Treat Consensus only as a discovery source. Never use a `consensus.app` URL as the paper's original link.
    - Resolve and verify the version-of-record DOI from Crossref or the publisher when available, then store `url` and `doi_url` as `https://doi.org/<DOI>`.

@@ -62,6 +62,48 @@ class ScoringTests(unittest.TestCase):
 
         self.assertTrue(has_robotics_relevance(paper))
 
+    def test_bioinspired_material_without_robotics_context_is_rejected(self) -> None:
+        paper = Paper(
+            title="Bio-inspired cementitious composites",
+            abstract="Organic-inorganic copolymers self-assemble into strong construction materials.",
+        )
+
+        self.assertFalse(has_robotics_relevance(paper))
+
+    def test_generic_swarm_optimizer_is_rejected(self) -> None:
+        paper = Paper(
+            title="Particle swarm optimization for symbolic logic",
+            abstract="The optimizer tunes a neural network for satisfiability problems.",
+        )
+
+        self.assertFalse(has_robotics_relevance(paper))
+
+    def test_embodied_robot_learning_topics_are_accepted(self) -> None:
+        paper = Paper(
+            title="Vision-language-action foundation model for embodied intelligence",
+            abstract="The policy transfers to robotic manipulation tasks.",
+        )
+
+        self.assertTrue(has_robotics_relevance(paper))
+
+    def test_venue_tier_bonus_is_applied(self) -> None:
+        config = {
+            "ranking": {
+                "preferred_venues": [],
+                "publisher_keywords": [],
+                "method_keywords": [],
+                "venue_tiers": [
+                    {"name": "top_tier", "bonus": 3.5, "venues": ["Nature Communications"]}
+                ],
+            }
+        }
+        paper = Paper(title="A modular robotic platform", venue="Nature Communications")
+
+        scored = score_paper(paper, config, "modular_reconfigurable_robotics", 1.0)
+
+        self.assertEqual(scored.score, 5.5)
+        self.assertIn("top_tier venue: Nature Communications", scored.reasons)
+
 
 if __name__ == "__main__":
     unittest.main()

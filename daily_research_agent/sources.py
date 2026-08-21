@@ -48,6 +48,9 @@ class SourceClient:
     def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
         raise NotImplementedError
 
+    def search_venue(self, venue: str, since: date, limit: int) -> Iterable[Paper]:
+        return []
+
 
 class ArxivSource(SourceClient):
     name = "arxiv"
@@ -90,52 +93,171 @@ class CrossrefSource(SourceClient):
     def __init__(self, mailto: str = "") -> None:
         self.mailto = mailto
 
-    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
-        params = {
-            "query.bibliographic": query,
-            "filter": f"from-pub-date:{since.isoformat()},type:journal-article",
-            "sort": "published",
-            "order": "desc",
-            "rows": str(limit),
-        }
+    def _request(self, params: dict[str, str]) -> list[dict[str, Any]]:
         if self.mailto:
             params["mailto"] = self.mailto
         url = "https://api.crossref.org/works?" + urllib.parse.urlencode(params)
         data = fetch_json(url)
-        for item in data.get("message", {}).get("items", []):
-            title = strip_markup(first(item.get("title")))
+        return data.get("message", {}).get("items", [])
+
+    @staticmethod
+    def _to_paper(item: dict[str, Any]) -> Paper | None:
+        title = strip_markup(first(item.get("title")))
+        if not title:
+            return None
+        published_parts = (
+            item.get("published-online", {}).get("date-parts")
+            or item.get("published", {}).get("date-parts")
+            or item.get("issued", {}).get("date-parts")
+            or item.get("published-print", {}).get("date-parts")
+            or item.get("created", {}).get("date-parts")
+            or []
+        )
+        published = ""
+        year = None
+        if published_parts and published_parts[0]:
+            parts = published_parts[0]
+            year = int(parts[0]) if parts[0] else None
+            month = int(parts[1]) if len(parts) > 1 else 1
+            day = int(parts[2]) if len(parts) > 2 else 1
+            published = f"{year:04d}-{month:02d}-{day:02d}" if year else ""
+        authors = [
+            " ".join([a.get("given", ""), a.get("family", "")]).strip()
+            for a in item.get("author", [])
+        ]
+        return Paper(
+            title=title,
+            abstract=strip_markup(item.get("abstract", "")),
+            authors=[a for a in authors if a],
+            year=year,
+            published=published,
+            venue=first(item.get("container-title")),
+            publisher=item.get("publisher", ""),
+            doi=item.get("DOI", ""),
+            url=item.get("URL", ""),
+            source="crossref",
+            raw={"type": item.get("type", "")},
+        )
+
+    @staticmethod
+    def _dedupe_items(items: Iterable[dict[str, Any]]) -> list[Paper]:
+        papers: dict[str, Paper] = {}
+        for item in items:
+            paper = CrossrefSource._to_paper(item)
+            if paper is None:
+                continue
+            current = papers.get(paper.identity)
+            if current is None or len(paper.abstract) > len(current.abstract):
+                papers[paper.identity] = paper
+        return list(papers.values())
+
+    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+        common = {
+            "filter": (
+                f"from-pub-date:{since.isoformat()},"
+                f"until-pub-date:{date.today().isoformat()},type:journal-article"
+            ),
+            "rows": str(limit),
+        }
+        result_sets = [
+            self._request({**common, "query.title": query}),
+            self._request(
+                {
+                    **common,
+                    "query.bibliographic": query,
+                    "sort": "published",
+                    "order": "desc",
+                }
+            ),
+        ]
+        time.sleep(0.2)
+        return self._dedupe_items(item for result in result_sets for item in result)
+
+    def search_venue(self, venue: str, since: date, limit: int) -> Iterable[Paper]:
+        params = {
+            "filter": (
+                f"from-pub-date:{since.isoformat()},"
+                f"until-pub-date:{date.today().isoformat()},"
+                f"type:journal-article,container-title:{venue}"
+            ),
+            "sort": "published",
+            "order": "desc",
+            "rows": str(limit),
+        }
+        papers = self._dedupe_items(self._request(params))
+        time.sleep(0.2)
+        return papers
+
+
+def abstract_from_inverted_index(index: Any) -> str:
+    if not isinstance(index, dict) or not index:
+        return ""
+    positions = [position for values in index.values() for position in values if isinstance(position, int)]
+    if not positions:
+        return ""
+    words = [""] * (max(positions) + 1)
+    for word, values in index.items():
+        for position in values:
+            if isinstance(position, int) and 0 <= position < len(words):
+                words[position] = word
+    return " ".join(word for word in words if word)
+
+
+class OpenAlexSource(SourceClient):
+    name = "openalex"
+
+    def __init__(self, mailto: str = "") -> None:
+        self.mailto = mailto
+
+    def search(self, query: str, since: date, limit: int) -> Iterable[Paper]:
+        params = {
+            "search": query,
+            "filter": f"from_publication_date:{since.isoformat()},type:article",
+            "sort": "relevance_score:desc",
+            "per-page": str(min(limit, 100)),
+            "select": (
+                "id,doi,title,publication_year,publication_date,primary_location,"
+                "authorships,abstract_inverted_index,open_access,topics,keywords,"
+                "cited_by_count,type"
+            ),
+        }
+        if self.mailto:
+            params["mailto"] = self.mailto
+        url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
+        data = fetch_json(url)
+        for item in data.get("results", []):
+            title = strip_markup(item.get("title", ""))
             if not title:
                 continue
-            published_parts = (
-                item.get("published-print", {}).get("date-parts")
-                or item.get("published-online", {}).get("date-parts")
-                or item.get("created", {}).get("date-parts")
-                or []
-            )
-            published = ""
-            year = None
-            if published_parts and published_parts[0]:
-                parts = published_parts[0]
-                year = int(parts[0]) if parts[0] else None
-                month = int(parts[1]) if len(parts) > 1 else 1
-                day = int(parts[2]) if len(parts) > 2 else 1
-                published = f"{year:04d}-{month:02d}-{day:02d}" if year else ""
+            location = item.get("primary_location") or {}
+            source = location.get("source") or {}
+            doi = str(item.get("doi") or "")
+            if doi.lower().startswith("https://doi.org/"):
+                doi = doi[len("https://doi.org/") :]
             authors = [
-                " ".join([a.get("given", ""), a.get("family", "")]).strip()
-                for a in item.get("author", [])
+                (authorship.get("author") or {}).get("display_name", "")
+                for authorship in item.get("authorships", [])
             ]
+            topics = [topic.get("display_name", "") for topic in item.get("topics", [])]
+            keywords = [keyword.get("display_name", "") for keyword in item.get("keywords", [])]
             yield Paper(
                 title=title,
-                abstract=strip_markup(item.get("abstract", "")),
-                authors=[a for a in authors if a],
-                year=year,
-                published=published,
-                venue=first(item.get("container-title")),
-                publisher=item.get("publisher", ""),
-                doi=item.get("DOI", ""),
-                url=item.get("URL", ""),
+                abstract=abstract_from_inverted_index(item.get("abstract_inverted_index")),
+                authors=[author for author in authors if author],
+                year=item.get("publication_year"),
+                published=item.get("publication_date") or "",
+                venue=source.get("display_name", ""),
+                publisher=source.get("host_organization_name", ""),
+                doi=doi,
+                url=doi and f"https://doi.org/{doi}" or location.get("landing_page_url", ""),
                 source=self.name,
-                raw={"type": item.get("type", "")},
+                raw={
+                    "openalex_id": item.get("id", ""),
+                    "cited_by_count": item.get("cited_by_count", 0),
+                    "openalex_topics": topics,
+                    "openalex_keywords": keywords,
+                    "oa_url": (item.get("open_access") or {}).get("oa_url", ""),
+                },
             )
         time.sleep(0.2)
 
@@ -263,9 +385,10 @@ def build_sources(config: dict[str, Any]) -> list[SourceClient]:
         sources.append(CrossrefSource(mailto=source_config.get("crossref", {}).get("mailto", "")))
     if source_config.get("semantic_scholar", {}).get("enabled", False):
         sources.append(SemanticScholarSource())
+    if source_config.get("openalex", {}).get("enabled", False):
+        sources.append(OpenAlexSource(mailto=source_config.get("openalex", {}).get("mailto", "")))
     if source_config.get("ieee", {}).get("enabled", False):
         sources.append(IEEESource())
     if source_config.get("elsevier", {}).get("enabled", False):
         sources.append(ElsevierSource())
     return sources
-

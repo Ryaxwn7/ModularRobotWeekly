@@ -11,6 +11,10 @@ def contains(text: str, phrase: str) -> bool:
     return phrase.lower() in text.lower()
 
 
+def normalized_venue(value: str) -> str:
+    return " ".join(re.findall(r"[a-z0-9]+", (value or "").lower()))
+
+
 def tokenize(text: str) -> set[str]:
     return set(re.findall(r"[a-zA-Z][a-zA-Z0-9-]+", text.lower()))
 
@@ -42,7 +46,7 @@ def is_future_paper(paper: Paper, report_date: date) -> bool:
 
 def has_robotics_relevance(paper: Paper) -> bool:
     text = f"{paper.title} {paper.abstract}".lower()
-    robotics_patterns = [
+    direct_robotics_patterns = [
         r"\brobot\b",
         r"\brobots\b",
         r"\brobotic\b",
@@ -52,17 +56,49 @@ def has_robotics_relevance(paper: Paper) -> bool:
         r"\bmodular[- ]robot",
         r"\breconfigurable[- ]robot",
         r"\bself[- ]reconfigurable[- ]robot",
-        r"\bbiomimetic\b",
-        r"\bbio[- ]inspired\b",
-        r"\bbioinspired\b",
-        r"\bbionic\b",
-        r"\bnature[- ]inspired\b",
-        r"\bswarm intelligence\b",
-        r"\bant colony\b",
-        r"\bparticle swarm\b",
-        r"\bbee colony\b",
+        r"\brobot learning\b",
+        r"\brobot foundation model",
+        r"\bvision[- ]language[- ]action\b",
+        r"\bautonomous mobile robot",
+        r"\bsimultaneous localization and mapping\b",
+        r"\bsoft robot",
+        r"\bmedical robot",
+        r"\bmicro[- ]robot",
+        r"\bnano[- ]robot",
     ]
-    return any(re.search(pattern, text) for pattern in robotics_patterns)
+    if any(re.search(pattern, text) for pattern in direct_robotics_patterns):
+        return True
+
+    bio_signal = re.search(
+        r"\b(?:biomimetic|bio[- ]inspired|bioinspired|bionic|nature[- ]inspired)\b",
+        text,
+    )
+    bio_robotics_context = re.search(
+        r"\b(?:actuator|artificial muscle|gripper|manipulator|soft machine|"
+        r"flapping wing mechanism|morphing mechanism|locomotion mechanism)\b",
+        text,
+    )
+    if bio_signal and bio_robotics_context:
+        return True
+
+    swarm_signal = re.search(
+        r"\b(?:swarm intelligence|ant colony|particle swarm|bee colony)\b",
+        text,
+    )
+    multi_agent_context = re.search(
+        r"\b(?:multi[- ]agent|path planning|motion planning|formation control|"
+        r"cooperative navigation|collective transport|task allocation)\b",
+        text,
+    )
+    if swarm_signal and multi_agent_context:
+        return True
+
+    embodied_signal = re.search(r"\b(?:embodied intelligence|embodied ai)\b", text)
+    embodied_context = re.search(
+        r"\b(?:agent|action|policy|control|learning|manipulation|navigation)\b",
+        text,
+    )
+    return bool(embodied_signal and embodied_context)
 
 
 def classify_tags(paper: Paper) -> list[str]:
@@ -76,6 +112,8 @@ def classify_tags(paper: Paper) -> list[str]:
         "theory": ["theorem", "proof", "model", "stability", "convergence", "analysis"],
         "swarm": ["swarm", "collective", "multi-robot", "multi robot"],
         "reconfiguration": ["reconfigurable", "reconfiguration", "self-reconfigurable", "modular"],
+        "perception": ["perception", "vision", "visual", "slam", "localization", "mapping"],
+        "embodied_ai": ["embodied", "vision-language-action", "vision language action", "foundation model"],
     }
     for tag, keywords in tag_keywords.items():
         if any(keyword in text for keyword in keywords):
@@ -97,11 +135,25 @@ def score_paper(paper: Paper, config: dict[str, Any], topic_name: str, topic_wei
     score += 2.0 * topic_weight
     reasons.append(f"matches topic {topic_name}")
 
-    for venue in preferred_venues:
-        if contains(paper.venue, venue):
-            score += 3.0
-            reasons.append(f"preferred venue: {venue}")
+    venue_bonus_applied = False
+    paper_venue = normalized_venue(paper.venue)
+    for tier in ranking.get("venue_tiers", []):
+        for venue in tier.get("venues", []):
+            if paper_venue and paper_venue == normalized_venue(venue):
+                bonus = float(tier.get("bonus", 0))
+                score += bonus
+                reasons.append(f"{tier.get('name', 'priority')} venue: {venue}")
+                venue_bonus_applied = True
+                break
+        if venue_bonus_applied:
             break
+
+    if not venue_bonus_applied:
+        for venue in preferred_venues:
+            if contains(paper.venue, venue):
+                score += 3.0
+                reasons.append(f"preferred venue: {venue}")
+                break
 
     for keyword in publisher_keywords:
         if contains(paper.publisher, keyword) or contains(paper.venue, keyword):
