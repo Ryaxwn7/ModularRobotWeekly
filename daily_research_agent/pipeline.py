@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
+from urllib.error import HTTPError
 
 from .llm import build_summarizer
 from .models import Paper, PipelineResult
@@ -48,6 +49,11 @@ class ResearchPipeline:
             chunk_days=chunk_days,
         )
         source_error_count = sum("source_error" in paper.tags for paper in collected)
+        blocking_source_error_count = sum(
+            "source_error" in paper.tags and bool(paper.raw.get("blocking", True))
+            for paper in collected
+        )
+        source_errors = [paper for paper in collected if "source_error" in paper.tags]
         unique = self.dedupe(collected)
         selected = [
             paper
@@ -65,10 +71,11 @@ class ResearchPipeline:
             executive_summary,
             search_since=window.since,
             search_until=window.until,
+            source_errors=source_errors,
         )
         report_id = Path(report_path).stem
 
-        completed_successfully = not dry_run and source_error_count == 0
+        completed_successfully = not dry_run and blocking_source_error_count == 0
         site_data_file = storage.get("site_data_file")
         if site_data_file and completed_successfully:
             upsert_site_papers(
@@ -103,13 +110,19 @@ class ResearchPipeline:
             search_until=window.until.isoformat(),
             cursor_advanced=cursor_advanced,
             source_error_count=source_error_count,
+            blocking_source_error_count=blocking_source_error_count,
         )
 
     def collect(self, since: date, report_date: date, limit: int, chunk_days: int = 14) -> list[Paper]:
         sources = build_sources(self.config)
         papers: list[Paper] = []
+        unavailable_sources: set[str] = set()
         for chunk_since, chunk_until in iter_date_chunks(since, report_date, chunk_days):
-            papers.extend(self._collect_chunk(sources, chunk_since, chunk_until, limit))
+            papers.extend(
+                self._collect_chunk(
+                    sources, chunk_since, chunk_until, limit, unavailable_sources
+                )
+            )
         return papers
 
     def _collect_chunk(
@@ -118,6 +131,7 @@ class ResearchPipeline:
         since: date,
         until: date,
         limit: int,
+        unavailable_sources: set[str],
     ) -> list[Paper]:
         papers: list[Paper] = []
         for topic in self.config.get("topics", []):
@@ -125,6 +139,8 @@ class ResearchPipeline:
             topic_weight = float(topic.get("weight", 1.0))
             for query in topic.get("queries", []):
                 for source in sources:
+                    if source.name in unavailable_sources:
+                        continue
                     try:
                         results = source.search(query=query, since=since, until=until, limit=limit)
                         for paper in results:
@@ -135,20 +151,16 @@ class ResearchPipeline:
                             papers.append(score_paper(paper, self.config, topic_name, topic_weight))
                     except Exception as exc:
                         papers.append(
-                            Paper(
-                                title=f"[source error] {source.name}: {query}",
-                                abstract=str(exc),
-                                source=source.name,
-                                topics=[topic_name],
-                                tags=["source_error"],
-                                score=0.0,
-                                reasons=["source request failed"],
-                            )
+                            self._source_error(source.name, query, topic_name, since, until, exc)
                         )
+                        if isinstance(exc, HTTPError) and exc.code in {401, 403, 429}:
+                            unavailable_sources.add(source.name)
         venue_watch = self.config.get("ranking", {}).get("venue_watch", [])
         venue_limit = int(self.config.get("agent", {}).get("max_venue_results", limit))
         for venue in venue_watch:
             for source in sources:
+                if source.name in unavailable_sources:
+                    continue
                 try:
                     results = source.search_venue(
                         venue=venue, since=since, until=until, limit=venue_limit
@@ -163,17 +175,46 @@ class ResearchPipeline:
                         )
                 except Exception as exc:
                     papers.append(
-                        Paper(
-                            title=f"[source error] {source.name}: venue {venue}",
-                            abstract=str(exc),
-                            source=source.name,
-                            topics=["high_impact_venue_watch"],
-                            tags=["source_error"],
-                            score=0.0,
-                            reasons=["source request failed"],
+                        self._source_error(
+                            source.name,
+                            f"venue {venue}",
+                            "high_impact_venue_watch",
+                            since,
+                            until,
+                            exc,
                         )
                     )
+                    if isinstance(exc, HTTPError) and exc.code in {401, 403, 429}:
+                        unavailable_sources.add(source.name)
         return papers
+
+    def _source_error(
+        self,
+        source_name: str,
+        request: str,
+        topic: str,
+        since: date,
+        until: date,
+        exc: Exception,
+    ) -> Paper:
+        required = bool(
+            self.config.get("sources", {}).get(source_name, {}).get("required", True)
+        )
+        return Paper(
+            title=f"[source error] {source_name}: {request}",
+            abstract=f"{type(exc).__name__}: {exc}",
+            source=source_name,
+            topics=[topic],
+            tags=["source_error", "blocking_error" if required else "optional_source_warning"],
+            score=0.0,
+            reasons=["source request failed"],
+            raw={
+                "blocking": required,
+                "request": request,
+                "since": since.isoformat(),
+                "until": until.isoformat(),
+            },
+        )
 
     @staticmethod
     def _outside_window(paper: Paper, since: date, until: date) -> bool:

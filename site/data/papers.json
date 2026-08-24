@@ -1,10 +1,179 @@
 {
-  "updated_at": "2026-08-21T16:45:20",
+  "updated_at": "2026-08-24T10:55:52",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
+      "id": "doi:10.1038/s41467-026-76133-y",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Reconfiguring handed shape-morphing and actuation in hydrogels via light-encoded rapid expansion",
+      "url": "https://doi.org/10.1038/s41467-026-76133-y",
+      "doi": "10.1038/s41467-026-76133-y",
+      "doi_url": "https://doi.org/10.1038/s41467-026-76133-y",
+      "summary": "Reconfiguring handedness in synthetic systems with spatiotemporal control and reversible behavior remains a fundamental challenge in bioinspired robotics and materials science—especially in structurally homogeneous materials that lack intrinsic chirality. Here, we demonstrate homogeneous photoactive hydrogels capable of ultrafast, programmable handed shape-morphing, including helices and twists, through spatially co...",
+      "abstract": "Reconfiguring handedness in synthetic systems with spatiotemporal control and reversible behavior remains a fundamental challenge in bioinspired robotics and materials science—especially in structurally homogeneous materials that lack intrinsic chirality. Here, we demonstrate homogeneous photoactive hydrogels capable of ultrafast, programmable handed shape-morphing, including helices and twists, through spatially controlled light illumination. This transformation is driven by a photoexpansion exceeding 80,000% volumetric growth within 40 seconds, enabled by the synergistic combination of spiropyran photoisomerization and tailored polymer-network interactions. Deterministic strain mismatches at illuminated interfaces allow on-demand forming and shaping of handed architectures, which can be erased in darkness and reprogrammed reversibly with light. We further synchronize opposing handedness and complex tendril-like geometries in a single material, and exploit handedness to achieve self-propelled rotation for robotic locomotion. This work introduces a versatile method for adaptive, lifelike chirality in homogeneous matter, closing a key gap between biological shape-morphing and engineered soft robotics. Handedness in synthetic systems can be challenging to control. Here, the authors report the development of homogeneous hydrogels with programmable, handed shape morphing, including helices and twists, as a result of photoexpansion.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Reconfiguring handed shape-morphing and actuation in hydrogels via light-encoded rapid expansion",
+      "authors": [
+        "Zhaomiao Chu",
+        "Zicong Zhou",
+        "Keao Jin",
+        "Linghui He",
+        "Chuang Li"
+      ],
+      "published": "2026-08-22",
+      "venue": "Nature Communications",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "biomimetic_structure_design",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "system"
+      ],
+      "score": 8.66
+    },
+    {
+      "id": "doi:10.1038/s44182-026-00109-9",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Aerial tactile perching via an anthropomorphic hand with embodied soft tactile receptors",
+      "url": "https://doi.org/10.1038/s44182-026-00109-9",
+      "doi": "10.1038/s44182-026-00109-9",
+      "doi_url": "https://doi.org/10.1038/s44182-026-00109-9",
+      "summary": "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets. However, their endurance remains limited, inhibiting their applicability in long-term missions. Perching, the ability to attach to environmental structures and rest with minimal power, offers a solution. Yet existing methods typically rely on bespoke attachm...",
+      "abstract": "Abstract Aerial robots are widely employed for exploration, inspection, and environmental monitoring, where their agility and maneuverability are strong assets. However, their endurance remains limited, inhibiting their applicability in long-term missions. Perching, the ability to attach to environmental structures and rest with minimal power, offers a solution. Yet existing methods typically rely on bespoke attachment mechanisms tuned to a single, known, and predefined target, as well as vision-based target detection systems, prone to noise and occlusions, forcing reliance on brittle feed-forward control. We introduce a tactile-driven perching strategy for aerial robots that refines pose through touch. The system integrates a compliant anthropomorphic hand with embedded binary tactile sensors, enabling closed-loop alignment and grasp stability assessment through direct physical interaction. In simulation, the method achieves over 99% perching success across diverse geometries and pose errors up to 0.6 m and 50°. Hardware experiments validate robust perching across 26 real-world trials on diverse structures, despite corrupted pose estimates. By embedding tactile feedback into perching, this work advances a new paradigm, enabling micro aerial vehicles to exploit contact as informative feedback rather than relying solely on pre-contact visual estimates, facilitating robust autonomous perching on diverse, previously unseen targets in unstructured environments.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Aerial tactile perching via an anthropomorphic hand with embodied soft tactile receptors",
+      "authors": [
+        "Anton Bredenbeck",
+        "Anish Jadoenathmisier",
+        "Salua Hamaza"
+      ],
+      "published": "2026-08-22",
+      "venue": "npj Robotics",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "control",
+        "embodied_ai",
+        "perception",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 8.08
+    },
+    {
+      "id": "doi:10.1007/s00170-026-18940-7",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A Cyber-Physical framework for Energy-Aware distributed optimization of 6-DOF robotic manufacturing cells via hybrid bioinspired metaheuristics",
+      "url": "https://doi.org/10.1007/s00170-026-18940-7",
+      "doi": "10.1007/s00170-026-18940-7",
+      "doi_url": "https://doi.org/10.1007/s00170-026-18940-7",
+      "summary": "Abstract Energy-aware coordination is a fundamental cornerstone for the future of autonomous Cyber-Physical Systems (CPS). This work proposes a novel distributed CPS framework to address the decoupling between high-level coordination of autonomous agents and the nonlinear dynamics of six-degree-of-freedom (6-DOF) manipulators. These dynamics are modeled through Euler-Lagrange equations and electromechanical dissipat...",
+      "abstract": "Abstract Energy-aware coordination is a fundamental cornerstone for the future of autonomous Cyber-Physical Systems (CPS). This work proposes a novel distributed CPS framework to address the decoupling between high-level coordination of autonomous agents and the nonlinear dynamics of six-degree-of-freedom (6-DOF) manipulators. These dynamics are modeled through Euler-Lagrange equations and electromechanical dissipation heuristics. To discover energy-efficient coordination strategies, a hybrid algorithm based on Ant Colony Optimization (ACO), Firefly Algorithm (FA), and Particle Swarm Optimization (PSO) was developed. The framework was rigorously validated through a three-phase experimental protocol, including 1,600 high-density scalability simulations with clusters of up to 20 agents, complemented by a computational complexity analysis. Results demonstrate that the ACO-driven component reduces median total energy by 55.4% relative to the PSO-only baseline in the stochastic analysis, while the integration of PSO and FA demonstrates robust empirical safety performance even in high-density environments. Such gains are achieved while upholding strict operational fidelity, with positional deviations constrained within a 3.5% threshold. The framework further exhibits statistically validated robustness across diverse multi-agent geometric configurations, supported by non-parametric hypothesis testing and tail-sensitive safety analyses. The overall findings demonstrate the effectiveness, scalability, and robustness of the framework for intelligent digital twins and the transition from Industry 4.0 to Industry 5.0.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Cyber-Physical framework for Energy-Aware distributed optimization of 6-DOF robotic manufacturing cells via hybrid bioinspired metaheuristics",
+      "authors": [
+        "Rennan Santos de Araujo",
+        "João F. Justo"
+      ],
+      "published": "2026-08-22",
+      "venue": "The International Journal of Advanced Manufacturing Technology",
+      "publisher": "Springer Science+Business Media",
+      "source": "openalex",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "score": 6.5
+    },
+    {
+      "id": "doi:10.9734/jsrr/2026/v32i94462",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Digital Agriculture and Sustainable Rural Transformation: A Critical Narrative Review of Mobile Agro-Advisory Services, Agricultural Robotics and Livelihood Resilience",
+      "url": "https://doi.org/10.9734/jsrr/2026/v32i94462",
+      "doi": "10.9734/jsrr/2026/v32i94462",
+      "doi_url": "https://doi.org/10.9734/jsrr/2026/v32i94462",
+      "summary": "Digital agriculture is increasingly presented as a route to more productive, resource-efficient and climate-resilient rural economies, yet technologies grouped under this label differ sharply in capital intensity, evidence maturity and distributional consequences. This critical narrative review examines three connected domains: mobile agro-advisory services, agricultural robotics and livelihood resilience. The revie...",
+      "abstract": "Digital agriculture is increasingly presented as a route to more productive, resource-efficient and climate-resilient rural economies, yet technologies grouped under this label differ sharply in capital intensity, evidence maturity and distributional consequences. This critical narrative review examines three connected domains: mobile agro-advisory services, agricultural robotics and livelihood resilience. The review integrates evidence from agricultural economics, extension science, rural development, information systems, precision agriculture and field robotics, with particular attention to smallholder and resource-constrained settings while retaining broader robotics evidence where it illuminates transferable technical or institutional mechanisms. The literature indicates that mobile advisory interventions can reduce information frictions and improve knowledge, recall and adoption, but effects on yield and income are heterogeneous and depend on relevance, trust, timing, connectivity, complementary inputs and human support. Agricultural robotics can improve task precision and reduce exposure to repetitive or hazardous work, but field robustness, capital cost, service infrastructure, interoperability and uneven farm-scale economics continue to constrain inclusive deployment. These two technology families therefore occupy different positions in rural transformation: advisory services mainly augment decisions and coordination, whereas robots automate physical operations and can reorganise labour, asset ownership and production systems. Livelihood resilience is strengthened only when digitalisation expands farmers' capabilities to anticipate, absorb, adapt and transform without creating new dependencies on inaccessible platforms, proprietary data systems or unaffordable machinery. The strongest interpretation of the combined evidence is consequently institutional rather than technological: sustainability gains are contingent on inclusive delivery models, trusted extension interfaces, viable financing, data rights, labour-transition strategies and outcome evaluation that extends beyond adoption. Future research should prioritise long-duration, distribution-sensitive studies that connect farm-level technical performance with household welfare, environmental effects and rural labour dynamics. Digital agriculture can support sustainable rural transformation, but the pathway is conditional, socially mediated and unlikely to be achieved through technology diffusion alone.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Digital Agriculture and Sustainable Rural Transformation: A Critical Narrative Review of Mobile Agro-Advisory Services, Agricultural Robotics and Livelihood Resilience",
+      "authors": [
+        "Pragya Ojha",
+        "Pankaj Kumar Ojha",
+        "Pratibha Joshi"
+      ],
+      "published": "2026-08-22",
+      "venue": "Journal of Scientific Research and Reports",
+      "publisher": "Sciencedomain International",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 5.2
+    },
+    {
+      "id": "doi:10.1002/adom.202503353",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Machine Learning‐Triggered Auto‐Discovery and Promotion of Luminescent Materials: From Predictive Modeling to Autonomous Laboratories",
+      "url": "https://doi.org/10.1002/adom.202503353",
+      "doi": "10.1002/adom.202503353",
+      "doi_url": "https://doi.org/10.1002/adom.202503353",
+      "summary": "ABSTRACT Machine learning (ML) is transforming the development of luminescent materials, including quantum dots, rare‐earth‐doped phosphors, and transition‐metal‐doped phosphors, by addressing the limitations inherent in traditional trial‐and‐error methodologies. First‐generation ML models accurately predict single properties such as bandgaps and Debye temperature, enabling virtual material screening and revealing u...",
+      "abstract": "ABSTRACT Machine learning (ML) is transforming the development of luminescent materials, including quantum dots, rare‐earth‐doped phosphors, and transition‐metal‐doped phosphors, by addressing the limitations inherent in traditional trial‐and‐error methodologies. First‐generation ML models accurately predict single properties such as bandgaps and Debye temperature, enabling virtual material screening and revealing underlying physical mechanisms. Second‐generation approaches use ensemble learning and Bayesian optimization to optimize multiple objectives simultaneously, such as quantum efficiency, thermal stability, chromaticity, and environmental compliance, leading to synergistic performance enhancements. Next‐generation autonomous laboratories, which integrate ML‐driven predictions with robotic synthesis and real‐time characterization, create closed‐loop systems that significantly accelerate the materials discovery process and compress traditional development cycles. Despite these advancements, significant challenges persist, including poor data quality and standardization, limited model generalizability across different material systems, and the low interpretability of complex “black‐box” models. Overcoming these limitations will fully harness the potential of this ML‐driven ecosystem, facilitating the intelligent design of next‐generation luminescent materials for advanced displays, energy‐efficient lighting, and biomedical applications.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Machine Learning‐Triggered Auto‐Discovery and Promotion of Luminescent Materials: From Predictive Modeling to Autonomous Laboratories",
+      "authors": [
+        "Chao He",
+        "Shaoan Zhang",
+        "Zonglong Guo",
+        "Jialong Xu",
+        "Shengzhi Sun",
+        "Jianrong Qiu",
+        "Yang Li"
+      ],
+      "published": "2026-08-22",
+      "venue": "Advanced Optical Materials",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 5.18
+    },
+    {
       "id": "doi:10.1126/sciadv.aeg9191",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "Evolutionary diversification via modular compliance for self-reconfigurable continuum robots",
       "url": "https://doi.org/10.1126/sciadv.aeg9191",
       "doi": "10.1126/sciadv.aeg9191",
@@ -36,7 +205,7 @@
     },
     {
       "id": "doi:10.1126/sciadv.aeg8849",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "BeetleBot: An integrated bioinspired soft robot for multimodal sensing and adaptive interaction",
       "url": "https://doi.org/10.1126/sciadv.aeg8849",
       "doi": "10.1126/sciadv.aeg8849",
@@ -64,13 +233,9 @@
       "publisher": "American Association for the Advancement of Science (AAAS)",
       "source": "crossref",
       "topics": [
-        "bioinspired_swarm_algorithms",
         "biomimetic_structure_design",
-        "engineering_system_design",
         "high_impact_venue_watch",
         "modular_reconfigurable_robotics",
-        "robot_learning_embodied_ai",
-        "robot_perception_navigation",
         "soft_medical_field_robotics",
         "swarm_intelligence_robotics"
       ],
@@ -84,7 +249,7 @@
     },
     {
       "id": "doi:10.1126/sciadv.aee1381",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "AI-driven robotics for optics",
       "url": "https://doi.org/10.1126/sciadv.aee1381",
       "doi": "10.1126/sciadv.aee1381",
@@ -121,6 +286,139 @@
       "score": 8.7
     },
     {
+      "id": "doi:10.21275/sr26728104249",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Role of Kinematics in Robotic Arm Movement",
+      "url": "https://doi.org/10.21275/sr26728104249",
+      "doi": "10.21275/sr26728104249",
+      "doi_url": "https://doi.org/10.21275/sr26728104249",
+      "summary": "ROBOTS are commonly used in the industries. In many field applications where, technical support is required is, man handling is either dangerous or is not possible. In such situation, robotics arm manipulator is commonly used. They are on the great demand to speed up the automation process. Three link manipulators are the fundamental robotics arms, which are still used in micro to macro scale applications viz. chip...",
+      "abstract": "ROBOTS are commonly used in the industries. In many field applications where, technical support is required is, man handling is either dangerous or is not possible. In such situation, robotics arm manipulator is commonly used. They are on the great demand to speed up the automation process. Three link manipulators are the fundamental robotics arms, which are still used in micro to macro scale applications viz. chip fabrication to huge mechanical actuators used in the chemical process. Robotic Instrumentation plays vital role in robotics world, without these sensors, actuators, detector, robots are not able to interact with the environment. In this paper, we present optimal control for movement and trajectory planning of a various degree of freedom robots using soft computing techniques. We have evaluated and show comparative analysis of various degree of freedom robotic arm to compensate the uncertainties like; Movement, friction and settling time in robotic arm movement. this paper describes genetic algorithms, which is designed to optimize robot movement and trajectory. Though the model joints, it converges too quickly even if the population is very large. The result also shows the complete trajectory planning with soft computing and also demonstrating the flexibility of this technique. In the developed genetic algorithms in order to obtain the optimal angular displacement for the robotic arm in the whole workspace, elitism has been retained from the previous generation to the next. Simulations, testing and comparison have been carried out .GA does not need a complete knowledge of the system. Evolutionary process converges too quickly even if the population is very large. The performance is good, the robotic arm moves and reaches the target position within the simulation time. The performance is optimal is all over possible input values as the evolution function exhaustively test the possible input spaces. It is concluded that GA and FL are practical and effective method for achieving optimization of robotic arm angular displacements. On the other hand, it also requires less knowledge of the system description to apply this technique over the artificial intelligence technique like ANN. This algorithm can be extended to more degree of freedom robot with very little modification.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Role of Kinematics in Robotic Arm Movement",
+      "authors": [
+        "Gurjeet Singh"
+      ],
+      "published": "2026-08-21",
+      "venue": "International Journal of Science and Research (IJSR)",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 8.56
+    },
+    {
+      "id": "doi:10.59543/jidmis.v3.2113",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Eye Robot for Combat Surveillance: A Physics-Guided Deep Learning Framework for Thermal Drift Prediction in Autonomous Aerial Monitoring",
+      "url": "https://doi.org/10.59543/jidmis.v3.2113",
+      "doi": "10.59543/jidmis.v3.2113",
+      "doi_url": "https://doi.org/10.59543/jidmis.v3.2113",
+      "summary": "Surveillance operations in warfare today require advanced, smart, and resilient systems that are able to work in hostile and unpredictable environments. Those systems need to be capable of continuous monitoring, regardless of the environmental conditions that they face, such as low light, darkness, or extreme temperatures. Thermal imaging is a significant modality in these types of conditions, as it essentially reli...",
+      "abstract": "Surveillance operations in warfare today require advanced, smart, and resilient systems that are able to work in hostile and unpredictable environments. Those systems need to be capable of continuous monitoring, regardless of the environmental conditions that they face, such as low light, darkness, or extreme temperatures. Thermal imaging is a significant modality in these types of conditions, as it essentially relies on heat signatures. One major issue to long-term thermal surveillance, however, is what is known as thermal drift, which is gradual changes in the thermal image as a result of various dynamics in the environment, as well as properties of the sensor.In this article, we introduce Eye Robot, a lightweight and physically informed deep learning model and architecture that is capable of modelling and forecasting thermal drift for long-term surveillance scenarios. Eye Robot utilizes classical physical modelling principles, namely the heat equation, but takes advantage of modern convolutional neural network design. We incorporate the Laplacian into the architecture, ensuring the network learns properties of the heat diffusion process, thus allowing the model to predict future thermal frames with an additional layer of physical realism.We apply the Long-Term Thermal Drift Dataset and consider temporally sparse video frames from the dataset (one frame for every 4 seconds) in training our model. Extensive experiments show that Eye Robot performs better than standard CNN baselines and physics-agnostic models with respect to accuracy and structural similarity. The proposed method is highly applicable with respect to combat surveillance, search and rescue, and autonomous inspection scenario tasks.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Eye Robot for Combat Surveillance: A Physics-Guided Deep Learning Framework for Thermal Drift Prediction in Autonomous Aerial Monitoring",
+      "authors": [
+        "Jagadam Vijay Gopal"
+      ],
+      "published": "2026-08-21",
+      "venue": "Journal of Intelligent Decision Making and Information Science",
+      "publisher": "Nexora Academic Press",
+      "source": "crossref",
+      "topics": [
+        "robot_learning_embodied_ai",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "system",
+        "theory"
+      ],
+      "score": 8.48
+    },
+    {
+      "id": "doi:10.1007/s44443-026-01136-0",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A review of underwater robot technologies for inland waterway inspection and maintenance: the pinglu canal scenario",
+      "url": "https://doi.org/10.1007/s44443-026-01136-0",
+      "doi": "10.1007/s44443-026-01136-0",
+      "doi_url": "https://doi.org/10.1007/s44443-026-01136-0",
+      "summary": "Underwater robotics has advanced fastest in its individual capabilities. Learned optical enhancement, sonar interpretation, and tightly coupled multimodal fusion each report steady gains on dedicated benchmarks, yet whether those gains translate into reliable operation under deployment constraints remains largely untested. We examine this question for confined inland waterways, where narrow geometry, persistent turb...",
+      "abstract": "Underwater robotics has advanced fastest in its individual capabilities. Learned optical enhancement, sonar interpretation, and tightly coupled multimodal fusion each report steady gains on dedicated benchmarks, yet whether those gains translate into reliable operation under deployment constraints remains largely untested. We examine this question for confined inland waterways, where narrow geometry, persistent turbidity, dense engineered structures, and GNSS denial jointly decide what a robot can and cannot do. The Pinglu Canal in Guangxi, China, serves as the reference scenario, and the analysis is organized around a scenario-centric evaluation framework rather than an isolated capability survey. Across perception, multimodal fusion, SLAM, planning, communication, and platform design, we assess each technology for its functional adequacy under canal-specific conditions, then map the resulting capabilities onto bathymetric survey, infrastructure inspection, hazard detection, environmental monitoring, and lifecycle maintenance. The reviewed evidence points to one conclusion. No reviewed technology is adequate on all three axes of the scoring framework applied here, and no reviewed study demonstrates an integrated system operating under the combined canal constraints. The gap is system-level integration rather than algorithmic maturity. Each identified failure originates in a single module, escapes detection at that module’s own output, and becomes observable only after corrupting the layers above it. Reliable operation depends on adaptive multimodal perception paired with structure-relative localization and persistent mapping, a requirement that transfers directly to ports, bridges, tunnels, and other infrastructure-dense waterways.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A review of underwater robot technologies for inland waterway inspection and maintenance: the pinglu canal scenario",
+      "authors": [
+        "Peijun Shi",
+        "Chee‐Onn Chow",
+        "Wei Ru Wong"
+      ],
+      "published": "2026-08-21",
+      "venue": "Journal of King Saud University - Computer and Information Sciences",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "perception",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 8.4
+    },
+    {
+      "id": "doi:10.1126/sciadv.aeg3333",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A ciliated intravascular soft millirobot for multimodal in-flow collective manipulation",
+      "url": "https://doi.org/10.1126/sciadv.aeg3333",
+      "doi": "10.1126/sciadv.aeg3333",
+      "doi_url": "https://doi.org/10.1126/sciadv.aeg3333",
+      "summary": "The laminar nature of blood flow and the resulting boundary layer pose substantial challenges for transverse mass transport in blood vessels, limiting intravascular biomedical applications such as targeted delivery, thrombolysis and biomarker enrichment. Herein, we develop a ciliated intravascular millirobot, CiliaVine, for active manipulation of particle and cell collectives through flow regulation. Actuated by tai...",
+      "abstract": "The laminar nature of blood flow and the resulting boundary layer pose substantial challenges for transverse mass transport in blood vessels, limiting intravascular biomedical applications such as targeted delivery, thrombolysis and biomarker enrichment. Herein, we develop a ciliated intravascular millirobot, CiliaVine, for active manipulation of particle and cell collectives through flow regulation. Actuated by tailored magnetic fields, soft cilia on the robot oscillate in different modes, generating desired flow patterns for flow regulation. CiliaVine enhances the transverse transport that is otherwise suppressed under laminar flow, driving circulating collectives from the vessel center toward the vessel wall for drug penetration, or reversing transport for thrombus residue clearance. Flow regulation is investigated in a vascular model using fluorescent tracer particles. Enhanced targeted drug delivery and accelerated thrombolysis enabled by the robot are validated. Circulating tumor cell (CTC) enrichment is evaluated using cancer patient blood and in tumor-bearing rabbits, revealing its effectiveness in physiological environments and its potential for intravascular rare-cell enrichment.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A ciliated intravascular soft millirobot for multimodal in-flow collective manipulation",
+      "authors": [
+        "Yibin Wang",
+        "Ye Li",
+        "Leiming Xie",
+        "Kaiwen Fang",
+        "Chunyun Wei",
+        "Feng Duan",
+        "Jiangfan Yu"
+      ],
+      "published": "2026-08-21",
+      "venue": "Science Advances",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm",
+        "theory"
+      ],
+      "score": 8.3
+    },
+    {
       "id": "doi:10.1007/s44163-026-01955-0",
       "report_id": "robotics_research_20260821_164520",
       "title": "A systematic review of artificial intelligence and internet of things applications in precision agriculture",
@@ -154,8 +452,163 @@
       "score": 8.18
     },
     {
+      "id": "doi:10.3390/app16168316",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Adaptive Navigation Framework for Mobile Robots with Heterogeneous and Low-Fidelity Sensing",
+      "url": "https://doi.org/10.3390/app16168316",
+      "doi": "10.3390/app16168316",
+      "doi_url": "https://doi.org/10.3390/app16168316",
+      "summary": "Simultaneous localization and mapping (SLAM) is a foundational capability for autonomous navigation in unknown environments. Its performance is strongly coupled to the type, quality, and reliability of available localization and perception sensor data, limiting the portability of navigation systems across heterogeneous mobile robot platforms. This paper presents an adaptive navigation framework designed to support p...",
+      "abstract": "Simultaneous localization and mapping (SLAM) is a foundational capability for autonomous navigation in unknown environments. Its performance is strongly coupled to the type, quality, and reliability of available localization and perception sensor data, limiting the portability of navigation systems across heterogeneous mobile robot platforms. This paper presents an adaptive navigation framework designed to support portability across heterogeneous mobile robot platforms by decoupling localization providers from platform-specific localization and perception sensing configurations. A sensor abstraction layer normalizes heterogeneous and low-fidelity sensor localization and perception inputs into a unified representation, enabling structured operational modes constructed according to available sensing modalities, computational constraints, and environmental characteristics. A learning-based performance prediction module is further designed to estimate impending SLAM degradation and support proactive mode switching. Due to middleware constraints within the Pepper NAOqi stack, this predictive component was not deployed during experimental evaluation and remains part of the proposed architecture for future validation. Experimental results on real indoor navigation tasks demonstrate improved robustness and adaptive performance compared with fixed SLAM configurations without manual retuning.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Adaptive Navigation Framework for Mobile Robots with Heterogeneous and Low-Fidelity Sensing",
+      "authors": [
+        "Molly Watson",
+        "Zach Carter",
+        "Yeganeh Madadi"
+      ],
+      "published": "2026-08-21",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "robot_perception_navigation"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "system",
+        "perception"
+      ],
+      "score": 8.18
+    },
+    {
+      "id": "doi:10.1038/s41928-026-01697-y",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Robot return",
+      "url": "https://doi.org/10.1038/s41928-026-01697-y",
+      "doi": "10.1038/s41928-026-01697-y",
+      "doi_url": "https://doi.org/10.1038/s41928-026-01697-y",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Robot return",
+      "authors": [],
+      "published": "2026-08-21",
+      "venue": "Nature Electronics",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "high_impact_venue_watch",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [],
+      "score": 8.0
+    },
+    {
+      "id": "doi:10.1007/s44223-026-00121-x",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Tool to teammate: a systematic review on human–robot collaboration in architectural fabrication",
+      "url": "https://doi.org/10.1007/s44223-026-00121-x",
+      "doi": "10.1007/s44223-026-00121-x",
+      "doi_url": "https://doi.org/10.1007/s44223-026-00121-x",
+      "summary": "Abstract The evolving field of Human–Robot Collaboration (HRC) in the Architecture, Engineering, Fabrication, and Construction (AEFC) academia and Industry requires new approaches that reconcile human cognitive adaptability with robotic precision to address the unpredictability of construction environments. Architectural fabrication operates under site-specific conditions, material irregularities, and design uniquen...",
+      "abstract": "Abstract The evolving field of Human–Robot Collaboration (HRC) in the Architecture, Engineering, Fabrication, and Construction (AEFC) academia and Industry requires new approaches that reconcile human cognitive adaptability with robotic precision to address the unpredictability of construction environments. Architectural fabrication operates under site-specific conditions, material irregularities, and design uniqueness that limit the effectiveness of conventional automation, especially in comparison to the controlled manufacturing settings. This review investigates how frameworks of HRC in architecture have evolved from tool-based automation toward shared and adaptive systems, and what challenges persist in translating these developments into real-world construction practices. A systematic review was conducted on 110 peer-reviewed studies, each analyzed across various analytical dimensions: level of collaboration, materials, fabrication scale, digital and physical methods. To organize this diversity, the review introduces a six-level classification of human–robot collaboration, starting from manual control to supervised autonomy, collaborative control, adaptive collaboration, fully autonomous systems, and finally collective human–robot collaboration. Each level builds upon and evolves from the insights of the preceding ones. This framework enables a consistent comparison of technological capabilities, degrees of autonomy, and modes of human involvement across studies. The synthesis indicates gradual evolution in HRC frameworks. The more basic levels retain strong connections to craft and material intuition but remain constrained in scalability and repeatability. Intermediate levels incorporate real-time feedback and learning-based responsiveness, enabling more balanced task sharing between humans and robots. The advanced levels demonstrate emerging capacities for distributed intelligence and coordinated multi-agent behavior, yet they encounter significant technical, operational, and economic limitations that restrict their deployment beyond experimental settings. Across all levels, advances in sensing, simulation, and human–machine interface design are steadily expanding the domain of robotic construction while revealing persistent gaps between research and practice. The trajectory of HRC in architecture represents a broader socio-technical transformation that redefines the relationship between design, labor, and automation. Future progress depends on integrating collaborative robotics into construction workflows, fostering democratization of technology, and establishing robust frameworks for safety, training, and regulation that support human–robot coexistence on site. Bridging the divide between experimental success and scalable application will require sustained interdisciplinary collaboration among architects, engineers, robotic experts, and social scientists to advance a more adaptive and human-centered construction future.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Tool to teammate: a systematic review on human–robot collaboration in architectural fabrication",
+      "authors": [
+        "Tahmures Ghiyasi",
+        "Ali Ghazvinian"
+      ],
+      "published": "2026-08-21",
+      "venue": "Architectural Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "system",
+        "swarm"
+      ],
+      "score": 5.76
+    },
+    {
+      "id": "doi:10.1007/s11255-026-05349-0",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Single-port robotic-assisted kidney transplantation: early benchmarks from a systematic review",
+      "url": "https://doi.org/10.1007/s11255-026-05349-0",
+      "doi": "10.1007/s11255-026-05349-0",
+      "doi_url": "https://doi.org/10.1007/s11255-026-05349-0",
+      "summary": "Abstract Background Single-port (SP) robotic-assisted kidney transplantation (SP-RAKT) is an emerging minimally invasive approach whose perioperative safety profile and early graft outcomes remain poorly characterized. We performed a systematic review to summarize available evidence on SP-RAKT using the da Vinci SP platform. Methods A protocol-registered systematic review (PROSPERO: CRD420251086071) was conducted pe...",
+      "abstract": "Abstract Background Single-port (SP) robotic-assisted kidney transplantation (SP-RAKT) is an emerging minimally invasive approach whose perioperative safety profile and early graft outcomes remain poorly characterized. We performed a systematic review to summarize available evidence on SP-RAKT using the da Vinci SP platform. Methods A protocol-registered systematic review (PROSPERO: CRD420251086071) was conducted per PRISMA guidelines. PubMed and Embase were searched through June 28, 2025. Adult studies reporting perioperative, postoperative, or graft outcomes following SP-RAKT were included. Quantitative synthesis was restricted to allotransplantation studies, with preclinical and autotransplantation studies described narratively; weighted means were calculated for continuous outcomes and proportions for categorical outcomes. Study quality was assessed using Joanna Briggs Institute (JBI) and MINORS criteria. Results Seventeen studies (272 procedures, 2019–2025) met inclusion criteria, of which only one was a full-text peer-reviewed clinical study; the remainder comprised conference abstracts, video reports, a preprint, and two preclinical studies. Quantitative synthesis of the 253 allotransplantation procedures showed a mean recipient age of 51.39 years and BMI of 31.70 kg/m 2 ; 66% received living donor grafts. Mean operative time was 287.45 min, estimated blood loss 60.87 mL, and vascular anastomosis time 53.33 min. Mean hospital stay was 2.38 days. No conversion to open surgery was reported. Delayed graft function occurred in 6% of patients, overall complication rate was 10%, and 90-day readmission rate was 24%. Mean serum creatinine improved from 2.37 mg/dL at discharge to 1.48 mg/dL at last follow-up. No graft losses were reported at 6 or 12 months in cohorts with available data. Mean postoperative pain score was 3.93 and opioid consumption 61.20 morphine milligram equivalents. Discussion Early institutional experience suggests SP-RAKT is technically feasible in carefully selected patients at experienced centers, with minimal blood loss, short hospitalization, and early graft function consistent with established benchmarks. Operative times reflect an expected learning curve and improve with experience. The evidence base is derived primarily from small, single-center, predominantly non-peer-reviewed series with heterogeneous outcome reporting; these findings support feasibility but not comparative safety or superiority over open or multi-port approaches. Prospective, multicenter trials with standardized endpoints are needed to define the definitive role of SP-RAKT in transplant surgery. Level of evidence IV.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Single-port robotic-assisted kidney transplantation: early benchmarks from a systematic review",
+      "authors": [
+        "Pierangelo Nitzkowski",
+        "Aaron Ouyang",
+        "Thriaksh Rajan",
+        "Hachem Ziadeh",
+        "Mohamed Eltemamy",
+        "Nima Nassiri",
+        "Ramy Abou Ghayda"
+      ],
+      "published": "2026-08-21",
+      "venue": "International Urology and Nephrology",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "system"
+      ],
+      "score": 5.3
+    },
+    {
+      "id": "doi:10.9734/jerr/2026/v28i81983",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
+      "url": "https://doi.org/10.9734/jerr/2026/v28i81983",
+      "doi": "10.9734/jerr/2026/v28i81983",
+      "doi_url": "https://doi.org/10.9734/jerr/2026/v28i81983",
+      "summary": "Aims: This study developed and evaluated a humanoid joint-space motion-tracking controller integrating standard Kalman filtering, adaptive proportional-integral-derivative feedback and model-based inverse-dynamics feedforward compensation. Study Design: A twenty-trial Monte Carlo comparative numerical simulation was conducted against a fixed-gain proportional-derivative baseline under matched plant parameters, refer...",
+      "abstract": "Aims: This study developed and evaluated a humanoid joint-space motion-tracking controller integrating standard Kalman filtering, adaptive proportional-integral-derivative feedback and model-based inverse-dynamics feedforward compensation. Study Design: A twenty-trial Monte Carlo comparative numerical simulation was conducted against a fixed-gain proportional-derivative baseline under matched plant parameters, reference trajectories, measurement-noise sequences and disturbance sequences. Place and Duration of Study: The study was conducted at the School of Automation and Electrical Engineering, Tianjin University of Technology and Education, Tianjin, China, from March 2026 to July 2026. Methodology: A simplified 12-degree-of-freedom humanoid joint-space model was simulated for 500 time steps per trial at a sampling interval of 0.01 s. Each joint state was estimated using a two-state discrete Kalman filter. The PID gains were adjusted online through bounded nonlinear laws, while nominal inverse dynamics supplied inertia, velocity-dependent and gravity feedforward compensation. Tracking performance was assessed using MAE, RMSE, maximum error and 95% confidence intervals. Results: The mean trial-level MAE decreased from 0.165825 rad to 0.039224 rad, a mean reduction of 76.35% with an approximate 95% CI of [75.91%, 76.78%]. Mean trial-level RMSE decreased from 0.224126 rad to 0.067078 rad, a mean reduction of 70.07% with an approximate 95% CI of [69.81%, 70.33%]. All twelve joints showed lower MAE. Conclusion: The integrated controller improved joint-angle tracking consistently within the evaluated simplified model. Contact-rich simulation and physical-robot experiments remain necessary for external validation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
+      "authors": [
+        "Li Jinhui",
+        "Zhang Jingyu",
+        "Song Changhao",
+        "Li Xiangbin"
+      ],
+      "published": "2026-08-21",
+      "venue": "Journal of Engineering Research and Reports",
+      "publisher": "Sciencedomain International",
+      "source": "crossref",
+      "topics": [
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "theory"
+      ],
+      "score": 5.18
+    },
+    {
       "id": "doi:10.1126/science.aee2448",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "The lab that learns",
       "url": "https://doi.org/10.1126/science.aee2448",
       "doi": "10.1126/science.aee2448",
@@ -180,8 +633,290 @@
       "score": 9.2
     },
     {
+      "id": "doi:10.1038/s41467-026-76740-9",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Accelerating protein design by scaling experimental characterization",
+      "url": "https://doi.org/10.1038/s41467-026-76740-9",
+      "doi": "10.1038/s41467-026-76740-9",
+      "doi_url": "https://doi.org/10.1038/s41467-026-76740-9",
+      "summary": "Abstract Recent advances in de novo protein design have greatly outpaced standard protein biochemistry workflows, and experimental testing has been a bottleneck in the validation of new designs and methodologies. Here, we describe experimental and computational workflows to address the issues of scale, speed and reproducibility of common in vitro protein testing methods, enabling at least an order of magnitude incre...",
+      "abstract": "Abstract Recent advances in de novo protein design have greatly outpaced standard protein biochemistry workflows, and experimental testing has been a bottleneck in the validation of new designs and methodologies. Here, we describe experimental and computational workflows to address the issues of scale, speed and reproducibility of common in vitro protein testing methods, enabling at least an order of magnitude increase in throughput while reducing wetlab time. Semi-Automated Protein Production (SAPP) is a rapid, modular, scalable and cost-effective protocol, enabling up to milligram-scale protein production, and standardized characterization including yield, dispersity, and oligomeric state of hundreds of designs per day, at the cost-equivalent of a few DNA oligos per construct. End-to-end protocol execution takes 48 hours, with about 6 hours spent benchside using mostly standard laboratory equipment. This protocol has become the standard at our institute, providing critical experimental validation for dozens of projects spanning tens of thousands of designs. We showcase the power of the platform by using it to rapidly characterize de novo designed inhibitors of respiratory syncytial virus. Since at least 80% of SAPP’s total cost comes from synthetic DNA, we also developed a scalable demultiplexing protocol (DMX) to leverage oligo pools as input DNA, providing a further 5-fold reduction in costs, enabling >1000 designs to be purified and characterized in arrayed, clonal format at a cost of $5 per construct. By reframing standard molecular biology practices and orchestrating wetlab workflows with partial automation instead of complex end-to-end robotics, these protocols should be widely adoptable, accelerating protein design.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Accelerating protein design by scaling experimental characterization",
+      "authors": [
+        "Jason Qian",
+        "Lukas F. Milles",
+        "Basile I. M. Wicky",
+        "Robert J. Ragotte",
+        "Amir Motmaen",
+        "Andrew J. Borst",
+        "Rebecca Skotheim",
+        "Sebastian Ols",
+        "Brian Coventry",
+        "Xinting Li",
+        "Ryan D. Kibler",
+        "Inna Goreshnik",
+        "Marc Expòsit",
+        "Karin Loré",
+        "Lance Stewart",
+        "David Baker"
+      ],
+      "published": "2026-08-20",
+      "venue": "Nature Communications",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design",
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "reconfiguration",
+        "system"
+      ],
+      "score": 8.8
+    },
+    {
+      "id": "doi:10.1038/s41467-026-76850-4",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Creating locally enriched single-atom catalysts via bio-inspired internalization process for interference-resistant NO2 detection in complex environments",
+      "url": "https://doi.org/10.1038/s41467-026-76850-4",
+      "doi": "10.1038/s41467-026-76850-4",
+      "doi_url": "https://doi.org/10.1038/s41467-026-76850-4",
+      "summary": "Abstract Intelligent gas-sensing technology that accurately and stably identifies gas categories in complex atmospheres is critical for protecting public safety and environment. However, competing interactions among different gases on sensing surfaces can trigger interference even poison of sensors. Here, we present a bio-inspired atomic internalization process that produces locally enriched single Pt species, enabl...",
+      "abstract": "Abstract Intelligent gas-sensing technology that accurately and stably identifies gas categories in complex atmospheres is critical for protecting public safety and environment. However, competing interactions among different gases on sensing surfaces can trigger interference even poison of sensors. Here, we present a bio-inspired atomic internalization process that produces locally enriched single Pt species, enabling highly selective and interference-resistant gas detection. By engineering Sn/C precursors as homologous receptors, Pt 3 Sn alloys are two-step redistributed into high-density single Pt species within regionalized SnO 2 surface. This structure constitutionally alters the distribution patterns of NO 2 molecules and thus delivers accurate NO 2 monitoring in multicomponent atmospheres and stable detection for over 550 days, surpassing state-of-the-art commercial devices. Further integrating characteristic-specific sensors into arrays, the resulting device further achieves 100% classification accuracy for single and mixed gases at ultralow cost. Moreover, we demonstrate an autonomous “cruise-monitoring” system by equipping the sensor on a robot to detect and identify NO 2 in real time. Our findings thus guide the accurate analysis and interference-resistant detection in complex gas mixtures.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Creating locally enriched single-atom catalysts via bio-inspired internalization process for interference-resistant NO2 detection in complex environments",
+      "authors": [
+        "Xin Jia",
+        "Runfang Mao",
+        "Hu Shan",
+        "Muyu Yan",
+        "Haotian Huang",
+        "Zhiheng Ma",
+        "Xuesong Zhang",
+        "Musen Li",
+        "Yongjie Shen",
+        "Wenqiang Qu",
+        "Zheng Wang",
+        "Yi Jiang",
+        "Shuai Guo",
+        "Pengcheng Xu",
+        "Zhenggang Xue",
+        "Dengsong Zhang",
+        "Jiaqiang Xu"
+      ],
+      "published": "2026-08-20",
+      "venue": "Nature Communications",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "theory"
+      ],
+      "score": 8.8
+    },
+    {
+      "id": "doi:10.3389/fnins.2026.1882653",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Closed-loop brain-computer interfaces for post-stroke sensorimotor loop restoration",
+      "url": "https://doi.org/10.3389/fnins.2026.1882653",
+      "doi": "10.3389/fnins.2026.1882653",
+      "doi_url": "https://doi.org/10.3389/fnins.2026.1882653",
+      "summary": "Stroke recovery is increasingly understood as a process shaped by disrupted interactions among motor intention, descending motor output, peripheral movement, and sensory feedback, rather than by motor weakness alone. After stroke, residual motor intention may not be effectively translated into spinal motor output, peripheral movement may be too limited to provide sufficient sensory feedback, and compensatory network...",
+      "abstract": "Stroke recovery is increasingly understood as a process shaped by disrupted interactions among motor intention, descending motor output, peripheral movement, and sensory feedback, rather than by motor weakness alone. After stroke, residual motor intention may not be effectively translated into spinal motor output, peripheral movement may be too limited to provide sufficient sensory feedback, and compensatory network recruitment may not always support efficient motor control. Closed-loop brain-computer interfaces offer a mechanistically motivated approach to this problem by detecting motor imagery, motor attempt, or sensorimotor rhythms in real time and translating these signals into contingent functional electrical stimulation, robotic assistance, virtual reality, multisensory feedback, or neuromodulation. By partially restoring the temporal coupling between detected motor intention, assisted or stimulated movement, and sensory feedback, these systems are hypothesized to promote activity-dependent plasticity, reinforce sensorimotor circuits, and modulate distributed motor, sensory, attentional, and interhemispheric networks. In this review, we synthesize the neurobiological basis, recovery mechanisms, implementation strategies, and emerging predictive biomarkers of closed-loop brain-computer interfaces for post-stroke sensorimotor rehabilitation. Although closed-loop brain-computer interfaces show promise for selected patients, treatment effects remain heterogeneous and depend on patient characteristics, decodability of motor-related brain signals, intervention dose, feedback modality, and trial design. Future progress will require mechanism-informed patient stratification, adaptive decoding, individualized feedback, standardized outcomes, and real-world validation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Closed-loop brain-computer interfaces for post-stroke sensorimotor loop restoration",
+      "authors": [
+        "Ran Tao",
+        "Can Duan",
+        "Yang-pu Zhang"
+      ],
+      "published": "2026-08-20",
+      "venue": "Frontiers in Neuroscience",
+      "publisher": "Frontiers Media",
+      "source": "openalex",
+      "topics": [
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "system"
+      ],
+      "score": 8.48
+    },
+    {
+      "id": "doi:10.22214/ijraset.2026.84647",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A Survey of Deep Reinforcement Learning Approaches in Robotic Manipulation",
+      "url": "https://doi.org/10.22214/ijraset.2026.84647",
+      "doi": "10.22214/ijraset.2026.84647",
+      "doi_url": "https://doi.org/10.22214/ijraset.2026.84647",
+      "summary": "Neural-network-based reinforcement learning has driven a broad set of breakthroughs across many application areas. In the specific case of robotic manipulation, these methods raise the prospect of machines acquiring dexterous, human-like manipulation skills straight from visual input. This survey examines where reinforcement learning algorithms currently stand within this field. It lays out the core theory and termi...",
+      "abstract": "Neural-network-based reinforcement learning has driven a broad set of breakthroughs across many application areas. In the specific case of robotic manipulation, these methods raise the prospect of machines acquiring dexterous, human-like manipulation skills straight from visual input. This survey examines where reinforcement learning algorithms currently stand within this field. It lays out the core theory and terminology involved, and highlights the principal obstacles that still restrict these algorithms from being deployed on real-world robotic problems. The paper closes with the authors' outlook on promising directions for continued research.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Survey of Deep Reinforcement Learning Approaches in Robotic Manipulation",
+      "authors": [
+        "Sachidananda M H",
+        "Prashanth Kumar R",
+        "P Darshan"
+      ],
+      "published": "2026-08-20",
+      "venue": "International Journal for Research in Applied Science and Engineering Technology",
+      "publisher": "International Journal for Research in Applied Science and Engineering Technology (IJRASET)",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "perception"
+      ],
+      "score": 8.4
+    },
+    {
+      "id": "doi:10.1002/rob.70316",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Design of a Novel Gripping Mechanism and Dual Manipulator Robotic System for Apple Harvesting Using Tractor",
+      "url": "https://doi.org/10.1002/rob.70316",
+      "doi": "10.1002/rob.70316",
+      "doi_url": "https://doi.org/10.1002/rob.70316",
+      "summary": "ABSTRACT The architecture of apple orchards can be converted to easier operation by implementing the use of a low‐cost, tractor‐mounted, dual manipulator based on a robotic harvesting system with lower degrees of freedom (DoF). To accurately avoid injuries by detecting apples, an efferent, real‐time vision system that includes a new gripping mechanism was developed. In this context, by introducing a new gripping sys...",
+      "abstract": "ABSTRACT The architecture of apple orchards can be converted to easier operation by implementing the use of a low‐cost, tractor‐mounted, dual manipulator based on a robotic harvesting system with lower degrees of freedom (DoF). To accurately avoid injuries by detecting apples, an efferent, real‐time vision system that includes a new gripping mechanism was developed. In this context, by introducing a new gripping system, spindle wall‐type apple orchard architectures have high potential for easy harvesting using a robotic platform. Therefore, this study was conducted to design and develop a tractor‐mounted, machine vision‐based, 3‐DoF, dual telescopic robotic cartesian system with a novel 2‐DoF gripping mechanism for apple harvesting. The machine vision system was developed using the EfficientDet object detection deep neural network with a mAP@0.5 of 0.775. The tracking algorithm DeepSORT was selected to track the localized apples and transfer the G ‐code to the robotic arm system. The developed novel gripping mechanism consists of three vacuum‐powered, (400 mmHg) spring‐loaded, silicone fingers that provide 0.73 N.m (±0.1) twisting torque to apples in a natural orientation (90°) and a dragging force of 17.65 N (±0.5). The average harvesting cycle time was approximately eleven seconds for both robotic arms, including detection and completion of the harvesting cycle.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design of a Novel Gripping Mechanism and Dual Manipulator Robotic System for Apple Harvesting Using Tractor",
+      "authors": [
+        "R. M. Rasika D. Abeyrathna",
+        "Victor Massaki Nakaguchi",
+        "Zifu Liu",
+        "Tofael Ahamed"
+      ],
+      "published": "2026-08-20",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "engineering_system_design",
+        "high_impact_venue_watch"
+      ],
+      "tags": [
+        "algorithm",
+        "perception",
+        "structure",
+        "system"
+      ],
+      "score": 8.08
+    },
+    {
+      "id": "doi:10.5468/ogs.26062",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Single-port robot-assisted repair of cesarean scar defect using the da Vinci SP system with near-infrared and simultaneous multi-image display for precise defect localization and excision",
+      "url": "https://doi.org/10.5468/ogs.26062",
+      "doi": "10.5468/ogs.26062",
+      "doi_url": "https://doi.org/10.5468/ogs.26062",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Single-port robot-assisted repair of cesarean scar defect using the da Vinci SP system with near-infrared and simultaneous multi-image display for precise defect localization and excision",
+      "authors": [
+        "Masafumi Nii",
+        "Hideaki Yajima",
+        "Shunichiro Tsuji",
+        "Satoshi Tanimura",
+        "Yusuke Sako",
+        "Kenta Yoshida",
+        "Mikiko Nishioka",
+        "Erina Takayama",
+        "Eiji Kondo",
+        "Tomoaki Ikeda"
+      ],
+      "published": "2026-08-20",
+      "venue": "Obstetrics &amp; Gynecology Science",
+      "publisher": "Korean Society of Obstetrics and Gynecology",
+      "source": "crossref",
+      "topics": [
+        "engineering_system_design",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "perception",
+        "system"
+      ],
+      "score": 7.3
+    },
+    {
+      "id": "doi:10.1142/s0218001426510092",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "EIL-CNN: Embodied Intelligence-Driven Lightweight CNN for Representation Learning and Intelligent Extraction of Power Metering Information",
+      "url": "https://doi.org/10.1142/s0218001426510092",
+      "doi": "10.1142/s0218001426510092",
+      "doi_url": "https://doi.org/10.1142/s0218001426510092",
+      "summary": "Accurate and efficient extraction of power metering information is essential for modern smart grids and energy management systems. Traditional methods often suffer from high computational cost and limited adaptability to dynamic electrical environments, especially when processing high-dimensional, multi-source, and non-stationary load data, where manually designed features may lead to increased prediction errors and...",
+      "abstract": "Accurate and efficient extraction of power metering information is essential for modern smart grids and energy management systems. Traditional methods often suffer from high computational cost and limited adaptability to dynamic electrical environments, especially when processing high-dimensional, multi-source, and non-stationary load data, where manually designed features may lead to increased prediction errors and delayed inference. In this paper, we propose EIL-CNN, an Embodied Intelligence-Driven Lightweight Convolutional Neural Network framework for representation learning and intelligent extraction of power metering data. By integrating embodied intelligence principles, EIL-CNN enables adaptive feature selection and contextual awareness in metering data streams, allowing the network to focus on high-value information. A lightweight convolutional architecture further ensures computational efficiency, enabling real-time deployment on edge devices such as smart meters and gateways. Extensive experiments on multiple real-world power datasets demonstrate that EIL-CNN achieves superior performance in both representation learning and intelligent extraction tasks, while significantly reducing computational overhead compared to conventional deep learning approaches. The proposed framework paves the way for intelligent, edge-deployable power metering solutions in future smart grids.",
+      "figure_url": "",
+      "figure_alt": "Main figure for EIL-CNN: Embodied Intelligence-Driven Lightweight CNN for Representation Learning and Intelligent Extraction of Power Metering Information",
+      "authors": [
+        "Chunkai Nong",
+        "Lin Li",
+        "Xiaoyan Yang",
+        "Hongyu Su"
+      ],
+      "published": "2026-08-20",
+      "venue": "International Journal of Pattern Recognition and Artificial Intelligence",
+      "publisher": "World Scientific Pub Co Pte Ltd",
+      "source": "crossref",
+      "topics": [
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "algorithm",
+        "system",
+        "embodied_ai"
+      ],
+      "score": 6.98
+    },
+    {
+      "id": "doi:10.5120/ijcaf0c19b006749",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Building Resilience Security Architecture for Healthcare AI and Robotics: Best Practices",
+      "url": "https://doi.org/10.5120/ijcaf0c19b006749",
+      "doi": "10.5120/ijcaf0c19b006749",
+      "doi_url": "https://doi.org/10.5120/ijcaf0c19b006749",
+      "summary": "As healthcare delivery becomes increasingly dependent on AIdriven analytics and robotic systems, ensuring the confidentiality, integrity, and availability of patients' data and automated processes is paramount.This paper surveys the state of the art in security architectures tailored for intelligent and robotic healthcare platforms.It reviews emerging frameworks -Zero Trust, DevSecOps, federated learning, and hardwa...",
+      "abstract": "As healthcare delivery becomes increasingly dependent on AIdriven analytics and robotic systems, ensuring the confidentiality, integrity, and availability of patients' data and automated processes is paramount.This paper surveys the state of the art in security architectures tailored for intelligent and robotic healthcare platforms.It reviews emerging frameworks -Zero Trust, DevSecOps, federated learning, and hardwarerooted trust -and distills best practices in threat modeling, cryptographic data management, network segmentation, and secure development lifecycles.It also illustrates how these approaches interoperate to build layered, resilient defenses against sophisticated cyber-physical threats, compliance gaps, and supply-chain risks.A matrix of frameworks versus capabilities guides practitioners in selecting and integrating security controls that meet both technical and regulatory requirements.Finally, the paper outlines open research challenges and proposes a roadmap for future advances in secure and trustworthy AI and robotics in healthcare.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Building Resilience Security Architecture for Healthcare AI and Robotics: Best Practices",
+      "authors": [
+        "Olusola Gbenga Olufemi",
+        "Seraphine Agbor"
+      ],
+      "published": "2026-08-20",
+      "venue": "International Journal of Computer Applications",
+      "publisher": "Foundation of Computer Science",
+      "source": "openalex",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "engineering_system_design",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 5.26
+    },
+    {
       "id": "doi:10.1126/scirobotics.aed1152",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "Learning vision-driven reactive soccer skills for humanoid robots",
       "url": "https://doi.org/10.1126/scirobotics.aed1152",
       "doi": "10.1126/scirobotics.aed1152",
@@ -207,22 +942,23 @@
       "publisher": "American Association for the Advancement of Science (AAAS)",
       "source": "crossref",
       "topics": [
-        "high_impact_venue_watch"
+        "high_impact_venue_watch",
+        "robot_perception_navigation"
       ],
       "tags": [
         "algorithm",
         "control",
-        "system",
-        "theory",
-        "reconfiguration",
+        "embodied_ai",
         "perception",
-        "embodied_ai"
+        "reconfiguration",
+        "system",
+        "theory"
       ],
       "score": 9.66
     },
     {
       "id": "doi:10.1126/scirobotics.aed3973",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "Evolution of humanoid locomotion control",
       "url": "https://doi.org/10.1126/scirobotics.aed3973",
       "doi": "10.1126/scirobotics.aed3973",
@@ -261,8 +997,42 @@
       "score": 9.36
     },
     {
+      "id": "doi:10.65206/pajes.1922237",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Application and evaluation of reinforcement learning for two-dimensional trajectory tracking in snake-like robots",
+      "url": "https://doi.org/10.65206/pajes.1922237",
+      "doi": "10.65206/pajes.1922237",
+      "doi_url": "https://doi.org/10.65206/pajes.1922237",
+      "summary": "Context—Snake-like robots are biomimetic systems that can move effectively in narrow, complex, and restricted environments thanks to their modular and flexible body structures composed of numerous serially connected joints. These characteristics offer significant advantages, particularly in areas such as pipeline inspection, search and rescue operations, industrial maintenance applications, and exploration missions....",
+      "abstract": "Context—Snake-like robots are biomimetic systems that can move effectively in narrow, complex, and restricted environments thanks to their modular and flexible body structures composed of numerous serially connected joints. These characteristics offer significant advantages, particularly in areas such as pipeline inspection, search and rescue operations, industrial maintenance applications, and exploration missions. The multiple degrees of freedom distributed along the body enable the robot to achieve high maneuverability but also make the control problem quite complex. Due to the dynamic interactions between segments, friction-based motion characteristics, and nonlinear system behavior, achieving reliable and accurate trajectory tracking emerges as a significant engineering problem.Objective—In this study, a reinforcement learning (RL) based control method has been developed to solve the trajectory tracking problem for snake-like robots in a two-dimensional plane.Method—In the proposed approach, the robot’s dynamic model was created in the Webots simulation environment, an open-source simulation program, and all training and testing processes were carried out in this environment. During the learning process, policy- based RL algorithms from the Stable-Baselines library were used. In this context, Proximal Policy Optimization (PPO) and three different RL algorithms were used during the training process. To enable the robot to adapt to different orientation scenarios, seven different angles defined in the range of +45 to −45 and trajectories of varying lengths were used. Thus, the goal was for the agent to learn a generalizable control policy not only for a specific trajectory type but also for tracks with different slopes and orientations.Results—The results obtained show that the PPO algorithm produced a higher average reward compared to other methods and exhibited a more stable learning process. After training was completed, the developed method was tested both on trajectories used during the training phase and on previously unseen trajectories. For the 0 trajectory, maximum errors were recorded as 0.093 m and 0.040 m for the x and y axes, respectively. Furthermore, the system exhibited robust generalization capabilities on a +22.5 trajectory, not encountered during the training phase, yielding maximum errors of 0.099 m and 0.052 m.Conclusion—These findings demonstrate that the proposed RL-based control approach can effectively solve the two-dimensional trajectory tracking problem in snake robots. In future studies, the proposed method can be extended to the three-dimensional trajectory tracking problem, or it can be evaluated under more complex conditions, such as scenarios involving obstacles.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Application and evaluation of reinforcement learning for two-dimensional trajectory tracking in snake-like robots",
+      "authors": [
+        "Furkan Mezgil",
+        "Mustafa Can Bingöl"
+      ],
+      "published": "2026-08-19",
+      "venue": "Pamukkale University Journal of Engineering Sciences",
+      "publisher": "Pamukkale University",
+      "source": "openalex",
+      "topics": [
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "reconfiguration",
+        "system",
+        "theory"
+      ],
+      "score": 9.36
+    },
+    {
       "id": "doi:10.1126/scirobotics.aek6923",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "Are humanoid robots in 2035 more fiction than science?",
       "url": "https://doi.org/10.1126/scirobotics.aek6923",
       "doi": "10.1126/scirobotics.aek6923",
@@ -286,7 +1056,7 @@
     },
     {
       "id": "doi:10.1093/nsr/nwag506",
-      "report_id": "robotics_research_20260821_164520",
+      "report_id": "robotics_research_20260824_105552",
       "title": "Embodied Learning under Policy and Dynamics Shifts",
       "url": "https://doi.org/10.1093/nsr/nwag506",
       "doi": "10.1093/nsr/nwag506",
@@ -314,6 +1084,273 @@
         "embodied_ai"
       ],
       "score": 8.56
+    },
+    {
+      "id": "doi:10.3389/fpls.2026.1878431",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Heterogeneous agricultural robots: a review of collaborative sensing and control, challenges and opportunities",
+      "url": "https://doi.org/10.3389/fpls.2026.1878431",
+      "doi": "10.3389/fpls.2026.1878431",
+      "doi_url": "https://doi.org/10.3389/fpls.2026.1878431",
+      "summary": "A critical shift towards improved efficiency is currently taking place in modern agriculture, sustainability, and intelligence, driven by population growth, resource constraints, labor shortages, and increasing environmental pressure. Agricultural robots, especially heterogeneous robotic systems, have emerged as key enablers of this transformation by enabling precise, automated, and large-scale operations. This pape...",
+      "abstract": "A critical shift towards improved efficiency is currently taking place in modern agriculture, sustainability, and intelligence, driven by population growth, resource constraints, labor shortages, and increasing environmental pressure. Agricultural robots, especially heterogeneous robotic systems, have emerged as key enablers of this transformation by enabling precise, automated, and large-scale operations. This paper presents a comprehensive review of collaborative sensing and control technologies for heterogeneous agricultural robots working in both structured agricultural environments (greenhouses, orchards, and facility cultivation) and representative field farming scenarios. Focusing on recent advances over the past three years, we systematically analyze five representative robotic platforms: sprinkler irrigation robots, unmanned ground vehicles (UGVs), unmanned aerial vehicles (UAVs), agricultural robotic arms, and underground robots, from the perspectives of sensing, control, and cooperative operation. The review highlights key control methodologies, including intelligent path planning, adaptive and learning-based control, visual navigation, multi-sensor fusion, and energy-aware optimization. Furthermore, air–ground–underground integrated systems are discussed as an emerging paradigm for full-space agricultural coverage. Beyond technological progress, this paper identifies critical challenges in heterogeneous agricultural robot systems, including cooperative communication reliability, real-time safe control under dynamic environments, energy and endurance constraints, and system-level security. Finally, future research directions are outlined, emphasizing integrated communication and sensing, dual-arm and multi-arm collaborative manipulation, and heterogeneous multi-robot cooperative control frameworks.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Heterogeneous agricultural robots: a review of collaborative sensing and control, challenges and opportunities",
+      "authors": [
+        "Rongrong Gu",
+        "Songda Luan",
+        "Yunming Zhao",
+        "Shengyi Zhao",
+        "Xi Kan",
+        "Yuxuan Ma",
+        "Tao Teng",
+        "Yuxin Sun",
+        "Chengyuan Li",
+        "Xudong Sun",
+        "Jizhang Wang"
+      ],
+      "published": "2026-08-19",
+      "venue": "Frontiers in Plant Science",
+      "publisher": "Frontiers Media",
+      "source": "openalex",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "perception",
+        "swarm",
+        "system"
+      ],
+      "score": 8.56
+    },
+    {
+      "id": "doi:10.70267/mseac.2026181188",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Design and Development of Robotic Arms: Structural Innovation, Intelligent Control, and Application Expansion",
+      "url": "https://doi.org/10.70267/mseac.2026181188",
+      "doi": "10.70267/mseac.2026181188",
+      "doi_url": "https://doi.org/10.70267/mseac.2026181188",
+      "summary": "Robotic arms, as core executive components of industrial automation and intelligent robotics, are widely applied in industrial manufacturing, agricultural picking, medical rehabilitation, aerospace, and other fields. This paper systematically reviews the development history and current research status of robotic arms, focusing on structural design innovations, including rigid -flexible switching, bionic configuratio...",
+      "abstract": "Robotic arms, as core executive components of industrial automation and intelligent robotics, are widely applied in industrial manufacturing, agricultural picking, medical rehabilitation, aerospace, and other fields. This paper systematically reviews the development history and current research status of robotic arms, focusing on structural design innovations, including rigid -flexible switching, bionic configurations, and lightweight materials, as well as intelligent control technologies, such as adaptive c ontrol, machine vision fusion, and human-machine interaction. The key technical bottlenecks that restrict the development of robotic arms are analyzed, including the trade -off between lightweight design and high load capacity, accuracy errors due to flexible deformation, poor adaptability in unstructured environments, and high operational costs. Finally, the future development trends of robotic arms are predicted to center on bionic integration, intelligent collaboration, modular customization, and green, energy-saving technologies, thereby providing a theoretical reference and technical support for subsequent research and engineering applications.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design and Development of Robotic Arms: Structural Innovation, Intelligent Control, and Application Expansion",
+      "authors": [
+        "Qiyu Dong"
+      ],
+      "published": "2026-08-19",
+      "venue": "Exploring Science Academic Conference Series",
+      "publisher": "Zeus Press",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "reconfiguration",
+        "perception"
+      ],
+      "score": 8.18
+    },
+    {
+      "id": "doi:10.54644/jte.2026.2401",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A Unified Multi-Task Deep Learning Framework for Robotic Bin-Picking of Planar Objects",
+      "url": "https://doi.org/10.54644/jte.2026.2401",
+      "doi": "10.54644/jte.2026.2401",
+      "doi_url": "https://doi.org/10.54644/jte.2026.2401",
+      "summary": "Automating random bin-picking in industrial robotics, where robots handle diverse and cluttered objects, remains challenging due to the complexity of object detection and pose estimation. While many solutions focus on free-form objects, systems specifically designed for planar objects are lacking. Planar objects pose unique challenges, as the commonly used point pair feature approach for free-form objects is ineffec...",
+      "abstract": "Automating random bin-picking in industrial robotics, where robots handle diverse and cluttered objects, remains challenging due to the complexity of object detection and pose estimation. While many solutions focus on free-form objects, systems specifically designed for planar objects are lacking. Planar objects pose unique challenges, as the commonly used point pair feature approach for free-form objects is ineffective due to their lack of distinctive geometric features. In this study, the proposed framework was implemented and evaluated using USB packs as a representative planar object case study. An innovative approach is introduced for the random bin-picking of planar objects by developing a multi-task model for instance segmentation and keypoint detection in 2D images. Geometric approach is then employed to estimate the 6D object pose for robotic grasping. Furthermore, a grasp candidate selection strategy is proposed to enable reliable grasping in cluttered industrial environments. Experimental results show that the proposed method achieved mAP50 values of 0.954, 0.800, and 0.926 for bounding box detection, instance segmentation, and keypoint detection, respectively, with a processing time of 2.7 ms. Future work will focus on integrating the framework into a digital twin system to support real-time monitoring, simulation, and optimization of automated manufacturing processes.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Unified Multi-Task Deep Learning Framework for Robotic Bin-Picking of Planar Objects",
+      "authors": [
+        "The-Thinh Pham",
+        "Tuan-Khanh Nguyen",
+        "Chi-Cuong Tran",
+        "Quang-Huan Dong",
+        "Duc Do",
+        "Hoang-Vinh-Khang Nguyen",
+        "Quang-Chien Nguyen"
+      ],
+      "published": "2026-08-19",
+      "venue": "Technical Education Science/Giáo dục Kỹ thuật",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design",
+        "robot_perception_navigation"
+      ],
+      "tags": [
+        "algorithm",
+        "system",
+        "theory"
+      ],
+      "score": 8.18
+    },
+    {
+      "id": "doi:10.1186/s42252-026-00103-2",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Data driven approach for topological data of polyelectrolytes assembly",
+      "url": "https://doi.org/10.1186/s42252-026-00103-2",
+      "doi": "10.1186/s42252-026-00103-2",
+      "doi_url": "https://doi.org/10.1186/s42252-026-00103-2",
+      "summary": "Layer-by-layer (LbL) assembly of polyelectrolytes is a universal method for controlling composite coatings. When combined with atomic force microscopy (AFM), it is useful strategy to analyze morphology. Optimisation of the LbL technique is bottlenecked by manual sample preparation, and there is also a lack of standardised analytical pipelines to convert characterisation data into machine-readable descriptors. We add...",
+      "abstract": "Layer-by-layer (LbL) assembly of polyelectrolytes is a universal method for controlling composite coatings. When combined with atomic force microscopy (AFM), it is useful strategy to analyze morphology. Optimisation of the LbL technique is bottlenecked by manual sample preparation, and there is also a lack of standardised analytical pipelines to convert characterisation data into machine-readable descriptors. We address both bottlenecks by combining a collaborative robotic dip-coating platform with an automated feature-extraction backend for AFM topography. The robotic arm handles the substrate (Si wafer), immerses it in polyelectrolyte solution, and prepares samples for AFM study without operator intervention. Resulting AFM scans are transferred into a reproducible pipeline that applies a logged preprocessing chain and computes twelve groups of physically interpretable descriptors per sample: ISO 25,178 areal roughness, height-distribution statistics, radial power spectrum with Hurst and fractal exponents, two-dimensional autocorrelation, local-patch minima/maxima distributions, persistent homology of patch point clouds, gliding-box lacunarity, and a recipe-derived block of layer composition, sequence k-grams and RDKit monomer descriptors. Every descriptor is stored with the originating method version and parameters, supporting idempotent recomputation and side-by-side methodological evolution. The pipeline was applied to polyethyleneimine (PEI)/polystyrene sulfonate (PSS) assemblies on Si substrates, and an unsupervised principal component projection of the scalar descriptors already separates samples by the number of deposited layers, demonstrating that the resulting feature vectors carry coating-state information at a level useful for downstream machine learning. This work establishes a traceable, data‑driven bridge from synthesis instructions to high‑dimensional surface descriptors, demonstrating for the first time an end‑to‑end pipeline where robotic LbL assembly, versioned AFM processing, and hybrid topological‑chemical feature extraction converge into a single machine‑learning‑ready dataset.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Data driven approach for topological data of polyelectrolytes assembly",
+      "authors": [
+        "Aleksei V. Meshkov",
+        "Olesya V. Khoroshilova",
+        "Vladimir V. Potapov",
+        "Timur A. Aliev",
+        "Anna A. Nikitina",
+        "Dmitrii A. Kozodaev",
+        "Ekaterina V. Skorb"
+      ],
+      "published": "2026-08-19",
+      "venue": "Journal of Materials Science Composites",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "system"
+      ],
+      "score": 8.08
+    },
+    {
+      "id": "doi:10.3390/app16168262",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Robot-Centric Elevation Map Completion with Sensor Geometry-Aware Augmentation and Uncertainty Estimation",
+      "url": "https://doi.org/10.3390/app16168262",
+      "doi": "10.3390/app16168262",
+      "doi_url": "https://doi.org/10.3390/app16168262",
+      "summary": "Robot-centric elevation maps built from onboard sensing are always incomplete: occlusions, a limited field of view, and range limits leave large unobserved regions that traversability analysis and motion planning must still reason about. We present a supervised framework that completes these maps and reports a per-cell uncertainty. Its core is a ray-cone augmentation that removes angular sectors anchored at the sens...",
+      "abstract": "Robot-centric elevation maps built from onboard sensing are always incomplete: occlusions, a limited field of view, and range limits leave large unobserved regions that traversability analysis and motion planning must still reason about. We present a supervised framework that completes these maps and reports a per-cell uncertainty. Its core is a ray-cone augmentation that removes angular sectors anchored at the sensor origin during training; unlike the random masks of image inpainting, these sectors match the coverage gaps of real deployments, such as camera failures or reduced camera configurations. Partial maps generated from four depth cameras along legged-robot trajectories in the TartanGround dataset are paired with dense ground truth, yielding 32,329 samples across five outdoor environments. An encoder–decoder network is trained with a masked β-NLL loss and evaluated with a five-fold leave-one-environment-out protocol. The augmentation lowers the completion error on missing sensor sectors by 8.3 to 9.7%, depending on the sector width, at no measurable cost on uncorrupted partial inputs. The completed maps reach a hole root-mean-square error of 2.86 m, a 45% improvement over the strongest classical interpolation baseline.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Robot-Centric Elevation Map Completion with Sensor Geometry-Aware Augmentation and Uncertainty Estimation",
+      "authors": [
+        "Jozef Goga",
+        "Michal Kovac",
+        "Martin Dekan",
+        "Jarmila Pavlovicova",
+        "Frantisek Duchon"
+      ],
+      "published": "2026-08-19",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "algorithm",
+        "theory"
+      ],
+      "score": 8.0
+    },
+    {
+      "id": "doi:10.1002/rob.70332",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A 3D‐Printed Auxetic Metamaterial Robot for Adaptive Navigation in Pipelines With Complex Geometries",
+      "url": "https://doi.org/10.1002/rob.70332",
+      "doi": "10.1002/rob.70332",
+      "doi_url": "https://doi.org/10.1002/rob.70332",
+      "summary": "ABSTRACT Navigation within complex pipelines in sectors such as construction, mining, and underwater exploration presents significant demands on robotic adaptability and maneuverability. While traditional soft robots achieve such navigation through large material deformations, they face an inherent conflict between deformation capacity and structural rigidity, which hinders the simultaneous attainment of high traver...",
+      "abstract": "ABSTRACT Navigation within complex pipelines in sectors such as construction, mining, and underwater exploration presents significant demands on robotic adaptability and maneuverability. While traditional soft robots achieve such navigation through large material deformations, they face an inherent conflict between deformation capacity and structural rigidity, which hinders the simultaneous attainment of high traversability and strong load‐bearing capacity. To address this limitation, we propose a novel structural framework to overcome existing constraints of pipeline robots through integrating the characteristics of auxetic metamaterials. Firstly, the proposed robot is monolithically fabricated via 3D printing techniques. The mechanical properties of the printing material are characterized through quasi‐static tensile tests. Subsequently, the deformation behavior of the robotic body is analyzed and compared between numerical and experimental methods. Ultimately, the robot's navigation through complex pipelines is simulated and compared with physical pipe‐passing tests. The results demonstrate that during navigation in complex pipelines, the auxetic structure of the robot deforms radially, which releases circumferential pressures. This pressure release thereby reduces motion resistance, enhancing the robot's overall maneuverability. The findings of this work transcend the performance limitations of rigid materials, thereby offering a viable pathway for robotic navigation within the complex piping networks.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A 3D‐Printed Auxetic Metamaterial Robot for Adaptive Navigation in Pipelines With Complex Geometries",
+      "authors": [
+        "Kezhen Shan",
+        "Zewen Gu",
+        "Jianlin Liu"
+      ],
+      "published": "2026-08-19",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "high_impact_venue_watch",
+        "robot_perception_navigation"
+      ],
+      "tags": [
+        "system"
+      ],
+      "score": 7.7
+    },
+    {
+      "id": "doi:10.70917/ijcisim-2026-4922",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Reinforcement Learning-Driven Robotic Swarm Coordination for Precision Agriculture: A Longitudinal Field Study on Yield Optimisation and Operational Autonomy",
+      "url": "https://doi.org/10.70917/ijcisim-2026-4922",
+      "doi": "10.70917/ijcisim-2026-4922",
+      "doi_url": "https://doi.org/10.70917/ijcisim-2026-4922",
+      "summary": "Distributed IoT sensing and multi-agent reinforcement learning (MARL) present largely unexplored synergies for precision agriculture automation, yet no peer-reviewed work has demonstrated their integration in a longitudinal field deployment with heterogeneous robotic fleets. This article reports the design and 18-month field evaluation of a MARL-driven robotic swarm coordination system deployed across a 340-hectare...",
+      "abstract": "Distributed IoT sensing and multi-agent reinforcement learning (MARL) present largely unexplored synergies for precision agriculture automation, yet no peer-reviewed work has demonstrated their integration in a longitudinal field deployment with heterogeneous robotic fleets. This article reports the design and 18-month field evaluation of a MARL-driven robotic swarm coordination system deployed across a 340-hectare multi-crop research farm. The system integrates a 20-robot heterogeneous fleet—12 ground robots and 8 aerial drones—with an 847-node distributed IoT sensor network and a composite agronomic reward formulation for MARL policy training under a centralized training with decentralized execution (CTDE) paradigm. Over 18 months spanning two complete growing seasons, the system achieved a 23.4% mean crop yield improvement (4.2 to 5.2 t/ha; t(3) = 6.17, p = 0.009, Cohen's d = 3.08) and a 67.0% reduction in irrigation water consumption (847 to 280 m³/ha/season; 95% CI: [62.4%, 71.2%]), alongside a 15-fold improvement in pest stress detection lead time. Soil moisture was maintained within ±3.2% of the crop-optimal range 91.4% of the time, producing a water use efficiency of 2.04 kg/m³—a 2.84× improvement over the 0.72 kg/m³ pre-automation baseline. An event-driven adaptive sampling protocol extended median sensor battery life 3.4-fold (from 4.2 to 14.3 months). Swarm coordination efficiency reached 94.7% of urgent tasks completed within the 6-hour agronomic response window, with inter-agent conflict rates declining from 3.2 to 0.8 per 100 operating hours across the first six months through online MARL policy adaptation. Deployment break-even economics are confirmed at month 31 under conservative NPV assumptions. These results establish MARL-orchestrated heterogeneous robotic fleets as a technically and operationally validated approach to precision agriculture automation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Reinforcement Learning-Driven Robotic Swarm Coordination for Precision Agriculture: A Longitudinal Field Study on Yield Optimisation and Operational Autonomy",
+      "authors": [
+        "Sujay Patel"
+      ],
+      "published": "2026-08-19",
+      "venue": "International Journal of Computer Information Systems and Industrial Management Applications",
+      "publisher": "Cerebration Science Publishing Co., Limited",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "robot_learning_embodied_ai",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm",
+        "system"
+      ],
+      "score": 5.7
+    },
+    {
+      "id": "doi:10.1617/s11527-026-03241-y",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "A three-dimensional CFD–DEM model to investigate the fiber orientation and distribution during concrete extrusion in 3D printing",
+      "url": "https://doi.org/10.1617/s11527-026-03241-y",
+      "doi": "10.1617/s11527-026-03241-y",
+      "doi_url": "https://doi.org/10.1617/s11527-026-03241-y",
+      "summary": "Abstract Steel fibers are a promising reinforcement for 3D concrete printing (3DcP), which enhance post-cracking mechanical strength and fracture resistance. However, during the printing process, fibers tend to align with the printing direction, which exacerbates the inherent anisotropy of 3DcP structural components. Accurate prediction of fiber orientation is therefore essential for mitigating this effect. Traditio...",
+      "abstract": "Abstract Steel fibers are a promising reinforcement for 3D concrete printing (3DcP), which enhance post-cracking mechanical strength and fracture resistance. However, during the printing process, fibers tend to align with the printing direction, which exacerbates the inherent anisotropy of 3DcP structural components. Accurate prediction of fiber orientation is therefore essential for mitigating this effect. Traditional numerical approaches, however, are often limited by prohibitive computational costs due to the large number of fibers and the complex fluid–fiber interactions involved. This study proposes a computationally efficient three-dimensional coupled computational fluid dynamics–discrete element method (CFD–DEM) model for the rapid simulation of fiber orientation during the extrusion process. To improve computational efficiency, fluid–fiber interactions are treated using a one-way coupling framework, in which fiber rotation is analytically resolved based on Jeffery’s rotation equations. Validation against experimental measurements demonstrates the reliability of the proposed model. Parametric studies reveal that smaller nozzle openings, longer fiber lengths, and higher printing speeds promote stronger alignment of fibers along the printing direction, whereas the influence of rheological properties is relatively limited. In addition, shear-induced rotation is identified as one of the dominant mechanisms governing fiber orientation during extrusion. Increasing the size of the shear-dominated region near the nozzle exit can therefore improve fiber alignment in the printing direction. Beyond its engineering implications, the proposed modeling framework provides a design-oriented tool for fiber-reinforced 3DcP systems. By enabling the prediction and control of fiber orientation fields, the approach opens opportunities for directionally informed structural design in robotic concrete construction and can be extended to other short-fiber-reinforced material systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A three-dimensional CFD–DEM model to investigate the fiber orientation and distribution during concrete extrusion in 3D printing",
+      "authors": [
+        "Yiqing Yan",
+        "Xiaonan Zhang",
+        "Jiaxu Liu",
+        "Xiangyu Xie"
+      ],
+      "published": "2026-08-19",
+      "venue": "Materials and Structures",
+      "publisher": "Springer Science+Business Media",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 5.48
     },
     {
       "id": "doi:10.1002/advs.77230",
@@ -1458,6 +2495,40 @@
       "score": 8.78
     },
     {
+      "id": "doi:10.1109/tase.2025.3555042",
+      "report_id": "robotics_research_20260824_105552",
+      "title": "Complete Coverage Path Planning for Omnidirectional Self-Reconfigurable Cleaning Robot Using $a$ GBNN",
+      "url": "https://doi.org/10.1109/TASE.2025.3555042",
+      "doi": "10.1109/TASE.2025.3555042",
+      "doi_url": "https://doi.org/10.1109/TASE.2025.3555042",
+      "summary": "Complete coverage path planning (CCPP) is essential for autonomous cleaning robots, particularly in complex and variable environments where traditional, fixed-footprint designs may fall short. This paper presents adaptive Glasius bio-inspired neural network ( $a$ GBNN) approach to CCPP, specifically tailored for an omnidirectional self-reconfigurable cleaning robot (OSCR). The $a$ GBNN method dynamically generates a...",
+      "abstract": "Complete coverage path planning (CCPP) is essential for autonomous cleaning robots, particularly in complex and variable environments where traditional, fixed-footprint designs may fall short. This paper presents adaptive Glasius bio-inspired neural network ( $a$ GBNN) approach to CCPP, specifically tailored for an omnidirectional self-reconfigurable cleaning robot (OSCR). The $a$ GBNN method dynamically generates a complete coverage path by leveraging the ability to change sweeping footprint of the robot (SFR) assisted by reconfiguring brushes design. The sweeping is carried out both longitudinally and laterally, thereby complementing the omnidirectional locomotion with cleaning. Unlike conventional CCPP algorithms that assume a fixed robot footprint, the proposed $a$ GBNN adapts in real-time to spatial and moving obstacles, significantly enhancing coverage efficiency. Experimental and simulation results demonstrate the advantage of the $a$ GBNN approach, in terms of path length, and total time to complete area coverage compared to state-of-the-art methods. Note to Practitioners—Efficient cleaning of large and complex spaces is increasingly essential across industries such as healthcare, hospitality, and manufacturing, where maintaining cleanliness over vast areas or around fixed obstacles is challenging. Traditional cleaning robots are often limited by fixed brush configurations, restricting their adaptability to clean sideways and navigate tight space while cleaning. $a$ GBNN dynamically adjusts the cleaning path based on the OSCR’s configuration, reducing path length and cleaning time. Simulation and experimental results demonstrate that the OSCR, using the $a$ GBNN, significantly outperforms conventional fixed-footprint robots and existing CCPP methods. We compare our work against algorithms, namely, the original works of Glasius bio-inspired neural network (GBNN) without adaptive nature to handle reconfiguration, Depth First Search (DFS), Predator-Prey Coverage Planner (PPCPP), and $\\varepsilon ^{*}$ . It is found that $a$ GBNN achieves more efficient area coverage with up to 21.9% fewer steps, 16.3% less distance traveled, and 17.9% less time required. For industry professionals and practitioners, this means that integrating the OSCR into cleaning operations can lead to improvements in efficiency and cost-effectiveness. However, the implementation requires sophisticated control systems to manage the robot’s reconfiguration. Future research will focus on enhancing the robot’s adaptability and control systems to better handle real-world conditions.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Complete Coverage Path Planning for Omnidirectional Self-Reconfigurable Cleaning Robot Using $a$ GBNN",
+      "authors": [
+        "Lim Yi",
+        "A. A. Hayat",
+        "A. Sang",
+        "Anh Vu Le",
+        "Q. Tang",
+        "M. R. Elara"
+      ],
+      "published": "2026",
+      "venue": "IEEE Transactions on Automation Science and Engineering",
+      "publisher": "",
+      "source": "semantic_scholar",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "system",
+        "reconfiguration"
+      ],
+      "score": 8.78
+    },
+    {
       "id": "doi:10.1109/tase.2026.3675474",
       "report_id": "robotics_research_20260821_164520",
       "title": "Closed-Loop Self-Assembly and Navigation of Magnetic Modular Millibots in Confined Environments",
@@ -1592,6 +2663,76 @@
       "venue": "Smart Materials and Structures",
       "figure_alt": "Main figure for bionic soft robot structural design review",
       "url": "https://doi.org/10.1088/1361-665X/ae3a5f"
+    },
+    {
+      "id": "doi:10.1038/s41467-025-61985-7",
+      "report_id": "robotics_research_20260824_072451",
+      "title": "A collective intelligence model for swarm robotics applications",
+      "url": "https://doi.org/10.1038/s41467-025-61985-7",
+      "doi": "10.1038/s41467-025-61985-7",
+      "doi_url": "https://doi.org/10.1038/s41467-025-61985-7",
+      "summary": "Nature Communications 提出 Swarm Cooperation Model，把元启发式优化与共识理论合并为可作为虚拟优化器和多车控制器的群体协作模型，并在 AUV 污染物定位任务中验证概念。",
+      "abstract": "The paper proposes a swarm cooperation model that can act as both virtual optimizer and vehicle controller by merging meta-heuristic methods with consensus theory. It reports higher or equal success rates than benchmark methods on many low-dimensional landscapes for small swarms, and demonstrates a computational proof of concept for autonomous underwater vehicles localizing contaminants in a dynamic marine environment.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A collective intelligence model for swarm robotics applications",
+      "authors": [
+        "A. Nitti",
+        "M. D. de Tullio",
+        "I. Federico",
+        "G. Carbone"
+      ],
+      "published": "2025-07-17",
+      "venue": "Nature Communications",
+      "publisher": "Springer Nature",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "bioinspired_swarm_algorithms"
+      ],
+      "tags": [
+        "swarm",
+        "algorithm",
+        "distributed",
+        "control",
+        "theory"
+      ],
+      "score": 9.55
+    },
+    {
+      "id": "doi:10.1109/lra.2025.3526560",
+      "report_id": "robotics_research_20260824_072451",
+      "title": "Modular Self-Reconfigurable Continuum Robot for General Purpose Loco-Manipulation",
+      "url": "https://doi.org/10.1109/LRA.2025.3526560",
+      "doi": "10.1109/LRA.2025.3526560",
+      "doi_url": "https://doi.org/10.1109/LRA.2025.3526560",
+      "summary": "IEEE RA-L 提出带连续体骨架和全向对接机构的模块化自重构软连续体机器人，使单模块和多模块系统能够在滚动、爬行、蛇形运动和抓取场景中执行 loco-manipulation。",
+      "abstract": "This paper presents a modular self-reconfigurable soft continuum robotic system featuring a continuum backbone and an omnidirectional docking mechanism. Each module can independently perform loco-manipulation and participate in self-reconfiguration. The authors develop kinetostatic modeling, docking range analysis, reconfiguration procedures, and gaits including rolling, crawling, and snake-like undulation, with hardware demonstrations on single and connected modules.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Modular Self-Reconfigurable Continuum Robot for General Purpose Loco-Manipulation",
+      "authors": [
+        "Yilin Cai",
+        "Haokai Xu",
+        "Yifan Wang",
+        "Desai Chen",
+        "Wojciech Matusik",
+        "Wan Shou",
+        "Yue Chen"
+      ],
+      "published": "2025-02-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "reconfiguration",
+        "structure",
+        "control",
+        "system"
+      ],
+      "score": 9.25
     },
     {
       "id": "consensus:90ffb9422d8456ef9816d185c6ab45d4",
@@ -1842,6 +2983,74 @@
         "system"
       ],
       "score": 8.0
+    },
+    {
+      "id": "doi:10.1126/scirobotics.ado5888",
+      "report_id": "robotics_research_20260824_072451",
+      "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
+      "url": "https://doi.org/10.1126/scirobotics.ado5888",
+      "doi": "10.1126/scirobotics.ado5888",
+      "doi_url": "https://doi.org/10.1126/scirobotics.ado5888",
+      "summary": "Science Robotics 将反事实奖励用于最多 200 个单独激光控制微机器人，通过自动信用分配训练 MARL 策略，实现类似蚁群的集体搬运，并对群体规模、故障个体和噪声保持鲁棒。",
+      "abstract": "This work uses multi-agent reinforcement learning with counterfactual rewards to train individually controlled microrobot swarms for collective transport. The reward scheme assigns credit to individual microrobots by comparing actual group performance against virtual removals. Experiments show that swarms of up to 200 laser-controlled microrobots can transport cargo to target positions and orientations, remain robust to group-size changes, tolerate malfunctioning units, and manipulate multiple objects.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
+      "authors": [
+        "Veit-Lorenz Heuthe",
+        "Emanuele Panizon",
+        "Hongri Gu",
+        "Clemens Bechinger"
+      ],
+      "published": "2024-12-18",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "swarm",
+        "algorithm",
+        "control",
+        "learning",
+        "system"
+      ],
+      "score": 9.6
+    },
+    {
+      "id": "doi:10.1126/scirobotics.adl3546",
+      "report_id": "robotics_research_20260824_072451",
+      "title": "Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
+      "url": "https://doi.org/10.1126/scirobotics.adl3546",
+      "doi": "10.1126/scirobotics.adl3546",
+      "doi_url": "https://doi.org/10.1126/scirobotics.adl3546",
+      "summary": "Science Robotics 提出 HEXEL 六边形电液模块，将高速高应变软执行器、刚性放大结构和磁性可逆机械/电连接集成到可重构模块中，展示跳跃、管道爬行、滚动和主动阵列等形态。",
+      "abstract": "Robots made from reconfigurable modular units feature versatility, cost efficiency, and improved sustainability compared with fixed designs. This work introduces electrically actuated hexagonal electrohydraulic modules with high-speed, high-strain actuation and magnetic reversible mechanical and electrical connections. The modules can be arranged into rapidly reconfigurable robots including high-jumping, pipe-crawling, rolling, active-array, and muscle-like systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Hexagonal electrohydraulic modules for rapidly reconfigurable high-speed robots",
+      "authors": [
+        "Zachary Yoder",
+        "Ellen H. Rumley",
+        "Ingemar Schmidt",
+        "Philipp Rothemund",
+        "Christoph Keplinger"
+      ],
+      "published": "2024-09-18",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "reconfiguration",
+        "structure",
+        "hardware",
+        "system"
+      ],
+      "score": 9.65
     },
     {
       "id": "consensus:7dc27f96507057e19a2c2d6b77205bfa",

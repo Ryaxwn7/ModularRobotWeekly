@@ -37,6 +37,7 @@ def write_report(
     executive_summary: str,
     search_since: date | None = None,
     search_until: date | None = None,
+    source_errors: list[Paper] | None = None,
 ) -> Path:
     report_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.now()
@@ -65,6 +66,22 @@ def write_report(
             content.append(paper_markdown(paper, index))
     else:
         content.append("No papers passed the configured threshold.")
+    content.extend(
+        [
+            "",
+            "## Source Diagnostics",
+            "",
+        ]
+    )
+    if source_errors:
+        for error in source_errors:
+            blocking = bool(error.raw.get("blocking", True))
+            content.append(
+                f"- {'BLOCKING' if blocking else 'WARNING'} | {error.source} | "
+                f"{error.raw.get('request', error.title)} | {error.abstract}"
+            )
+    else:
+        content.append("- No source errors.")
     content.extend(
         [
             "",

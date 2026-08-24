@@ -3,6 +3,7 @@ import tempfile
 import unittest
 from datetime import date
 from pathlib import Path
+from urllib.error import HTTPError
 from unittest.mock import patch
 
 from daily_research_agent.models import Paper
@@ -30,6 +31,13 @@ class SuccessfulSource:
 class FailingSource(SuccessfulSource):
     def search(self, query: str, since: date, until: date, limit: int):
         raise RuntimeError("temporary source failure")
+
+
+class RateLimitedSource(SuccessfulSource):
+    name = "semantic_scholar"
+
+    def search(self, query: str, since: date, until: date, limit: int):
+        raise HTTPError("https://example.test", 429, "rate limited", {}, None)
 
 
 class TemplateSummarizer:
@@ -82,10 +90,29 @@ class PipelineCursorTests(unittest.TestCase):
 
             self.assertFalse(failed.cursor_advanced)
             self.assertGreater(failed.source_error_count, 0)
+            self.assertGreater(failed.blocking_source_error_count, 0)
             self.assertEqual(
                 json.loads(cursor_path.read_text(encoding="utf-8"))["last_successful_run"],
                 first_cursor["last_successful_run"],
             )
+
+    def test_optional_rate_limit_warns_without_blocking_cursor(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = self._config()
+            config["sources"] = {"semantic_scholar": {"required": False}}
+            pipeline = ResearchPipeline(config, root)
+            with (
+                patch("daily_research_agent.pipeline.build_sources", return_value=[RateLimitedSource()]),
+                patch("daily_research_agent.pipeline.build_summarizer", return_value=TemplateSummarizer()),
+            ):
+                result = pipeline.run()
+
+            self.assertTrue(result.cursor_advanced)
+            self.assertEqual(result.source_error_count, 1)
+            self.assertEqual(result.blocking_source_error_count, 0)
+            report = Path(result.report_path).read_text(encoding="utf-8")
+            self.assertIn("WARNING | semantic_scholar", report)
 
 
 if __name__ == "__main__":

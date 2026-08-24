@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -13,20 +14,41 @@ from .models import Paper
 
 
 USER_AGENT = "DailyResearchAgent/0.1 (mailto:research-agent@example.local)"
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+
+
+def _retry_delay(exc: Exception, attempt: int) -> float:
+    if isinstance(exc, urllib.error.HTTPError):
+        retry_after = exc.headers.get("Retry-After") if exc.headers else None
+        if retry_after and retry_after.isdigit():
+            return min(float(retry_after), 5.0)
+    return min(float(2**attempt), 5.0)
+
+
+def _open_with_retry(request: urllib.request.Request, timeout: int) -> bytes:
+    attempts = 5
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read()
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+            retryable = not isinstance(exc, urllib.error.HTTPError) or exc.code in RETRYABLE_HTTP_CODES
+            if not retryable or attempt == attempts - 1:
+                raise
+            time.sleep(_retry_delay(exc, attempt))
+    raise RuntimeError("request retry loop ended unexpectedly")
 
 
 def fetch_json(url: str, headers: dict[str, str] | None = None, timeout: int = 30) -> dict[str, Any]:
     request = urllib.request.Request(url, headers=headers or {"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        import json
+    import json
 
-        return json.loads(response.read().decode("utf-8"))
+    return json.loads(_open_with_retry(request, timeout).decode("utf-8"))
 
 
 def fetch_text(url: str, headers: dict[str, str] | None = None, timeout: int = 30) -> str:
     request = urllib.request.Request(url, headers=headers or {"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read().decode("utf-8")
+    return _open_with_retry(request, timeout).decode("utf-8")
 
 
 def strip_markup(value: str) -> str:
@@ -245,18 +267,18 @@ class OpenAlexSource(SourceClient):
                 (authorship.get("author") or {}).get("display_name", "")
                 for authorship in item.get("authorships", [])
             ]
-            topics = [topic.get("display_name", "") for topic in item.get("topics", [])]
-            keywords = [keyword.get("display_name", "") for keyword in item.get("keywords", [])]
+            topics = [(topic.get("display_name") or "") for topic in item.get("topics", [])]
+            keywords = [(keyword.get("display_name") or "") for keyword in item.get("keywords", [])]
             yield Paper(
                 title=title,
                 abstract=abstract_from_inverted_index(item.get("abstract_inverted_index")),
                 authors=[author for author in authors if author],
                 year=item.get("publication_year"),
                 published=item.get("publication_date") or "",
-                venue=source.get("display_name", ""),
-                publisher=source.get("host_organization_name", ""),
+                venue=source.get("display_name") or "",
+                publisher=source.get("host_organization_name") or "",
                 doi=doi,
-                url=doi and f"https://doi.org/{doi}" or location.get("landing_page_url", ""),
+                url=doi and f"https://doi.org/{doi}" or (location.get("landing_page_url") or ""),
                 source=self.name,
                 raw={
                     "openalex_id": item.get("id", ""),

@@ -48,3 +48,4 @@ class PipelineResult:
     search_until: str
     cursor_advanced: bool
     source_error_count: int
+    blocking_source_error_count: int

@@ -7,8 +7,8 @@ from typing import Any
 from .models import Paper
 
 
-def contains(text: str, phrase: str) -> bool:
-    return phrase.lower() in text.lower()
+def contains(text: str | None, phrase: str | None) -> bool:
+    return (phrase or "").lower() in (text or "").lower()
 
 
 def normalized_venue(value: str) -> str:

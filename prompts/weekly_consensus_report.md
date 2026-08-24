@@ -35,28 +35,32 @@ Topic rotation:
 - If the previous report had few biomimetic or swarm-algorithm papers, use search 5 instead of one lower-yield query.
 - If the local public-source report shows a clear spike in another topic, replace one query with the most relevant recommended query, but still stay within 2 searches.
 
-After Consensus search:
+Execution order:
 
 1. Run the local project command:
    `python -m daily_research_agent --config config.weekly.json`
-   - Keep the configured 21-day overlapping lookback so delayed indexing, missed runs, and temporary source failures are backfilled automatically.
+   - Let the agent resume from its successful cursor with the configured overlap. Never pass `--days`.
    - Search arXiv, Crossref, Semantic Scholar, and OpenAlex, including the configured high-impact journal watch list.
-2. Merge the Consensus findings into `site/data/papers.json`, preserving existing high-quality items and updating or inserting new papers by stable id or DOI.
+2. Inspect the command output before doing anything else.
+   - Continue only when it prints `Cursor advanced: yes` and `Blocking source errors: 0`.
+   - If the cursor did not advance, stop immediately. Do not call Consensus, do not edit `site/data/papers.json`, do not update `consensus_usage.json`, and do not publish.
+3. Only after the public-source run succeeds, apply the Consensus quota policy and run at most two Consensus searches.
+4. Merge the Consensus findings into `site/data/papers.json`, preserving existing high-quality items and updating or inserting new papers by stable id or DOI.
    - Treat Consensus only as a discovery source. Never use a `consensus.app` URL as the paper's original link.
    - Resolve and verify the version-of-record DOI from Crossref or the publisher when available, then store `url` and `doi_url` as `https://doi.org/<DOI>`.
    - For papers without a DOI, use the official arXiv abstract page or the publisher's article page. If no original source can be verified, leave `url` empty.
-3. Combine the local report with the Consensus findings.
-4. Update `consensus_usage.json` with the month, date, purpose, and number of Consensus search calls used.
-5. Prioritize Science Robotics, Nature, IEEE RA-L, IEEE T-RO, IJRR, Autonomous Robots, Advanced Intelligent Systems, and Elsevier robotics venues.
-6. Downgrade low-signal venues, generic reviews, and papers without clear robotics validation.
-7. Write a concise Chinese weekly report with:
+5. Combine the local report with the Consensus findings.
+6. Update `consensus_usage.json` with the month, date, purpose, and number of Consensus search calls used.
+7. Prioritize Science Robotics, Nature, IEEE RA-L, IEEE T-RO, IJRR, Autonomous Robots, Advanced Intelligent Systems, and Elsevier robotics venues.
+8. Downgrade low-signal venues, generic reviews, and papers without clear robotics validation.
+9. Write a concise Chinese weekly report with:
    - executive summary
    - top 8-12 papers
    - algorithm / structure / system / theory tags
    - why each paper matters
    - links and citation metadata
    - next-week tracking suggestions
-8. Publish the updated local Codex results to GitHub by running:
+10. Publish the updated local Codex results to GitHub by running:
    `powershell -ExecutionPolicy Bypass -File .\scripts\publish_site_data.ps1 -Message "Update site data from Codex weekly report"`
 
 Important: GitHub Actions must only deploy the existing `site/` directory. Do not rely on GitHub Actions to run the paper search, because it cannot access the Codex Consensus connector.

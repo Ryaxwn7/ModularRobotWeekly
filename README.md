@@ -46,7 +46,8 @@ python -m daily_research_agent --config config.weekly.json
 
 程序优先读取 `outputs/state/collection_cursor.json` 中的上次成功时间。如果本地游标不存在，
 则读取 `site/data/papers.json` 的 `updated_at`；两者都不存在时，才使用 21 天首次回采窗口。
-只有所有数据源均成功完成时才会更新网站、历史库和游标；失败区间会在下次运行时重试。
+只有所有必需数据源均成功完成时才会更新网站、历史库和游标；失败区间会在下次运行时重试。
+主采集源错误会阻止游标推进；无 API key 的 Semantic Scholar 作为补充来源，其限流会记录为告警并在本轮熔断，但不会阻止 Crossref、OpenAlex 和 arXiv 的成功结果发布。每份报告的 `Source Diagnostics` 会保留来源、查询和异常信息。
 
 报告输出目录：
 

@@ -81,17 +81,21 @@
   ],
   "sources": {
     "arxiv": {
-      "enabled": true
+      "enabled": true,
+      "required": true
     },
     "crossref": {
       "enabled": true,
+      "required": true,
       "mailto": ""
     },
     "semantic_scholar": {
-      "enabled": true
+      "enabled": true,
+      "required": false
     },
     "openalex": {
       "enabled": true,
+      "required": true,
       "mailto": ""
     },
     "ieee": {

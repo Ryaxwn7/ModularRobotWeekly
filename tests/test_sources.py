@@ -1,8 +1,14 @@
 import unittest
 from datetime import date
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
+from urllib.error import HTTPError
 
-from daily_research_agent.sources import CrossrefSource, OpenAlexSource, abstract_from_inverted_index
+from daily_research_agent.sources import (
+    CrossrefSource,
+    OpenAlexSource,
+    abstract_from_inverted_index,
+    fetch_json,
+)
 
 
 class SourceTests(unittest.TestCase):
@@ -78,8 +84,61 @@ class SourceTests(unittest.TestCase):
         self.assertEqual(papers[0].abstract, "Robot learning")
         self.assertEqual(papers[0].venue, "Nature Machine Intelligence")
 
+    def test_openalex_null_venue_fields_are_normalized(self) -> None:
+        response = {
+            "results": [
+                {
+                    "id": "https://openalex.org/W2",
+                    "doi": None,
+                    "title": "A modular robot with adaptive locomotion",
+                    "publication_year": 2026,
+                    "publication_date": "2026-07-12",
+                    "primary_location": {
+                        "landing_page_url": None,
+                        "source": {"display_name": None, "host_organization_name": None},
+                    },
+                    "authorships": [],
+                    "abstract_inverted_index": {},
+                    "open_access": {},
+                    "topics": [{"display_name": None}],
+                    "keywords": [{"display_name": None}],
+                    "cited_by_count": 0,
+                    "type": "article",
+                }
+            ]
+        }
+
+        with patch("daily_research_agent.sources.fetch_json", return_value=response):
+            paper = list(
+                OpenAlexSource().search(
+                    "modular robot", date(2026, 7, 1), date(2026, 7, 31), 5
+                )
+            )[0]
+
+        self.assertEqual(paper.venue, "")
+        self.assertEqual(paper.publisher, "")
+        self.assertEqual(paper.url, "")
+
     def test_abstract_from_inverted_index_handles_missing_values(self) -> None:
         self.assertEqual(abstract_from_inverted_index(None), "")
+
+    def test_fetch_json_retries_rate_limit(self) -> None:
+        error = HTTPError("https://example.test", 429, "rate limited", {}, None)
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = b'{"ok": true}'
+
+        with (
+            patch(
+                "daily_research_agent.sources.urllib.request.urlopen",
+                side_effect=[error, error, response],
+            ) as mocked_open,
+            patch("daily_research_agent.sources.time.sleep") as mocked_sleep,
+        ):
+            data = fetch_json("https://example.test")
+
+        self.assertEqual(data, {"ok": True})
+        self.assertEqual(mocked_open.call_count, 3)
+        self.assertEqual(mocked_sleep.call_count, 2)
 
 
 if __name__ == "__main__":
