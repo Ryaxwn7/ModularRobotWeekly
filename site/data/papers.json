@@ -1,10 +1,620 @@
 {
-  "updated_at": "2026-08-24T23:26:32",
+  "updated_at": "2026-08-27T15:30:31",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
+      "id": "doi:10.1126/scirobotics.aed4106",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Robot in a crib: How a playing robot helps us understand sensorimotor contingency learning",
+      "url": "https://doi.org/10.1126/scirobotics.aed4106",
+      "doi": "10.1126/scirobotics.aed4106",
+      "doi_url": "https://doi.org/10.1126/scirobotics.aed4106",
+      "summary": "Learning sensorimotor contingencies—that is, the link between one’s actions and their sensory effects—is fundamental to developing body knowledge, understanding causality, and developing a sense of agency. In developmental psychology, this process is classically studied using the mobile paradigm, where infants learn that movement of a limb causes motion of a connected mobile. To expand our understanding of how infan...",
+      "abstract": "Learning sensorimotor contingencies—that is, the link between one’s actions and their sensory effects—is fundamental to developing body knowledge, understanding causality, and developing a sense of agency. In developmental psychology, this process is classically studied using the mobile paradigm, where infants learn that movement of a limb causes motion of a connected mobile. To expand our understanding of how infants learn this, we tested an embodied computational model that learns through two biologically inspired mechanisms: prediction and curiosity. Implemented on the child-sized iCub humanoid robot interacting with a mobile, the model detected sensorimotor contingencies across several experimental conditions using a variety of movement strategies. Our findings suggest that contingency learning cannot be captured by a single behavioral metric, such as the amount of movement, but instead emerges through a spectrum of exploratory behaviors. Analysis of the robot’s internal activity reveals that these behaviors emerge from the dynamic trade-off between prediction and curiosity—between exploitation and exploration. Our work provides a biologically motivated, physically embodied model of sensorimotor interaction that connects theories of infant learning with robotic implementations. The results allow us to generate testable hypotheses for developmental research and to inform the design of autonomous learning systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Robot in a crib: How a playing robot helps us understand sensorimotor contingency learning",
+      "authors": [
+        "Josua Spisak",
+        "Sergiu Tcaci Popescu",
+        "Lukas Rustler",
+        "Stefan Wermter",
+        "J. Kevin O’Regan",
+        "Matej Hoffmann"
+      ],
+      "published": "2026-08-26",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "high_impact_venue_watch",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "embodied_ai",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 9.9
+    },
+    {
+      "id": "doi:10.1126/scirobotics.adx8924",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "BeyondMimic: From motion tracking to versatile humanoid control via guided diffusion",
+      "url": "https://doi.org/10.1126/scirobotics.adx8924",
+      "doi": "10.1126/scirobotics.adx8924",
+      "doi_url": "https://doi.org/10.1126/scirobotics.adx8924",
+      "summary": "The humanlike form of humanoid robots uniquely positions them to achieve the agility and versatility in motor skills that humans have. Learning from human demonstrations offers a scalable approach to acquiring these capabilities. However, prior works either produced unnatural motions or relied on motion-specific tuning to achieve satisfactory naturalness. Furthermore, these methods are often motion or goal specific,...",
+      "abstract": "The humanlike form of humanoid robots uniquely positions them to achieve the agility and versatility in motor skills that humans have. Learning from human demonstrations offers a scalable approach to acquiring these capabilities. However, prior works either produced unnatural motions or relied on motion-specific tuning to achieve satisfactory naturalness. Furthermore, these methods are often motion or goal specific, lacking the versatility to compose diverse skills, especially when solving unseen tasks. We present BeyondMimic, a framework that scales to diverse motions and carries the versatility to compose them seamlessly in tackling unseen downstream tasks. A compact motion tracking formulation enables mastery of a wide range of highly agile behaviors, including aerial cartwheels, spin kicks, flip kicks, and sprinting, with a single setup and shared hyperparameters, all while achieving humanlike performance. Moving beyond the mere imitation of existing motions, we propose a unified latent diffusion model that empowers versatile goal specification, seamless task switching, and dynamic composition of these agile behaviors. Leveraging classifier guidance, a diffusion-specific technique for test-time optimization toward unseen objectives, our model extended its capability to solve downstream tasks never encountered during training, including motion inpainting, joystick teleoperation, and obstacle avoidance, and transferred these skills zero-shot to real hardware. Together, these components enable scalable acquisition of humanlike motor skills from human motion and motion synthesis that generalizes and adapts beyond the training setup.",
+      "figure_url": "",
+      "figure_alt": "Main figure for BeyondMimic: From motion tracking to versatile humanoid control via guided diffusion",
+      "authors": [
+        "Qiayuan Liao",
+        "Takara E. Truong",
+        "Xiaoyu Huang",
+        "Yuman Gao",
+        "Guy Tevet",
+        "Koushil Sreenath",
+        "C. Karen Liu"
+      ],
+      "published": "2026-08-26",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "high_impact_venue_watch"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "theory"
+      ],
+      "score": 9.66
+    },
+    {
+      "id": "doi:10.1126/scirobotics.aec7205",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Convergent binocular stereo: Depth perception for humanoid robot vision",
+      "url": "https://doi.org/10.1126/scirobotics.aec7205",
+      "doi": "10.1126/scirobotics.aec7205",
+      "doi_url": "https://doi.org/10.1126/scirobotics.aec7205",
+      "summary": "The design of robotic binocular camera systems has been inspired by human vision, as has their use in humanoid robots. One aspect of this inspiration has yet to play a major role, namely, that humans determine depth using a convergent binocular imaging geometry with both eyes pointing at the same location. Although some robot heads have the functionality to use vergence and version movements and thus alter binocular...",
+      "abstract": "The design of robotic binocular camera systems has been inspired by human vision, as has their use in humanoid robots. One aspect of this inspiration has yet to play a major role, namely, that humans determine depth using a convergent binocular imaging geometry with both eyes pointing at the same location. Although some robot heads have the functionality to use vergence and version movements and thus alter binocular imaging geometry, a method to exploit it for depth computation has not been explored. Even though to an observer, their motions and appearance might resemble that of humans, in detail, the resemblance to the motions required for actual convergent depth computation is not seen. To bridge this gap, we present convergent binocular stereo (CBS), a stereo algorithm designed to provide a foundation for purposeful binocular computations under the humanoid constraint, intended for active binocular robots. CBS computes horizontal and vertical disparities using a coarse-to-fine refinement strategy with Gabor-filtered responses. We also introduce the Convergent Binocular Stereo–BenchMark (CBS-BM), a convergent, natural image dataset containing 49 scenes with ground-truth horizontal disparity collected on a four-degrees-of-freedom robotic system. Our evaluation, a quantitative comparison between parallel and convergent stereo systems, shows that CBS is broadly competitive with state-of-the-art parallel methods, even outperforming them in scenes with repeated patterns and in mean horizontal disparity and depth error over all scenes. Although not intended to replace parallel stereo where humanlike behavior is unnecessary, CBS enables functionally realistic depth computation for humanoid robotic heads.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Convergent binocular stereo: Depth perception for humanoid robot vision",
+      "authors": [
+        "Mingshi Chi",
+        "John K. Tsotsos"
+      ],
+      "published": "2026-08-26",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "high_impact_venue_watch",
+        "modular_reconfigurable_robotics",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "perception",
+        "system"
+      ],
+      "score": 9.3
+    },
+    {
+      "id": "doi:10.1126/scirobotics.aek7970",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "From acrobatics to generality: Humanoid robots at an inflection point",
+      "url": "https://doi.org/10.1126/scirobotics.aek7970",
+      "doi": "10.1126/scirobotics.aek7970",
+      "doi_url": "https://doi.org/10.1126/scirobotics.aek7970",
+      "summary": "This special issue examines what it takes to move humanoids beyond task-specific demonstrations toward dependable generality.",
+      "abstract": "This special issue examines what it takes to move humanoids beyond task-specific demonstrations toward dependable generality.",
+      "figure_url": "",
+      "figure_alt": "Main figure for From acrobatics to generality: Humanoid robots at an inflection point",
+      "authors": [
+        "Hae-Won Park"
+      ],
+      "published": "2026-08-26",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "high_impact_venue_watch"
+      ],
+      "tags": [],
+      "score": 8.9
+    },
+    {
+      "id": "doi:10.1002/rob.70333",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Design and Optimization of a Deep Sea Bionic Robot Fish Based on Phase Change Actuator",
+      "url": "https://doi.org/10.1002/rob.70333",
+      "doi": "10.1002/rob.70333",
+      "doi_url": "https://doi.org/10.1002/rob.70333",
+      "summary": "ABSTRACT In this study, a bionic fin drive system suitable for deep‐sea environments is proposed. The system heats the phase change material (PCM) through the heat‐conducting medium and converts the expansion generated during the phase change process into hydraulic energy. Finally, the tail fin swing and pectoral fin expansion are realized through a novel motion conversion device, which offers the advantages of simp...",
+      "abstract": "ABSTRACT In this study, a bionic fin drive system suitable for deep‐sea environments is proposed. The system heats the phase change material (PCM) through the heat‐conducting medium and converts the expansion generated during the phase change process into hydraulic energy. Finally, the tail fin swing and pectoral fin expansion are realized through a novel motion conversion device, which offers the advantages of simple structure and low cost. In addition, the effects of the heat transfer medium and the thickness of the fish body outside the phase change actuator (PCA) on the output performance of the fin PCA were analyzed. The flexible adjustment of the tail fin's swinging characteristics can be realized by adjusting the voltage and duty cycle applied to the PCA heating sheet. A bionic fish prototype equipped with a phase‐change drive system has been successfully fabricated. The experimental results indicate that the robot can swim straight at a speed of 36 mm/s and complete a quick turn with a radius of 3.2 BL. Through the simulation of deep‐sea environment experiments, the robot can still achieve flexible underwater movement under water pressure of up to 110 MPa without bulky pressure‐resistant devices. These excellent performances demonstrate the reliable movement ability of the bionic robotic fish in the extreme deep‐sea environment.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design and Optimization of a Deep Sea Bionic Robot Fish Based on Phase Change Actuator",
+      "authors": [
+        "Gangda Liang",
+        "Dayong Ning",
+        "Zhilei Liu",
+        "Fengrui Zhang",
+        "Ming Yi",
+        "Dejin Cai",
+        "Lincong Lan",
+        "Jiaoyi Hou"
+      ],
+      "published": "2026-08-26",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "high_impact_venue_watch"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "system"
+      ],
+      "score": 8.38
+    },
+    {
+      "id": "doi:10.1002/rob.70341",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Reinforcement Learning‐Enhanced Path‐Planning Method for Orchard Robots",
+      "url": "https://doi.org/10.1002/rob.70341",
+      "doi": "10.1002/rob.70341",
+      "doi_url": "https://doi.org/10.1002/rob.70341",
+      "summary": "ABSTRACT Path planning for orchard robots is one of the most fundamental technologies of smart agriculture. Introducing reinforcement learning (RL) into path planning has become a promising approach at the frontier of robotics research, addressing the problem that existing methods primarily focus on the optimal path at the immediate moment, lack a holistic perspective, and fail to achieve optimal overall performance...",
+      "abstract": "ABSTRACT Path planning for orchard robots is one of the most fundamental technologies of smart agriculture. Introducing reinforcement learning (RL) into path planning has become a promising approach at the frontier of robotics research, addressing the problem that existing methods primarily focus on the optimal path at the immediate moment, lack a holistic perspective, and fail to achieve optimal overall performance. However, the sim‐to‐real issue presents a critical challenge for implementing RL in orchard robots. To solve this issue, an RL‐enhanced path‐planning method is proposed for orchard robots. The proposed method avoids directly using RL to generate a path, thereby eliminating the primary source of the sim‐to‐real problem in RL. In the proposed method, multiple candidate paths are computed using a Bézier curve and are physically navigable for robots, leveraging LiDAR to dynamically update the environmental map. Meanwhile, a comprehensive reward function is designed for RL to achieve optimal path planning. Subsequently, RL is employed to select the optimal path among multiple candidate paths, thereby avoiding the sim‐to‐real problem in complex orchard environments. Finally, validation tests are carried out in both simulation and field environments. The experimental results show that the proposed method effectively addresses the sim‐to‐real challenges of RL and achieves optimal path planning.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Reinforcement Learning‐Enhanced Path‐Planning Method for Orchard Robots",
+      "authors": [
+        "Wenbin Tian",
+        "Haibo Bao",
+        "Du Chen",
+        "Yuxing Chu",
+        "Ruidong Yan",
+        "Jianping Li",
+        "Zixuan Tang",
+        "Duan Li"
+      ],
+      "published": "2026-08-26",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "high_impact_venue_watch",
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "algorithm",
+        "system"
+      ],
+      "score": 8.3
+    },
+    {
+      "id": "doi:10.1002/rob.70328",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Visual Point‐Line and Inertial Measurement Unit Fusion‐Based Simultaneous Localization and Mapping Algorithm for Robotic Grinding of Wind Turbine Blades",
+      "url": "https://doi.org/10.1002/rob.70328",
+      "doi": "10.1002/rob.70328",
+      "doi_url": "https://doi.org/10.1002/rob.70328",
+      "summary": "ABSTRACT Various drawbacks exist in traditional visual SLAM methods for wind turbine blade polishing scenarios. Insufficient feature extraction, unstable matching, and reduced positioning accuracy are easily produced. These issues are triggered by weak textures, strong reflections, and illumination fluctuations. A point‐line fused visual‐inertial positioning method named EPL‐VINS is therefore proposed. FAST feature...",
+      "abstract": "ABSTRACT Various drawbacks exist in traditional visual SLAM methods for wind turbine blade polishing scenarios. Insufficient feature extraction, unstable matching, and reduced positioning accuracy are easily produced. These issues are triggered by weak textures, strong reflections, and illumination fluctuations. A point‐line fused visual‐inertial positioning method named EPL‐VINS is therefore proposed. FAST feature points and EDLines feature lines are adopted in the visual front end of this method. An adaptive threshold feature detection strategy and a texture complexity‐based feature distribution optimization mechanism are put forward, so that the capability of effective feature extraction is strengthened and the spatial distribution of features is optimized. At the back end, a tightly coupled optimization framework based on sliding window is constructed. Marginal prior information, IMU pre‐integration residuals, visual point‐line feature residuals, and loop closure constraints are all integrated into the optimized objective function to realize the joint estimation of visual and inertial information. Meanwhile, the LM optimization algorithm is improved by the dynamic update strategy of damping factors, and the convergence speed and numerical stability of back‐end nonlinear optimization are enhanced. On the public EuRoC data set, an average positioning accuracy improvement of 22.3% is achieved by EPL‐VINS compared with VINS‐Mono. Higher positioning accuracy and environmental adaptability are also exhibited by EPL‐VINS in actual factory scenarios for wind turbine blade polishing. High‐precision robot positioning is realized by the proposed method in complex industrial environments.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Visual Point‐Line and Inertial Measurement Unit Fusion‐Based Simultaneous Localization and Mapping Algorithm for Robotic Grinding of Wind Turbine Blades",
+      "authors": [
+        "Yu Fang",
+        "Liwen Lu",
+        "Jintao Xu",
+        "Weiwei Gao"
+      ],
+      "published": "2026-08-26",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "high_impact_venue_watch",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "perception",
+        "structure",
+        "theory"
+      ],
+      "score": 8.08
+    },
+    {
+      "id": "doi:10.1002/rob.70340",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Vision‐Language‐Action Models for Embodied Artificial Intelligence: A Comprehensive Survey",
+      "url": "https://doi.org/10.1002/rob.70340",
+      "doi": "10.1002/rob.70340",
+      "doi_url": "https://doi.org/10.1002/rob.70340",
+      "summary": "ABSTRACT Embodied artificial intelligence (Embodied AI) aims to develop agents that can perceive, reason, and act through continuous interaction with physical world. To achieve this goal, agents must not only understand visual scenes and language instructions, but also transform multimodal information into executable actions. This requirement calls for models that can integrate perception, semantic reasoning, and ac...",
+      "abstract": "ABSTRACT Embodied artificial intelligence (Embodied AI) aims to develop agents that can perceive, reason, and act through continuous interaction with physical world. To achieve this goal, agents must not only understand visual scenes and language instructions, but also transform multimodal information into executable actions. This requirement calls for models that can integrate perception, semantic reasoning, and action generation within a unified decision‐making framework. Recent advances in large language models (LLMs) have provided important technical foundations for this integration, leading to emergence of vision‐language‐action (VLA) models as a central paradigm for embodied systems. Although existing surveys have reviewed Embodied AI from perspectives such as robotic systems, simulation environments and task settings, few have systematically analyzed action‐generation mechanisms of VLA models. This limitation makes it difficult to distinguish VLA architectures. To address this gap, we provide a comprehensive review of VLA models for Embodied AI from an action‐generation perspective. We first formulate VLA models as embodied decision‐making systems that map visual observations and language instructions to action sequences through interaction with dynamic environments. Building on this formulation, we review historical evolution of VLA models. Furthermore, we propose an action‐generation‐centered taxonomy that categorizes VLA models into three paradigms: direct policy learning, generative action modeling, and reasoning‐guided modeling. For each paradigm, we analyze representative methods, action‐generation mechanisms, advantages and limitations, thereby providing a coherent framework for comparing diverse VLA architectures. Beyond model architectures, we summarize key resources and benchmarking settings and discuss recent applications. Finally, we identify major challenges and future directions. By organizing VLA models around the central problem of action generation, we aim to provide a structured technical map for future research toward more general, reliable, and physically grounded Embodied AI.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Vision‐Language‐Action Models for Embodied Artificial Intelligence: A Comprehensive Survey",
+      "authors": [
+        "Ning Xiong",
+        "Mingle Xu",
+        "Wei Chen",
+        "Jianming Liu",
+        "Chuanlei Zhang",
+        "Yuan Wang",
+        "Jucheng Yang"
+      ],
+      "published": "2026-08-26",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "high_impact_venue_watch",
+        "robot_learning_embodied_ai"
+      ],
+      "tags": [
+        "algorithm",
+        "embodied_ai",
+        "perception",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 8.08
+    },
+    {
+      "id": "doi:10.1038/s44460-026-00126-z",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "A robotic skin that feels fast and thinks deep",
+      "url": "https://doi.org/10.1038/s44460-026-00126-z",
+      "doi": "10.1038/s44460-026-00126-z",
+      "doi_url": "https://doi.org/10.1038/s44460-026-00126-z",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A robotic skin that feels fast and thinks deep",
+      "authors": [
+        "Wenzhuo Wu"
+      ],
+      "published": "2026-08-26",
+      "venue": "Nature Sensors",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [],
+      "score": 7.5
+    },
+    {
+      "id": "doi:10.3390/app16178463",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "DMOPP: A Deformation-Informed Multi-Objective Path Planning Method for Multi-Seam Robotic Welding",
+      "url": "https://doi.org/10.3390/app16178463",
+      "doi": "10.3390/app16178463",
+      "doi_url": "https://doi.org/10.3390/app16178463",
+      "summary": "Robotic multi-seam welding path planning for box-type thin-walled structures faces significant challenges due to multiple constraints, multiple objectives, and its high-dimensional discrete combinatorial nature. To address these issues, a deformation-informed multi-objective path planning method for multi-seam welding (DMOPP) is proposed, comprising a multi-objective formulation and an optimization algorithm. At the...",
+      "abstract": "Robotic multi-seam welding path planning for box-type thin-walled structures faces significant challenges due to multiple constraints, multiple objectives, and its high-dimensional discrete combinatorial nature. To address these issues, a deformation-informed multi-objective path planning method for multi-seam welding (DMOPP) is proposed, comprising a multi-objective formulation and an optimization algorithm. At the modeling level, welding path length and maximum structural deformation are defined as the optimization objectives. Collision-free path planning is used to calculate the path length, while an XGBoost-based surrogate model is developed to establish the mapping between welding path variables and maximum deformation, enabling rapid deformation prediction without computationally expensive finite element simulations. At the optimization level, a modified discrete artificial lemming algorithm (MODALA) is proposed to improve global search capability and convergence stability. Experimental results show that MODALA outperforms the comparison algorithms on benchmark functions and discrete optimization problems, demonstrating its superior optimization performance. The XGBoost surrogate model achieves an R2 of 0.8447 and an RMSE of 0.0841 mm, indicating good predictive accuracy. In welding path planning simulations, the proposed method effectively reduces the path length and welding deformation while achieving a favorable trade-off between path efficiency and structural quality. Robotic welding experiments further validate its practical effectiveness.",
+      "figure_url": "",
+      "figure_alt": "Main figure for DMOPP: A Deformation-Informed Multi-Objective Path Planning Method for Multi-Seam Robotic Welding",
+      "authors": [
+        "Tie Zhang",
+        "Canlin Peng",
+        "Weihua Chen",
+        "Yanbiao Zou"
+      ],
+      "published": "2026-08-25",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "bioinspired_swarm_algorithms"
+      ],
+      "tags": [
+        "algorithm",
+        "system",
+        "theory",
+        "perception"
+      ],
+      "score": 8.58
+    },
+    {
+      "id": "doi:10.47852/bonviewaaes62028258",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Asymmetric Configuration for a Four-Motor Omnidirectional Robot",
+      "url": "https://doi.org/10.47852/bonviewaaes62028258",
+      "doi": "10.47852/bonviewaaes62028258",
+      "doi_url": "https://doi.org/10.47852/bonviewaaes62028258",
+      "summary": "Four-wheel omnidirectional robots are commonly designed under the assumption of symmetric wheel placement. However, compact platforms and mechanically constrained layouts often require asymmetric configurations, where front and rear wheel angles differ. In such cases, symmetric inverse-kinematics formulations may introduce non-negligible errors. This paper presents an explicit analytical formulation for inverse kine...",
+      "abstract": "Four-wheel omnidirectional robots are commonly designed under the assumption of symmetric wheel placement. However, compact platforms and mechanically constrained layouts often require asymmetric configurations, where front and rear wheel angles differ. In such cases, symmetric inverse-kinematics formulations may introduce non-negligible errors. This paper presents an explicit analytical formulation for inverse kinematics in four-wheel omnidirectional robots with arbitrary wheel angles 𝛼 and β. The derivation is based on a structured linear-algebraic treatment that avoids symmetry assumptions and yields closed-form expressions for motor velocities. The kinematic error introduced by applying symmetric-case equations to asymmetric layouts is analytically quantified. Experimental validation was conducted on a four-wheel omnidirectional robot configured with 𝛼 = 55° and β = 45°. Two representative steering angles (15° and 30°) were tested with repeated runs per condition. The proposed formulation showed improved directional accuracy compared to standard symmetric RoboCup-based equations. At 15°, the mean angular error was significantly reduced, while at 30°, the symmetric approximation exhibited a large systematic deviation, with heading errors exceeding 16° on average. Although the current validation is limited to selected configurations, the results demonstrate that asymmetric geometries require dedicated kinematic treatment to ensure motion fidelity. The proposed formulation provides a practical engineering solution for compact omnidirectional robots where symmetry cannot be maintained. Received: 16 November 2025 | Revised: 18 March 2026 | Accepted: 29 June 2026 Conflicts of Interest The authors declare that they have no conflicts of interest to this work. Data Availability Statement Data are available from the corresponding author upon reasonable request. Author Contribution Statement Raimondo Sgrò: Conceptualization, Software, Validation, Investigation, Resources, Data curation, Writing – original draft, Writing – review &amp; editing, Visualization, Project administration. Sergio Cacciatori: Methodology, Validation, Formal analysis, Writing – original draft, Writing – review and editing.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Asymmetric Configuration for a Four-Motor Omnidirectional Robot",
+      "authors": [
+        "Raimondo Sgrò",
+        "Sergio Cacciatori"
+      ],
+      "published": "2026-08-25",
+      "venue": "Archives of Advanced Engineering Science",
+      "publisher": "Bon View Publishing Pte",
+      "source": "crossref",
+      "topics": [
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "modular_reconfigurable_robotics",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "perception",
+        "system",
+        "theory"
+      ],
+      "score": 8.3
+    },
+    {
+      "id": "doi:10.1177/01622439261472946",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Desynchronizing the Digital Factory: Relational Intelligence at the Limits of Industrial Artificial Intelligence (AI)",
+      "url": "https://doi.org/10.1177/01622439261472946",
+      "doi": "10.1177/01622439261472946",
+      "doi_url": "https://doi.org/10.1177/01622439261472946",
+      "summary": "This article examines how industrial artificial intelligence (AI) and digital twin technologies reorganize human labor in a high-tech electric vehicle factory in Vietnam. Corporate narratives portray digitally simulated factories as spaces where human and machine actions can be synchronized and managed through computational intelligence. However, drawing on interviews with welding workers and analysis of industrial...",
+      "abstract": "This article examines how industrial artificial intelligence (AI) and digital twin technologies reorganize human labor in a high-tech electric vehicle factory in Vietnam. Corporate narratives portray digitally simulated factories as spaces where human and machine actions can be synchronized and managed through computational intelligence. However, drawing on interviews with welding workers and analysis of industrial AI discourse, I argue that what makes industrial AI work is the human work of “desynchronization.” Workers routinely move beyond digitally prescribed instructions, interpreting machine outputs and adapting to material contingencies that computational models cannot fully anticipate. To explain this process, I develop the concept of relational intelligence: workers’ capacity to coordinate between computational plans and changing workplace realities. Relational intelligence enables workers to complete tasks, accommodate uncertainty, and produce desired outcomes. Industrial AI therefore depends not only on machine intelligence but also on the undervalued human practices that sustain its operation. By foregrounding workers collaborating with industrial AI, who describe themselves as “robots that run on rice,” this article challenges techno-optimistic accounts of automation and digital twins. It argues that the intelligence sustaining industrial AI is not located in machines alone but emerges through workers’ relational intelligence in coordination with computational systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Desynchronizing the Digital Factory: Relational Intelligence at the Limits of Industrial Artificial Intelligence (AI)",
+      "authors": [
+        "June Yeoreum Kim"
+      ],
+      "published": "2026-08-25",
+      "venue": "Science, Technology, &amp; Human Values",
+      "publisher": "SAGE Publications",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "theory"
+      ],
+      "score": 8.1
+    },
+    {
+      "id": "doi:10.1002/advs.76800",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Review of Gastrointestinal Capsule Robots: Materials, Actuation, Diagnostics, and Therapeutics",
+      "url": "https://doi.org/10.1002/advs.76800",
+      "doi": "10.1002/advs.76800",
+      "doi_url": "https://doi.org/10.1002/advs.76800",
+      "summary": "Gastrointestinal capsule robots are minimally invasive devices for diagnosis and therapy in the digestive tract. This review examines them from a systems engineering perspective, spanning the technological chain from materials and actuation to sensing, treatment, and clinical translation. Structurally, current designs employ rigid polymers and metals, flexible elastomers, and biodegradable or stimuli-responsive mate...",
+      "abstract": "Gastrointestinal capsule robots are minimally invasive devices for diagnosis and therapy in the digestive tract. This review examines them from a systems engineering perspective, spanning the technological chain from materials and actuation to sensing, treatment, and clinical translation. Structurally, current designs employ rigid polymers and metals, flexible elastomers, and biodegradable or stimuli-responsive materials to balance mechanical stability, biocompatibility, and environmental adaptability. Locomotion strategies range from passive peristalsis-driven transit to magnetic, wireless-powered, multi-legged, and tethered actuation, paired with magnetic, radiofrequency, vision-based, MRI-based, X-ray-based, and hybrid localization. Diagnostic capabilities extend from ex situ tissue biopsy and fluid sampling to in situ multimodal sensing and optical imaging for physiological monitoring and biochemical analysis within the gut. Therapeutic developments include targeted drug delivery, microneedle injection, photodynamic therapy, thermal hemostasis, electrical stimulation, metabolic intervention, and mechanical clearance. Despite this progress, challenges persist in actuation capability, energy supply, precise navigation, and system-level integration. We conclude by highlighting current technological gaps and outlining future directions toward intelligent intraluminal platforms capable of autonomous navigation, multimodal diagnosis, and precision therapy. This work provides a comprehensive reference for advancing the science and application of gastrointestinal capsule robots across multiple fields.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Review of Gastrointestinal Capsule Robots: Materials, Actuation, Diagnostics, and Therapeutics",
+      "authors": [
+        "Zengsheng Li",
+        "Zhongguo Ren",
+        "Yiliang Lin",
+        "Xianfeng Xia",
+        "Tianlong Li",
+        "Kai Fung Chan",
+        "Philip Wai Yan Chiu",
+        "Wei Peng Yong",
+        "Mengmeng Sun"
+      ],
+      "published": "2026-08-25",
+      "venue": "Advanced Science",
+      "publisher": "Wiley",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design"
+      ],
+      "tags": [
+        "system",
+        "theory",
+        "perception"
+      ],
+      "score": 7.5
+    },
+    {
+      "id": "doi:10.1007/s10958-026-08613-x",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "MAXIMAL X-PROJECTION OF CHUA ATTRACTORS: THEORY AND MOBILE ROBOT NAVIGATION APPLICATIONS",
+      "url": "https://doi.org/10.1007/s10958-026-08613-x",
+      "doi": "10.1007/s10958-026-08613-x",
+      "doi_url": "https://doi.org/10.1007/s10958-026-08613-x",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for MAXIMAL X-PROJECTION OF CHUA ATTRACTORS: THEORY AND MOBILE ROBOT NAVIGATION APPLICATIONS",
+      "authors": [
+        "Faiza Zaamoune",
+        "Tidjani Menacer",
+        "René Lozi",
+        "Mohamed Boumehraz"
+      ],
+      "published": "2026-08-25",
+      "venue": "Journal of Mathematical Sciences",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "biomimetic_structure_design",
+        "robot_perception_navigation"
+      ],
+      "tags": [],
+      "score": 7.5
+    },
+    {
+      "id": "doi:10.1007/s44443-026-01113-7",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "HMEC: a robot number optimization algorithm for coverage path planning with heterogeneous multiple robots",
+      "url": "https://doi.org/10.1007/s44443-026-01113-7",
+      "doi": "10.1007/s44443-026-01113-7",
+      "doi_url": "https://doi.org/10.1007/s44443-026-01113-7",
+      "summary": "Multi-robot coverage path planning (MCPP) has gained increasing attention in agricultural automation. In various agricultural applications, employing heterogeneous multi-robot systems to perform coverage tasks better aligns with complex task requirements. However, due to the heterogeneous characteristics and kinematic constraints, optimizing the number of robots and their coverage paths under task requirements remai...",
+      "abstract": "Multi-robot coverage path planning (MCPP) has gained increasing attention in agricultural automation. In various agricultural applications, employing heterogeneous multi-robot systems to perform coverage tasks better aligns with complex task requirements. However, due to the heterogeneous characteristics and kinematic constraints, optimizing the number of robots and their coverage paths under task requirements remains a critical issue. Most existing MCPP methods are designed for homogeneous multi-robot systems or assume a fixed number of robots— the former inapplicable to heterogeneous systems, and the latter prone to wasting robotic resources. To address these challenges, this paper proposes a resource-optimized multi-robot coverage path planning method for heterogeneous multi-robot systems. First, we develop a generalized Reed-Shepp (RS) model. This model introduces intermediate variables to simplify the original RS path combinations, thereby reducing computational complexity. Second, we propose the HMEC algorithm specifically designed for heterogeneous multi-robot systems. HMEC optimizes the computation process through a knowledge reuse mechanism and is capable of determining the (near-)minimum heterogeneous robot fleet required to complete a coverage task, along with their corresponding coverage paths. We evaluate the HMEC algorithm against baseline and state-of-the-art algorithms under various target environments, robot fleets, and task requirements. Experimental results demonstrate that HMEC consistently identifies the minimum number of robots required to complete the coverage task, achieving up to 25% savings in robotic resources in the best-case scenario.",
+      "figure_url": "",
+      "figure_alt": "Main figure for HMEC: a robot number optimization algorithm for coverage path planning with heterogeneous multiple robots",
+      "authors": [
+        "Lin Li",
+        "Xing Zhou",
+        "Junfeng Man",
+        "Bowen Zhou"
+      ],
+      "published": "2026-08-24",
+      "venue": "Journal of King Saud University - Computer and Information Sciences",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "score": 8.78
+    },
+    {
+      "id": "doi:10.1007/s44443-026-01192-6",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Task allocation and robot repair strategy optimization in multi-robot system with ability decay",
+      "url": "https://doi.org/10.1007/s44443-026-01192-6",
+      "doi": "10.1007/s44443-026-01192-6",
+      "doi_url": "https://doi.org/10.1007/s44443-026-01192-6",
+      "summary": "Multi-robot task allocation (MRTA) is an essential problem in multi-robot systems. It is worth noting that letting the robots replace humans to perform some tasks in severe environments has long been an important expectation. In severe environments, the abilities of the robots may also be influenced. Some previous studies have analyzed the influence of environments on the abilities of robots. However, they just try...",
+      "abstract": "Multi-robot task allocation (MRTA) is an essential problem in multi-robot systems. It is worth noting that letting the robots replace humans to perform some tasks in severe environments has long been an important expectation. In severe environments, the abilities of the robots may also be influenced. Some previous studies have analyzed the influence of environments on the abilities of robots. However, they just try to present robust task allocation strategy instead of discussing the situation where the ability of a robot can be recovered after the robot is repaired. In this paper, we analyze the multi-robot task allocation problem where the abilities of robots will decay over time but the robots can select to return to the base and be repaired. There are two new challenges: (1) the size of the solution space becomes much larger because of the additional decisions about repairs; (2) the plan and expected time cost of a robot will be influenced by other robots because of repair resource preemption. The second challenge means that the time complexity of accurately calculating the expected time cost will be larger. We fully analyze this problem and present a hybrid algorithm based on collaborative discrete bee colony algorithm, simulated annealing and two heuristic modules. In experiments, the comparative analyses show that the hybrid algorithm significantly outperforms the benchmark strategies. The ablation experiments show that different modules of the hybrid algorithm respectively play the most important role in different cases.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Task allocation and robot repair strategy optimization in multi-robot system with ability decay",
+      "authors": [
+        "Fuhan Yan",
+        "Yang Wang",
+        "Yiwen Liang",
+        "Yifei Li",
+        "Yuang Sheng"
+      ],
+      "published": "2026-08-24",
+      "venue": "Journal of King Saud University - Computer and Information Sciences",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "bioinspired_swarm_algorithms",
+        "biomimetic_structure_design",
+        "engineering_system_design",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "score": 8.78
+    },
+    {
+      "id": "doi:10.7759/s44389-026-00243-3",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Development and Analysis of AI-Driven Anomaly Detection and Predictive Maintenance Algorithms for Robotic Systems in Industrial Environments: Leveraging Electrical and Sensor Data",
+      "url": "https://doi.org/10.7759/s44389-026-00243-3",
+      "doi": "10.7759/s44389-026-00243-3",
+      "doi_url": "https://doi.org/10.7759/s44389-026-00243-3",
+      "summary": "Industrial robotic systems are essential to modern manufacturing, but their reliability is threatened by progressive mechanical and electrical degradation.Traditional reactive and preventive maintenance strategies are inadequate for the complex, high-dimensional sensor environments of contemporary industrial robots.This study developed and evaluated AE-LSTM-ATT (Attention-Enhanced Hybrid LSTM Autoencoder), an LSTM e...",
+      "abstract": "Industrial robotic systems are essential to modern manufacturing, but their reliability is threatened by progressive mechanical and electrical degradation.Traditional reactive and preventive maintenance strategies are inadequate for the complex, high-dimensional sensor environments of contemporary industrial robots.This study developed and evaluated AE-LSTM-ATT (Attention-Enhanced Hybrid LSTM Autoencoder), an LSTM encoder-decoder architecture with Bahdanaustyle additive attention, for unsupervised anomaly detection in industrial robotic systems.The model was evaluated on the public Industrial Robot Anomaly Detection (IndRAD) dataset (robot joint positions, velocities, torques, and motor currents) against an attention-free LSTM Autoencoder and an Isolation Forest baseline, across five independent training runs and four synthetically injected anomaly types (spike, step, freeze-to-zero, and freeze-to-last-value).AE-LSTM-ATT and the attention-free baseline performed comparably on abrupt anomalies (spike, step; AUC-ROC (Area Under the Receiver Operating Characteristic Curve) = 1.000 for both).For the subtler, gradually manifesting anomaly types, attention provided a small, directionally positive advantage: for freeze-to-last-value, AE-LSTM-ATT achieved AUC-ROC = 0.518 ± 0.059 and F1-score = 0.682 ± 0.020 (95% CI, 5 seeds), versus 0.491 ± 0.046 and 0.670 ± 0.017 for the baseline; freeze-to-zero showed overlapping confidence intervals.An independent replication of this comparison with a paired significance test across five matched seeds (section \"Ablation: Contribution of the Attention Mechanism\") did not find the difference to be statistically significant, and the direction of the per-seed difference was not uniform.These results indicate that any attention-related benefit in this architecture is, at most, small and anomaly-type dependent, and is not established as statistically significant at the sample sizes evaluated here; attention showed no distinguishable advantage for abrupt, high-amplitude faults already near-perfectly separable by reconstruction error alone.The framework operates in an unsupervised paradigm requiring no labelled fault data, supporting deployment in settings where run-to-failure data are scarce.Overall, this study finds no evidence that attention-enhanced temporal autoencoders offer a universal advantage over simpler deep learning baselines for industrial robotic predictive maintenance; any benefit appears concentrated in detecting subtle, temporally extended fault signatures, is small in magnitude, and was not confirmed as statistically significant in the present sample.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Development and Analysis of AI-Driven Anomaly Detection and Predictive Maintenance Algorithms for Robotic Systems in Industrial Environments: Leveraging Electrical and Sensor Data",
+      "authors": [
+        "Salisu Auta Musa",
+        "Sanjay Choudhary",
+        "Bashir Muhammad Ahmad"
+      ],
+      "published": "2026-08-24",
+      "venue": "Cureus Journal of Computer Science.",
+      "publisher": "Springer Science+Business Media",
+      "source": "openalex",
+      "topics": [
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 8.48
+    },
+    {
+      "id": "doi:10.1002/advs.77372",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "A Modular Variable Stiffness Co‐Bot System Achieving Tasks Flexibility and Contact Compliance",
+      "url": "https://doi.org/10.1002/advs.77372",
+      "doi": "10.1002/advs.77372",
+      "doi_url": "https://doi.org/10.1002/advs.77372",
+      "summary": "ABSTRACT Enhancing contact compliance and task flexibility is essential for expanding the real‐world use of robotic systems. This paper presents a modular collaborative robot system that combines antagonistic actuation with hybrid soft–rigid variable‐stiffness components, including a modular variable‐stiffness bending joint (mvsBJ), a modular variable‐stiffness rotational joint (mvsRJ), and a modular variable‐stiffn...",
+      "abstract": "ABSTRACT Enhancing contact compliance and task flexibility is essential for expanding the real‐world use of robotic systems. This paper presents a modular collaborative robot system that combines antagonistic actuation with hybrid soft–rigid variable‐stiffness components, including a modular variable‐stiffness bending joint (mvsBJ), a modular variable‐stiffness rotational joint (mvsRJ), and a modular variable‐stiffness link (mvsL), supported by an integrated control framework. Experimental characterization shows that the mvsBJ achieves a 55.96° bending range and nearly threefold stiffness variation, from 9.16 to 24.72 Nm/rad, through fluidic pressure adjustment. The mvsRJ achieves 145° bidirectional rotation. The platform is benchmarked across repeated trials in healthcare assistance and industrial support scenarios. In an assistive feeding task, a 3‐DoF RBBL configuration operates in a low‐stiffness mode, maintaining bounded force‐tracking variation with mean error drift below 0.16 N. Collision tests across 40–60 mm/s show peak interaction forces increasing predictably from 3.93 to 5.38 N. In an industrial chamfering task, the 2‐DoF RB configuration achieves pressurized rigidity comparable to a conventional mechanical workbench. These results demonstrate plug‐and‐play reconfigurability with reliable adjustable compliance, providing a novel architecture for diverse physical human–robot collaboration applications.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Modular Variable Stiffness Co‐Bot System Achieving Tasks Flexibility and Contact Compliance",
+      "authors": [
+        "Wenlong Gaozhang",
+        "Yue Li",
+        "Jialei Shi",
+        "Yaxi Wang",
+        "Kaspar Althoefer",
+        "Agostino Stilli",
+        "Helge A. Wurdemann"
+      ],
+      "published": "2026-08-24",
+      "venue": "Advanced Science",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "reconfiguration"
+      ],
+      "score": 8.46
+    },
+    {
       "id": "doi:10.1002/rob.70327",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Leveraging IoT‐Aided Robotics for Enhanced Efficiency in Urban Traffic Management Utilizing Multi‐Component Attention Graph Convolutional Neural Network Intended for Real‐Time Traffic Monitoring Systems",
       "url": "https://doi.org/10.1002/rob.70327",
       "doi": "10.1002/rob.70327",
@@ -25,10 +635,7 @@
       "publisher": "Wiley",
       "source": "crossref",
       "topics": [
-        "bioinspired_swarm_algorithms",
-        "high_impact_venue_watch",
-        "soft_medical_field_robotics",
-        "swarm_intelligence_robotics"
+        "high_impact_venue_watch"
       ],
       "tags": [
         "algorithm",
@@ -39,7 +646,7 @@
     },
     {
       "id": "doi:10.1002/rob.70336",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Hierarchical Path Planning for On‐Board Mechanical Arm Construction Robots Based on I‐Bi‐RRT‐APF and LLM‐DT",
       "url": "https://doi.org/10.1002/rob.70336",
       "doi": "10.1002/rob.70336",
@@ -61,9 +668,7 @@
       "publisher": "Wiley",
       "source": "crossref",
       "topics": [
-        "bioinspired_swarm_algorithms",
-        "high_impact_venue_watch",
-        "soft_medical_field_robotics"
+        "high_impact_venue_watch"
       ],
       "tags": [
         "algorithm",
@@ -74,79 +679,73 @@
       "score": 8.3
     },
     {
-      "id": "doi:10.1007/s44443-026-01113-7",
-      "report_id": "robotics_research_20260824_232632",
-      "title": "HMEC: a robot number optimization algorithm for coverage path planning with heterogeneous multiple robots",
-      "url": "https://doi.org/10.1007/s44443-026-01113-7",
-      "doi": "10.1007/s44443-026-01113-7",
-      "doi_url": "https://doi.org/10.1007/s44443-026-01113-7",
-      "summary": "",
-      "abstract": "",
+      "id": "doi:10.1002/advs.77412",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Programmable Sequential 4D Actuation in Multistable Kirigami Metamaterials",
+      "url": "https://doi.org/10.1002/advs.77412",
+      "doi": "10.1002/advs.77412",
+      "doi_url": "https://doi.org/10.1002/advs.77412",
+      "summary": "Programmable shape transformation is essential for adaptive soft mechanisms operating in constrained or dynamic environments. This study presents a modular kirigami metamaterial platform that enables programmable multistability and sequential 4D actuation through thermally triggered recovery. Inspired by geometric motifs from traditional Korean Dancheong patterns, in which symmetry and motif stacking govern pattern...",
+      "abstract": "Programmable shape transformation is essential for adaptive soft mechanisms operating in constrained or dynamic environments. This study presents a modular kirigami metamaterial platform that enables programmable multistability and sequential 4D actuation through thermally triggered recovery. Inspired by geometric motifs from traditional Korean Dancheong patterns, in which symmetry and motif stacking govern pattern formation, two kirigami unit cells with different slit configurations are designed to exhibit distinct bistable responses and directional auxetic behavior. Using dual-material additive manufacturing, each cell integrates thermally responsive and passive thermoplastics to achieve cold-programmed bistability and sequential 4D actuation. This approach is validated through three functional mechanisms: (i) multimodal bridging structures capable of both mechanically and thermally induced reconfigurations; (ii) multistable 4D grippers capable of inward and outward transformations; and (iii) a biomimetic underwater cleaning robot that autonomously collects and encloses floating debris through sequential thermal recovery. All functions are achieved without electronic or pneumatic actuators, relying entirely on mechanically encoded transformations and thermal activation. Furthermore, the use of thermoplastics provides higher stiffness than elastomer-based actuators, opening new opportunities for thermo-mechanically encoded actuation with improved mechanical robustness.",
       "figure_url": "",
-      "figure_alt": "Main figure for HMEC: a robot number optimization algorithm for coverage path planning with heterogeneous multiple robots",
+      "figure_alt": "Main figure for Programmable Sequential 4D Actuation in Multistable Kirigami Metamaterials",
       "authors": [
-        "Lin Li",
-        "Xing Zhou",
-        "Junfeng Man",
-        "Bowen Zhou"
+        "Eui Hyun Kim",
+        "Minsung Kim",
+        "Hyunsik Yoon",
+        "Keun Park"
       ],
       "published": "2026-08-24",
-      "venue": "Journal of King Saud University Computer and Information Sciences",
-      "publisher": "Springer Science and Business Media LLC",
-      "source": "crossref",
+      "venue": "Advanced Science",
+      "publisher": "Wiley",
+      "source": "openalex",
       "topics": [
-        "bioinspired_swarm_algorithms",
-        "biomimetic_structure_design",
-        "engineering_system_design",
-        "modular_reconfigurable_robotics",
-        "soft_medical_field_robotics",
-        "swarm_intelligence_robotics"
+        "biomimetic_structure_design"
       ],
       "tags": [
-        "algorithm"
+        "structure",
+        "system",
+        "theory",
+        "reconfiguration"
       ],
-      "score": 8.18
+      "score": 8.3
     },
     {
-      "id": "doi:10.1038/s41467-026-76824-6",
-      "report_id": "robotics_research_20260824_232632",
-      "title": "Supporting upper limb movements with a soft robot after a brachial plexus injury",
-      "url": "https://doi.org/10.1038/s41467-026-76824-6",
-      "doi": "10.1038/s41467-026-76824-6",
-      "doi_url": "https://doi.org/10.1038/s41467-026-76824-6",
-      "summary": "",
-      "abstract": "",
+      "id": "doi:10.1016/j.robot.2026.105710",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Robust vision-based goal-reaching control for mobile robots using a hierarchical learning framework",
+      "url": "https://doi.org/10.1016/j.robot.2026.105710",
+      "doi": "10.1016/j.robot.2026.105710",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105710",
+      "summary": "Reinforcement learning (RL) has strong potential in robotics, but exploration-based training complicates safe deployment on large-scale robots. This paper proposes a novel hierarchical goal-reaching framework that integrates stereo visual pose estimation, constrained RL-based motion planning, actuator-level robust adaptive control (RAC), and supervisory safe-return logic. Stereo visual localization is used as the re...",
+      "abstract": "Reinforcement learning (RL) has strong potential in robotics, but exploration-based training complicates safe deployment on large-scale robots. This paper proposes a novel hierarchical goal-reaching framework that integrates stereo visual pose estimation, constrained RL-based motion planning, actuator-level robust adaptive control (RAC), and supervisory safe-return logic. Stereo visual localization is used as the real-time pose-estimation interface with loop closing, map fusion, and relocalization. The RL planner generates goal-reaching references using a problem-specific reward structure and motion constraints that promote goal progress, reduce oscillations, preserve vision-consistent smoothness, and respect the mechanical limits of a heavy skid-steered robot. At the actuation layer, a scaled conjugate-gradient (SCG)-trained deep neural network (DNN) approximates a quasi-static actuator feedforward map from wheel-speed data to nominal control input. This feedforward map is combined with a logarithmic-barrier-based RAC to compensate for residual modeling errors, slip-induced disturbances, and bounded mismatch between the nominal map and real actuator response. For the actuator-level wheel-tracking subsystem, uniformly ultimately bounded tracking with exponential convergence to a disturbance-dependent residual set is established under bounded uncertainty. A logarithmic safety supervisor monitors predefined safety-boundary and localization-consistency triggers and, when activated, applies deterministic braking followed by latched safe-return mode. Experiments on a 6000 kg robot over asphalt and loose-soil terrain demonstrate approximately 3–4 cm SLAM-frame final-position root mean square error (RMSE), improved tracking of RL-generated commands, actuator-level performance over two RAC baselines, and observed deterministic braking and safe-return behavior in the two reported injected-localization-fault cases.",
       "figure_url": "",
-      "figure_alt": "Main figure for Supporting upper limb movements with a soft robot after a brachial plexus injury",
+      "figure_alt": "Main figure for Robust vision-based goal-reaching control for mobile robots using a hierarchical learning framework",
       "authors": [
-        "Roberto Ferroni",
-        "Vittoria Aglietta",
-        "Daniele Filippo Mauceri",
-        "Jacopo Carpaneto",
-        "Silvestro Micera",
-        "Paolo Titolo",
-        "Tommaso Proietti"
+        "Mehdi Heydari Shahna",
+        "Pauli Mustalahti",
+        "Jouni Mattila"
       ],
       "published": "2026-08-24",
-      "venue": "Nature Communications",
-      "publisher": "Springer Science and Business Media LLC",
-      "source": "crossref",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
       "topics": [
-        "bioinspired_swarm_algorithms",
-        "biomimetic_structure_design",
-        "engineering_system_design",
-        "high_impact_venue_watch",
-        "modular_reconfigurable_robotics",
-        "robot_perception_navigation",
-        "soft_medical_field_robotics",
-        "swarm_intelligence_robotics"
+        "robot_learning_embodied_ai"
       ],
-      "tags": [],
-      "score": 8.0
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "system",
+        "theory",
+        "perception"
+      ],
+      "score": 8.28
     },
     {
       "id": "doi:10.1002/rob.70330",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Sensorless Force Estimation Based on Teleoperation Robot State Information",
       "url": "https://doi.org/10.1002/rob.70330",
       "doi": "10.1002/rob.70330",
@@ -170,13 +769,10 @@
       "publisher": "Wiley",
       "source": "crossref",
       "topics": [
-        "bioinspired_swarm_algorithms",
         "biomimetic_structure_design",
         "engineering_system_design",
         "high_impact_venue_watch",
         "modular_reconfigurable_robotics",
-        "robot_learning_embodied_ai",
-        "robot_perception_navigation",
         "soft_medical_field_robotics",
         "swarm_intelligence_robotics"
       ],
@@ -187,49 +783,8 @@
       "score": 7.8
     },
     {
-      "id": "doi:10.1002/rob.70331",
-      "report_id": "robotics_research_20260824_232632",
-      "title": "A Novel Instance Segmentation‐Based Navigation Line Extraction for Paddy‐Field Weeding Robot",
-      "url": "https://doi.org/10.1002/rob.70331",
-      "doi": "10.1002/rob.70331",
-      "doi_url": "https://doi.org/10.1002/rob.70331",
-      "summary": "ABSTRACT Rice cultivation is a cornerstone of global food security, yet effective weed management remains a critical challenge. Autonomous weeding robots offer a sustainable alternative, but their efficacy hinges on precise navigation, particularly in the complex visual environments of paddy fields. This study introduces a novel instance segmentation‐based navigation line extraction method tailored for paddy‐field r...",
-      "abstract": "ABSTRACT Rice cultivation is a cornerstone of global food security, yet effective weed management remains a critical challenge. Autonomous weeding robots offer a sustainable alternative, but their efficacy hinges on precise navigation, particularly in the complex visual environments of paddy fields. This study introduces a novel instance segmentation‐based navigation line extraction method tailored for paddy‐field robots. Unlike conventional machine vision techniques, which struggle with noise, water reflections, and irregular crop rows, our approach leverages a lightweight instance segmentation model to accurately identify and differentiate rice seedling rows. The model, optimized for deployment on resource‐constrained edge devices like the Jetson Nano, achieves high precision with minimal angular and pixel deviations (0.54° and 6.40 pixels, respectively). It also demonstrates real‐time inference speeds of 16.13 FPS, making it suitable for practical applications. Furthermore, our method eliminates the need for high‐precision data annotation, reducing labeling complexity and enhancing generalizability. Comparative experiments with existing methods, such as YOLOv8‐seg, ESNet, VGG‐UNet, Mobile‐UNet, and Mobile‐DeeplabV3+, demonstrate that our method achieves superior performance in both accuracy and computational efficiency. The proposed navigation line extraction method not only meets the demands of agricultural robots in paddy fields but also lays a foundation for future advancements in automated field navigation, potentially integrating GNSS/INS systems for fully autonomous operations. This research represents a significant step toward sustainable and efficient agricultural practices, addressing both environmental and economic challenges in rice cultivation.",
-      "figure_url": "",
-      "figure_alt": "Main figure for A Novel Instance Segmentation‐Based Navigation Line Extraction for Paddy‐Field Weeding Robot",
-      "authors": [
-        "Yanchao Zhang",
-        "Yujie Chen",
-        "Zhenpu Huang",
-        "Xiwen Li",
-        "Xiaping Fu",
-        "Wei Tang",
-        "Yongjie Yang"
-      ],
-      "published": "2026-08-24",
-      "venue": "Journal of Field Robotics",
-      "publisher": "Wiley",
-      "source": "crossref",
-      "topics": [
-        "bioinspired_swarm_algorithms",
-        "biomimetic_structure_design",
-        "engineering_system_design",
-        "high_impact_venue_watch",
-        "modular_reconfigurable_robotics",
-        "robot_perception_navigation",
-        "soft_medical_field_robotics",
-        "swarm_intelligence_robotics"
-      ],
-      "tags": [
-        "perception",
-        "system",
-        "theory"
-      ],
-      "score": 7.8
-    },
-    {
       "id": "doi:10.1088/1361-6501/ae96cf",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "ICF-SLAM: Instance-guided loop closure and asynchronous historical correction for filter-based LiDAR–inertial SLAM",
       "url": "https://doi.org/10.1088/1361-6501/ae96cf",
       "doi": "10.1088/1361-6501/ae96cf",
@@ -258,41 +813,101 @@
       "score": 7.8
     },
     {
-      "id": "doi:10.1007/s44443-026-01192-6",
-      "report_id": "robotics_research_20260824_232632",
-      "title": "Task allocation and robot repair strategy optimization in multi-robot system with ability decay",
-      "url": "https://doi.org/10.1007/s44443-026-01192-6",
-      "doi": "10.1007/s44443-026-01192-6",
-      "doi_url": "https://doi.org/10.1007/s44443-026-01192-6",
+      "id": "doi:10.1038/s41467-026-76824-6",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Supporting upper limb movements with a soft robot after a brachial plexus injury",
+      "url": "https://doi.org/10.1038/s41467-026-76824-6",
+      "doi": "10.1038/s41467-026-76824-6",
+      "doi_url": "https://doi.org/10.1038/s41467-026-76824-6",
       "summary": "",
       "abstract": "",
       "figure_url": "",
-      "figure_alt": "Main figure for Task allocation and robot repair strategy optimization in multi-robot system with ability decay",
+      "figure_alt": "Main figure for Supporting upper limb movements with a soft robot after a brachial plexus injury",
       "authors": [
-        "Fuhan Yan",
-        "Yang Wang",
-        "Yiwen Liang",
-        "Yifei Li",
-        "Yuang Sheng"
+        "Roberto Ferroni",
+        "Vittoria Aglietta",
+        "Daniele Filippo Mauceri",
+        "Jacopo Carpaneto",
+        "Silvestro Micera",
+        "Paolo Titolo",
+        "Tommaso Proietti"
       ],
       "published": "2026-08-24",
-      "venue": "Journal of King Saud University Computer and Information Sciences",
+      "venue": "Nature Communications",
       "publisher": "Springer Science and Business Media LLC",
       "source": "crossref",
       "topics": [
-        "bioinspired_swarm_algorithms",
         "biomimetic_structure_design",
-        "engineering_system_design",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [],
+      "score": 7.7
+    },
+    {
+      "id": "doi:10.1002/rob.70331",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "A Novel Instance Segmentation‐Based Navigation Line Extraction for Paddy‐Field Weeding Robot",
+      "url": "https://doi.org/10.1002/rob.70331",
+      "doi": "10.1002/rob.70331",
+      "doi_url": "https://doi.org/10.1002/rob.70331",
+      "summary": "ABSTRACT Rice cultivation is a cornerstone of global food security, yet effective weed management remains a critical challenge. Autonomous weeding robots offer a sustainable alternative, but their efficacy hinges on precise navigation, particularly in the complex visual environments of paddy fields. This study introduces a novel instance segmentation‐based navigation line extraction method tailored for paddy‐field r...",
+      "abstract": "ABSTRACT Rice cultivation is a cornerstone of global food security, yet effective weed management remains a critical challenge. Autonomous weeding robots offer a sustainable alternative, but their efficacy hinges on precise navigation, particularly in the complex visual environments of paddy fields. This study introduces a novel instance segmentation‐based navigation line extraction method tailored for paddy‐field robots. Unlike conventional machine vision techniques, which struggle with noise, water reflections, and irregular crop rows, our approach leverages a lightweight instance segmentation model to accurately identify and differentiate rice seedling rows. The model, optimized for deployment on resource‐constrained edge devices like the Jetson Nano, achieves high precision with minimal angular and pixel deviations (0.54° and 6.40 pixels, respectively). It also demonstrates real‐time inference speeds of 16.13 FPS, making it suitable for practical applications. Furthermore, our method eliminates the need for high‐precision data annotation, reducing labeling complexity and enhancing generalizability. Comparative experiments with existing methods, such as YOLOv8‐seg, ESNet, VGG‐UNet, Mobile‐UNet, and Mobile‐DeeplabV3+, demonstrate that our method achieves superior performance in both accuracy and computational efficiency. The proposed navigation line extraction method not only meets the demands of agricultural robots in paddy fields but also lays a foundation for future advancements in automated field navigation, potentially integrating GNSS/INS systems for fully autonomous operations. This research represents a significant step toward sustainable and efficient agricultural practices, addressing both environmental and economic challenges in rice cultivation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Novel Instance Segmentation‐Based Navigation Line Extraction for Paddy‐Field Weeding Robot",
+      "authors": [
+        "Yanchao Zhang",
+        "Yujie Chen",
+        "Zhenpu Huang",
+        "Xiwen Li",
+        "Xiaping Fu",
+        "Wei Tang",
+        "Yongjie Yang"
+      ],
+      "published": "2026-08-24",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "high_impact_venue_watch",
+        "robot_perception_navigation"
+      ],
+      "tags": [
+        "perception",
+        "system",
+        "theory"
+      ],
+      "score": 7.7
+    },
+    {
+      "id": "doi:10.1038/s44182-026-00111-1",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Collective assembly and shape formation of modular cubes under uniform global magnetic control",
+      "url": "https://doi.org/10.1038/s44182-026-00111-1",
+      "doi": "10.1038/s44182-026-00111-1",
+      "doi_url": "https://doi.org/10.1038/s44182-026-00111-1",
+      "summary": "Achieving coordinated collective behaviors in modular robotic systems under a single global input remains challenging, particularly for forming and manipulating structures beyond planar configurations. Here, we introduce magnetic modular cubes with face-specific magnetic encoding across all six faces and investigate their assembly and locomotion under uniform global magnetic field control. Two cube types, each with...",
+      "abstract": "Achieving coordinated collective behaviors in modular robotic systems under a single global input remains challenging, particularly for forming and manipulating structures beyond planar configurations. Here, we introduce magnetic modular cubes with face-specific magnetic encoding across all six faces and investigate their assembly and locomotion under uniform global magnetic field control. Two cube types, each with a 2 mm edge length and embedded with ten Neodymium micro-magnets, are designed with complementary face-specific encoding that enables multimodal locomotion, selective 2D assembly, and 3D assembly through vertical stacking. To coordinate multiple module groups, we introduce a multiplex workspace that exploits boundary-mediated symmetry breaking to generate differentiated manipulation and assembly behaviors without local sensing or agent-specific control. Using a triaxial Helmholtz coil system, we demonstrate parallel 2D assembly, structure-level pivot walking with per-cycle displacement approaching half the structure length, controlled in-plane rotation, rolling locomotion reaching approximately three body lengths per cycle, and tilted pivot walking for vertical stacking of assembled structures. Dipole interaction modeling and quantitative locomotion analysis relate these behaviors to actuation geometry and magnetic interactions. These results establish a framework for coordinated multimodal assembly and locomotion of modular structures under global magnetic control with applications in programmable matter and collective microrobotic systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Collective assembly and shape formation of modular cubes under uniform global magnetic control",
+      "authors": [
+        "Anuruddha Bhattacharjee",
+        "Min Jun Kim"
+      ],
+      "published": "2026-08-24",
+      "venue": "npj Robotics",
+      "publisher": "Springer Science+Business Media",
+      "source": "openalex",
+      "topics": [
         "modular_reconfigurable_robotics",
-        "robot_learning_embodied_ai",
-        "robot_perception_navigation",
-        "soft_medical_field_robotics",
         "swarm_intelligence_robotics"
       ],
       "tags": [
-        "algorithm",
+        "control",
+        "reconfiguration",
+        "structure",
         "swarm",
-        "system"
+        "system",
+        "theory"
       ],
       "score": 7.58
     },
@@ -323,6 +938,47 @@
       ],
       "tags": [],
       "score": 7.3
+    },
+    {
+      "id": "doi:10.1002/jum.70417",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Robotic Ultrasound Imaging",
+      "url": "https://doi.org/10.1002/jum.70417",
+      "doi": "10.1002/jum.70417",
+      "doi_url": "https://doi.org/10.1002/jum.70417",
+      "summary": "Ultrasound imaging is an indispensable diagnostic tool, yet its profound reliance on operator expertise inherently restricts its reproducibility and global accessibility. Robotic ultrasound systems (RUSS) have evolved over the past 2 decades to mitigate these limitations by mechanically decoupling the human operator from the patient. This comprehensive review examines the historical trajectory of medical ultrasonogr...",
+      "abstract": "Ultrasound imaging is an indispensable diagnostic tool, yet its profound reliance on operator expertise inherently restricts its reproducibility and global accessibility. Robotic ultrasound systems (RUSS) have evolved over the past 2 decades to mitigate these limitations by mechanically decoupling the human operator from the patient. This comprehensive review examines the historical trajectory of medical ultrasonography and robotics, highlighting their convergence into modern RUSS. We detail the taxonomies of robotic autonomy and evaluate the clinical impact of teleoperated systems (telesonography), which increasingly leverage ultra‐low‐latency 5G networks to project diagnostic expertise globally. Furthermore, we dissect the enabling hardware and control algorithms essential for autonomous acquisition, including compliant force control, probe orientation optimization, and dynamic path generation. The contemporary integration of artificial intelligence (AI), particularly deep learning, physics‐inspired neural networks, and reinforcement learning, has catalyzed a paradigm shift toward fully autonomous systems capable of semantic reasoning, motion‐aware imaging, and deformation compensation. This review explores emerging frontiers, such as soft robotics, wearable ultrasound patches, and large language model (LLM) graph planners, while addressing the critical regulatory and ethical frameworks required for the future clinical translation of intelligent robotic sonographers.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Robotic Ultrasound Imaging",
+      "authors": [
+        "Shashank Chapala",
+        "Jonathan Gibson",
+        "Praveen Chinniah",
+        "Shreragaru Hanumanthappa Chandrashekhara",
+        "Vivek Kiyawat",
+        "Yogesh Parmar",
+        "Rajesh Botchu"
+      ],
+      "published": "2026-08-24",
+      "venue": "Journal of Ultrasound in Medicine",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "engineering_system_design",
+        "modular_reconfigurable_robotics",
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "soft_medical_field_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "score": 6.06
     },
     {
       "id": "doi:10.1007/s44430-026-00039-z",
@@ -711,8 +1367,45 @@
       "score": 4.5
     },
     {
+      "id": "doi:10.1016/j.fsir.2026.100513",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Industry 4.0 crime scene investigation: A review and zero-trust digital forensic architecture for evidence integrity",
+      "url": "https://doi.org/10.1016/j.fsir.2026.100513",
+      "doi": "10.1016/j.fsir.2026.100513",
+      "doi_url": "https://doi.org/10.1016/j.fsir.2026.100513",
+      "summary": "Industry 4.0 technology adoptions in crime scene investigation has led to the emergence of a distributed forensic ecosystem involving IoT devices, AI-driven forensic analytics, cloud systems, blockchain platforms, digital twin-based forensics, robotics, and immersive environments for forensic examination. Although these technologies can enhance forensic automation and evidence correlation, there are critical informa...",
+      "abstract": "Industry 4.0 technology adoptions in crime scene investigation has led to the emergence of a distributed forensic ecosystem involving IoT devices, AI-driven forensic analytics, cloud systems, blockchain platforms, digital twin-based forensics, robotics, and immersive environments for forensic examination. Although these technologies can enhance forensic automation and evidence correlation, there are critical information security and digital forensic issues that come with their deployment, which include evidence tampering, volatility of evidence, adversarial use of AI, insecurity in IoT communication channels, weaknesses in authentication methods, exposure to privacy violations, and threats to the chain of custody. Studies conducted on such technologies tend to treat them separately and overlook frameworks that ensure evidence trustworthiness, privacy preservation, and legal investigations. This study seeks to fill this research gap by analyzing Industry 4.0 technologies in terms of evidence life cycle management. Building upon the identified gaps in existing forensic frameworks, this study proposes a conceptual Zero-Trust Digital Forensic Architecture (ZTF-CSI) that unifies secure evidence acquisition, continuous identity verification, blockchain-enabled chain-of-custody, cryptographic integrity validation, explainable AI-assisted evidence verification, and privacy-preserving cloud forensics into a single evidence lifecycle model. Unlike prior studies that address these technologies independently, the proposed architecture integrates them within a security-by-design framework intended to preserve evidence integrity, strengthen forensic trustworthiness, and improve legal defensibility throughout Industry 4.0 crime scene investigations. The Zero Trust Digital Forensics Framework (ZTF-CSI) is a conceptual framework architecture based on the systematic analysis of the literature review findings and will serve as the basis for a future prototype and experimental validation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Industry 4.0 crime scene investigation: A review and zero-trust digital forensic architecture for evidence integrity",
+      "authors": [
+        "Hitesh Bhatt",
+        "Neetu Banduni",
+        "Rajesh Bahuguna",
+        "Rajesh Singh",
+        "Anita Gehlot",
+        "Amit Kumar Thakur",
+        "Sudhanshu Dogra",
+        "Anil Ghubade"
+      ],
+      "published": "2026-08-23",
+      "venue": "Forensic Science International Reports",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "robot_learning_embodied_ai",
+        "robot_perception_navigation",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "theory"
+      ],
+      "score": 8.78
+    },
+    {
       "id": "doi:10.3390/app16178383",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Bimanual Tactile-Augmented Teleoperation for Contact-Rich Robotic Manipulation: A Pilot Evaluation",
       "url": "https://doi.org/10.3390/app16178383",
       "doi": "10.3390/app16178383",
@@ -732,10 +1425,8 @@
       "publisher": "MDPI AG",
       "source": "crossref",
       "topics": [
-        "modular_reconfigurable_robotics",
         "robot_learning_embodied_ai",
-        "robot_perception_navigation",
-        "swarm_intelligence_robotics"
+        "robot_perception_navigation"
       ],
       "tags": [
         "algorithm",
@@ -745,11 +1436,11 @@
         "system",
         "theory"
       ],
-      "score": 8.68
+      "score": 8.48
     },
     {
       "id": "doi:10.1002/aisy.70526",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Vision‐Based Tactile Finger Integrating Fingerpad and Nail Sensing for Robotic Manipulation",
       "url": "https://doi.org/10.1002/aisy.70526",
       "doi": "10.1002/aisy.70526",
@@ -767,21 +1458,19 @@
       "publisher": "Wiley",
       "source": "crossref",
       "topics": [
-        "modular_reconfigurable_robotics",
         "robot_learning_embodied_ai",
-        "robot_perception_navigation",
-        "swarm_intelligence_robotics"
+        "robot_perception_navigation"
       ],
       "tags": [
         "perception",
         "structure",
         "system"
       ],
-      "score": 8.4
+      "score": 8.2
     },
     {
       "id": "doi:10.1002/aisy.70524",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "LLM‐Based Multimodal Robotic Endoscope Control Framework for Enhancing Human–Robot Interaction in Minimally Invasive Surgery",
       "url": "https://doi.org/10.1002/aisy.70524",
       "doi": "10.1002/aisy.70524",
@@ -805,8 +1494,6 @@
       "publisher": "Wiley",
       "source": "crossref",
       "topics": [
-        "biomimetic_structure_design",
-        "modular_reconfigurable_robotics",
         "robot_learning_embodied_ai",
         "swarm_intelligence_robotics"
       ],
@@ -818,11 +1505,11 @@
         "system",
         "theory"
       ],
-      "score": 8.18
+      "score": 7.98
     },
     {
       "id": "doi:10.34133/cesci.0025",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Socially Consistent Multi-Robot Navigation Using Decoupled Planning and Trajectory Coordination",
       "url": "https://doi.org/10.34133/cesci.0025",
       "doi": "10.34133/cesci.0025",
@@ -843,10 +1530,7 @@
         "bioinspired_swarm_algorithms",
         "biomimetic_structure_design",
         "engineering_system_design",
-        "modular_reconfigurable_robotics",
-        "robot_learning_embodied_ai",
         "robot_perception_navigation",
-        "soft_medical_field_robotics",
         "swarm_intelligence_robotics"
       ],
       "tags": [
@@ -854,11 +1538,11 @@
         "control",
         "swarm"
       ],
-      "score": 8.1
+      "score": 7.9
     },
     {
       "id": "doi:10.1002/aisy.70515",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "A Bioinspired Underwater Soft Robot for Active Intravesical Liquid Delivery and Mixing",
       "url": "https://doi.org/10.1002/aisy.70515",
       "doi": "10.1002/aisy.70515",
@@ -882,25 +1566,19 @@
       "publisher": "Wiley",
       "source": "crossref",
       "topics": [
-        "bioinspired_swarm_algorithms",
         "biomimetic_structure_design",
-        "engineering_system_design",
-        "modular_reconfigurable_robotics",
-        "robot_learning_embodied_ai",
-        "robot_perception_navigation",
-        "soft_medical_field_robotics",
-        "swarm_intelligence_robotics"
+        "soft_medical_field_robotics"
       ],
       "tags": [
         "control",
         "system",
         "theory"
       ],
-      "score": 7.88
+      "score": 7.58
     },
     {
       "id": "doi:10.1002/aisy.202501403",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "From Swarm to Individual: Emergent Individuality in Light‐Mediated Robot Collectives",
       "url": "https://doi.org/10.1002/aisy.202501403",
       "doi": "10.1002/aisy.202501403",
@@ -923,11 +1601,6 @@
       "topics": [
         "bioinspired_swarm_algorithms",
         "biomimetic_structure_design",
-        "engineering_system_design",
-        "modular_reconfigurable_robotics",
-        "robot_learning_embodied_ai",
-        "robot_perception_navigation",
-        "soft_medical_field_robotics",
         "swarm_intelligence_robotics"
       ],
       "tags": [
@@ -937,7 +1610,7 @@
         "system",
         "theory"
       ],
-      "score": 7.58
+      "score": 7.38
     },
     {
       "id": "doi:10.70917/ijcisim-2026-5017",
@@ -1118,7 +1791,7 @@
     },
     {
       "id": "doi:10.1038/s41467-026-76133-y",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Reconfiguring handed shape-morphing and actuation in hydrogels via light-encoded rapid expansion",
       "url": "https://doi.org/10.1038/s41467-026-76133-y",
       "doi": "10.1038/s41467-026-76133-y",
@@ -1150,7 +1823,7 @@
     },
     {
       "id": "doi:10.3390/app16178370",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Empirical Evaluation of CHOMP for Autonomous Pick-and-Place Manipulation Using a UR5e Robot Arm: A MATLAB–ROS2 Hybrid Framework",
       "url": "https://doi.org/10.3390/app16178370",
       "doi": "10.3390/app16178370",
@@ -1168,9 +1841,7 @@
       "publisher": "MDPI AG",
       "source": "crossref",
       "topics": [
-        "biomimetic_structure_design",
-        "robot_learning_embodied_ai",
-        "soft_medical_field_robotics"
+        "robot_learning_embodied_ai"
       ],
       "tags": [
         "algorithm",
@@ -1181,7 +1852,7 @@
     },
     {
       "id": "doi:10.1093/nsr/nwag520",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Wings with Stiffness and Stroke Variations Enabling Efficient Flight and Swimming for Flapping-Wing Robots",
       "url": "https://doi.org/10.1093/nsr/nwag520",
       "doi": "10.1093/nsr/nwag520",
@@ -1220,7 +1891,7 @@
     },
     {
       "id": "doi:10.1038/s44182-026-00109-9",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "Aerial tactile perching via an anthropomorphic hand with embodied soft tactile receptors",
       "url": "https://doi.org/10.1038/s44182-026-00109-9",
       "doi": "10.1038/s44182-026-00109-9",
@@ -1239,23 +1910,21 @@
       "publisher": "Springer Science and Business Media LLC",
       "source": "crossref",
       "topics": [
-        "biomimetic_structure_design",
-        "robot_learning_embodied_ai",
         "soft_medical_field_robotics"
       ],
       "tags": [
         "control",
-        "embodied_ai",
-        "perception",
         "structure",
         "system",
-        "theory"
+        "theory",
+        "perception",
+        "embodied_ai"
       ],
-      "score": 8.28
+      "score": 7.98
     },
     {
       "id": "doi:10.1007/s00170-026-18940-7",
-      "report_id": "robotics_research_20260824_232632",
+      "report_id": "robotics_research_20260827_152738",
       "title": "A Cyber-Physical framework for Energy-Aware distributed optimization of 6-DOF robotic manufacturing cells via hybrid bioinspired metaheuristics",
       "url": "https://doi.org/10.1007/s00170-026-18940-7",
       "doi": "10.1007/s00170-026-18940-7",
@@ -3679,7 +4348,7 @@
       "score": 4.5
     },
     {
-      "id": "consensus:10ee28fd3a6f587587233f4de125b5da",
+      "id": "doi:10.1126/scirobotics.adz1999",
       "report_id": "seed_20260725",
       "title": "Modular reconfigurable robots: Toward on-demand multifunctional applications",
       "url": "https://doi.org/10.1126/scirobotics.adz1999",
@@ -3817,7 +4486,7 @@
       "score": 8.48
     },
     {
-      "id": "consensus:64a6d774e4c1501ebc5c0a3ec0f59d2c",
+      "id": "doi:10.1109/lra.2026.3685902",
       "title": "Self-Reconfiguration Planning for Deformable Quadrilateral Modular Robots",
       "url": "https://doi.org/10.1109/LRA.2026.3685902",
       "summary": "A 2026 RA-L planning method that uses a virtual graph and Dependence-based Reverse Tree to order feasible connect/disconnect actions for deformable quadrilateral MSRRs.",
@@ -3852,9 +4521,9 @@
       "publisher": ""
     },
     {
-      "id": "consensus:6abc7842f1b8503dab45ba89c0c03302",
+      "id": "doi:10.48550/arxiv.2604.21894",
       "title": "Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
-      "url": "https://arxiv.org/abs/2604.21894",
+      "url": "https://doi.org/10.48550/ARXIV.2604.21894",
       "summary": "A 2026 formal co-design framework for heterogeneous multi-robot systems that jointly optimizes robot design, fleet composition, and planning under task-specific constraints.",
       "abstract": "The framework models robots, fleets, planners, executors, and evaluators as interconnected design problems, enabling joint optimization with optimality guarantees across case studies.",
       "authors": [
@@ -3878,9 +4547,9 @@
       ],
       "score": 8.1,
       "citation_count": 2,
-      "report_id": "robotics_weekly_research_20260730",
-      "doi": "",
-      "doi_url": "",
+      "report_id": "robotics_research_20260827_152738",
+      "doi": "10.48550/ARXIV.2604.21894",
+      "doi_url": "https://doi.org/10.48550/ARXIV.2604.21894",
       "figure_url": "",
       "figure_alt": "Main figure for Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
       "publisher": ""
@@ -3892,7 +4561,7 @@
         "materials",
         "soft_robotics"
       ],
-      "id": "consensus:d003526bf0605ab59a02a484868d5b07",
+      "id": "doi:10.1088/1361-665x/ae3a5f",
       "doi_url": "https://doi.org/10.1088/1361-665X/ae3a5f",
       "figure_url": "",
       "abstract": "The review summarizes flexible materials such as elastomers, liquid crystal elastomers, liquid metals, kirigami metamaterials, dielectric elastomers, ionic polymer-metal composites, and hydrogels, then links them to bionic soft robot structures and fabrication methods.",
@@ -3951,6 +4620,84 @@
       "score": 9.55
     },
     {
+      "id": "doi:10.1002/smtd.202402264",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Bioinspired Soft Robots with Integrated Biological Motion Mechanisms and Rigid-Flexible Coupling Systems",
+      "url": "https://doi.org/10.1002/smtd.202402264",
+      "doi": "10.1002/smtd.202402264",
+      "doi_url": "https://doi.org/10.1002/smtd.202402264",
+      "summary": "Reviews shape-morphing soft robot structures that combine biological motion mechanisms with rigid-flexible coupling strategies.",
+      "abstract": "This review focuses on bioinspired soft robots with morphing capabilities such as bending, twisting, stretching, and contraction. It organizes biological prototypes, motion mechanisms, deformable robot design strategies, and biomedical applications, emphasizing how rigid-flexible coupling and biological motion principles can improve multi-degree-of-freedom soft robotic systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Bioinspired Soft Robots with Integrated Biological Motion Mechanisms and Rigid-Flexible Coupling Systems",
+      "authors": [
+        "Chenxi Ma",
+        "Wenda Song",
+        "Xudong Zhao",
+        "Hexuan Yu",
+        "Jiaming Lu",
+        "Zhibei Qu",
+        "Wenzheng Wu",
+        "Zhiwu Han",
+        "Zhengzhi Mu",
+        "Jiao Yan",
+        "Luquan Ren"
+      ],
+      "published": "2025-05-06",
+      "venue": "Small Methods",
+      "publisher": "Wiley",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "review",
+        "structure",
+        "soft_robotics",
+        "biomimetic"
+      ],
+      "score": 8.2,
+      "citation_count": 7
+    },
+    {
+      "id": "doi:10.1002/advs.202416764",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Bioinspired Mechanisms and Actuation of Soft Robotic Crawlers",
+      "url": "https://doi.org/10.1002/advs.202416764",
+      "doi": "10.1002/advs.202416764",
+      "doi_url": "https://doi.org/10.1002/advs.202416764",
+      "summary": "A high-citation Advanced Science review linking crawler morphology, flexible materials, actuation modes, and control challenges.",
+      "abstract": "This review surveys soft robotic crawlers inspired by soft-bodied locomotion, covering two-anchor, peristaltic, serpentine, and undulatory mechanisms. It connects flexible materials, fabrication strategies, pneumatic, hydraulic, electrical, magnetic, optical, and chemical actuation, and discusses control and autonomy challenges for deploying soft crawlers in medical, environmental, exploration, and inspection settings.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Bioinspired Mechanisms and Actuation of Soft Robotic Crawlers",
+      "authors": [
+        "Min Pan",
+        "Miaomiao Liu",
+        "Jiayi Lei",
+        "Yunyi Wang",
+        "Changhong Linghu",
+        "Chris Bowen",
+        "K. Hsia"
+      ],
+      "published": "2025-03-20",
+      "venue": "Advanced Science",
+      "publisher": "Wiley",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "review",
+        "structure",
+        "actuation",
+        "soft_robotics"
+      ],
+      "score": 8.55,
+      "citation_count": 39
+    },
+    {
       "id": "doi:10.1109/lra.2025.3526560",
       "report_id": "robotics_research_20260824_072451",
       "title": "Modular Self-Reconfigurable Continuum Robot for General Purpose Loco-Manipulation",
@@ -3987,7 +4734,7 @@
       "score": 9.25
     },
     {
-      "id": "consensus:51ca5b50bdf75409826c83917926e48f",
+      "id": "doi:10.1038/s41467-025-56025-3",
       "title": "A framework for soft mechanism driven robots",
       "url": "https://doi.org/10.1038/s41467-025-56025-3",
       "summary": "A 2025 Nature Communications design and 3D-printing framework that blends soft and rigid materials to create mechanism-driven legged soft robots with closed-loop control.",
@@ -4027,7 +4774,7 @@
         "sensing",
         "embodied_ai"
       ],
-      "id": "consensus:9d0c1ad9700c571da132eda51b112476",
+      "id": "doi:10.1038/s41467-025-63881-6",
       "doi_url": "https://doi.org/10.1038/s41467-025-63881-6",
       "figure_url": "",
       "abstract": "Flexible Electronic Robots use programmable flexible electronic components and setae modules for multimodal locomotion, environmental perception, hazard avoidance, thermal tracking, and adaptive behavior in small-scale soft robotics.",
@@ -4061,13 +4808,94 @@
       "url": "https://doi.org/10.1038/s41467-025-63881-6"
     },
     {
+      "id": "doi:10.1002/rob.70092",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "CONCERT: A Modular Reconfigurable Robot for Construction",
+      "url": "https://doi.org/10.1002/rob.70092",
+      "doi": "10.1002/rob.70092",
+      "doi_url": "https://doi.org/10.1002/rob.70092",
+      "summary": "A fully reconfigurable modular collaborative robot for construction-site operations, with automatic morphology discovery and deployment after module changes.",
+      "abstract": "This paper presents CONCERT, a fully reconfigurable modular collaborative robot for multiple on-site construction operations. Its modular body and end-effectors allow rapid changes in morphology, while the software pipeline discovers the installed module topology and updates kinematic, dynamic, and geometric parameters. Real construction-site validation covers drilling, sanding, plastering, and collaborative transportation with obstacle avoidance, demonstrating reassembly and operation in less than 10 minutes.",
+      "figure_url": "",
+      "figure_alt": "Main figure for CONCERT: A Modular Reconfigurable Robot for Construction",
+      "authors": [
+        "Luca Rossini",
+        "Edoardo Romiti",
+        "Arturo Laurenzi",
+        "Francesco Ruscelli",
+        "Marco Ruzzon",
+        "Luca Covizzi",
+        "Lorenzo Baccelliere",
+        "Stefano Carrozzo",
+        "Michael Terzer",
+        "Marco Magri",
+        "Carlo Morganti",
+        "Maolin Lei",
+        "Liana Bertoni",
+        "Diego Vedelago",
+        "Corrado Burchielli",
+        "S. Cordasco",
+        "L. Muratore",
+        "Andrea Giusti",
+        "N. Tsagarakis"
+      ],
+      "published": "2025",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "reconfiguration",
+        "hardware",
+        "system",
+        "co_design"
+      ],
+      "score": 8.7,
+      "citation_count": 5
+    },
+    {
+      "id": "doi:10.1109/tase.2025.3628162",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Holistic Optimization of Modular Robots",
+      "url": "https://doi.org/10.1109/TASE.2025.3628162",
+      "doi": "10.1109/TASE.2025.3628162",
+      "doi_url": "https://doi.org/10.1109/TASE.2025.3628162",
+      "summary": "Jointly optimizes modular robot composition, base placement, and trajectory, improving industrial cycle time and deployment feasibility.",
+      "abstract": "The paper addresses modular robot task optimization as a coupled problem over composition, base placement, and trajectory. Evaluated on more than 300 industrial benchmarks, the method reduces cycle time by up to 25 percent and finds feasible solutions in twice as many cases compared with optimizing module composition alone. Real-world validation reports successful deployment in nine of ten point-to-point movement cases in less than an hour.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Holistic Optimization of Modular Robots",
+      "authors": [
+        "M. Mayer",
+        "M. Althoff"
+      ],
+      "published": "2025",
+      "venue": "IEEE Transactions on Automation Science and Engineering",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "optimization",
+        "reconfiguration",
+        "hardware",
+        "planning"
+      ],
+      "score": 8.6,
+      "citation_count": 3
+    },
+    {
       "tags": [
         "review",
         "soft_robotics",
         "materials",
         "control"
       ],
-      "id": "consensus:b233c5088db550bfa981c93afa5569d3",
+      "id": "doi:10.1002/advs.202506296",
       "doi_url": "https://doi.org/10.1002/advs.202506296",
       "figure_url": "",
       "abstract": "The review covers biomimetic actuation, programmable morphology and mechanics, heterogeneous fabrication, embodied intelligence, and practical challenges such as actuation efficiency, material durability, nonlinear control, and robust sensing.",
@@ -4103,7 +4931,7 @@
         "soft_robotics",
         "control"
       ],
-      "id": "consensus:bcecf9d9bd11529eb6a671c5d97a9b4c",
+      "id": "doi:10.3390/s25051353",
       "doi_url": "https://doi.org/10.3390/s25051353",
       "figure_url": "",
       "abstract": "The review surveys recent advances in multi-robot systems and soft robotics, with emphasis on their integration for adaptive collaborative robots across manipulation, navigation, transportation, sensing, actuation, modeling, and simulation.",
@@ -4131,7 +4959,7 @@
       "url": "https://doi.org/10.3390/s25051353"
     },
     {
-      "id": "consensus:c75a52cbb6d15245aaf872d02b048130",
+      "id": "doi:10.1109/lra.2025.3543139",
       "report_id": "seed_20260725",
       "title": "RS-ModCubes: Self-Reconfigurable, Scalable, Modular Cubic Robots for Underwater Operations",
       "url": "https://doi.org/10.1109/LRA.2025.3543139",
@@ -4236,7 +5064,43 @@
       "score": 9.65
     },
     {
-      "id": "consensus:89be485bf3185b62b2570007c08687d1",
+      "id": "doi:10.1088/1748-3190/ad3ff7",
+      "report_id": "robotics_research_20260827_152738",
+      "title": "Design of an actuator with bionic claw hook-suction cup hybrid structure for soft robot",
+      "url": "https://doi.org/10.1088/1748-3190/ad3ff7",
+      "doi": "10.1088/1748-3190/ad3ff7",
+      "doi_url": "https://doi.org/10.1088/1748-3190/ad3ff7",
+      "summary": "A biomimetic hybrid actuator combines claw-hook locking and suction adhesion for adaptable soft robot attachment and walking.",
+      "abstract": "The study designs a bionic claw hook-suction cup hybrid actuator for soft robots, combining a rigid pop-up claw hook linkage with a flexible suction cup and a soft pneumatic actuator. Prototype tests characterize kinematic, mechanical, and attachment performance on smooth and rough surfaces, showing utility for adhesion, grasping, and walking in adaptable soft robots.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design of an actuator with bionic claw hook-suction cup hybrid structure for soft robot",
+      "authors": [
+        "Xing Wang",
+        "Aomin Lin",
+        "Wenqing Yuan",
+        "Hongwei Hu",
+        "Guanggui Cheng",
+        "Jianning Ding"
+      ],
+      "published": "2024-04-29",
+      "venue": "Bioinspiration & Biomimetics",
+      "publisher": "IOP Publishing",
+      "source": "consensus",
+      "topics": [
+        "biomimetic_structure_design",
+        "soft_medical_field_robotics"
+      ],
+      "tags": [
+        "actuation",
+        "structure",
+        "soft_robotics",
+        "biomimetic"
+      ],
+      "score": 8.0,
+      "citation_count": 10
+    },
+    {
+      "id": "doi:10.1109/lra.2024.3447460",
       "title": "Design of a Multi-Environmentally Adaptable Modular Self-Reconfigurable Robot",
       "url": "https://doi.org/10.1109/LRA.2024.3447460",
       "summary": "A 2024 RA-L amphibious modular self-reconfigurable robot with sealed modules and electro-permanent-magnet faces for coupling, power sharing, sensing, and configuration identification.",
@@ -4274,7 +5138,7 @@
       "publisher": ""
     },
     {
-      "id": "consensus:9fc2bc6155c15d13ba37eb21c607114f",
+      "id": "doi:10.1038/s41467-024-48903-z",
       "title": "Skin-inspired, sensory robots for electronic implants",
       "url": "https://doi.org/10.1038/s41467-024-48903-z",
       "summary": "A 2024 Nature Communications platform for bio-inspired implantable soft robots that integrate electronic skin, artificial muscle, wireless operation, sensing, and on-demand actuation.",
@@ -4324,7 +5188,7 @@
       "publisher": "Nature"
     },
     {
-      "id": "consensus:a49d138836ed53988e74634c1828f84e",
+      "id": "doi:10.1038/s41467-024-47788-2",
       "report_id": "seed_20260725",
       "title": "Snail-inspired robotic swarms: a hybrid connector drives collective adaptation in unstructured outdoor environments",
       "url": "https://doi.org/10.1038/s41467-024-47788-2",
@@ -4358,7 +5222,7 @@
       "score": 8.6
     },
     {
-      "id": "consensus:52ebaa689ac5530f96fe9bb10968a1d5",
+      "id": "doi:10.1177/02783649241286491",
       "title": "Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "url": "https://doi.org/10.1177/02783649241286491",
       "summary": "An IJRR method that detects quasi-static instability in modular self-reconfigurable robots with linear scaling in module count, using connection, contact, and environmental constraints.",
@@ -4392,7 +5256,7 @@
       "publisher": ""
     },
     {
-      "id": "consensus:0313242084205447980d7385dd714a6a",
+      "id": "doi:10.1109/lra.2024.3416797",
       "report_id": "robotics_research_20260803_071255",
       "title": "Design and Control of Rapid In-Air Reconfiguration for Modular Quadrotors With Full Controllable Degrees of Freedom",
       "url": "https://doi.org/10.1109/LRA.2024.3416797",
@@ -4428,7 +5292,7 @@
       "score": 8.0
     },
     {
-      "id": "consensus:d243fb857f9f581ea259d68ba0afa9f0",
+      "id": "doi:10.1109/lra.2024.3355756",
       "report_id": "robotics_research_20260803_071255",
       "title": "A Self-Reconfiguration Algorithm for Sliding Triangular Modular Robots",
       "url": "https://doi.org/10.1109/LRA.2024.3355756",
