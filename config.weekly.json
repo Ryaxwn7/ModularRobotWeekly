@@ -50,10 +50,10 @@
     {
       "name": "biomimetic_structure_design",
       "queries": [
-        "biomimetic robot structure design",
-        "bio-inspired bionic soft robot mechanism morphology"
+        "biomimetic modular robot structure connector design",
+        "bio-inspired robot swarm morphology collective locomotion"
       ],
-      "weight": 1.1
+      "weight": 1.0
     },
     {
       "name": "bioinspired_swarm_algorithms",
@@ -62,31 +62,6 @@
         "ant colony particle swarm multi-robot planning coordination"
       ],
       "weight": 1.05
-    },
-    {
-      "name": "robot_learning_embodied_ai",
-      "queries": [
-        "robot learning embodied intelligence foundation model",
-        "vision language action robotic manipulation",
-        "reinforcement learning autonomous robot control"
-      ],
-      "weight": 1.15
-    },
-    {
-      "name": "robot_perception_navigation",
-      "queries": [
-        "robot perception computer vision navigation SLAM",
-        "3D vision localization mapping robotic manipulation"
-      ],
-      "weight": 1.0
-    },
-    {
-      "name": "soft_medical_field_robotics",
-      "queries": [
-        "soft medical wearable micro robot",
-        "field aquatic aerial autonomous robotics"
-      ],
-      "weight": 1.0
     }
   ],
   "sources": {

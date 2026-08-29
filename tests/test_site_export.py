@@ -72,6 +72,27 @@ class SiteExportTests(unittest.TestCase):
             data = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual(len(data["papers"]), 1)
 
+    def test_upsert_removes_legacy_humanoid_and_out_of_scope_items(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "papers.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "papers": [
+                            {"id": "humanoid", "title": "Versatile humanoid control"},
+                            {"id": "medical", "title": "Robotic pancreas surgery"},
+                            {"id": "swarm", "title": "Distributed control for robot swarms"},
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            upsert_site_papers(path, [], "scope-cleanup")
+
+            data = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual([item["id"] for item in data["papers"]], ["swarm"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -4,6 +4,7 @@ from datetime import date
 from daily_research_agent.models import Paper
 from daily_research_agent.scoring import (
     classify_content_types,
+    classify_scope_topics,
     has_robotics_relevance,
     is_future_paper,
     score_paper,
@@ -59,10 +60,18 @@ class ScoringTests(unittest.TestCase):
 
         self.assertTrue(has_robotics_relevance(paper))
 
-    def test_biomimetic_structure_topics_are_accepted(self) -> None:
+    def test_generic_biomimetic_structure_is_rejected_without_target_scope(self) -> None:
         paper = Paper(
             title="Bio-inspired soft robot structure design",
             abstract="A biomimetic morphology improves locomotion and adaptive contact.",
+        )
+
+        self.assertFalse(has_robotics_relevance(paper))
+
+    def test_biomimetic_modular_structure_is_accepted(self) -> None:
+        paper = Paper(
+            title="Bio-inspired connector design for modular robots",
+            abstract="The robot modules self-assemble into adaptive morphologies.",
         )
 
         self.assertTrue(has_robotics_relevance(paper))
@@ -139,13 +148,37 @@ class ScoringTests(unittest.TestCase):
             ["structure_design", "algorithm_design"],
         )
 
-    def test_embodied_robot_learning_topics_are_accepted(self) -> None:
+    def test_embodied_robot_learning_topics_are_rejected(self) -> None:
         paper = Paper(
             title="Vision-language-action foundation model for embodied intelligence",
             abstract="The policy transfers to robotic manipulation tasks.",
         )
 
-        self.assertTrue(has_robotics_relevance(paper))
+        self.assertFalse(has_robotics_relevance(paper))
+
+    def test_humanoid_robot_is_rejected_even_with_swarm_language(self) -> None:
+        paper = Paper(
+            title="Coordination policies for a humanoid robot team",
+            abstract="Multiple humanoid robots perform collective transport.",
+        )
+
+        self.assertFalse(has_robotics_relevance(paper))
+
+    def test_scope_topics_are_inferred_from_content_not_query_history(self) -> None:
+        paper = Paper(
+            title="Bio-inspired decision making in robot swarms",
+            abstract="A collective control algorithm produces emergent behavior.",
+            topics=["robot_learning_embodied_ai"],
+        )
+
+        self.assertEqual(
+            classify_scope_topics(paper),
+            [
+                "swarm_intelligence_robotics",
+                "swarm_self_organization_emergence",
+                "bioinspired_swarm_algorithms",
+            ],
+        )
 
     def test_venue_tier_bonus_is_applied(self) -> None:
         config = {

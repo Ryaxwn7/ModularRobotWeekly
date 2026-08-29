@@ -44,3 +44,5 @@ Local source quality gates:
 - Reject papers whose publication date is later than the report date.
 - Reject public-source papers whose title or abstract does not contain a robotics signal such as robot, robotic, robotics, multi-robot, swarm robot, modular robot, or reconfigurable robot.
 - Treat generic words such as system, architecture, optimization, control, modular, and swarm as weak signals unless they appear with robotics context.
+- The core scope is modular/self-reconfigurable robots and robot swarms/multi-robot collective intelligence. Reject humanoid robots, embodied-AI/VLA work, medical or surgical robotics, and generic single-robot manipulation, perception, or navigation.
+- Keep biomimetic structures only when they directly support modular robots or robot swarms; keep bio-inspired optimization only with an explicit multi-robot or swarm-robot application.

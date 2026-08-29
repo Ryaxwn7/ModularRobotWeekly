@@ -46,59 +46,40 @@ def is_future_paper(paper: Paper, report_date: date) -> bool:
 
 def has_robotics_relevance(paper: Paper) -> bool:
     text = f"{paper.title} {paper.abstract}".lower()
-    direct_robotics_patterns = [
-        r"\brobot\b",
-        r"\brobots\b",
-        r"\brobotic\b",
-        r"\brobotics\b",
+    excluded_patterns = [
+        r"\bhumanoid(?: robot| robotics|s)?\b",
+        r"\bbipedal humanoid\b",
+        r"\banthropomorphic robot",
+    ]
+    if any(re.search(pattern, text) for pattern in excluded_patterns):
+        return False
+
+    target_robotics_patterns = [
         r"\bmulti[- ]robot\b",
         r"\bswarm[- ]robot",
+        r"\brobot(?:ic)? swarms?\b",
+        r"\bswarm robotics\b",
+        r"\bcollective robotic(?:s| systems?)\b",
         r"\bmodular[- ]robot",
+        r"\brobot(?:ic)? modules?\b",
         r"\breconfigurable[- ]robot",
         r"\bself[- ]reconfigurable[- ]robot",
-        r"\brobot learning\b",
-        r"\brobot foundation model",
-        r"\bvision[- ]language[- ]action\b",
-        r"\bautonomous mobile robot",
-        r"\bsimultaneous localization and mapping\b",
-        r"\bsoft robot",
-        r"\bmedical robot",
-        r"\bmicro[- ]robot",
-        r"\bnano[- ]robot",
+        r"\bself[- ]reconfiguring[- ]robot",
+        r"\bmorphological reconfiguration\b.{0,40}\brobot",
     ]
-    if any(re.search(pattern, text) for pattern in direct_robotics_patterns):
+    if any(re.search(pattern, text) for pattern in target_robotics_patterns):
         return True
 
-    bio_signal = re.search(
-        r"\b(?:biomimetic|bio[- ]inspired|bioinspired|bionic|nature[- ]inspired)\b",
+    collective_theory = re.search(
+        r"\b(?:self[- ]organi[sz](?:ation|ing)|collective behavior|collective dynamics|"
+        r"emergent collective|swarm intelligence|mean[- ]field|phase transition)\b",
         text,
     )
-    bio_robotics_context = re.search(
-        r"\b(?:actuator|artificial muscle|gripper|manipulator|soft machine|"
-        r"flapping wing mechanism|morphing mechanism|locomotion mechanism)\b",
+    robotic_agent_context = re.search(
+        r"\b(?:robotic agents?|robot agents?|distributed robots?)\b",
         text,
     )
-    if bio_signal and bio_robotics_context:
-        return True
-
-    swarm_signal = re.search(
-        r"\b(?:swarm intelligence|ant colony|particle swarm|bee colony)\b",
-        text,
-    )
-    multi_agent_context = re.search(
-        r"\b(?:multi[- ]agent|path planning|motion planning|formation control|"
-        r"cooperative navigation|collective transport|task allocation)\b",
-        text,
-    )
-    if swarm_signal and multi_agent_context:
-        return True
-
-    embodied_signal = re.search(r"\b(?:embodied intelligence|embodied ai)\b", text)
-    embodied_context = re.search(
-        r"\b(?:agent|action|policy|control|learning|manipulation|navigation)\b",
-        text,
-    )
-    return bool(embodied_signal and embodied_context)
+    return bool(collective_theory and robotic_agent_context)
 
 
 def classify_tags(paper: Paper) -> list[str]:
@@ -142,6 +123,50 @@ def classify_tags(paper: Paper) -> list[str]:
         if any(keyword in text for keyword in keywords):
             tags.append(tag)
     return tags
+
+
+def classify_scope_topics(paper: Paper) -> list[str]:
+    text = f"{paper.title} {paper.abstract}".lower()
+    topics: list[str] = []
+    modular = re.search(
+        r"\b(?:modular[- ]robot(?:s|ic)?|modular (?:robotic )?(?:systems?|arms?|boats?|"
+        r"cubes?|millibots?|structures?|units?)|robot(?:ic)? modules?|"
+        r"self[- ]reconfigur(?:able|ing|ation)[- ]robot(?:s|ic)?|"
+        r"reconfigurable[- ]robots?|morphological reconfiguration)\b",
+        text,
+    )
+    swarm = re.search(
+        r"\b(?:robot(?:ic)? swarms?|swarm[- ]robots?|swarm robotics|multi[- ]robots?|"
+        r"collective robotic(?:s| systems?))\b",
+        text,
+    )
+    collective_theory = re.search(
+        r"\b(?:self[- ]organi[sz](?:ation|ing)|emergen(?:ce|t)|collective dynamics|"
+        r"mean[- ]field|phase transition|order parameter|statistical mechanics)\b",
+        text,
+    )
+    engineering = re.search(
+        r"\b(?:system design|co[- ]design|architecture|hardware|prototype|task allocation|"
+        r"coordination|formation|distributed control)\b",
+        text,
+    )
+    bio = re.search(r"\b(?:biomimetic|bio[- ]inspired|bioinspired|bionic|nature[- ]inspired)\b", text)
+    algorithm = re.search(r"\b(?:algorithm|planning|control|optimization|learning|decision making)\b", text)
+    structure = re.search(r"\b(?:structure|mechanism|morphology|connector|actuator|module)\b", text)
+
+    if modular:
+        topics.append("modular_reconfigurable_robotics")
+    if swarm:
+        topics.append("swarm_intelligence_robotics")
+    if swarm and collective_theory:
+        topics.append("swarm_self_organization_emergence")
+    if (modular or swarm) and engineering:
+        topics.append("engineering_system_design")
+    if bio and structure and (modular or swarm):
+        topics.append("biomimetic_structure_design")
+    if bio and algorithm and swarm:
+        topics.append("bioinspired_swarm_algorithms")
+    return topics
 
 
 def classify_content_types(paper: Paper) -> list[str]:
@@ -243,6 +268,5 @@ def score_paper(paper: Paper, config: dict[str, Any], topic_name: str, topic_wei
     paper.reasons = reasons
     paper.tags = classify_tags(paper)
     paper.content_types = classify_content_types(paper)
-    if topic_name not in paper.topics:
-        paper.topics.append(topic_name)
+    paper.topics = sorted(set(paper.topics + classify_scope_topics(paper)))
     return paper

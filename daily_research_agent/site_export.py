@@ -7,7 +7,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 from .models import Paper
-from .scoring import classify_content_types
+from .scoring import classify_content_types, classify_scope_topics, has_robotics_relevance
 
 
 def paper_summary(paper: Paper, max_chars: int = 420) -> str:
@@ -83,7 +83,21 @@ def sanitize_site_item(item: dict[str, Any]) -> dict[str, Any]:
         ),
         "",
     )
+    paper = Paper(
+        title=str(item.get("title", "")),
+        abstract=str(item.get("abstract") or item.get("summary") or ""),
+    )
+    item["topics"] = classify_scope_topics(paper)
     return item
+
+
+def site_item_is_in_scope(item: dict[str, Any]) -> bool:
+    return has_robotics_relevance(
+        Paper(
+            title=str(item.get("title", "")),
+            abstract=str(item.get("abstract") or item.get("summary") or ""),
+        )
+    )
 
 
 def paper_to_site_item(paper: Paper, report_id: str) -> dict[str, Any]:
@@ -126,8 +140,14 @@ def upsert_site_papers(
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     data = load_site_data(path)
-    existing = {item["id"]: item for item in data.get("papers", []) if item.get("id")}
+    existing = {
+        item["id"]: item
+        for item in data.get("papers", [])
+        if item.get("id") and site_item_is_in_scope(item)
+    }
     for paper in papers:
+        if not has_robotics_relevance(paper):
+            continue
         item = paper_to_site_item(paper, report_id=report_id)
         current = existing.get(item["id"])
         if current:

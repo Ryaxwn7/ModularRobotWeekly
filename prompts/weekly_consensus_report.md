@@ -6,8 +6,14 @@ Generate the twice-weekly research report for robotics, focusing on:
 - swarm intelligence and swarm robotics
 - self-organization, collective dynamics, and emergent intelligence in robot swarms
 - multi-robot system engineering, co-design, control, hardware architecture, and theory
-- biomimetic structure design and bio-inspired robotic mechanisms
+- biomimetic structure design only when it supports modular robots or robot swarms
 - bio-inspired swarm algorithms, ant colony methods, particle swarm methods, and nature-inspired collective control
+
+Hard scope exclusions:
+
+- Exclude humanoid robots, bipedal humanoids, embodied-AI foundation models, and general vision-language-action robot learning.
+- Exclude generic manipulation, perception, SLAM, autonomous navigation, medical/surgical robotics, and soft robots unless the paper directly studies modular reconfiguration or a robot swarm.
+- A high-impact venue is not enough by itself; every selected paper must have a clear modular/reconfigurable robot or robot-swarm/multi-robot contribution.
 
 Consensus quota policy:
 
@@ -26,14 +32,14 @@ Recommended Consensus searches:
 1. `modular self-reconfigurable robot modular reconfigurable robotics Science Robotics IEEE Robotics and Automation Letters year:2024-2026`
 2. `swarm robotics collective intelligence multi-robot distributed control Nature Communications Science Robotics year:2024-2026`
 3. `multi robot system engineering co-design modular robot hardware architecture Autonomous Robots IJRR year:2024-2026`
-4. `biomimetic robot structure design bio-inspired robotic mechanism soft robot Science Robotics Nature Communications year:2024-2026`
+4. `biomimetic modular robot structure bio-inspired robot swarm morphology Science Robotics Nature Communications year:2024-2026`
 5. `bio-inspired swarm robotics algorithm ant colony particle swarm multi-robot coordination year:2024-2026`
 6. `robot swarm self-organization emergent collective behavior mean-field phase transition graph theory year:2024-2026`
 
 Topic rotation:
 
 - Monday: prefer search 1 and alternate searches 2 and 6 so self-organization and emergence theory is covered regularly.
-- Thursday: prefer searches 3 and 4.
+- Thursday: prefer search 3 and alternate searches 1, 4, and 6 while retaining at least one core modular or swarm query.
 - If the previous report had few biomimetic or swarm-algorithm papers, use search 5 instead of one lower-yield query.
 - If the previous two reports contain no self-organization or emergence paper, prioritize search 6.
 - If the local public-source report shows a clear spike in another topic, replace one query with the most relevant recommended query, but still stay within 2 searches.
@@ -49,6 +55,7 @@ Execution order:
    - If the cursor did not advance, stop immediately. Do not call Consensus, do not edit `site/data/papers.json`, do not update `consensus_usage.json`, and do not publish.
 3. Only after the public-source run succeeds, apply the Consensus quota policy and run at most two Consensus searches.
 4. Merge the Consensus findings into `site/data/papers.json`, preserving existing high-quality items and updating or inserting new papers by stable id or DOI.
+   - Apply the same hard scope exclusions before merging, including the humanoid-robot exclusion.
    - Treat Consensus only as a discovery source. Never use a `consensus.app` URL as the paper's original link.
    - Resolve and verify the version-of-record DOI from Crossref or the publisher when available, then store `url` and `doi_url` as `https://doi.org/<DOI>`.
    - For papers without a DOI, use the official arXiv abstract page or the publisher's article page. If no original source can be verified, leave `url` empty.
