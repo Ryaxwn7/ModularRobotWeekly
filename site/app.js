@@ -3,8 +3,6 @@ const state = {
   filtered: [],
 };
 
-const fallbackFigure = "./assets/paper-placeholder.svg";
-
 function normalize(value) {
   return String(value || "").toLowerCase();
 }
@@ -122,26 +120,19 @@ function renderPapers() {
 
   state.filtered.forEach((paper) => {
     const node = template.content.cloneNode(true);
-    const figure = node.querySelector(".paper-figure");
-    const figureLink = node.querySelector(".figure-link");
     const title = node.querySelector(".paper-title");
     const original = node.querySelector(".paper-link");
     const doi = node.querySelector(".doi-link");
 
     const url = originalPaperUrl(paper);
-    figure.src = paper.figure_url || fallbackFigure;
-    figure.alt = paper.figure_alt || `论文主图：${paper.title}`;
-
     node.querySelector(".paper-date").textContent = formatDate(paper.published);
     node.querySelector(".paper-venue").textContent = paper.venue || paper.source || "Unknown venue";
     node.querySelector(".paper-score").textContent = paper.score ? `Score ${paper.score}` : "";
     title.textContent = paper.title;
     if (url) {
-      figureLink.href = url;
       title.href = url;
       original.href = url;
     } else {
-      figureLink.removeAttribute("href");
       title.removeAttribute("href");
       original.remove();
     }
