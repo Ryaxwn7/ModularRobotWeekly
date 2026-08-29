@@ -31,6 +31,16 @@
       "weight": 1.15
     },
     {
+      "name": "swarm_self_organization_emergence",
+      "queries": [
+        "robot swarm self-organization emergent collective behavior",
+        "swarm robotics emergence collective intelligence theory",
+        "multi-robot self-organizing systems mean-field graph theory",
+        "robotic swarms phase transition order parameter statistical mechanics"
+      ],
+      "weight": 1.2
+    },
+    {
       "name": "engineering_system_design",
       "queries": [
         "robotic swarm system design",
@@ -99,7 +109,16 @@
       "theory",
       "proof",
       "experiment",
-      "prototype"
+      "prototype",
+      "self-organization",
+      "emergence",
+      "collective dynamics",
+      "mean-field",
+      "graph theory",
+      "dynamical systems",
+      "phase transition",
+      "order parameter",
+      "statistical mechanics"
     ]
   },
   "summarizer": {

@@ -30,6 +30,16 @@
       "weight": 1.15
     },
     {
+      "name": "swarm_self_organization_emergence",
+      "queries": [
+        "robot swarm self-organization emergent collective behavior",
+        "swarm robotics emergence collective intelligence theory",
+        "multi-robot self-organizing systems mean-field graph theory",
+        "robotic swarms phase transition order parameter statistical mechanics"
+      ],
+      "weight": 1.2
+    },
+    {
       "name": "engineering_system_design",
       "queries": [
         "multi robot system engineering",
@@ -141,7 +151,12 @@
       "Artificial Intelligence",
       "Pattern Recognition",
       "ACM Computing Surveys",
-      "ACM Transactions on Human-Robot Interaction"
+      "ACM Transactions on Human-Robot Interaction",
+      "Proceedings of the National Academy of Sciences",
+      "Nature Physics",
+      "Physical Review E",
+      "Artificial Life",
+      "IEEE Transactions on Network Science and Engineering"
     ],
     "venue_tiers": [
       {
@@ -168,7 +183,9 @@
           "The International Journal of Robotics Research",
           "International Journal of Robotics Research",
           "Journal of Machine Learning Research",
-          "International Journal of Computer Vision"
+          "International Journal of Computer Vision",
+          "Proceedings of the National Academy of Sciences",
+          "Nature Physics"
         ]
       },
       {
@@ -193,7 +210,10 @@
           "ACM Computing Surveys",
           "ACM Transactions on Human-Robot Interaction",
           "Communications AI & Computing",
-          "npj Robotics"
+          "npj Robotics",
+          "Physical Review E",
+          "Artificial Life",
+          "IEEE Transactions on Network Science and Engineering"
         ]
       }
     ],
@@ -215,7 +235,9 @@
       "Soft Robotics",
       "Robotics and Autonomous Systems",
       "Journal of Field Robotics",
-      "International Journal of Computer Vision"
+      "International Journal of Computer Vision",
+      "Proceedings of the National Academy of Sciences",
+      "Nature Physics"
     ],
     "publisher_keywords": [
       "IEEE",
@@ -251,7 +273,19 @@
       "nature-inspired",
       "ant colony",
       "particle swarm",
-      "bee colony"
+      "bee colony",
+      "self-organization",
+      "self-organizing",
+      "emergence",
+      "emergent behavior",
+      "collective dynamics",
+      "mean-field",
+      "graph theory",
+      "dynamical systems",
+      "phase transition",
+      "order parameter",
+      "statistical mechanics",
+      "active matter"
     ]
   },
   "consensus": {

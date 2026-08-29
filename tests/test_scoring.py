@@ -78,6 +78,42 @@ class ScoringTests(unittest.TestCase):
 
         self.assertFalse(has_robotics_relevance(paper))
 
+    def test_robot_swarm_emergence_theory_is_tagged(self) -> None:
+        config = {
+            "ranking": {
+                "preferred_venues": [],
+                "publisher_keywords": [],
+                "method_keywords": [
+                    "self-organization",
+                    "emergence",
+                    "mean-field",
+                    "phase transition",
+                ],
+            }
+        }
+        paper = Paper(
+            title="Self-organization and emergent collective behavior in robot swarms",
+            abstract=(
+                "A mean-field model identifies a phase transition and order parameter "
+                "for decentralized robotic agents."
+            ),
+        )
+
+        self.assertTrue(has_robotics_relevance(paper))
+        scored = score_paper(paper, config, "swarm_self_organization_emergence", 1.2)
+        self.assertIn("self_organization", scored.tags)
+        self.assertIn("emergence", scored.tags)
+        self.assertIn("collective_dynamics", scored.tags)
+        self.assertIn("theory", scored.tags)
+
+    def test_non_robotic_active_matter_emergence_is_rejected(self) -> None:
+        paper = Paper(
+            title="Emergent phase transitions in active matter",
+            abstract="Self-organizing particles exhibit a collective order parameter.",
+        )
+
+        self.assertFalse(has_robotics_relevance(paper))
+
     def test_embodied_robot_learning_topics_are_accepted(self) -> None:
         paper = Paper(
             title="Vision-language-action foundation model for embodied intelligence",

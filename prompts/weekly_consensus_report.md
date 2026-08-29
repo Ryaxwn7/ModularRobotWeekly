@@ -4,6 +4,7 @@ Generate the twice-weekly research report for robotics, focusing on:
 
 - modular and self-reconfigurable robots
 - swarm intelligence and swarm robotics
+- self-organization, collective dynamics, and emergent intelligence in robot swarms
 - multi-robot system engineering, co-design, control, hardware architecture, and theory
 - biomimetic structure design and bio-inspired robotic mechanisms
 - bio-inspired swarm algorithms, ant colony methods, particle swarm methods, and nature-inspired collective control
@@ -27,12 +28,14 @@ Recommended Consensus searches:
 3. `multi robot system engineering co-design modular robot hardware architecture Autonomous Robots IJRR year:2024-2026`
 4. `biomimetic robot structure design bio-inspired robotic mechanism soft robot Science Robotics Nature Communications year:2024-2026`
 5. `bio-inspired swarm robotics algorithm ant colony particle swarm multi-robot coordination year:2024-2026`
+6. `robot swarm self-organization emergent collective behavior mean-field phase transition graph theory year:2024-2026`
 
 Topic rotation:
 
-- Monday: prefer searches 1 and 2.
+- Monday: prefer search 1 and alternate searches 2 and 6 so self-organization and emergence theory is covered regularly.
 - Thursday: prefer searches 3 and 4.
 - If the previous report had few biomimetic or swarm-algorithm papers, use search 5 instead of one lower-yield query.
+- If the previous two reports contain no self-organization or emergence paper, prioritize search 6.
 - If the local public-source report shows a clear spike in another topic, replace one query with the most relevant recommended query, but still stay within 2 searches.
 
 Execution order:

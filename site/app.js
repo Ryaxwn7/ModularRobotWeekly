@@ -15,7 +15,13 @@ function formatDate(value) {
 }
 
 function topicLabel(topic) {
-  return topic.replaceAll("_", " ");
+  const labels = {
+    swarm_self_organization_emergence: "群体自组织与智能涌现",
+    self_organization: "自组织",
+    emergence: "智能涌现",
+    collective_dynamics: "群体动力学",
+  };
+  return labels[topic] || topic.replaceAll("_", " ");
 }
 
 function isConsensusUrl(value) {
