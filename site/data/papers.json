@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T15:30:31",
+  "updated_at": "2026-08-29T13:38:56",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
@@ -544,6 +544,45 @@
         "system"
       ],
       "score": 4.5
+    },
+    {
+      "id": "doi:10.1073/pnas.2519129123",
+      "report_id": "curated_backfill_20260829",
+      "title": "Agile legged locomotion in reconfigurable modular robots",
+      "url": "https://doi.org/10.1073/pnas.2519129123",
+      "doi": "10.1073/pnas.2519129123",
+      "doi_url": "https://doi.org/10.1073/pnas.2519129123",
+      "summary": "提出可自由组合的自主模块化单自由度腿单元，并通过学习与自动设计构建可快速重组、修复和承受结构损伤的敏捷多足机器人，将动态足式运动与模块化可重构形态结合。",
+      "abstract": "Legged machines are agile but usually retain fixed body plans. This work introduces autonomous single-degree-of-freedom modular legs that can be freely combined into reconfigurable multilegged machines. The modules learn dynamic behaviors, support rapid repair and redesign, tolerate structural damage, and enable automatic exploration of a compact latent design space for diverse agile morphologies.",
+      "figure_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/instance/12974426/bin/pnas.2519129123fig01.jpg",
+      "figure_alt": "Main figure for Agile legged locomotion in reconfigurable modular robots",
+      "authors": [
+        "Chen Yu",
+        "David Matthews",
+        "Jingxian Wang",
+        "Jing Gu",
+        "Douglas Blackiston",
+        "Michael Rubenstein",
+        "Sam Kriegman"
+      ],
+      "published": "2026-03-06",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "publisher": "National Academy of Sciences",
+      "source": "curated_backfill",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "structure",
+        "algorithm",
+        "system",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 9.5
     },
     {
       "id": "doi:10.1126/scirobotics.adz1999",

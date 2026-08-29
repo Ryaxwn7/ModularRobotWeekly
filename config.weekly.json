@@ -2,7 +2,7 @@
   "agent": {
     "name": "Robotics Weekly Research Agent",
     "language": "zh-CN",
-    "lookback_days": 21,
+    "lookback_days": 365,
     "cursor_overlap_days": 2,
     "date_chunk_days": 14,
     "max_results_per_query": 50,

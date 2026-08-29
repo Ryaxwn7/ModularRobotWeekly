@@ -49,6 +49,7 @@ Execution order:
 1. Run the local project command:
    `python -m daily_research_agent --config config.weekly.json`
    - Let the agent resume from its successful cursor with the configured overlap. Never pass `--days`.
+   - On a new installation with no cursor or site state, use the configured 365-day bootstrap window so important recent history is not missed.
    - Search arXiv, Crossref, Semantic Scholar, and OpenAlex, including the configured high-impact journal watch list.
 2. Inspect the command output before doing anything else.
    - Continue only when it prints `Cursor advanced: yes` and `Blocking source errors: 0`.
