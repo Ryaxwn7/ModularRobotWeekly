@@ -18,6 +18,7 @@ class SiteExportTests(unittest.TestCase):
             venue="Science Robotics",
             topics=["modular_reconfigurable_robotics"],
             tags=["structure"],
+            content_types=["structure_design"],
             raw={"figure_url": "https://example.com/figure.png"},
         )
 
@@ -27,6 +28,17 @@ class SiteExportTests(unittest.TestCase):
         self.assertEqual(item["url"], "https://doi.org/10.0000/example")
         self.assertEqual(item["figure_url"], "https://example.com/figure.png")
         self.assertTrue(item["summary"])
+        self.assertEqual(item["content_types"], ["structure_design"])
+
+    def test_site_export_infers_content_type_when_missing(self) -> None:
+        paper = Paper(
+            title="Learning-based coordination algorithm for robot swarms",
+            abstract="A distributed control policy coordinates the robots.",
+        )
+
+        item = paper_to_site_item(paper, "report")
+
+        self.assertEqual(item["content_types"], ["algorithm_design"])
 
     def test_consensus_url_is_not_exported_as_original_paper(self) -> None:
         paper = Paper(

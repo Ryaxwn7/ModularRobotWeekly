@@ -2,7 +2,12 @@ import unittest
 from datetime import date
 
 from daily_research_agent.models import Paper
-from daily_research_agent.scoring import has_robotics_relevance, is_future_paper, score_paper
+from daily_research_agent.scoring import (
+    classify_content_types,
+    has_robotics_relevance,
+    is_future_paper,
+    score_paper,
+)
 
 
 class ScoringTests(unittest.TestCase):
@@ -113,6 +118,26 @@ class ScoringTests(unittest.TestCase):
         )
 
         self.assertFalse(has_robotics_relevance(paper))
+
+    def test_review_is_classified_without_design_labels(self) -> None:
+        paper = Paper(
+            title="A systematic review of modular robot control algorithms",
+            abstract="This survey covers mechanisms, planning, and learning.",
+            tags=["structure", "algorithm"],
+        )
+
+        self.assertEqual(classify_content_types(paper), ["review"])
+
+    def test_hybrid_hardware_and_control_paper_has_two_content_types(self) -> None:
+        paper = Paper(
+            title="Docking mechanism and distributed control for modular robots",
+            abstract="The prototype combines a connector with a planning algorithm.",
+        )
+
+        self.assertEqual(
+            classify_content_types(paper),
+            ["structure_design", "algorithm_design"],
+        )
 
     def test_embodied_robot_learning_topics_are_accepted(self) -> None:
         paper = Paper(

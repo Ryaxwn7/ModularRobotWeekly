@@ -18,6 +18,7 @@ class Paper:
     source: str = ""
     topics: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
+    content_types: list[str] = field(default_factory=list)
     score: float = 0.0
     reasons: list[str] = field(default_factory=list)
     raw: dict[str, Any] = field(default_factory=dict)

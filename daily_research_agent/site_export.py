@@ -7,6 +7,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 from .models import Paper
+from .scoring import classify_content_types
 
 
 def paper_summary(paper: Paper, max_chars: int = 420) -> str:
@@ -106,6 +107,7 @@ def paper_to_site_item(paper: Paper, report_id: str) -> dict[str, Any]:
         "source": paper.source,
         "topics": paper.topics,
         "tags": paper.tags,
+        "content_types": paper.content_types or classify_content_types(paper),
         "score": paper.score,
     })
 

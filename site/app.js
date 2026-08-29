@@ -20,8 +20,33 @@ function topicLabel(topic) {
     self_organization: "自组织",
     emergence: "智能涌现",
     collective_dynamics: "群体动力学",
+    review: "综述",
+    structure_design: "结构设计",
+    algorithm_design: "算法设计",
   };
   return labels[topic] || topic.replaceAll("_", " ");
+}
+
+function contentTypes(paper) {
+  if ((paper.content_types || []).length) return paper.content_types;
+
+  const title = normalize(paper.title);
+  const text = normalize([paper.title, paper.summary, paper.abstract].join(" "));
+  const tags = paper.tags || [];
+  if (/\b(review|survey|systematic review|scoping review|meta-analysis|bibliometric analysis|taxonomy|state of the art)\b/.test(title)
+      || /\b(this|the|a|an|comprehensive|systematic|scoping) review\b/.test(text)
+      || tags.some((tag) => ["review", "综述"].includes(tag))) {
+    return ["review"];
+  }
+
+  const types = [];
+  if (/\b(structure design|structural design|mechanism design|mechanical design|morphology|actuator|hardware|fabrication|prototype|docking|connector|gripper|module design|material design)\b/.test(text)) {
+    types.push("structure_design");
+  }
+  if (/\b(algorithm|control|controller|planning|planner|optimization|learning|policy|coordination|consensus|estimation|perception|localization|mapping|navigation|task allocation|formation|mean-field|graph theory|dynamical system|stability|convergence|phase transition|order parameter|statistical mechanics)\b/.test(text)) {
+    types.push("algorithm_design");
+  }
+  return types;
 }
 
 function isConsensusUrl(value) {
@@ -54,6 +79,7 @@ function renderTopicOptions(papers) {
 function applyFilters() {
   const query = normalize(document.querySelector("#searchInput").value);
   const topic = document.querySelector("#topicFilter").value;
+  const contentType = document.querySelector("#contentTypeFilter").value;
   const sort = document.querySelector("#sortSelect").value;
 
   state.filtered = state.papers.filter((paper) => {
@@ -64,10 +90,12 @@ function applyFilters() {
       paper.venue,
       ...(paper.tags || []),
       ...(paper.topics || []),
+      ...contentTypes(paper),
     ].join(" "));
     const matchesQuery = !query || haystack.includes(query);
     const matchesTopic = !topic || (paper.topics || []).includes(topic);
-    return matchesQuery && matchesTopic;
+    const matchesContentType = !contentType || contentTypes(paper).includes(contentType);
+    return matchesQuery && matchesTopic && matchesContentType;
   });
 
   state.filtered.sort((a, b) => {
@@ -120,9 +148,12 @@ function renderPapers() {
     node.querySelector(".paper-summary").textContent = paper.summary || paper.abstract || "暂无摘要。";
 
     const tags = node.querySelector(".paper-tags");
-    [...(paper.topics || []), ...(paper.tags || [])].forEach((tag) => {
+    const paperContentTypes = contentTypes(paper);
+    [...new Set([...paperContentTypes, ...(paper.topics || []), ...(paper.tags || [])])].forEach((tag) => {
       const item = document.createElement("span");
-      item.className = (paper.topics || []).includes(tag) ? "tag topic" : "tag";
+      item.className = paperContentTypes.includes(tag)
+        ? "tag content-type"
+        : (paper.topics || []).includes(tag) ? "tag topic" : "tag";
       item.textContent = topicLabel(tag);
       tags.appendChild(item);
     });
@@ -152,7 +183,7 @@ async function init() {
   }
 
   renderTopicOptions(state.papers);
-  ["#searchInput", "#topicFilter", "#sortSelect"].forEach((selector) => {
+  ["#searchInput", "#topicFilter", "#contentTypeFilter", "#sortSelect"].forEach((selector) => {
     document.querySelector(selector).addEventListener("input", applyFilters);
   });
   applyFilters();

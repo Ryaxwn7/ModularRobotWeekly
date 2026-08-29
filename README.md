@@ -33,6 +33,7 @@ https://github.com/Ryaxwn7/ModularRobotWeekly
 - 可选接入 IEEE、Elsevier、Gemini、DeepSeek、豆包等 API。
 - 按期刊来源、主题相关性、算法/结构/系统/理论标签评分。
 - 过滤未来日期论文和非机器人主题论文。
+- 按论文内容标记综述、结构设计和算法设计；结构与算法可同时标记。
 - 生成 Markdown 周报。
 - 同步生成 `site/data/papers.json`，供静态网站展示。
 - 通过 GitHub Actions 每周一、周四自动更新并发布到 GitHub Pages。

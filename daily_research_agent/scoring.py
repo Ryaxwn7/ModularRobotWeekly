@@ -105,6 +105,7 @@ def classify_tags(paper: Paper) -> list[str]:
     text = f"{paper.title} {paper.abstract}".lower()
     tags: list[str] = []
     tag_keywords = {
+        "review": ["review", "survey", "meta-analysis", "bibliometric analysis"],
         "algorithm": ["algorithm", "planning", "optimization", "learning", "policy", "estimation"],
         "control": ["control", "controller", "distributed", "consensus", "coordination"],
         "structure": ["mechanism", "morphology", "module", "hardware", "actuator", "lattice"],
@@ -141,6 +142,41 @@ def classify_tags(paper: Paper) -> list[str]:
         if any(keyword in text for keyword in keywords):
             tags.append(tag)
     return tags
+
+
+def classify_content_types(paper: Paper) -> list[str]:
+    title = (paper.title or "").lower()
+    text = f"{paper.title or ''} {paper.abstract or ''}".lower()
+
+    review_pattern = (
+        r"\b(?:review|survey|systematic review|scoping review|meta-analysis|"
+        r"bibliometric analysis|taxonomy|state of the art)\b"
+    )
+    abstract_review_pattern = r"\b(?:this|the|a|an|comprehensive|systematic|scoping) review\b"
+    if (
+        re.search(review_pattern, title)
+        or re.search(abstract_review_pattern, (paper.abstract or "").lower())
+        or any(tag in paper.tags for tag in ("review", "综述"))
+    ):
+        return ["review"]
+
+    content_types: list[str] = []
+    structure_pattern = (
+        r"\b(?:structur(?:e|al) design|mechanism design|mechanical design|morphology|"
+        r"actuator|artificial muscle|hardware|fabrication|prototype|docking|connector|"
+        r"gripper|module design|soft robotic body|material design)\b"
+    )
+    algorithm_pattern = (
+        r"\b(?:algorithm|control(?:ler)?|planning|planner|optimization|learning|policy|"
+        r"coordination|consensus|estimation|perception|localization|mapping|navigation|"
+        r"task allocation|formation|mean-field|graph theory|dynamical system|stability|"
+        r"convergence|phase transition|order parameter|statistical mechanics)\b"
+    )
+    if re.search(structure_pattern, text):
+        content_types.append("structure_design")
+    if re.search(algorithm_pattern, text):
+        content_types.append("algorithm_design")
+    return content_types
 
 
 def score_paper(paper: Paper, config: dict[str, Any], topic_name: str, topic_weight: float) -> Paper:
@@ -206,6 +242,7 @@ def score_paper(paper: Paper, config: dict[str, Any], topic_name: str, topic_wei
     paper.score = round(score, 2)
     paper.reasons = reasons
     paper.tags = classify_tags(paper)
+    paper.content_types = classify_content_types(paper)
     if topic_name not in paper.topics:
         paper.topics.append(topic_name)
     return paper
