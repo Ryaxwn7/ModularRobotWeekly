@@ -1,7 +1,737 @@
 {
-  "updated_at": "2026-08-29T13:38:56",
+  "updated_at": "2026-09-07T17:05:37",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
+    {
+      "id": "doi:10.1007/s12065-026-01257-5",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Survival probability-weighted clustering for UAV-based multi-robot task allocation in disaster response",
+      "url": "https://doi.org/10.1007/s12065-026-01257-5",
+      "doi": "10.1007/s12065-026-01257-5",
+      "doi_url": "https://doi.org/10.1007/s12065-026-01257-5",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Survival probability-weighted clustering for UAV-based multi-robot task allocation in disaster response",
+      "authors": [
+        "Abdullah Osman",
+        "Tarık Küçükdeniz"
+      ],
+      "published": "2026-09-07",
+      "venue": "Evolutionary Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.5
+    },
+    {
+      "id": "doi:10.1016/j.scico.2026.103559",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Project Emerge: A Demonstrator for Self-organizing Robot Teams",
+      "url": "https://doi.org/10.1016/j.scico.2026.103559",
+      "doi": "10.1016/j.scico.2026.103559",
+      "doi_url": "https://doi.org/10.1016/j.scico.2026.103559",
+      "summary": "Aggregate computing has been studied for over a decade and is supported by multiple programming frameworks, proving suitable for simulating applications in challenging domains such as smart cities and robot swarms. Project Emerge is a toolchain for practical multi-robot demonstrations based on aggregate computing principles, validated through a public, live, interactive demo at a European Researchers’ Night event. U...",
+      "abstract": "Aggregate computing has been studied for over a decade and is supported by multiple programming frameworks, proving suitable for simulating applications in challenging domains such as smart cities and robot swarms. Project Emerge is a toolchain for practical multi-robot demonstrations based on aggregate computing principles, validated through a public, live, interactive demo at a European Researchers’ Night event. Using a camera system and ArUco markers for localization, we show how the demonstrator coordinates mobile robots to form spatial patterns.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Project Emerge: A Demonstrator for Self-organizing Robot Teams",
+      "authors": [
+        "Nicolas Farabegoli",
+        "Gianluca Aguzzi",
+        "Martina Baiardi",
+        "Angela Cortecchia",
+        "Davide Domini",
+        "Danilo Pianini",
+        "Mirko Viroli"
+      ],
+      "published": "2026-09-01",
+      "venue": "Science of Computer Programming",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "perception",
+        "self_organization",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.2
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3711507",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Congestion-Aware Efficient Multi-Robot Task Planning via Invocation-Pruning Task Evaluation",
+      "url": "https://doi.org/10.1109/lra.2026.3711507",
+      "doi": "10.1109/lra.2026.3711507",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3711507",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Congestion-Aware Efficient Multi-Robot Task Planning via Invocation-Pruning Task Evaluation",
+      "authors": [
+        "Haoyu Tian",
+        "Zisen Nie",
+        "Guanghui Sun",
+        "Ligang Wu",
+        "Weiran Yao"
+      ],
+      "published": "2026-09-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.1
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3711857",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "WiSER-X: Wireless Signal-Based Decentralized Multi-Robot Exploration Without Explicit Information Exchange",
+      "url": "https://doi.org/10.1109/lra.2026.3711857",
+      "doi": "10.1109/lra.2026.3711857",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3711857",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for WiSER-X: Wireless Signal-Based Decentralized Multi-Robot Exploration Without Explicit Information Exchange",
+      "authors": [
+        "Ninad Jadhav",
+        "Meghna Behari",
+        "Robert J. Wood",
+        "Stephanie Gil"
+      ],
+      "published": "2026-09-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 6.8
+    },
+    {
+      "id": "doi:10.1016/j.array.2026.101190",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "RTSF: An open, schema-validated robot task specification format for vendor-independent description, LLM generation, and multi-platform validation of manipulator tasks",
+      "url": "https://doi.org/10.1016/j.array.2026.101190",
+      "doi": "10.1016/j.array.2026.101190",
+      "doi_url": "https://doi.org/10.1016/j.array.2026.101190",
+      "summary": "Objective: Robot task programming in manufacturing remains tightly coupled to vendor-specific languages, hindering portability and reuse. This paper presents a vendor-neutral, schema-validated format for robot task specification that enables large language model (LLM) generation and multi-robot execution without modifying the task description. Methods: The Robot Task Specification Format (RTSF) is a JSON format with...",
+      "abstract": "Objective: Robot task programming in manufacturing remains tightly coupled to vendor-specific languages, hindering portability and reuse. This paper presents a vendor-neutral, schema-validated format for robot task specification that enables large language model (LLM) generation and multi-robot execution without modifying the task description. Methods: The Robot Task Specification Format (RTSF) is a JSON format with nine step types covering all six control-flow constructs, governed by a JSON Schema (draft-07). A gap analysis against ten existing formats positions RTSF. Schema-guided LLM generation is evaluated on 30 task descriptions across four domains, with a prompt ablation study. A runtime architecture (recursive parser, PDDL converter, BehaviorTree.CPP converter) enables multi-backend execution. A multi-robot experiment validates six scenarios on four platforms: UR5e, Franka FR3, Kinova Gen3, and Denso Cobotta (physical robot). Results: No surveyed format combines a task-level abstraction with a formal JSON Schema, vendor-independent execution, complete control-flow coverage, and schema-guided LLM generation. The multi-robot experiment verifies identical action sequences and arguments across over 500 adapter calls on four platforms using unmodified task files. Schema-guided prompting achieves high construct recall (100% corrected validity); an independent benchmark by three external evaluators confirms generalisability. Prompt ablation confirms that disambiguation and field-name guidance rules contribute roughly equally to recall. Scalability benchmark confirms sub-second processing at 5000 steps. Conclusion: RTSF fills the gap between natural-language task descriptions and heterogeneous execution backends, enabling vendor-independent robot task programming with schema-guided LLM generation and multi-platform validation. The format, examples, scripts, and test suite (107 tests) are released under the MIT licence.",
+      "figure_url": "",
+      "figure_alt": "Main figure for RTSF: An open, schema-validated robot task specification format for vendor-independent description, LLM generation, and multi-platform validation of manipulator tasks",
+      "authors": [
+        "Luigi Gargioni"
+      ],
+      "published": "2026-09-01",
+      "venue": "Array",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "review",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 5.46
+    },
+    {
+      "id": "doi:10.1016/j.isatra.2026.05.023",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Observer-based hierarchical distributed optimal robust safety consensus control of multi-robot systems under actuator faults",
+      "url": "https://doi.org/10.1016/j.isatra.2026.05.023",
+      "doi": "10.1016/j.isatra.2026.05.023",
+      "doi_url": "https://doi.org/10.1016/j.isatra.2026.05.023",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Observer-based hierarchical distributed optimal robust safety consensus control of multi-robot systems under actuator faults",
+      "authors": [
+        "Zhi Li",
+        "Shoufeng Tang"
+      ],
+      "published": "2026-09-01",
+      "venue": "ISA Transactions",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 4.78
+    },
+    {
+      "id": "doi:10.1016/j.ohx.2026.e00806",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Fin-Ray soft gripper for object manipulation with multi-robot systems",
+      "url": "https://doi.org/10.1016/j.ohx.2026.e00806",
+      "doi": "10.1016/j.ohx.2026.e00806",
+      "doi_url": "https://doi.org/10.1016/j.ohx.2026.e00806",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Fin-Ray soft gripper for object manipulation with multi-robot systems",
+      "authors": [
+        "Santiago Velasquez",
+        "Alejandro Toro-Ossaba",
+        "Daniel Sanin-Villa",
+        "Juan David Núñez",
+        "David Rozo-Osorio",
+        "Isis Bonet",
+        "Mario Góngora",
+        "Mario A. Giraldo",
+        "Juan C. Tejada"
+      ],
+      "published": "2026-09-01",
+      "venue": "HardwareX",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "structure_design"
+      ],
+      "score": 4.7
+    },
+    {
+      "id": "doi:10.1016/j.eswa.2026.132587",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Sector -scanning with energy-aware anchoring algorithm for task allocation of electric multi-robot systems",
+      "url": "https://doi.org/10.1016/j.eswa.2026.132587",
+      "doi": "10.1016/j.eswa.2026.132587",
+      "doi_url": "https://doi.org/10.1016/j.eswa.2026.132587",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Sector -scanning with energy-aware anchoring algorithm for task allocation of electric multi-robot systems",
+      "authors": [
+        "Peng Chen",
+        "Jing Liang",
+        "Kang-Jia Qiao",
+        "Hui Song",
+        "Xuan-Xuan Ban",
+        "Cai-Tong Yue",
+        "Kun-Jie Yu",
+        "Tian-Lei Ma"
+      ],
+      "published": "2026-09-01",
+      "venue": "Expert Systems with Applications",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.7
+    },
+    {
+      "id": "doi:10.1016/j.cja.2025.103962",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Multi-robot collaborative assembly strategy for large space structure",
+      "url": "https://doi.org/10.1016/j.cja.2025.103962",
+      "doi": "10.1016/j.cja.2025.103962",
+      "doi_url": "https://doi.org/10.1016/j.cja.2025.103962",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-robot collaborative assembly strategy for large space structure",
+      "authors": [
+        "Yi JI",
+        "Lingyu MA",
+        "Wuyang CHENG",
+        "Guanghui SUN",
+        "Ligang WU"
+      ],
+      "published": "2026-09-01",
+      "venue": "Chinese Journal of Aeronautics",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 4.5
+    },
+    {
+      "id": "doi:10.1016/j.oceaneng.2026.127392",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Cooperative multi-robot routing for AUV–UAV inspection with inter-vehicle synchronization",
+      "url": "https://doi.org/10.1016/j.oceaneng.2026.127392",
+      "doi": "10.1016/j.oceaneng.2026.127392",
+      "doi_url": "https://doi.org/10.1016/j.oceaneng.2026.127392",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Cooperative multi-robot routing for AUV–UAV inspection with inter-vehicle synchronization",
+      "authors": [
+        "Alessandro Bucci",
+        "Lorenzo Cecchi",
+        "Alessandro Ridolfi"
+      ],
+      "published": "2026-09-01",
+      "venue": "Ocean Engineering",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 4.3
+    },
+    {
+      "id": "doi:10.1016/j.asoc.2026.115505",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "A knowledge-driven collaborative discrete Jaya algorithm for energy-efficient multi-robot task allocation and scheduling problem",
+      "url": "https://doi.org/10.1016/j.asoc.2026.115505",
+      "doi": "10.1016/j.asoc.2026.115505",
+      "doi_url": "https://doi.org/10.1016/j.asoc.2026.115505",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A knowledge-driven collaborative discrete Jaya algorithm for energy-efficient multi-robot task allocation and scheduling problem",
+      "authors": [
+        "Hui Zhang",
+        "Quanke Pan",
+        "Wei Zhang",
+        "Zhonghua Miao",
+        "Bo Zhu"
+      ],
+      "published": "2026-09-01",
+      "venue": "Applied Soft Computing",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.3
+    },
+    {
+      "id": "doi:10.1016/j.ohx.2026.e00819",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Open-source hardware design and construction of a modular robotics kit for STEM education",
+      "url": "https://doi.org/10.1016/j.ohx.2026.e00819",
+      "doi": "10.1016/j.ohx.2026.e00819",
+      "doi_url": "https://doi.org/10.1016/j.ohx.2026.e00819",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Open-source hardware design and construction of a modular robotics kit for STEM education",
+      "authors": [
+        "Luis Calle-Arévalo",
+        "Juan Francisco Gonzales",
+        "John Alonso Ortega Naula",
+        "Diego Gabriel Zamora Lituma"
+      ],
+      "published": "2026-09-01",
+      "venue": "HardwareX",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [],
+      "tags": [
+        "structure",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design"
+      ],
+      "score": 4.3
+    },
+    {
+      "id": "doi:10.1109/jsyst.2026.3706478",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Predefined-Time Fault-Tolerant Formation Control for Large-Scale Heterogeneous Wheeled Mobile Robot Swarms",
+      "url": "https://doi.org/10.1109/jsyst.2026.3706478",
+      "doi": "10.1109/jsyst.2026.3706478",
+      "doi_url": "https://doi.org/10.1109/jsyst.2026.3706478",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Predefined-Time Fault-Tolerant Formation Control for Large-Scale Heterogeneous Wheeled Mobile Robot Swarms",
+      "authors": [
+        "Shiyu Yin",
+        "Chen Chen",
+        "Zhengrong Xiang"
+      ],
+      "published": "2026-09-01",
+      "venue": "IEEE Systems Journal",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.08
+    },
+    {
+      "id": "doi:10.1016/j.eij.2026.101006",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "A multi-robot two-stage adaptive sampling and rolling task reallocation method for carpet-like search",
+      "url": "https://doi.org/10.1016/j.eij.2026.101006",
+      "doi": "10.1016/j.eij.2026.101006",
+      "doi_url": "https://doi.org/10.1016/j.eij.2026.101006",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A multi-robot two-stage adaptive sampling and rolling task reallocation method for carpet-like search",
+      "authors": [
+        "Wan Xu",
+        "Ao Nie",
+        "Rupeng Chen",
+        "Wei Zhou",
+        "Yi Yu"
+      ],
+      "published": "2026-09-01",
+      "venue": "Egyptian Informatics Journal",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 4.0
+    },
+    {
+      "id": "doi:10.1007/s10791-026-10499-x",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "RoboSwarmCoordAI enables scalable swarm robotics coordination using multi agent reinforcement learning",
+      "url": "https://doi.org/10.1007/s10791-026-10499-x",
+      "doi": "10.1007/s10791-026-10499-x",
+      "doi_url": "https://doi.org/10.1007/s10791-026-10499-x",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for RoboSwarmCoordAI enables scalable swarm robotics coordination using multi agent reinforcement learning",
+      "authors": [
+        "Surendra Reddy Vinta",
+        "Rakesh Phanindra Akula",
+        "Surya Samantha Beri",
+        "Anuradha Anumolu",
+        "Gudlanarva Sudhakar",
+        "N. Vinaya Kumari"
+      ],
+      "published": "2026-08-31",
+      "venue": "Discover Computing",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.0
+    },
+    {
+      "id": "doi:10.3390/s26175514",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Agricultural Cyber-Physical Systems: Research Progress in Perception-Driven Multi-Robot Coordination and Logistics in Unstructured Environments",
+      "url": "https://doi.org/10.3390/s26175514",
+      "doi": "10.3390/s26175514",
+      "doi_url": "https://doi.org/10.3390/s26175514",
+      "summary": "Driven by the escalating global agricultural workforce shortage and the urgent need to meet the “Zero Hunger” mandate, the automation of harvest–transport workflows has emerged as a cornerstone of Agriculture 4.0. This paper highlights the latest research progress in multi-robot collaborative logistics scheduling across highly unstructured farming environments, underpinned by cutting-edge spatial perception and digi...",
+      "abstract": "Driven by the escalating global agricultural workforce shortage and the urgent need to meet the “Zero Hunger” mandate, the automation of harvest–transport workflows has emerged as a cornerstone of Agriculture 4.0. This paper highlights the latest research progress in multi-robot collaborative logistics scheduling across highly unstructured farming environments, underpinned by cutting-edge spatial perception and digital twin frameworks. Initially, we summarize the technological leap from conventional 2D geometric mapping to multi-modal semantic 3D reconstruction—fusing light detection and ranging (LiDAR), unmanned aerial vehicle (UAV) imagery, and spatial data—to enable high-fidelity forward-looking predictions. The discussion then transitions to algorithmic advancements, emphasizing the shift from traditional centralized operations research to decentralized, data-driven approaches such as Multi-Agent Reinforcement Learning (MARL). We also explore micro-kinematic predictive control mechanisms and the growing integration of ecological sustainability metrics into routing models. To demonstrate practical engineering progress, multi-agent implementations are analyzed across three typical spatial settings: high-throughput continuous relays in open fields, global navigation satellite system (GNSS)-denied discrete routing in dense orchards, and close-proximity human–robot collaboration (HRC) in smart greenhouses. Finally, we identify the remaining barriers to the large-scale commercialization of Agricultural Cyber-Physical Systems (ACPS), such as the “Sim-to-Real” gap restricted by edge-computing capacities, unclosed economic loops, and HRC ethical dilemmas, offering a forward-looking roadmap for next-generation resilient agricultural networks.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Agricultural Cyber-Physical Systems: Research Progress in Perception-Driven Multi-Robot Coordination and Logistics in Unstructured Environments",
+      "authors": [
+        "Jun Zhang",
+        "Tiantian Jing",
+        "Ziqi Tian",
+        "Honglei Zhang",
+        "Dong Lv",
+        "Zhong Tang"
+      ],
+      "published": "2026-08-31",
+      "venue": "Sensors",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "perception",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.68
+    },
+    {
+      "id": "doi:10.5875/4r9b0722",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Multi-Objective Task Allocation and Path Planning in Heterogeneous Multi-Robot Systems Using Hierarchical Framework and Reinforcement Learning",
+      "url": "https://doi.org/10.5875/4r9b0722",
+      "doi": "10.5875/4r9b0722",
+      "doi_url": "https://doi.org/10.5875/4r9b0722",
+      "summary": "This study proposes a multi-objective optimization framework for task allocation and path planning in transport-oriented multi-robot systems. The framework explicitly considers heterogeneous robot capabilities and load capacities while jointly minimizing task completion time and overall energy consumption. A hierarchical architecture is adopted, consisting of two stages. In the upper layer, the NSGA-II algorithm eva...",
+      "abstract": "This study proposes a multi-objective optimization framework for task allocation and path planning in transport-oriented multi-robot systems. The framework explicitly considers heterogeneous robot capabilities and load capacities while jointly minimizing task completion time and overall energy consumption. A hierarchical architecture is adopted, consisting of two stages. In the upper layer, the NSGA-II algorithm evaluates task allocation strategies and constructs a Pareto-optimal solution space, enabling decision-makers to select solutions according to optimization preferences or operational constraints. In the lower layer, deep neural networks and reinforcement learning are employed for multi-agent learning to generate collision-free paths for the assigned tasks. This hierarchical design enables capability-aware task allocation while providing flexibility to accommodate optimization priorities. Simulation and experimental results demonstrate that the proposed framework effectively addresses complex scenarios involving task dependencies, improves path-learning efficiency and task allocation performance, and provides multiple interpretable trade-off solutions without compromising single-objective performance. These results highlight the framework’s effectiveness, scalability, and practical applicability to real-world multi-robot transportation tasks.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-Objective Task Allocation and Path Planning in Heterogeneous Multi-Robot Systems Using Hierarchical Framework and Reinforcement Learning",
+      "authors": [
+        "Sheng-Hsiang Luo",
+        "Rongshun Chen"
+      ],
+      "published": "2026-08-29",
+      "venue": "International Journal of Automation and Smart Technology",
+      "publisher": "Chinese Institute of Automation Engineers",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.76
+    },
+    {
+      "id": "doi:10.1371/journal.pone.0356369",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Maximizing mobility: Distributed controllers of a Segway swarm for autonomous navigation in smart city environments",
+      "url": "https://doi.org/10.1371/journal.pone.0356369",
+      "doi": "10.1371/journal.pone.0356369",
+      "doi_url": "https://doi.org/10.1371/journal.pone.0356369",
+      "summary": "The advancement of autonomous multi-robot systems is critical for addressing the mobility challenges within modern smart city environments. Distributed, acceleration-based controllers are designed and mathematically validated for a Segway swarm navigating cluttered, time-varying urban settings. A Lyapunov-based Control Scheme (LbCS) is utilized to develop a potential function governing collective swarm behavior. Thi...",
+      "abstract": "The advancement of autonomous multi-robot systems is critical for addressing the mobility challenges within modern smart city environments. Distributed, acceleration-based controllers are designed and mathematically validated for a Segway swarm navigating cluttered, time-varying urban settings. A Lyapunov-based Control Scheme (LbCS) is utilized to develop a potential function governing collective swarm behavior. This function ensures target convergence, enforces formation cohesion, and prevents inter-agent collisions. It also dictates safe navigation around static geometric constraints (modeled as disks and lines) and the evasion of independent dynamic obstacles. System stability is formally proven, demonstrating asymptotic controllability and convergence to the desired equilibrium state. Numerical simulations verify the framework's performance across four distinct scenarios, highlighting emergent reactive behaviors to moving entities. These results establish control strategies for the safe collective operation of non-holonomic robots, providing a theoretical foundation for future prototype development in smart city applications.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Maximizing mobility: Distributed controllers of a Segway swarm for autonomous navigation in smart city environments",
+      "authors": [
+        "Ronal Chand",
+        "Ravinesh Chand",
+        "Ravinesh Chand",
+        "Ravinesh Chand",
+        "Kritika Lal",
+        "Bibhya Sharma",
+        "Sandeep A. Kumar"
+      ],
+      "published": "2026-08-28",
+      "venue": "PLoS ONE",
+      "publisher": "Public Library of Science",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 5.58
+    },
+    {
+      "id": "doi:10.1016/j.automatica.2026.113265",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Contingency Model-based Control (CMC) for communicationless cooperative collision avoidance in robot swarms",
+      "url": "https://doi.org/10.1016/j.automatica.2026.113265",
+      "doi": "10.1016/j.automatica.2026.113265",
+      "doi_url": "https://doi.org/10.1016/j.automatica.2026.113265",
+      "summary": "Cooperative collision avoidance between autonomous robots, or ‘agents,’ in swarm operations remains an open challenge. Assuming a decentralized architecture, each agent is responsible for making its own decisions and implementing them by choosing control actions. For avoiding collisions, most existing approaches rely on a (wireless) communication network between (some of) the agents. In reality, however, communicati...",
+      "abstract": "Cooperative collision avoidance between autonomous robots, or ‘agents,’ in swarm operations remains an open challenge. Assuming a decentralized architecture, each agent is responsible for making its own decisions and implementing them by choosing control actions. For avoiding collisions, most existing approaches rely on a (wireless) communication network between (some of) the agents. In reality, however, communication is brittle. It may be affected by latencies, irregular delays, packet losses, and faulty data transmissions. Moreover, it is subject to adversarial attacks, such as jamming or spoofing. This paper proposes Contingency Model-based Control (CMC) as a decentralized cooperative approach that does not rely on communication. Instead, it requires only (exact) measurements of the current state of other agents, using onboard sensors. The CMC algorithm is based on consensual rules that are designed offline for all agents, similar to traffic rules. This includes the definition of a contingency trajectory for each robot and perpendicular bisecting planes as collision avoidance constraints. The setup permits a full guarantee of recursive feasibility and collision avoidance between all members of the swarm in closed-loop operation. CMC naturally satisfies the plug & play paradigm, i.e., new robots may enter (or leave) the swarm dynamically. The effectiveness of the CMC regime is demonstrated in two numerical examples, showing that the collision avoidance guarantee is intact and the robot swarm operates smoothly in a constrained environment.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Contingency Model-based Control (CMC) for communicationless cooperative collision avoidance in robot swarms",
+      "authors": [
+        "Georg Schildbach"
+      ],
+      "published": "2026-08-28",
+      "venue": "Automatica",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "system",
+        "theory",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.26
+    },
+    {
+      "id": "doi:10.1038/s41467-026-76768-x",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Anisotropic shape-shifting robotic matter enabling versatile collective behaviors",
+      "url": "https://doi.org/10.1038/s41467-026-76768-x",
+      "doi": "10.1038/s41467-026-76768-x",
+      "doi_url": "https://doi.org/10.1038/s41467-026-76768-x",
+      "summary": "Collective robotic systems can exhibit emergent behaviors through local interactions among individual robots, yet most existing platforms rely on sophisticated individuals or complex control strategies to achieve diverse functionalities. Here, we present TriHex, a minimalist robotic unit capable of shape-shifting between triangular and hexagonal shapes using single-motor actuation. Despite its simplicity, collective...",
+      "abstract": "Collective robotic systems can exhibit emergent behaviors through local interactions among individual robots, yet most existing platforms rely on sophisticated individuals or complex control strategies to achieve diverse functionalities. Here, we present TriHex, a minimalist robotic unit capable of shape-shifting between triangular and hexagonal shapes using single-motor actuation. Despite its simplicity, collectives of TriHex units display remarkable behavioral diversity through two control dimensions: system configuration and individual unit’s shape-shifting phase. By adjusting these parameters, a static tessellated assembly’s stiffness can be programmed. In discrete assemblies, the system transitions between solid-like and liquid-like states and achieves programmable viscosity. When arranged in cellular configurations with a pre-designed phase difference, the system realizes controllable porosity. Additionally, shape changes enable coordinated collective locomotion, reconfiguration and integrating capabilities of object gripping and transportation. Analytical models and numerical simulations are developed that successfully capture and predict the TriHex collective’s behavior. This work demonstrates that complex collective behaviors can emerge from relatively simple individual units, offering insights for designing scalable and adaptive robotic matter. TriHex robots employ a single-motor mechanism to dynamically transform between triangular and hexagonal shapes, enabling diverse and adaptive collective behaviors in robotic materials.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Anisotropic shape-shifting robotic matter enabling versatile collective behaviors",
+      "authors": [
+        "Yunjia Zhang",
+        "Chenxuan Huang",
+        "Shuguang Li"
+      ],
+      "published": "2026-08-27",
+      "venue": "Nature Communications",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "control",
+        "emergence",
+        "reconfiguration",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 9.18
+    },
+    {
+      "id": "doi:10.1007/s11432-025-4909-6",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Wireless communication empowers online scheduling of partially-observable transportation multi-robot systems in a smart factory",
+      "url": "https://doi.org/10.1007/s11432-025-4909-6",
+      "doi": "10.1007/s11432-025-4909-6",
+      "doi_url": "https://doi.org/10.1007/s11432-025-4909-6",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Wireless communication empowers online scheduling of partially-observable transportation multi-robot systems in a smart factory",
+      "authors": [
+        "Yaxin Liao",
+        "Qimei Cui",
+        "Kwang-Cheng Chen",
+        "Xiong Li",
+        "Jinlian Chen",
+        "Xiyu Zhao",
+        "Xiaofeng Tao",
+        "Ping Zhang"
+      ],
+      "published": "2026-08-27",
+      "venue": "Science China Information Sciences",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm",
+        "system"
+      ],
+      "content_types": [],
+      "score": 7.4
+    },
     {
       "id": "doi:10.1007/s44443-026-01113-7",
       "report_id": "robotics_research_20260827_152738",
@@ -546,6 +1276,85 @@
       "score": 4.5
     },
     {
+      "id": "doi:10.48550/arxiv.2606.01597",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Physics-Informed Modeling and Control of Emergent Behaviors in Robot Swarms",
+      "url": "https://doi.org/10.48550/arXiv.2606.01597",
+      "doi": "10.48550/arXiv.2606.01597",
+      "doi_url": "https://doi.org/10.48550/arXiv.2606.01597",
+      "summary": "PhySwarm is a physics-informed micro-macro framework for multi-stage swarm emergence. It couples a macroscopic advection-diffusion-reaction density model with an executable microscopic deterministic motion model and a neural-physics controller trained with reinforcement learning and PINN constraints for foraging, formation-reconfigurable navigation, and search-and-rescue missions.",
+      "abstract": "PhySwarm is a physics-informed micro-macro framework for multi-stage swarm emergence. It couples a macroscopic advection-diffusion-reaction density model with an executable microscopic deterministic motion model and a neural-physics controller trained with reinforcement learning and PINN constraints for foraging, formation-reconfigurable navigation, and search-and-rescue missions.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Physics-Informed Modeling and Control of Emergent Behaviors in Robot Swarms",
+      "authors": [
+        "Zixuan Jin",
+        "Wenzhuo Zhang",
+        "Shuxian Quan",
+        "Zirui Dong",
+        "Fangwen Ye",
+        "Yuchen Shi",
+        "Cheng Xu"
+      ],
+      "published": "2026-06-01",
+      "venue": "ArXiv",
+      "publisher": "",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "theory",
+        "swarm",
+        "emergence",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.5
+    },
+    {
+      "id": "doi:10.1126/sciadv.aec6153",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Self-organized criticality in aquatic robot swarm",
+      "url": "https://doi.org/10.1126/sciadv.aec6153",
+      "doi": "10.1126/sciadv.aec6153",
+      "doi_url": "https://doi.org/10.1126/sciadv.aec6153",
+      "summary": "An aquatic robot swarm with optical attraction and hydrodynamic repulsion demonstrates self-organized criticality, including power-law avalanches, stable scaling exponents under upscaling, and self-organized convergence to steady state. Under external stimuli it preserves criticality while forming directed structures and collective pushing behaviors.",
+      "abstract": "An aquatic robot swarm with optical attraction and hydrodynamic repulsion demonstrates self-organized criticality, including power-law avalanches, stable scaling exponents under upscaling, and self-organized convergence to steady state. Under external stimuli it preserves criticality while forming directed structures and collective pushing behaviors.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Self-organized criticality in aquatic robot swarm",
+      "authors": [
+        "Shiji Zhao",
+        "Jiajun Huang",
+        "Chaoqun Li",
+        "Shengli Mi"
+      ],
+      "published": "2026-05-13",
+      "venue": "Science Advances",
+      "publisher": "",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "theory",
+        "swarm",
+        "self_organization",
+        "emergence",
+        "collective_dynamics"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 9.0
+    },
+    {
       "id": "doi:10.1073/pnas.2519129123",
       "report_id": "curated_backfill_20260829",
       "title": "Agile legged locomotion in reconfigurable modular robots",
@@ -583,6 +1392,44 @@
         "algorithm_design"
       ],
       "score": 9.5
+    },
+    {
+      "id": "doi:10.48550/arxiv.2601.19529",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "RhoMorph: Rhombus-shaped Deformable Modular Robots for Stable, Medium-Independent Reconfiguration Motion",
+      "url": "https://doi.org/10.48550/arXiv.2601.19529",
+      "doi": "10.48550/arXiv.2601.19529",
+      "doi_url": "https://doi.org/10.48550/arXiv.2601.19529",
+      "summary": "RhoMorph is a deformable planar lattice modular self-reconfigurable robot with a rhombus-shaped module. A single central actuator folds and unfolds a parallelogram skeleton, enabling morphing, docking, and locomotion with low control complexity. The work introduces morphpivoting as a reconfiguration primitive and validates stable reconfiguration, positional accuracy, and docking accuracy in physical experiments.",
+      "abstract": "RhoMorph is a deformable planar lattice modular self-reconfigurable robot with a rhombus-shaped module. A single central actuator folds and unfolds a parallelogram skeleton, enabling morphing, docking, and locomotion with low control complexity. The work introduces morphpivoting as a reconfiguration primitive and validates stable reconfiguration, positional accuracy, and docking accuracy in physical experiments.",
+      "figure_url": "",
+      "figure_alt": "Main figure for RhoMorph: Rhombus-shaped Deformable Modular Robots for Stable, Medium-Independent Reconfiguration Motion",
+      "authors": [
+        "Jie Gu",
+        "Yi-Rui Sun",
+        "Zhihao Xia",
+        "Tin Lun Lam",
+        "Chunxu Tian",
+        "Dan Zhang"
+      ],
+      "published": "2026-01-27",
+      "venue": "ArXiv",
+      "publisher": "",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "system",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.4
     },
     {
       "id": "doi:10.1126/scirobotics.adz1999",
@@ -760,6 +1607,45 @@
       "publisher": ""
     },
     {
+      "id": "doi:10.3390/s26134227",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Stigmergy and Self-Organizing Systems in Swarm Robotics: A Systematic Review",
+      "url": "https://doi.org/10.3390/s26134227",
+      "doi": "10.3390/s26134227",
+      "doi_url": "https://doi.org/10.3390/s26134227",
+      "summary": "A PRISMA 2020 systematic review analyzes mechanisms of stigmergy and self-organization in swarm robotics across 338 works, synthesizing bibliometric, thematic, and epistemological trends and highlighting fragmentation, benchmark gaps, physical-computational modeling limits, and opportunities for hybrid distributed learning and adaptive control.",
+      "abstract": "A PRISMA 2020 systematic review analyzes mechanisms of stigmergy and self-organization in swarm robotics across 338 works, synthesizing bibliometric, thematic, and epistemological trends and highlighting fragmentation, benchmark gaps, physical-computational modeling limits, and opportunities for hybrid distributed learning and adaptive control.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Stigmergy and Self-Organizing Systems in Swarm Robotics: A Systematic Review",
+      "authors": [
+        "L. M. Ribeiro",
+        "Nadia Nedjah",
+        "L. M. Mourelle"
+      ],
+      "published": "2026",
+      "venue": "Sensors",
+      "publisher": "",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "review",
+        "algorithm",
+        "control",
+        "structure",
+        "system",
+        "theory",
+        "swarm",
+        "self_organization"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 7.8
+    },
+    {
       "id": "doi:10.1038/s41467-025-61985-7",
       "report_id": "robotics_research_20260824_072451",
       "title": "A collective intelligence model for swarm robotics applications",
@@ -903,6 +1789,44 @@
       "venue": "Sensors",
       "figure_alt": "Main figure for multi-robot systems and soft robotics review",
       "url": "https://doi.org/10.3390/s25051353"
+    },
+    {
+      "id": "doi:10.1109/icra55743.2025.11128695",
+      "report_id": "robotics_research_20260907_170035",
+      "title": "Realizing Emergent Collective Behaviors Through Robotic Swarmalators",
+      "url": "https://doi.org/10.1109/ICRA55743.2025.11128695",
+      "doi": "10.1109/ICRA55743.2025.11128695",
+      "doi_url": "https://doi.org/10.1109/ICRA55743.2025.11128695",
+      "summary": "This work realizes theoretically predicted swarmalator behaviors on a 15-robot collective. Agents couple phase and motion through pairwise interactions, demonstrating chiral and non-chiral behaviors, frequency coupling, and homogeneous or heterogeneous natural frequency distributions as an experimental platform for active-matter-inspired swarm robotics.",
+      "abstract": "This work realizes theoretically predicted swarmalator behaviors on a 15-robot collective. Agents couple phase and motion through pairwise interactions, demonstrating chiral and non-chiral behaviors, frequency coupling, and homogeneous or heterogeneous natural frequency distributions as an experimental platform for active-matter-inspired swarm robotics.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Realizing Emergent Collective Behaviors Through Robotic Swarmalators",
+      "authors": [
+        "R. Beattie",
+        "Steven Ceron",
+        "Daniela Rus"
+      ],
+      "published": "2025",
+      "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+      "publisher": "",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "system",
+        "theory",
+        "swarm",
+        "emergence",
+        "collective_dynamics"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.1
     },
     {
       "id": "doi:10.1109/lra.2025.3543139",
