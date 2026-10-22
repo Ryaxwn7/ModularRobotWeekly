@@ -1,7 +1,1424 @@
 {
-  "updated_at": "2026-09-07T17:05:37",
+  "updated_at": "2026-10-23T01:16:16",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
+    {
+      "id": "doi:10.1126/scirobotics.adr9578",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Hearing the shape of an arena with spectral swarm robotics",
+      "url": "https://doi.org/10.1126/scirobotics.adr9578",
+      "doi": "10.1126/scirobotics.adr9578",
+      "doi_url": "https://doi.org/10.1126/scirobotics.adr9578",
+      "summary": "Swarm robotics relies on robots with minimal sensing and computation that achieve self-organization at the level of the collective to address a variety of tasks. Yet, swarm robotics still struggles with global tasks that require understanding the broader spatial context in which robots operate, such as identifying the shape of the arena in which they are embedded. Here, we introduce spectral swarm robotics, a framew...",
+      "abstract": "Swarm robotics relies on robots with minimal sensing and computation that achieve self-organization at the level of the collective to address a variety of tasks. Yet, swarm robotics still struggles with global tasks that require understanding the broader spatial context in which robots operate, such as identifying the shape of the arena in which they are embedded. Here, we introduce spectral swarm robotics, a framework in which robots recover global spectral descriptors of the swarm’s geometric structure through strictly local interactions. To do so, robots emulate diffusion to locally estimate Laplacian spectral invariants, quantities normally obtained only through centralized computation. These spectral values serve as compact descriptors of the environment. In the present proof of concept, robots estimated the second Laplacian eigenvalue, λ 2 , and used it to classify arenas from a predefined set of shapes with distinct spectral signatures. We show that estimating a single eigenvalue is sufficient for one-shot classification among selected confined environments with distinct spectral signatures. We uncovered a scaling law linking swarm size (a global parameter) and interaction radius (a local parameter) that ensures robust estimation. We validated the approach experimentally on two distinct hardware platforms, Kilobots and Pogobots, achieving reliable classification of arena shapes under realistic noise and sparse connectivity conditions. Last, we discuss how locally recovering Laplacian spectral invariants opens avenues for swarm robotics in settings where producing efficient collective behaviors strongly depends on the global structure of the swarm.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Hearing the shape of an arena with spectral swarm robotics",
+      "authors": [
+        "Leo Cazenille",
+        "Nicolas Lobato-Dauzier",
+        "Alessia Loi",
+        "Loona Macabre",
+        "Mika Ito",
+        "Olivier Marchal",
+        "Soo-Hyeon Kim",
+        "Nathanael Aubert-Kato",
+        "Nicolas Bredeche",
+        "Anthony J. Genot"
+      ],
+      "published": "2026-10-21",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "self_organization",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 10.1
+    },
+    {
+      "id": "doi:10.1126/scirobotics.adw4624",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Structural bias enables reliable sim-to-real transfer in reinforcement learning for robot swarms",
+      "url": "https://doi.org/10.1126/scirobotics.adw4624",
+      "doi": "10.1126/scirobotics.adw4624",
+      "doi_url": "https://doi.org/10.1126/scirobotics.adw4624",
+      "summary": "Reinforcement learning offers a powerful framework for automatically generating control policies for robot swarms, yet its application to physical multirobot systems has been limited by the simulation-to-reality gap. Despite substantial advances in multiagent reinforcement learning, systematic demonstrations of gradient-based sim-to-real transfer to physical robot swarms remain scarce. Most work remains confined to...",
+      "abstract": "Reinforcement learning offers a powerful framework for automatically generating control policies for robot swarms, yet its application to physical multirobot systems has been limited by the simulation-to-reality gap. Despite substantial advances in multiagent reinforcement learning, systematic demonstrations of gradient-based sim-to-real transfer to physical robot swarms remain scarce. Most work remains confined to simulation, and the few real-robot demonstrations lack evaluation across multiple runs and tasks. We show that this barrier can be overcome by embedding structural constraints into policy learning. We introduce attention-based counterfactual policy gradients for behavior selection in robot swarms (SwarmACB), a multiagent actor-critic method in which robots arbitrate among predefined behavior modules—reactive sensorimotor routines such as phototaxis or aggregation—rather than learning low-level motor commands. This architectural choice reduces the variance of learned solutions, which we argue mitigates overfitting to simulation artifacts. Through systematic evaluation on five collective missions using 20 physical e-puck robots (250 real-robot runs), we demonstrate that SwarmACB transfers successfully from simulation to reality, substantially outperforming continuous-action baselines. By progressively constraining policy architecture, perception, and model capacity, we show that smaller, structured policies transfer more reliably than large, unconstrained ones. These findings challenge the assumption that scale is necessary for successful transfer, suggesting instead that principled structural design enables reinforcement learning to produce control software for robot swarms that is both learned automatically and directly deployable in the physical world.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Structural bias enables reliable sim-to-real transfer in reinforcement learning for robot swarms",
+      "authors": [
+        "Ilyes Gharbi",
+        "Miquel Kegeleirs",
+        "Guillermo Legarda Herranz",
+        "Jeanne Szpirer",
+        "Ken Hasselmann",
+        "Mauro Birattari"
+      ],
+      "published": "2026-10-21",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "perception",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 9.66
+    },
+    {
+      "id": "doi:10.1002/rob.70365",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "A Modular Vision‐Based Robot for Efficient Noninvasive Inspection of External Pipeline Surfaces",
+      "url": "https://doi.org/10.1002/rob.70365",
+      "doi": "10.1002/rob.70365",
+      "doi_url": "https://doi.org/10.1002/rob.70365",
+      "summary": "ABSTRACT This paper presents a prototype of a modular autonomous robot aiming for the rapid inspection of steel pipelines, with a focus on detecting surface cracks. The robot incorporates a novel detachable mechanism, enabling full‐coverage inspection without requiring the robot to rotate completely around the pipe. This design not only simplifies attachment and detachment but also enhances operational flexibility....",
+      "abstract": "ABSTRACT This paper presents a prototype of a modular autonomous robot aiming for the rapid inspection of steel pipelines, with a focus on detecting surface cracks. The robot incorporates a novel detachable mechanism, enabling full‐coverage inspection without requiring the robot to rotate completely around the pipe. This design not only simplifies attachment and detachment but also enhances operational flexibility. A 360° rotating scanner, integrated with a vision system featuring on‐device artificial intelligence inference, enables real‐time crack detection while maintaining consistent velocity. An automated crawler system ensures smooth linear movement along the pipeline, keeping a uniform distance from the surface. Additionally, a suspension system enables the wheels to adapt to irregularities of up to 25 mm, ensuring reliable performance on uneven surfaces. Experimental results showcased the robot's capabilities, achieving a 96.67% crack detection accuracy through on‐device inferencing and an enhanced 99.3% accuracy during post‐processing. However, certain limitations were observed, attributed to constraints within the microcontroller. Motion analysis confirmed that the scanner exhibited consistent motion during testing, completing 42 circumferential rotations along a 5‐m pipeline in an average time of 72.45 s, and completed a complete inspection of the pipeline in 50.43 min. While the modular robot was specifically designed and evaluated for straight pipelines with end couplings and was not intended to navigate couplings or bent sections, the system demonstrated stable and accurate performance during laboratory trials. This design enables stable external inspection without requiring the robot to rotate along the pipeline, ensuring rapid and reliable inspection.",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Modular Vision‐Based Robot for Efficient Noninvasive Inspection of External Pipeline Surfaces",
+      "authors": [
+        "Steve James",
+        "R. Ambigai"
+      ],
+      "published": "2026-10-21",
+      "venue": "Journal of Field Robotics",
+      "publisher": "Wiley",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "perception",
+        "reconfiguration",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design"
+      ],
+      "score": 8.48
+    },
+    {
+      "id": "doi:10.3390/app162010393",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Execution-Aware Dynamic-Priority Scheduling for Functionally Heterogeneous Multi-Robot Disaster Response",
+      "url": "https://doi.org/10.3390/app162010393",
+      "doi": "10.3390/app162010393",
+      "doi_url": "https://doi.org/10.3390/app162010393",
+      "summary": "Multi-robot disaster-response task allocation requires balancing functional matching, task value, and execution efficiency. This study proposes an execution-aware heterogeneous dynamic-priority scheduling framework (HDPS) that connects interpretable task scoring with navigation feedback. Tasks are represented by location, type, value, remaining urgency, task state, and current owner. Robot-specific scoring weights a...",
+      "abstract": "Multi-robot disaster-response task allocation requires balancing functional matching, task value, and execution efficiency. This study proposes an execution-aware heterogeneous dynamic-priority scheduling framework (HDPS) that connects interpretable task scoring with navigation feedback. Tasks are represented by location, type, value, remaining urgency, task state, and current owner. Robot-specific scoring weights are updated from candidate-pool statistics through an exponential moving average, while completion, repeated navigation failure, and stalled progress trigger task-state updates or reassignment. A local encounter-coordination layer supports execution. The evaluation considers task-level functional-role heterogeneity on physically identical robots, with pre-generated task sets rather than continuous task arrivals or evolving disasters. Nine methods are compared on ten paired ROS 2-Gazebo-Nav2 scenarios, giving 90 main runs. Every method completes all 15 tasks in each main run. Relative to the nearest and no_type methods, HDPS improves the specialization match rate by 50.00 and 50.67 percentage points, respectively, with positive paired differences in all ten scenarios. Separate ablations identify the value term as the main contributor to early high-value service: the top-five-task completion rank improves from 8.32 without value scoring to 5.62 with HDPS. HDPS retains an effective value completion rate of 88.0% while achieving a mean total completion time of 178.87 s, compared with 88.9% and 193.85 s for fixed weights; the time difference is descriptive rather than statistically significant. These results support a practical trade-off among functional matching, early service of high-value tasks, and overall task-clearing time within the evaluated setting.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Execution-Aware Dynamic-Priority Scheduling for Functionally Heterogeneous Multi-Robot Disaster Response",
+      "authors": [
+        "Weining Ren",
+        "Wen Zhao"
+      ],
+      "published": "2026-10-20",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.2
+    },
+    {
+      "id": "doi:10.1038/s41598-026-75507-y",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Hierarchical reinforcement learning with model predictive elevator control for risk-sensitive multi-robot transport scheduling in hospitals",
+      "url": "https://doi.org/10.1038/s41598-026-75507-y",
+      "doi": "10.1038/s41598-026-75507-y",
+      "doi_url": "https://doi.org/10.1038/s41598-026-75507-y",
+      "summary": "Hospitals increasingly deploy autonomous mobile robots (AMRs) to move specimens and medicines between wards and laboratories. These fleets must meet clinical deadlines that differ across request classes, which couples two decisions: which request each robot serves, and the order of its stops. Intra-hospital transport is formulated here as a multi-objective Markov game and solved with hierarchical multi-agent reinfor...",
+      "abstract": "Hospitals increasingly deploy autonomous mobile robots (AMRs) to move specimens and medicines between wards and laboratories. These fleets must meet clinical deadlines that differ across request classes, which couples two decisions: which request each robot serves, and the order of its stops. Intra-hospital transport is formulated here as a multi-objective Markov game and solved with hierarchical multi-agent reinforcement learning for transport (HMART). A shared graph-attention encoder feeds a sequential assignment decoder and a route-improvement decoder, a conditional value-at-risk constraint bounds the tail of class-weighted tardiness, and a model predictive control layer coordinates the capacitated elevators. Two instantiations are evaluated: HMART-H, whose decoders are engineered, and HMART-RL, whose assignment decoder is a trained attention network. In a discrete-event simulator of a four-floor hospital with three elevators, at heavy load with twelve robots over twenty paired seeds, HMART-H lowers mean total weighted tardiness from 2359 ± 214 to 29 ± 6 against the strongest dispatching rule, mean work-in-process from 80.1 ± 6.4 to 14.3 ± 1.9, and the ninety-fifth percentile tardiness tail by more than an order of magnitude, while raising the STAT on-time rate from 0.925 ± 0.011 to 0.969 ± 0.007; all differences are significant under Holm-corrected Wilcoxon signed-rank tests. HMART-RL reaches 40 ± 8 and transfers across fleet sizes and building configurations without retraining. These gains are obtained in simulation and require confirmation in a live building.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Hierarchical reinforcement learning with model predictive elevator control for risk-sensitive multi-robot transport scheduling in hospitals",
+      "authors": [
+        "Kazi Md. Tanvir Anzum",
+        "Asef Shahriar"
+      ],
+      "published": "2026-10-20",
+      "venue": "Scientific Reports",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.28
+    },
+    {
+      "id": "doi:10.3390/app162010295",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Capability-Conditioned Relay Placement for Geometrically Feasible Chains in Multi-Robot Teams with Heterogeneous Communication Ranges",
+      "url": "https://doi.org/10.3390/app162010295",
+      "doi": "10.3390/app162010295",
+      "doi_url": "https://doi.org/10.3390/app162010295",
+      "summary": "Multi-robot task allocation can place relay and mission goals in one matrix; whether this controls geometric relay-chain feasibility in execution had not been established. A deployed unified formulation was evaluated in closed-loop Robot Operating System 2 (ROS 2)/Gazebo simulation on six identical robots with synthetic ranges and no simulated radio, as component-level assurance for human-supervised systems, not a m...",
+      "abstract": "Multi-robot task allocation can place relay and mission goals in one matrix; whether this controls geometric relay-chain feasibility in execution had not been established. A deployed unified formulation was evaluated in closed-loop Robot Operating System 2 (ROS 2)/Gazebo simulation on six identical robots with synthetic ranges and no simulated radio, as component-level assurance for human-supervised systems, not a mission-success estimate. As deployed, a mission task displaced a relay in 20/20 trials; a cost-divisor capability model assigned hops beyond holders’ ranges. After two established repairs, capability-conditioned relay placement (CCRP) chose relay positions and holders jointly, bounding each hop by both holders’ ranges. On the mixed-range fleet, CCRP formed a geometrically feasible chain in 10/10 trials, in 16.5 s (median) against 21.3 s for equal-hop placement in one session (in-session gains 1.1–10.05 s, not all significant). Across five arrangement–target cells, plans were reproduced in 100/100 trials. CCRP’s median formation time was lower in all four cells whose holders differed, significantly in two; in one, the capability-blind fall-through held no chain. CCRP produced geometrically feasible plans and, on the mixed-range fleet, faster chain formation; stalls beside stationary robots remained outside its distance objective. No transfer to untested maps, radios or hardware is claimed.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Capability-Conditioned Relay Placement for Geometrically Feasible Chains in Multi-Robot Teams with Heterogeneous Communication Ranges",
+      "authors": [
+        "Beom-Joon Park",
+        "Junwon Yoon",
+        "Jeon-Seong Kang",
+        "Ha-Yoon Song",
+        "Duck-Hyun Suh",
+        "Taejoon Yoon",
+        "Jooyoung Kim",
+        "Hyun-Joon Chung"
+      ],
+      "published": "2026-10-17",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.28
+    },
+    {
+      "id": "doi:10.1093/nsr/nwag643",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Programming multiconfiguration into bistable robots via traversable energy landscapes",
+      "url": "https://doi.org/10.1093/nsr/nwag643",
+      "doi": "10.1093/nsr/nwag643",
+      "doi_url": "https://doi.org/10.1093/nsr/nwag643",
+      "summary": "Abstract Soft robots using bistable structures often face limitations due to a fixed energy landscape, which restricts their configurational adaptability and functional diversity. To address this challenge, we introduce an energy-landscape-traversing (ELTra) bistable structure that enables on-demand reconstruction of the energy landscape, continuous stabilization of intermediate states, and precise modulation of ene...",
+      "abstract": "Abstract Soft robots using bistable structures often face limitations due to a fixed energy landscape, which restricts their configurational adaptability and functional diversity. To address this challenge, we introduce an energy-landscape-traversing (ELTra) bistable structure that enables on-demand reconstruction of the energy landscape, continuous stabilization of intermediate states, and precise modulation of energy release, capabilities that are challenging to achieve with conventional systems. Based on the established theoretical model of the ELTra bistable structure, we developed an ELTraBot prototype that features four distinct configurations, including two intermediate-stable configurations absent in traditional bistable structures. We further demonstrated the ELTraBot’s remarkable versatility, allowing it to perform nine distinct functions by leveraging its reconfigurable states. This design reduces the need for complex dedicated hardware and significantly simplifies design. Our work establishes a new design method for multifunctional, reconfigurable robots by advancing beyond binary bistability into the realm of continuously programmable materials.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Programming multiconfiguration into bistable robots via traversable energy landscapes",
+      "authors": [
+        "Xin Tong",
+        "Qinghua Yu",
+        "Tianle Zhang",
+        "Chengru Jiang",
+        "Yangkang Jiang",
+        "Yang Yang",
+        "Dong Wang",
+        "Guoying Gu",
+        "Yingtian Li"
+      ],
+      "published": "2026-10-14",
+      "venue": "National Science Review",
+      "publisher": "Oxford University Press",
+      "source": "openalex",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "structure",
+        "system",
+        "theory",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design"
+      ],
+      "score": 8.1
+    },
+    {
+      "id": "doi:10.3390/app162010108",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Semantic Cost-Based Task Allocation for Heterogeneous Multi-Robot Systems: Load-Dependent Route and Payload-Margin Costs",
+      "url": "https://doi.org/10.3390/app162010108",
+      "doi": "10.3390/app162010108",
+      "doi_url": "https://doi.org/10.3390/app162010108",
+      "summary": "Heterogeneous robot fleets transport items that differ in shape and weight, and robots differ in what they can handle and where they can pass. Conventional task allocation methods often compute allocation costs and routes on a single load-invariant spatial model, which may overlook changes in place traversability after loading. Payload capacity typically enters allocation only as a feasibility or ranking condition,...",
+      "abstract": "Heterogeneous robot fleets transport items that differ in shape and weight, and robots differ in what they can handle and where they can pass. Conventional task allocation methods often compute allocation costs and routes on a single load-invariant spatial model, which may overlook changes in place traversability after loading. Payload capacity typically enters allocation only as a feasibility or ranking condition, so light tasks may be allocated to high-capacity robots also needed for heavier ones. Taking the feasibility information from semantic reasoning as input, this study combines a route cost on load-state-dependent traversability graphs with a normalized payload-margin cost in a makespan-oriented sequential allocation procedure. In ablation experiments, load-invariant route planning produced non-traversable loaded routes for approximately one quarter of the tasks, whereas load-state-dependent planning and validation produced none, as expected by construction. Against a violation-free variant with load-invariant costs and no payload term, the proposed configuration shortened the makespan by 6.7–20.1%, mainly through the payload-margin term; its route cost made the predicted completion times consistent with the planned routes. The reduction persisted on a larger layout and with congested loading and unloading places. In ROS 2 and Gazebo, eight robots followed the planned place sequences in both completed runs.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Semantic Cost-Based Task Allocation for Heterogeneous Multi-Robot Systems: Load-Dependent Route and Payload-Margin Costs",
+      "authors": [
+        "Gungyo In",
+        "Kwanghee Lee",
+        "Yechan An",
+        "Kyeongjin Joo",
+        "Gihyeon Kwon",
+        "Taeyong Kuc"
+      ],
+      "published": "2026-10-12",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.5
+    },
+    {
+      "id": "doi:10.3390/app162010102",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Coupled Skin–Muscle-Inspired Potential Fields for Mapless Multi-Robot Formation Navigation",
+      "url": "https://doi.org/10.3390/app162010102",
+      "doi": "10.3390/app162010102",
+      "doi_url": "https://doi.org/10.3390/app162010102",
+      "summary": "Multi-robot formations can extend sensing coverage and improve operational resilience, but their practical value depends on coordinated navigation through cluttered environments. Under mapless local sensing, existing methods face conflicting demands for obstacle avoidance, collective progress and formation recovery. This study presents Coupled ESRM–MFAM, a deterministic bio-inspired controller for six differential-d...",
+      "abstract": "Multi-robot formations can extend sensing coverage and improve operational resilience, but their practical value depends on coordinated navigation through cluttered environments. Under mapless local sensing, existing methods face conflicting demands for obstacle avoidance, collective progress and formation recovery. This study presents Coupled ESRM–MFAM, a deterministic bio-inspired controller for six differential-drive robots. An Elastic Skin Reflex Model (ESRM) provides local obstacle-surface response, while a Muscle Fibre Actuation Model (MFAM) generates collective driving forces. Their direct combination, together with teammate-safety handling, integrates environmental response and formation coordination within a local control loop. Across 800 geometry-certified environments, the controller achieved a task completion rate of 75.00% within 120 s, compared with 56.50% for VFH+, the strongest tested baseline adaptation. This advantage remained significant after Holm correction and was reproduced on a separately generated 400-environment evaluation set. Component ablations supported the contributions of environmental response, collective actuation and teammate safety to timely completion. ROS2/Gazebo measurements further showed that six-robot controller computation remained within the budget required for 10 Hz control. These results support coupled environmental response and collective actuation as a practical approach to timely formation navigation under the tested local-sensing conditions.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Coupled Skin–Muscle-Inspired Potential Fields for Mapless Multi-Robot Formation Navigation",
+      "authors": [
+        "Wangyuan Liu",
+        "Jianggui Han",
+        "Hang Fu",
+        "Xin Xiong"
+      ],
+      "published": "2026-10-12",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design",
+        "bioinspired_swarm_algorithms"
+      ],
+      "tags": [
+        "control",
+        "swarm",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.48
+    },
+    {
+      "id": "doi:10.1186/s40648-026-00357-2",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Task-priority-aware MPPI control for human–multi-robot collaborative assembly",
+      "url": "https://doi.org/10.1186/s40648-026-00357-2",
+      "doi": "10.1186/s40648-026-00357-2",
+      "doi_url": "https://doi.org/10.1186/s40648-026-00357-2",
+      "summary": "We propose a task-priority-aware motion-control method that links task progress to online modification of model predictive path integral (MPPI) control parameters. Human–robot collaborative assembly with multiple robotic arms requires both task-level coordination and reactive motion generation in a shared workspace. A task planner can determine which robot should proceed first, whereas a motion controller must conti...",
+      "abstract": "We propose a task-priority-aware motion-control method that links task progress to online modification of model predictive path integral (MPPI) control parameters. Human–robot collaborative assembly with multiple robotic arms requires both task-level coordination and reactive motion generation in a shared workspace. A task planner can determine which robot should proceed first, whereas a motion controller must continuously respond to the positions of the human and the other robot. However, if these functions are designed independently, fixed avoidance settings can cause symmetric yielding, deadlock, or unnecessary suspension of robot motion in spatially conflicting tasks. Therefore, we propose a method in which a task-management layer determines the current priority relation between two robotic arms and updates selected goal-tracking and collision-related cost weights, together with the scales of the robot collision models used by the local MPPI controllers. This mechanism creates task-dependent asymmetric yielding while retaining reactive avoidance of the operator and the other robot. The method does not jointly optimize the trajectories of all controllers; instead, each robot computes its motion locally under task-level priority coordination. The proposed method was implemented in a collaborative assembly-support system involving one operator and two robotic arms. The experiments demonstrate inter-robot conflict resolution, avoidance of an unexpected human approach, and concurrent task execution during human-guided positioning of a heavy object. In the demonstrated task, the mean completion time was 203.7 s under the proposed control condition and 255.4 s under manual sequential control, corresponding to a 20.2% reduction for this specific experimental workflow. Finally, we discuss the practical implementation requirements, current limitations, and scope of applicability of the proposed framework. The current method relies on predefined task sequences, event-based sequence detection, and task-specific parameter design.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Task-priority-aware MPPI control for human–multi-robot collaborative assembly",
+      "authors": [
+        "Satoshi Nakamura"
+      ],
+      "published": "2026-10-10",
+      "venue": "ROBOMECH Journal",
+      "publisher": "Springer Nature",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.78
+    },
+    {
+      "id": "doi:10.1016/j.jss.2026.113113",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Modelling and model-checking a ROS2 multi-robot system using Timed Rebeca",
+      "url": "https://doi.org/10.1016/j.jss.2026.113113",
+      "doi": "10.1016/j.jss.2026.113113",
+      "doi_url": "https://doi.org/10.1016/j.jss.2026.113113",
+      "summary": "Model-based development accelerates prototyping, enables earlier experimentation, and ensures rigorous validation of system de- sign intents. In multi-agent systems with complex asynchronous interactions and concurrency, formal verification—particularly model-checking—offers an automated means of confirming that desired properties hold. Timed Rebeca, an actor-based modelling language supporting reactive, concurrent,...",
+      "abstract": "Model-based development accelerates prototyping, enables earlier experimentation, and ensures rigorous validation of system de- sign intents. In multi-agent systems with complex asynchronous interactions and concurrency, formal verification—particularly model-checking—offers an automated means of confirming that desired properties hold. Timed Rebeca, an actor-based modelling language supporting reactive, concurrent, and timed behaviors, together with its model-checking tool, provides a powerful framework for this purpose. By leveraging these capabilities, Timed Rebeca can intuitively capture ROS2 node graphs, recurring physical signals, motion primitives, and other time-convertible behaviors. Nevertheless, modelling and verifying multi-robot systems entail significant challenges: abstracting intricate information, bridging the gap between discrete models and continuous system dynamics, and managing large state spaces while preserving fidelity. To address these challenges, we propose discretization strategies tailored to various data types and identify thresholds of abstraction that balance accuracy and tractability. We further introduce optimization techniques to accelerate verification. Our work demonstrates how to systematically design and verify multi-robot systems through Timed Rebeca, efficiently transform continuous dynamics into discrete models for model-checking, and maintain a practical, bidirectional flow between the abstract model and the ROS2 implementation. The accompanying Rebeca and ROS2 codebases, made openly available, serve as a foundational reference for researchers and developers aiming to model and verify advanced autonomous robotic systems.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Modelling and model-checking a ROS2 multi-robot system using Timed Rebeca",
+      "authors": [
+        "Hiep Hong Trinh",
+        "Marjan Sirjani",
+        "Federico Ciccozzi",
+        "Abu Naser Masud",
+        "Mikael Sjödin"
+      ],
+      "published": "2026-10-09",
+      "venue": "Journal of Systems and Software",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.18
+    },
+    {
+      "id": "doi:10.1108/ir-03-2026-0130",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "PPO-based mobile robotic swarm for spatially adaptive architectural roof interface: a proof-of-concept",
+      "url": "https://doi.org/10.1108/ir-03-2026-0130",
+      "doi": "10.1108/ir-03-2026-0130",
+      "doi_url": "https://doi.org/10.1108/ir-03-2026-0130",
+      "summary": "Purpose As an extension of the self-assembly architectural design, the purpose of this study is to present a proof-of-concept validation of whether decentralized deep reinforcement learning (DRL) can enable self-organizing collective behavior of robotic agents toward a futuristic adaptive building roof interface. Design/methodology/approach A physical mock-up comprising a 2.4 × 1.52 m plexiglass roof platform and 15...",
+      "abstract": "Purpose As an extension of the self-assembly architectural design, the purpose of this study is to present a proof-of-concept validation of whether decentralized deep reinforcement learning (DRL) can enable self-organizing collective behavior of robotic agents toward a futuristic adaptive building roof interface. Design/methodology/approach A physical mock-up comprising a 2.4 × 1.52 m plexiglass roof platform and 15 identical robotic balls was developed. A ball integrates a microcontroller, DC motors, batteries and a dual-wheel mechanism within a spherical casing (d = 140 mm). A proximal policy optimization (PPO)-based controller was implemented to train the ball agents to move toward circular target zones (R = 0.25 m) while reducing collisions and maintaining spatial dispersion for shading. Simulation and field-validation experiments were conducted with the full agent configuration. Performance was evaluated using target coverage ratio, reaction time, travel distance and collision count/frequency. Findings The agentic system achieved 35%–55% target coverage within about ∼5 min, outperforming Greedy and artificial potential field baselines in both goal-reaching time and path length. The results demonstrate the feasibility of linking artificial swarm intelligence with spatial reconfiguration in a built-environment context. Research limitations/implications The study is conducted at a proof-of-concept scale, using a small experimental mock-up and lightweight mobile robots. Originality/value To the best of the authors’ knowledge, this study presents one of the first validations of a decentralized DRL-based swarm robotic system for an architectural roof interface, demonstrating the feasibility of autonomous spatial redistribution for target-zone shading without centralized coordination.",
+      "figure_url": "",
+      "figure_alt": "Main figure for PPO-based mobile robotic swarm for spatially adaptive architectural roof interface: a proof-of-concept",
+      "authors": [
+        "Hyuk Jae Lee",
+        "Enying Li",
+        "Dain Kim",
+        "One Jea Lee",
+        "Hwang Yi"
+      ],
+      "published": "2026-10-02",
+      "venue": "Industrial Robot: the international journal of robotics research and application",
+      "publisher": "Emerald",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "reconfiguration",
+        "self_organization",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.0
+    },
+    {
+      "id": "doi:10.1016/j.engappai.2026.115568",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Multi-robot coordination for effective anomaly handling in self-driving laboratories",
+      "url": "https://doi.org/10.1016/j.engappai.2026.115568",
+      "doi": "10.1016/j.engappai.2026.115568",
+      "doi_url": "https://doi.org/10.1016/j.engappai.2026.115568",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-robot coordination for effective anomaly handling in self-driving laboratories",
+      "authors": [
+        "Yang Yang",
+        "Jiankun Yang",
+        "Haibo Lu",
+        "Huaping Liu",
+        "Wen Gao"
+      ],
+      "published": "2026-10-01",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.8
+    },
+    {
+      "id": "doi:10.1016/j.engappai.2026.115720",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Neural-guided symbolic evolution: From symbolic control search to mechanism discovery in swarm robotics",
+      "url": "https://doi.org/10.1016/j.engappai.2026.115720",
+      "doi": "10.1016/j.engappai.2026.115720",
+      "doi_url": "https://doi.org/10.1016/j.engappai.2026.115720",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Neural-guided symbolic evolution: From symbolic control search to mechanism discovery in swarm robotics",
+      "authors": [
+        "Chen Wang",
+        "Cheng Zhu",
+        "Minfang Lu",
+        "Jiangyao Bai",
+        "Linbo Qiao"
+      ],
+      "published": "2026-10-01",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.78
+    },
+    {
+      "id": "doi:10.1016/j.ast.2026.114081",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Robust Mixed-Integer Predictive Planning for Multi-Robot Lunar Construction",
+      "url": "https://doi.org/10.1016/j.ast.2026.114081",
+      "doi": "10.1016/j.ast.2026.114081",
+      "doi_url": "https://doi.org/10.1016/j.ast.2026.114081",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Robust Mixed-Integer Predictive Planning for Multi-Robot Lunar Construction",
+      "authors": [
+        "Feiyu Gao",
+        "Zexu Zhang",
+        "Yang Gao",
+        "Shuai Yuan"
+      ],
+      "published": "2026-10-01",
+      "venue": "Aerospace Science and Technology",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.6
+    },
+    {
+      "id": "doi:10.1016/j.cnsns.2026.110169",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Model predictive control based on generalized fuzzy hyperbolic model applied to modular and reconfigurable robots with full-state constraints via adaptive dynamic programming",
+      "url": "https://doi.org/10.1016/j.cnsns.2026.110169",
+      "doi": "10.1016/j.cnsns.2026.110169",
+      "doi_url": "https://doi.org/10.1016/j.cnsns.2026.110169",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Model predictive control based on generalized fuzzy hyperbolic model applied to modular and reconfigurable robots with full-state constraints via adaptive dynamic programming",
+      "authors": [
+        "Bo Dong",
+        "Xinyi He",
+        "Bing Ma",
+        "Jian Sun",
+        "Tianjiao An"
+      ],
+      "published": "2026-10-01",
+      "venue": "Communications in Nonlinear Science and Numerical Simulation",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "control",
+        "theory",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.58
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3728375",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "FoM: Field-of-View-Aware Graph Neural Learning for Min–Max Multi-Robot Patrol Path Planning",
+      "url": "https://doi.org/10.1109/lra.2026.3728375",
+      "doi": "10.1109/lra.2026.3728375",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3728375",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for FoM: Field-of-View-Aware Graph Neural Learning for Min–Max Multi-Robot Patrol Path Planning",
+      "authors": [
+        "Binbin Zuo",
+        "Xueyi Liu",
+        "Zijie Zhao",
+        "Yaocheng Zhang",
+        "Kaixuan Xu",
+        "Weifan Li",
+        "Jishiyu Ding",
+        "Xun Wang",
+        "Zonglei Bai",
+        "Zhe Ma",
+        "Yuanheng Zhu"
+      ],
+      "published": "2026-10-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.5
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105592",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Integration of the collision risk index and dynamic priority in multi-robot cooperative path planning",
+      "url": "https://doi.org/10.1016/j.robot.2026.105592",
+      "doi": "10.1016/j.robot.2026.105592",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105592",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Integration of the collision risk index and dynamic priority in multi-robot cooperative path planning",
+      "authors": [
+        "Shijie Guo",
+        "Junhui Song",
+        "Yuting Liu",
+        "He Lyu",
+        "Zhiyi Li"
+      ],
+      "published": "2026-10-01",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.2
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3730349",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "DS-MRNav: Distributed Multi-Robot Navigation With Static Obstacles via a Decoupled-State Dual-Stream Framework",
+      "url": "https://doi.org/10.1109/lra.2026.3730349",
+      "doi": "10.1109/lra.2026.3730349",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3730349",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for DS-MRNav: Distributed Multi-Robot Navigation With Static Obstacles via a Decoupled-State Dual-Stream Framework",
+      "authors": [
+        "Hengyi Liu",
+        "Runhua Wang",
+        "Yichen Li",
+        "Xuebo Zhang",
+        "Yaonan Wang"
+      ],
+      "published": "2026-10-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.2
+    },
+    {
+      "id": "doi:10.1016/j.rcim.2026.103308",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Dynamic reconfiguration in multi-robot agent systems using embedded language models",
+      "url": "https://doi.org/10.1016/j.rcim.2026.103308",
+      "doi": "10.1016/j.rcim.2026.103308",
+      "doi_url": "https://doi.org/10.1016/j.rcim.2026.103308",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Dynamic reconfiguration in multi-robot agent systems using embedded language models",
+      "authors": [
+        "Shokhikha Amalana Murdivien",
+        "Jongsu Park",
+        "Jumyung Um"
+      ],
+      "published": "2026-10-01",
+      "venue": "Robotics and Computer-Integrated Manufacturing",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "reconfiguration",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [],
+      "score": 6.9
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3729488",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Parallel Graph Inference for Decentralized and Asynchronous Multi-Robot Cooperative Localization Under Limited Connectivity",
+      "url": "https://doi.org/10.1109/lra.2026.3729488",
+      "doi": "10.1109/lra.2026.3729488",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3729488",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Parallel Graph Inference for Decentralized and Asynchronous Multi-Robot Cooperative Localization Under Limited Connectivity",
+      "authors": [
+        "Qirong Tang",
+        "Haoyu Liu",
+        "Min Yu",
+        "Yuanxiang Wang"
+      ],
+      "published": "2026-10-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "perception",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 6.9
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3728333",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Makespan Minimization for Multi-Robot Task Allocation With Balance-Aware Pointerformer",
+      "url": "https://doi.org/10.1109/lra.2026.3728333",
+      "doi": "10.1109/lra.2026.3728333",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3728333",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Makespan Minimization for Multi-Robot Task Allocation With Balance-Aware Pointerformer",
+      "authors": [
+        "Hakmo Son",
+        "Haggi Do",
+        "Jinwhan Kim"
+      ],
+      "published": "2026-10-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 6.8
+    },
+    {
+      "id": "doi:10.1016/j.rcim.2026.103301",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "An efficient occlusion-aware visibility assurance method for multi-robot vision-integrated manufacturing",
+      "url": "https://doi.org/10.1016/j.rcim.2026.103301",
+      "doi": "10.1016/j.rcim.2026.103301",
+      "doi_url": "https://doi.org/10.1016/j.rcim.2026.103301",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for An efficient occlusion-aware visibility assurance method for multi-robot vision-integrated manufacturing",
+      "authors": [
+        "Donglai Zhu",
+        "Danfeng Sun",
+        "Junjie Hu",
+        "Zeyun Xiao",
+        "Yi Yan",
+        "Huifeng Wu"
+      ],
+      "published": "2026-10-01",
+      "venue": "Robotics and Computer-Integrated Manufacturing",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "perception",
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 6.8
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3723332",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "An LLM Based Framework for Automated MILP Modeling in Dynamic Multi-Robot Task Scheduling",
+      "url": "https://doi.org/10.1109/lra.2026.3723332",
+      "doi": "10.1109/lra.2026.3723332",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3723332",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for An LLM Based Framework for Automated MILP Modeling in Dynamic Multi-Robot Task Scheduling",
+      "authors": [
+        "Zhendong Chen",
+        "Mingming Peng",
+        "Hao Zhang",
+        "Jin Huang",
+        "Xinyu Li",
+        "Liang Gao"
+      ],
+      "published": "2026-10-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm",
+        "theory"
+      ],
+      "content_types": [],
+      "score": 6.8
+    },
+    {
+      "id": "doi:10.38124/ijisrt/26sep1187",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Hierarchical Reinforcement Learning for Multi-Robot Task Allocation and Path Planning in Digital Twin Enabled Smart Warehouses",
+      "url": "https://doi.org/10.38124/ijisrt/26sep1187",
+      "doi": "10.38124/ijisrt/26sep1187",
+      "doi_url": "https://doi.org/10.38124/ijisrt/26sep1187",
+      "summary": "As more companies embrace the use of autonomous mobile robots to organize their smart warehouses, one of the major issues facing them is the coordination of these fleets under very restrictive throughputs. Task allocation and path planning go hand in hand: if tasks are assigned without considering congestion, then each task can result in a conflict or a deadlock. Conversely, if path planning takes place totally reac...",
+      "abstract": "As more companies embrace the use of autonomous mobile robots to organize their smart warehouses, one of the major issues facing them is the coordination of these fleets under very restrictive throughputs. Task allocation and path planning go hand in hand: if tasks are assigned without considering congestion, then each task can result in a conflict or a deadlock. Conversely, if path planning takes place totally reactively, then the total travel effort and energy lead to wasteful results. This research introduces TwinSync-HRL, a framework that involves the coupling of reinforcement learning for task allocation in multi-robot settings with classical search-based path planning. The allocation is based on a learned Q-learning policy to manage the assignment of pickup-and-delivery tasks to robots while the actual path planning takes place using A* with space-time reservation. TwinSync uses a digital twin of the overall warehouse in order to facilitate synchronization and to quantify the conditions under which this synchronization takes place. The results show that the learned Q-learning allocator is superior to both the greedy and auction-based methods in the sense that it clears all 20 tasks per episode without conflict and at the lowest possible distance (483 ± 5.3 cells traveled). However, it does have a slower rate of task clearing (under mean conditions of 100.6 ± 6.5 steps as compared to 84.4 to 86.5 for the other two methods). When the total synchronization latency time increases from 0 to 15 steps, the number of replans per episode goes from 17.4 to 37.9 and the total conflicts in execution triples.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Hierarchical Reinforcement Learning for Multi-Robot Task Allocation and Path Planning in Digital Twin Enabled Smart Warehouses",
+      "authors": [
+        "Mohanad Ibrahim Elassadi"
+      ],
+      "published": "2026-09-30",
+      "venue": "International Journal of Innovative Science and Research Technology",
+      "publisher": "International Journal of Innovative Science and Research Technology",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.5
+    },
+    {
+      "id": "doi:10.55662/jair.2026.6204",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Autonomous Robot Networks for Infrastructure Inspection: A Literature-informed Conceptual Framework for Predictive Monitoring, Asset-specific Adaptation, and Safety Assurance",
+      "url": "https://doi.org/10.55662/jair.2026.6204",
+      "doi": "10.55662/jair.2026.6204",
+      "doi_url": "https://doi.org/10.55662/jair.2026.6204",
+      "summary": "Aging infrastructure systems, including bridges, roads, tunnels, pipelines, substations, and utility corridors, present growing inspection and maintenance challenges for public agencies and asset owners, particularly under conditions of deferred maintenance, aging assets, and constrained renewal budgets (American Society of Civil Engineers, 2021; World Bank, 2020). Conventional inspection workflows rely heavily on m...",
+      "abstract": "Aging infrastructure systems, including bridges, roads, tunnels, pipelines, substations, and utility corridors, present growing inspection and maintenance challenges for public agencies and asset owners, particularly under conditions of deferred maintenance, aging assets, and constrained renewal budgets (American Society of Civil Engineers, 2021; World Bank, 2020). Conventional inspection workflows rely heavily on manual fieldwork, periodic surveys, and fragmented reporting practices, which can limit inspection frequency, increase operational exposure, and reduce consistency across distributed asset portfolios (Federal Highway Administration, 2022; ISO 55000, 2014; ISO 55001, 2014). Although robotics, sensing, computer vision, digital twins, and predictive analytics have advanced substantially, research in these areas remains fragmented across platforms, sensing modalities, and asset domains (Koch et al., 2015; Spencer et al., 2019; Jiang et al., 2021; Opoku et al., 2021).This paper presents a literature-informed conceptual framework for an autonomous multi-robot inspection network intended to support predictive monitoring and maintenance prioritization. The framework was developed through a structured conceptual synthesis of prior research spanning multiple infrastructure and technical domains. It distinguishes invariant cross-domain architectural components from asset-specific adaptation requirements for bridges, roads, tunnels, pipelines, substations, and utility corridors. The proposed architecture integrates heterogeneous robotic agents, multimodal sensing, coordinated mission planning, defect detection, condition estimation, confidence-aware digital twin updating, maintenance prioritization, explainable reporting, and safety assurance within a unified decision-support structure (Gerkey & Mataric, 2004; Parker, 2008; Hall & Llinas, 1997; Khaleghi et al., 2013; Sacks et al., 2020; Jiang et al., 2021; Jardine et al., 2006; Doshi-Velez & Kim, 2017; NIST, 2023). This integration is literature-informed at the level of recurring functional requirements reported across robotics, multisensor fusion, digital twin, predictive maintenance, and trustworthy-AI research, while the specific cross-domain architectural composition presented here is proposed by the authors as a conceptual synthesis.The paper makes five contributions. First, it presents a structured framework-development approach that uses prior literature to identify recurring operational and technical requirements relevant to autonomous infrastructure inspection. Second, it defines a layered architecture that separates common system functions from asset-specific sensing, mobility, defect classification, safety, and maintenance adaptations. Third, it formalizes the system model by specifying variables, normalization logic, weighting structures, thresholds, and uncertainty pathways relevant to maintenance-priority outputs. The need to distinguish defect detection, condition estimation, prognosis, uncertainty handling, and maintenance prioritization is supported by prior condition-monitoring and predictive-maintenance literature, whereas the particular variables, weighting logic, aggregation equations, and threshold structures are author-proposed for conceptual operationalization in this framework. These variables and formal decision structures are proposed by the authors as a conceptual operationalization informed by prior literature rather than adopted directly from a single source. Fourth, it introduces a safety-assurance structure addressing hazards, fail-safe states, communication loss, geofencing, collision avoidance, hardware and battery faults, human takeover, change control, and incident reporting, drawing on prior work on human oversight, trustworthy AI, cyber-physical risk, and governance while proposing an integrated inspection-specific control structure for this domain (Parasuraman et al., 2000; Sheridan, 2016; Endsley, 2017; European Commission High-Level Expert Group on Artificial Intelligence, 2019; Humayed et al., 2017; NIST, 2023; NIST, 2024). Prior literature supports the need for human oversight, bounded autonomy, traceability, and risk-governed deployment, while the inspection-specific integration of these controls into a unified governance structure is proposed by the authors. Fifth, it outlines a prospective validation strategy with explicit hypotheses, baseline comparisons, external-site expectations, stress testing, and failure-case reporting.This study is conceptual and design-oriented; it does not present field-validated performance results or claim empirical superiority over existing inspection workflows. Instead, it offers an integrated foundation for future prototyping, pilot deployment, and comparative evaluation of autonomous multi-robot inspection systems in infrastructure management.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Autonomous Robot Networks for Infrastructure Inspection: A Literature-informed Conceptual Framework for Predictive Monitoring, Asset-specific Adaptation, and Safety Assurance",
+      "authors": [
+        "Kiran Kumar Banisetti",
+        "Padma Banisetti",
+        "Raghavendra Maganti"
+      ],
+      "published": "2026-09-29",
+      "venue": "Journal of Artificial Intelligence & Research",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "review",
+        "algorithm",
+        "control",
+        "structure",
+        "system",
+        "theory",
+        "swarm",
+        "perception"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 7.36
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105770",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Multi-3 adaptive coordination of robots",
+      "url": "https://doi.org/10.1016/j.robot.2026.105770",
+      "doi": "10.1016/j.robot.2026.105770",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105770",
+      "summary": "Background. Multi-robot systems (MRSs) are gaining interest as effective means for addressing complex tasks in various domains.Objective. This paper focuses on three multiplicity problems in MRSs to improve flexibility and resource utilization and reduce idle times or busy-waiting when possible: (i) enabling multi-purpose robots to execute multiple missions at a time, (ii) modeling MRS missions with multi-instance t...",
+      "abstract": "Background. Multi-robot systems (MRSs) are gaining interest as effective means for addressing complex tasks in various domains.Objective. This paper focuses on three multiplicity problems in MRSs to improve flexibility and resource utilization and reduce idle times or busy-waiting when possible: (i) enabling multi-purpose robots to execute multiple missions at a time, (ii) modeling MRS missions with multi-instance tasks, i.e., tasks repeated for multiple locations or objects, and (iii) enabling dynamic task assignment to improve resource utilization.Method. This work builds on the limitations of the literature to enable the execution of concurrent missions through a fleet of robots and, within each mission, multiple instances of the same task. The solution is experimentally validated to check its effectiveness in coordinating robots and reducing mission completion time, idle time, and battery consumption.Results. We present Multi-3, a framework for executing multiple missions (multi-missions) with multiple instances of the same task (multi-instance) using multiple robots (multi-robots). At the specification level, it enables the definition of missions with multi-instance tasks. At the execution level, the runtime support permits the execution of multiple missions at a time, while the adaptive coordination of the involved robots allows them to dynamically switch across tasks of multiple missions or multiple task instances.Conclusion. We validate the solution at work on a set of multi-robot systems scenarios in different domains. The results show that Multi-3 is viable, reduces the robots' idle time, and effectively allows the execution of multiple missions at a time.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-3 adaptive coordination of robots",
+      "authors": [
+        "Juan Antonio Piñera García",
+        "Gianluca Filippone",
+        "Marco Autili",
+        "Patrizio Pelliccione"
+      ],
+      "published": "2026-09-26",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "theory",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.6
+    },
+    {
+      "id": "doi:10.1088/1361-6501/aeac74",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Distance + angle rigid formation control for multi-agent systems: nonholonomic kinematic realization and configuration preservation",
+      "url": "https://doi.org/10.1088/1361-6501/aeac74",
+      "doi": "10.1088/1361-6501/aeac74",
+      "doi_url": "https://doi.org/10.1088/1361-6501/aeac74",
+      "summary": "Abstract In multi-robot systems, relative-position measurements provide distance and angle information for characterizing formation geometry. Simultaneous distance + angle constraints can uniquely specify formation geometry for multi-agent systems (MAS) with single-integrator kinematics. However, extending the corresponding control methods to more realistic nonholonomic kinematic models may lead to control singulari...",
+      "abstract": "Abstract In multi-robot systems, relative-position measurements provide distance and angle information for characterizing formation geometry. Simultaneous distance + angle constraints can uniquely specify formation geometry for multi-agent systems (MAS) with single-integrator kinematics. However, extending the corresponding control methods to more realistic nonholonomic kinematic models may lead to control singularities or convergence failures due to the mismatch between task-space geometric gradients and admissible motion directions. To address this issue, this paper develops a distance + angle rigid formation controller for nonholonomic MAS. By employing a geometric offset mapping and a nonsingular decoupling transformation, the rigidity-based task-space command is mapped into kinematically admissible linear and angular velocities while preserving the original rigidity formulation. On this basis, the asymptotic convergence of the distance and angle errors and the boundedness of the relative adapted-point states are established through Lyapunov-based cascade analysis and forward-invariance arguments. The proposed controller is validated through simulations and multi-robot experiments, demonstrating its practical applicability to nonholonomic mobile robots. By incorporating global geometric constraints at the formation topology level, the proposed method helps prevent formation deformation and configuration instability often observed in path-tracking coordination methods, including APF-based approaches, thereby supporting complex multi-modal navigation scenarios. Moreover, the controller requires neither the pre-training associated with reinforcement learning nor the online optimization required by model predictive control, making it well suited to embedded robotic platforms with limited computational and memory resources.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Distance + angle rigid formation control for multi-agent systems: nonholonomic kinematic realization and configuration preservation",
+      "authors": [
+        "Yuankang Wang",
+        "Haifei Chen",
+        "Kai Liao",
+        "Bin Wan",
+        "Peng Hu",
+        "Shihui Xiao"
+      ],
+      "published": "2026-09-25",
+      "venue": "Measurement Science and Technology",
+      "publisher": "IOP Publishing",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "system",
+        "theory",
+        "swarm",
+        "perception"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.86
+    },
+    {
+      "id": "doi:10.1038/s41467-026-77681-z",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Emergent memory in cell-like active systems",
+      "url": "https://doi.org/10.1038/s41467-026-77681-z",
+      "doi": "10.1038/s41467-026-77681-z",
+      "doi_url": "https://doi.org/10.1038/s41467-026-77681-z",
+      "summary": "Active systems across scales, ranging from molecular machines to human crowds, are usually modeled as assemblies of self-propelled particles driven by internally generated forces. However, these models often assume memoryless dynamics. Here, guided by the example of living cells, which have recently been shown to display multi-timescale memory effects, we introduce a minimal theoretical framework that incorporates i...",
+      "abstract": "Active systems across scales, ranging from molecular machines to human crowds, are usually modeled as assemblies of self-propelled particles driven by internally generated forces. However, these models often assume memoryless dynamics. Here, guided by the example of living cells, which have recently been shown to display multi-timescale memory effects, we introduce a minimal theoretical framework that incorporates internal state dynamics and environmental sensing into overdamped active particle models of cell migration. We show that when the self-propulsion depends on internal variables with their own complex dynamics–modulated by local environmental cues– environmental memory spontaneously emerges and gives rise to new classes of behaviours. These include memory-induced responses, adaptable localization in complex landscapes, suppression of motility-induced phase separation, and enhanced jamming transitions. Our results demonstrate how minimal information processing capabilities, intrinsic to nonequilibrium agents with internal states like living cells, can profoundly influence both individual and collective behaviours. This framework bridges cell-scale activity and large-scale intelligent motion in cell assemblies, and opens the way to the quantitative analysis and design of systems ranging from synthetic colloids to biological collectives and robotic swarms. Living cells can exhibit complex, multi-timescale memory effects influencing their motility and responses to environmental cues. Here, the authors introduce a minimal theoretical framework demonstrating that when active particles, modeled after cells, incorporate internal state dynamics and environmental sensing, emergent environmental memory spontaneously arises.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Emergent memory in cell-like active systems",
+      "authors": [
+        "Marc Besse",
+        "Raphaël Voituriez"
+      ],
+      "published": "2026-09-25",
+      "venue": "Nature Communications",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "system",
+        "theory",
+        "swarm",
+        "perception"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.4
+    },
+    {
+      "id": "doi:10.1186/s43067-026-00407-0",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Dynamic federated multi-agent planning under partial observability and network instability for real-time edge applications",
+      "url": "https://doi.org/10.1186/s43067-026-00407-0",
+      "doi": "10.1186/s43067-026-00407-0",
+      "doi_url": "https://doi.org/10.1186/s43067-026-00407-0",
+      "summary": "Abstract In recent years, the proliferation of autonomous systems at the edge—including robotic swarms, autonomous vehicles, and intelligent sensor networks—has highlighted the urgent need for resilient multi-agent planning under uncertain, decentralized conditions. Traditional multi-agent planning architectures typically assume stable communication links and complete observability, conditions that are rarely met in...",
+      "abstract": "Abstract In recent years, the proliferation of autonomous systems at the edge—including robotic swarms, autonomous vehicles, and intelligent sensor networks—has highlighted the urgent need for resilient multi-agent planning under uncertain, decentralized conditions. Traditional multi-agent planning architectures typically assume stable communication links and complete observability, conditions that are rarely met in real-world deployments marked by dynamic network topologies, delayed information exchange, and partial observability. This paper introduces Dynamic Federated Multi-Agent Planning (DFMAP), a novel framework that integrates federated reinforcement learning (FRL) with partially observable Markov decision processes (POMDPs) for real-time decision-making in volatile edge environments. The proposed architecture enables agents to learn locally, share model updates without centralized coordination, and collaboratively build global planning policies even under intermittent connectivity. A probabilistic graph-based model tracks dynamic communication topology shifts, while an asynchronous aggregation strategy with staleness correction ensures robustness to network instability. Experiments conducted in both simulated and semi-realistic edge environments—covering decentralized robotic navigation and collaborative search—demonstrate DFMAP’s consistent superiority over centralized and naively decentralized baselines. Specifically, DFMAP achieves a task success rate of 92.5%, a cumulative reward of 121.8 ± 5.4 by training round 100, and a per-round communication overhead of only 15.2 MB, representing more than a 66% reduction relative to the centralized baseline. Under severe communication stress with 50% link dropout, reward degradation is held to just 11.0%, substantially below the 22.4% and 30.0% observed for competing methods.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Dynamic federated multi-agent planning under partial observability and network instability for real-time edge applications",
+      "authors": [
+        "Milad Rahmati",
+        "Nima Rahmati"
+      ],
+      "published": "2026-09-24",
+      "venue": "Journal of Electrical Systems and Information Technology",
+      "publisher": "Springer Science+Business Media",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "system",
+        "theory",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 6.08
+    },
+    {
+      "id": "doi:10.1038/s41598-026-71833-3",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "BICLARE: bio-inspired collaborative lightweight algorithm for robust swarm exploration",
+      "url": "https://doi.org/10.1038/s41598-026-71833-3",
+      "doi": "10.1038/s41598-026-71833-3",
+      "doi_url": "https://doi.org/10.1038/s41598-026-71833-3",
+      "summary": "Having access to a floor plan upon arrival enables first responders to act swiftly and efficiently. This study investigates the use of robotic swarms for autonomous environment mapping, with the aim of generating maps before emergency personnel arrive at the scene. We introduce BICLARE, a lightweight exploration algorithm inspired by ant-colony pheromone-based communication and navigation. BICLARE employs a confiden...",
+      "abstract": "Having access to a floor plan upon arrival enables first responders to act swiftly and efficiently. This study investigates the use of robotic swarms for autonomous environment mapping, with the aim of generating maps before emergency personnel arrive at the scene. We introduce BICLARE, a lightweight exploration algorithm inspired by ant-colony pheromone-based communication and navigation. BICLARE employs a confidence model to estimate cell occupancy within a map and optimizes target selection based on travel time and battery estimates to improve efficiency. The algorithm is designed to run efficiently on low-cost hardware. The performance of BICLARE is validated through simulated experiments in diverse and dynamic environments, demonstrating accurate mapping and robust coverage even in the presence of noise and uncertainty. Field trials further confirm the feasibility of the approach on low-cost COTS devices.",
+      "figure_url": "",
+      "figure_alt": "Main figure for BICLARE: bio-inspired collaborative lightweight algorithm for robust swarm exploration",
+      "authors": [
+        "Hugo van Dijk",
+        "Suryansh Sharma",
+        "R. R. Venkatesha Prasad",
+        "Leszek Ambroziak"
+      ],
+      "published": "2026-09-23",
+      "venue": "Scientific Reports",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design",
+        "bioinspired_swarm_algorithms"
+      ],
+      "tags": [
+        "algorithm",
+        "perception",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 6.0
+    },
+    {
+      "id": "doi:10.1016/j.engappai.2026.116325",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Visual swarm navigation via deep reinforcement learning and evolutionary hybrid design",
+      "url": "https://doi.org/10.1016/j.engappai.2026.116325",
+      "doi": "10.1016/j.engappai.2026.116325",
+      "doi_url": "https://doi.org/10.1016/j.engappai.2026.116325",
+      "summary": "Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of generating emergent collective behaviors. This paper proposes a novel, AI-driven hybrid methodology for the automatic s...",
+      "abstract": "Swarm robotics presents a robust and cost-effective paradigm for advanced automation in complex, dynamic environments, such as those encountered in search and rescue or environmental monitoring. A fundamental challenge for this field is the data-driven design of decentralized controllers capable of generating emergent collective behaviors. This paper proposes a novel, AI-driven hybrid methodology for the automatic synthesis of swarm robotic controllers for autonomous visual navigation. This approach synergistically combines multi-agent reinforcement learning with neuro-evolutionary strategies, specifically leveraging implementations of the cross-entropy method and the covariance matrix adaptation evolution strategy to optimize a pre-trained individual navigation policy. The underlying deep architecture is engineered for low-cost, resource-constrained platforms, utilizing a compact neural network that relies exclusively on monocular camera imagery. This vision-based design emphasizes computational and energy efficiency, a critical requirement for practical swarm deployments. Experiments, performed in a high-fidelity physics simulator, demonstrate that the resulting controllers enable robust and scalable collective exploration of diverse indoor environments. The controller trained using our cross-entropy method achieves superior exploration coverage, visiting 36.20% more regions compared to the covariance matrix adaptation evolution strategy. Critically, our best vision-based policy achieves exploration performance statistically comparable to traditional methods relying on more expensive distance sensors, while delivering a significant 31.40% average reduction in energy consumption. These findings validate an effective and economically viable autonomous control system, establishing a path for deploying highly efficient collective intelligence in real-world engineering applications.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Visual swarm navigation via deep reinforcement learning and evolutionary hybrid design",
+      "authors": [
+        "Álvaro Díez",
+        "Fidel Aznar"
+      ],
+      "published": "2026-09-22",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "emergence",
+        "perception",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.66
+    },
+    {
+      "id": "doi:10.1038/s41598-026-70946-z",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Maximizing area coverage for multi-robots using cloud",
+      "url": "https://doi.org/10.1038/s41598-026-70946-z",
+      "doi": "10.1038/s41598-026-70946-z",
+      "doi_url": "https://doi.org/10.1038/s41598-026-70946-z",
+      "summary": "Abstract This paper presents an integrated framework for multi-robot task allocation and area coverage using an MQTT-based cloud communication architecture for waypoint delivery. A cost-based allocation strategy is proposed, incorporating factors such as battery level, robot age, approximate path distance, and number of turns required for coverage to optimize robot-to-region assignments using the Hungarian algorithm...",
+      "abstract": "Abstract This paper presents an integrated framework for multi-robot task allocation and area coverage using an MQTT-based cloud communication architecture for waypoint delivery. A cost-based allocation strategy is proposed, incorporating factors such as battery level, robot age, approximate path distance, and number of turns required for coverage to optimize robot-to-region assignments using the Hungarian algorithm. For coverage, an A*-assisted Boustrophedon path planning algorithm is utilized, improving coverage efficiency and enabling effective navigation. The system is implemented using ROS2 with MQTT-based cloud communication for waypoint delivery and validated through simulations and hardware experiments. Across the simulated cases, the exact assignment attains a lower total allocation cost than distance-only, uniform, and greedy battery-aware selection rules scored on the same objective, with a mean saving of 11.0% over the greedy baseline, and the hardware trials achieved 93.3–96.4% area coverage. The cloud component is demonstrated as a feasible and practical waypoint delivery mechanism with measured latency of 120 to 180 ms and zero message loss; a rigorous comparison against edge or onboard alternatives is identified as future work. The primary contribution of this work is an integrated, cloud-assisted multi-robot coverage framework that couples cost-aware task allocation with A*-assisted coverage path planning, and validates the complete pipeline in both simulation and real-world hardware experiments.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Maximizing area coverage for multi-robots using cloud",
+      "authors": [
+        "Nithul Bagathi",
+        "S. M. Bhagya P. Samarakoon",
+        "Koppaka Ganesh Sai Apuroop",
+        "Mohan Rajesh Elara",
+        "B.J. Sheu"
+      ],
+      "published": "2026-09-22",
+      "venue": "Scientific Reports",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 6.5
+    },
+    {
+      "id": "doi:10.1098/rstb.2024.0464",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Advancing human sensorimotor research through modular robotics: the case of the HRX-1",
+      "url": "https://doi.org/10.1098/rstb.2024.0464",
+      "doi": "10.1098/rstb.2024.0464",
+      "doi_url": "https://doi.org/10.1098/rstb.2024.0464",
+      "summary": "Abstract The HRX-1 is a single-degree-of-freedom, direct-drive, modular and reconfigurable robotic device designed for investigating human sensorimotor control. By examining its use, this case study highlights the opportunities offered by modular, portable and user-centred open-source design approaches for sensorimotor diagnostics and basic neuromechanics research. The robot's architecture enables simple and rapid r...",
+      "abstract": "Abstract The HRX-1 is a single-degree-of-freedom, direct-drive, modular and reconfigurable robotic device designed for investigating human sensorimotor control. By examining its use, this case study highlights the opportunities offered by modular, portable and user-centred open-source design approaches for sensorimotor diagnostics and basic neuromechanics research. The robot's architecture enables simple and rapid reconfiguration, allowing researchers to explore a wide range of experimental questions. When combined with muscle electromyography, functional electrical stimulation and electroencephalography, the system enables investigation of how muscles respond to external forces and how the brain coordinates the responses. These multimodal approaches also support the development of novel movement-assistive strategies for neuromotor rehabilitation. Clinical applications include studies of brain activity patterns in children with dystonia, upper-limb rehabilitation after stroke and therapy for patients with functional neurological disorders. This article is part of the discussion meeting issue ‘Digital healthcare for the management of functional neurological disorders’.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Advancing human sensorimotor research through modular robotics: the case of the HRX-1",
+      "authors": [
+        "Ildar Farkhatdinov",
+        "Joshua Brown",
+        "Aaron Yurkewich",
+        "Etienne Burdet"
+      ],
+      "published": "2026-09-17",
+      "venue": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "publisher": "The Royal Society",
+      "source": "crossref",
+      "topics": [],
+      "tags": [
+        "control",
+        "system",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.26
+    },
+    {
+      "id": "doi:10.1038/s41467-026-77743-2",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Leveraging design for collective phototaxis in morphological swarm robotics",
+      "url": "https://doi.org/10.1038/s41467-026-77743-2",
+      "doi": "10.1038/s41467-026-77743-2",
+      "doi_url": "https://doi.org/10.1038/s41467-026-77743-2",
+      "summary": "Morphological computing-the use of a robot’s physical design to facilitate task execution-has emerged as a promising strategy in swarm robotics. Here, through experiments and simulations, we show that its success critically depends on both the robots’ control policy and the details of their physical design. We study a swarm of Kilobots embedded in an exoskeleton whose geometry controls the propensity of robots to al...",
+      "abstract": "Morphological computing-the use of a robot’s physical design to facilitate task execution-has emerged as a promising strategy in swarm robotics. Here, through experiments and simulations, we show that its success critically depends on both the robots’ control policy and the details of their physical design. We study a swarm of Kilobots embedded in an exoskeleton whose geometry controls the propensity of robots to align or anti-align with the external force they experience. Experimentally, the contrast between the two morphologies in the success rate of a simple phototactic task becomes dramatic when stopping is forbidden and robots can only slow down. Using a faithful physical model of the robots’ self-aligning dynamics, numerical simulations reveal that efficient phototaxis requires fine tuning of the self-alignment strength around a sweet spot. More broadly, varying this parameter unlocks a rich repertoire of collective behaviors. Careful design of robots morphology leverage interactions for collective behaviors from little computation as demonstrated through experimental realizations and faithful simulations of a swarm of robots performing phototaxis.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Leveraging design for collective phototaxis in morphological swarm robotics",
+      "authors": [
+        "Jérémy Fersula",
+        "Nicolas Bredèche",
+        "Olivier Dauchot"
+      ],
+      "published": "2026-09-16",
+      "venue": "Nature Communications",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.78
+    },
+    {
+      "id": "doi:10.1007/s42979-026-05297-7",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Collaborative Continual Communicative Learning for Black-Box Visual Place Recognition via Place-Aware Distillation",
+      "url": "https://doi.org/10.1007/s42979-026-05297-7",
+      "doi": "10.1007/s42979-026-05297-7",
+      "doi_url": "https://doi.org/10.1007/s42979-026-05297-7",
+      "summary": "Abstract Visual Place Recognition (VPR) is a cornerstone of long-term robotic autonomy; however, maintaining performance in non-stationary environments requires robust Continual Learning (CL) to mitigate catastrophic forgetting. While conventional CL paradigms often assume internal access to prior models, the emergence of decentralized multi-robot ecosystems demands a transition toward knowledge transfer between het...",
+      "abstract": "Abstract Visual Place Recognition (VPR) is a cornerstone of long-term robotic autonomy; however, maintaining performance in non-stationary environments requires robust Continual Learning (CL) to mitigate catastrophic forgetting. While conventional CL paradigms often assume internal access to prior models, the emergence of decentralized multi-robot ecosystems demands a transition toward knowledge transfer between heterogeneous, black-box systems. This study proposes a sophisticated multi-robot CL framework that facilitates autonomous knowledge acquisition from black-box VPR models encountered during exploration. To ensure the framework’s relevance to state-of-the-art systems, we integrate a combinatorial partitioning strategy inspired by CPlaNet, which enables high-resolution spatial discretization while maintaining training data density, and leverage the \"place-aware\" Stage 1 encoder of Pair-VPR as a robust visual backbone. Central to our methodology is the strategic application of Membership Inference Attacks (MIA) to reconstruct high-fidelity pseudo-training sets, thereby enabling data-free knowledge distillation. To circumvent the sampling inefficiency inherent in high-dimensional latent spaces, we introduce specialized sampling strategies, including Reciprocal Rank and Entropy-based filtering. Extensive experimental validation using the NCLT dataset demonstrates that our approach not only effectively mitigates forgetting but also exhibits remarkable resilience to complex spatial partitions and advanced transformer-based feature representations. These findings confirm the framework’s capacity to facilitate decentralized collaborative learning under strict data-exclusive and black-box constraints in the next generation of autonomous robotic networks.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Collaborative Continual Communicative Learning for Black-Box Visual Place Recognition via Place-Aware Distillation",
+      "authors": [
+        "Kenta Tsukahara",
+        "Tanaka Kanji",
+        "Daiki Iwata",
+        "Jonathan Tay Yu Liang",
+        "Wuhao Xie"
+      ],
+      "published": "2026-09-15",
+      "venue": "SN Computer Science",
+      "publisher": "Springer Nature",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "algorithm",
+        "system",
+        "theory",
+        "swarm",
+        "emergence",
+        "perception"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.4
+    },
+    {
+      "id": "doi:10.1145/3846183",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Level of Autonomy and Reliability in Co-located Multiple Robot Operation: A Five-Level Framework and Practical Design Guidance",
+      "url": "https://doi.org/10.1145/3846183",
+      "doi": "10.1145/3846183",
+      "doi_url": "https://doi.org/10.1145/3846183",
+      "summary": "Teleoperated robots augmented with autonomous assistance are increasingly used for conversational customer service in co-located deployments; we need a systematic method for determining which functions to automate and which to retain for the operator. We introduce a Level of Autonomy (LOA) framework with five levels and empirically examine how LOA and autonomy reliability jointly affect outcomes in co-located deploy...",
+      "abstract": "Teleoperated robots augmented with autonomous assistance are increasingly used for conversational customer service in co-located deployments; we need a systematic method for determining which functions to automate and which to retain for the operator. We introduce a Level of Autonomy (LOA) framework with five levels and empirically examine how LOA and autonomy reliability jointly affect outcomes in co-located deployments. We conducted a laboratory study in which participants (N=32) acted as robot operators and, via a teleoperated robot in a simulated shop, engaged in conversational product recommendation interactions using a teleoperation interface. We compared five LOA conditions across multiple reliability conditions and measured the NASA-TLX, System Usability Scale (SUS), interpersonal effects, and task performance. The results show that when reliability is high, the most effective strategy was either to fully automate the target function or to keep operator control minimal and clearly bounded; designs that required operators to both supervise the automation and intervene frequently tended to increase workload. In addition, in early deployments, when operators are unfamiliar with teleoperation, avoid designs that require frequent operator decisions. When reliability is limited, lower LOA was preferable, reducing mode-switching between error recovery and normal teleoperation. This study provides a five-level LOA framework for co-located multi-robot customer service and suggests that effective customer-facing HRI in such settings requires aligning LOA with autonomy reliability and clear human-robot role allocation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Level of Autonomy and Reliability in Co-located Multiple Robot Operation: A Five-Level Framework and Practical Design Guidance",
+      "authors": [
+        "Yota Hatano",
+        "Jun Baba",
+        "Junya Nakanishi",
+        "Yuichiro Yoshikawa",
+        "Hiroshi Ishiguro"
+      ],
+      "published": "2026-09-15",
+      "venue": "ACM Transactions on Human-Robot Interaction",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.58
+    },
+    {
+      "id": "doi:10.64235/40fkfs25",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Learning to Coordinate: A Critical Synthesis of Reinforcement Learning Approaches for Autonomous Robotics in Warehouse Automation",
+      "url": "https://doi.org/10.64235/40fkfs25",
+      "doi": "10.64235/40fkfs25",
+      "doi_url": "https://doi.org/10.64235/40fkfs25",
+      "summary": "The rapid acceleration of e-commerce has placed unprecedented demands on warehouse logistics, creating a compelling use case for autonomous mobile robot fleets operating at scale. Reinforcement learning has emerged as a promising paradigm for addressing the coordination challenges inherent in multi-robot warehouse automation, offering potential advantages over traditional optimization methods in dynamic, partially o...",
+      "abstract": "The rapid acceleration of e-commerce has placed unprecedented demands on warehouse logistics, creating a compelling use case for autonomous mobile robot fleets operating at scale. Reinforcement learning has emerged as a promising paradigm for addressing the coordination challenges inherent in multi-robot warehouse automation, offering potential advantages over traditional optimization methods in dynamic, partially observable environments. Yet despite substantial research investment and promising laboratory demonstrations, the translation of reinforcement learning based approaches to industrial practice remains constrained by unresolved theoretical and engineering challenges. This paper presents a systematic critical synthesis of the literature on reinforcement learning for warehouse robotics, examining 67 peer reviewed studies published between 2021 and 2026 across the intersecting domains of multi-agent path finding, task allocation, and collaborative order fulfillment. The analysis identifies three persistent tensions that structure the field: the tradeoff between centralized coordination and distributed scalability, the challenge of transferring policies trained in simulation to noisy physical environments, and the unresolved relationship between individual robot learning and system level optimization objectives. Our findings indicate that while hierarchical and curriculum based reinforcement learning architectures demonstrate genuine promise for specific subproblems, claims of generalizable superiority over classical methods remain insufficiently supported by evidence from realistic, large scale evaluations. We propose an integrative framework that specifies conditions under which reinforcement learning adds value relative to conventional approaches, with implications for research design and industrial deployment.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Learning to Coordinate: A Critical Synthesis of Reinforcement Learning Approaches for Autonomous Robotics in Warehouse Automation",
+      "authors": [
+        "Victor Ogunrinde"
+      ],
+      "published": "2026-09-10",
+      "venue": "Journal of Science Technology and Social Transformation",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "review",
+        "algorithm",
+        "control",
+        "system",
+        "theory",
+        "swarm"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 8.56
+    },
+    {
+      "id": "doi:10.1177/02783649261464202",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Commerge: Communication-efficient, robust, and fast LiDAR map merging framework for multi-robot coordination in resource-constrained scenarios",
+      "url": "https://doi.org/10.1177/02783649261464202",
+      "doi": "10.1177/02783649261464202",
+      "doi_url": "https://doi.org/10.1177/02783649261464202",
+      "summary": "By maintaining global consistency across robot teams, multi-robot light detection and ranging (LiDAR) map merging enables faster exploration and efficient area coverage. However, map merging requires exchanging massive sensor data between the server and robots, making communication the bottleneck, especially in communication-constrained environments. Therefore, we present Commerge , a communication-efficient map mer...",
+      "abstract": "By maintaining global consistency across robot teams, multi-robot light detection and ranging (LiDAR) map merging enables faster exploration and efficient area coverage. However, map merging requires exchanging massive sensor data between the server and robots, making communication the bottleneck, especially in communication-constrained environments. Therefore, we present Commerge , a communication-efficient map merging framework that achieves bandwidth reduction through graph-theoretic selective data exchange. By doing so, our Commerge reduces inter-robot communication by up to 5000× while maintaining alignment accuracy. Our key insight is that only a small subset of carefully selected scans is sufficient for robust map merging. We formulate this as a three-stage cascaded optimization problem on an exchange graph, where vertices represent robot keyframes and edges denote candidate inter-robot loops. Through three cascade stages, we select a sequentially overlapped, balanced-transmission-cost, and geometrically-perceptually optimal scan subset that preserves alignment quality while reducing communication. Unlike existing approaches that either transmit whole scans, which require GB-scale data exchange, or employ naïve downsampling, our approach exchanges only MB-scale data while achieving comparable alignment accuracy. Extensive evaluation on five public datasets and four in-house datasets covering cave, planetary-analog, indoor, and outdoor campus environments shows up to 99.98% reduction in data exchange (e.g., from 7000 MB to 1.3 MB on the HeLiPR dataset), while maintaining alignment performance across embedded to desktop platforms. Furthermore, we demonstrate that our proposed framework operates on resource-constrained hardware where existing methods fail, enabling real-world multi-robot deployment in bandwidth-limited field operations. Finally, we validate system robustness under a real-world non-line-of-sight (NLOS) communication environment with up to 73.3% dropout rate, as well as under emulated network degradation scenarios including delay, bandwidth limitation, and packet loss, confirming reliable map merging even under severely degraded connectivity.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Commerge: Communication-efficient, robust, and fast LiDAR map merging framework for multi-robot coordination in resource-constrained scenarios",
+      "authors": [
+        "Hogyun Kim",
+        "Jiwon Choi",
+        "Juwon Kim",
+        "Geonmo Yang",
+        "Seokhwan Jeong",
+        "Hyungtae Lim",
+        "Younggun Cho"
+      ],
+      "published": "2026-09-08",
+      "venue": "The International Journal of Robotics Research",
+      "publisher": "SAGE Publications",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 7.58
+    },
     {
       "id": "doi:10.1007/s12065-026-01257-5",
       "report_id": "robotics_research_20260907_170035",
@@ -32,6 +1449,41 @@
         "algorithm_design"
       ],
       "score": 4.5
+    },
+    {
+      "id": "doi:10.3390/app16178852",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Formation-Preserving Control for Multi-Robot Systems: Experimental Validation",
+      "url": "https://doi.org/10.3390/app16178852",
+      "doi": "10.3390/app16178852",
+      "doi_url": "https://doi.org/10.3390/app16178852",
+      "summary": "Artificial potential fields (APFs) are widely used for collision avoidance in robotic systems due to their simplicity and real-time performance. However, in cooperative environments, robots may undergo unnecessary displacements caused by repulsive forces from neighboring robots, even after reaching their target positions. This paper presents a formation-preserving control strategy that suppresses such unnecessary mo...",
+      "abstract": "Artificial potential fields (APFs) are widely used for collision avoidance in robotic systems due to their simplicity and real-time performance. However, in cooperative environments, robots may undergo unnecessary displacements caused by repulsive forces from neighboring robots, even after reaching their target positions. This paper presents a formation-preserving control strategy that suppresses such unnecessary motion while retaining the standard APF behavior when robots are far from their desired positions. The stability of the proposed controller is proven through Lyapunov stability analysis. Furthermore, the theoretical analysis establishes local exponential stability and positive invariance of a neighborhood of the desired configuration. A formal proof of collision avoidance is also provided, ensuring that inter-robot safety constraints are preserved. The approach is validated through two simulations and two experiments: the first illustrates APF-induced fluctuations, whereas the second demonstrates that the proposed controller enables robots to maintain their desired target positions.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Formation-Preserving Control for Multi-Robot Systems: Experimental Validation",
+      "authors": [
+        "Wojciech Kowalczyk",
+        "Arpit Joon",
+        "Przemysław Herman"
+      ],
+      "published": "2026-09-06",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.58
     },
     {
       "id": "doi:10.1016/j.scico.2026.103559",
@@ -1339,8 +2791,7 @@
       "publisher": "",
       "source": "consensus",
       "topics": [
-        "swarm_intelligence_robotics",
-        "swarm_self_organization_emergence"
+        "swarm_intelligence_robotics"
       ],
       "tags": [
         "theory",
@@ -2031,6 +3482,50 @@
         "scalability"
       ],
       "score": 7.6
+    },
+    {
+      "id": "doi:10.1126/scirobotics.ado5888",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
+      "url": "https://doi.org/10.1126/scirobotics.ado5888",
+      "doi": "10.1126/scirobotics.ado5888",
+      "doi_url": "https://doi.org/10.1126/scirobotics.ado5888",
+      "summary": "Science Robotics 通过反事实奖励为个体受控微型机器人分配集体搬运贡献，训练最多 200 个机器人协同运输物体，并在噪声、故障单元和群体规模变化下验证鲁棒性。",
+      "abstract": "The paper uses multi-agent reinforcement learning with counterfactual rewards to train individually laser-controlled microrobots for collective cargo transport. It demonstrates robust coordinated transport up to 200 robots despite thermal noise, varying swarm sizes, and malfunctioning units.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
+      "authors": ["Veit-Lorenz Heuthe", "Emanuele Panizon", "Hongri Gu", "Clemens Bechinger"],
+      "published": "2024-12-18",
+      "venue": "Science Robotics",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "source": "consensus",
+      "topics": ["swarm_intelligence_robotics", "swarm_self_organization_emergence"],
+      "tags": ["swarm", "algorithm", "control", "collective_transport", "reinforcement_learning"],
+      "content_types": ["algorithm_design"],
+      "score": 9.4,
+      "citation_count": 53
+    },
+    {
+      "id": "doi:10.1109/access.2025.3559424",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Multi-Layered Distributed Control for Collective Movement and Coverage of Robot Swarms in Unknown Structured Environments",
+      "url": "https://doi.org/10.1109/ACCESS.2025.3559424",
+      "doi": "10.1109/ACCESS.2025.3559424",
+      "doi_url": "https://doi.org/10.1109/ACCESS.2025.3559424",
+      "summary": "IEEE Access 提出多层分布式控制框架，将部署、覆盖与撤离策略构建于保持网络连通和避碰的行为控制之上，并以仿真和实机实验验证。",
+      "abstract": "This work presents a multi-layer distributed-control framework for swarm deployment, coverage, and withdrawal in unknown structured environments. The behavior layer preserves network integrity and collision avoidance, while higher layers select collective strategies; simulations and real-world experiments evaluate performance and scalability.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-Layered Distributed Control for Collective Movement and Coverage of Robot Swarms in Unknown Structured Environments",
+      "authors": ["Pham Duy Hung", "Trung Dung Ngo"],
+      "published": "2025-04-10",
+      "venue": "IEEE Access",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": ["swarm_intelligence_robotics", "engineering_system_design"],
+      "tags": ["swarm", "distributed_control", "coverage", "network_connectivity", "system"],
+      "content_types": ["algorithm_design"],
+      "score": 8.2,
+      "citation_count": 7
     }
   ]
 }
