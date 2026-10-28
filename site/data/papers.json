@@ -1,10 +1,258 @@
 {
-  "updated_at": "2026-10-23T01:16:16",
+  "updated_at": "2026-10-28T14:48:50",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
+      "id": "doi:10.1007/s12065-026-01284-2",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Competitive learning-based atom search optimization with parameter adaptation for numerical optimization and multi-robot path planning",
+      "url": "https://doi.org/10.1007/s12065-026-01284-2",
+      "doi": "10.1007/s12065-026-01284-2",
+      "doi_url": "https://doi.org/10.1007/s12065-026-01284-2",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Competitive learning-based atom search optimization with parameter adaptation for numerical optimization and multi-robot path planning",
+      "authors": [
+        "Qiuhong Lin",
+        "Hongbin Chang",
+        "Shijun Luo",
+        "Jiqin Li",
+        "Lang Liu"
+      ],
+      "published": "2026-10-27",
+      "venue": "Evolutionary Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.98
+    },
+    {
+      "id": "doi:10.1038/s41598-026-76756-7",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Robust design of air chamber to enhance impact connection strength of magnetic connectors on modular truss robots",
+      "url": "https://doi.org/10.1038/s41598-026-76756-7",
+      "doi": "10.1038/s41598-026-76756-7",
+      "doi_url": "https://doi.org/10.1038/s41598-026-76756-7",
+      "summary": "The connection mechanisms between neighboring modules are crucial subsystems in modular reconfigurable robot (MRR) systems. Magnetic connectors have been widely used for docking and undocking because of their mechanical simplicity and ease of use. However, they suffer from lower maximum tensile strength compared with mechanical docking mechanisms. This limitation is critical when modular truss robots are subjected t...",
+      "abstract": "The connection mechanisms between neighboring modules are crucial subsystems in modular reconfigurable robot (MRR) systems. Magnetic connectors have been widely used for docking and undocking because of their mechanical simplicity and ease of use. However, they suffer from lower maximum tensile strength compared with mechanical docking mechanisms. This limitation is critical when modular truss robots are subjected to impact forces during locomotion, reconfiguration, docking, and undocking. To address this challenge, this paper presents a comprehensive parametric study and establishes design guidelines to maximize the impact resistance of magnetic connectors. As a core component of this approach, we investigate a mode-switching silicone air chamber designed to enhance impact absorption while mitigating the degradation of undocking capabilities. To evaluate the performance of the air chamber, we introduce an experimental evaluation method inspired by the Charpy impact test. Because the transient response of the soft structure is highly complex, the Taguchi and full factorial design method were employed to optimize the design parameters and derive the design guidelines. In the case of parameters, four factors were selected that could be judged to have an impact on the pneumatic stiffness, structural flexibility, and fluid damping of the air chamber. Also, each design parameter was divided into three levels, and five replicate experiments were conducted for each combination using an \\(L_9(3^4)\\) orthogonal array. The performance metrics consist of the sum of weighted values of \\(M_1\\) , which indicates the air chamber’s resistance to impact, and \\(M_2\\) , which reflects the indicator of mode switching between opening and closing the air chamber’s bottom hole. To explore the vicinity of the optimal value identified in the first experiment, a second experiment was conducted to pinpoint the final optimal parameter configuration, achieving a metric improvement of 0.051969 over the worst-case scenario. Finally, the practical feasibility and effectiveness of the proposed design guidelines were demonstrated through a hardware model using a prototype connector within a configured MRR system, demonstrating connection retention under selected impact conditions.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Robust design of air chamber to enhance impact connection strength of magnetic connectors on modular truss robots",
+      "authors": [
+        "Jaeyeol Kim",
+        "WooSeong Shin",
+        "Yohan Go",
+        "Myeongjin Choi",
+        "TaeWon Seo"
+      ],
+      "published": "2026-10-25",
+      "venue": "Scientific Reports",
+      "publisher": "Nature Portfolio",
+      "source": "openalex",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "reconfiguration",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design"
+      ],
+      "score": 6.2
+    },
+    {
+      "id": "doi:10.3390/agriculture16212330",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Improved DWA-Based Local Path Planning for Multi-Robot Navigation",
+      "url": "https://doi.org/10.3390/agriculture16212330",
+      "doi": "10.3390/agriculture16212330",
+      "doi_url": "https://doi.org/10.3390/agriculture16212330",
+      "summary": "The Dynamic Window Approach (DWA) evaluates candidate motions for local robot navigation. This paper presents an Improved Dynamic Window Approach (IDWA) with two changes to trajectory evaluation. First, a distance threshold selects a near-term reference state on each predicted trajectory for heading evaluation. Second, an additional distance score combines the distance from the predicted endpoint to the local target...",
+      "abstract": "The Dynamic Window Approach (DWA) evaluates candidate motions for local robot navigation. This paper presents an Improved Dynamic Window Approach (IDWA) with two changes to trajectory evaluation. First, a distance threshold selects a near-term reference state on each predicted trajectory for heading evaluation. Second, an additional distance score combines the distance from the predicted endpoint to the local target with the minimum distance from the predicted trajectory to the obstacle-point set. A* provides global path guidance, while IDWA evaluates local candidate motions. Simulation comparisons report the trajectories, simulated navigation times, velocity responses, and smoothness of the complete IDWA configuration in the tested scenarios. Gazebo and indoor physical experiments also illustrate the operation of a multi-robot navigation system in obstacle-containing environments.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Improved DWA-Based Local Path Planning for Multi-Robot Navigation",
+      "authors": [
+        "Jiahao Zhu",
+        "Yuankang Wang",
+        "Kai Liao",
+        "Haifei Chen"
+      ],
+      "published": "2026-10-25",
+      "venue": "Agriculture",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.0
+    },
+    {
+      "id": "doi:10.3390/electronics15214909",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Swarm Robotics, Swarm Intelligence and Machine Learning: A Classification Framework and Review of Hybrid Swarm Architectures",
+      "url": "https://doi.org/10.3390/electronics15214909",
+      "doi": "10.3390/electronics15214909",
+      "doi_url": "https://doi.org/10.3390/electronics15214909",
+      "summary": "Swarm robotics (SR) and swarm intelligence (SI) share decentralization and collective behavior but address different problems. SR concerns physical multi-robot systems whose collective behavior must hold under sensing, communication, energy, and safety constraints, while SI includes computational models and optimization methods, many of which involve no robots. Conflating them obscures which SI results transfer to r...",
+      "abstract": "Swarm robotics (SR) and swarm intelligence (SI) share decentralization and collective behavior but address different problems. SR concerns physical multi-robot systems whose collective behavior must hold under sensing, communication, energy, and safety constraints, while SI includes computational models and optimization methods, many of which involve no robots. Conflating them obscures which SI results transfer to robot swarms and what machine learning (ML) contributes. This review examines SR coordination, SI optimization, and ML-augmented hybrid methods from a deployment perspective. It proposes a tiered framework for deciding whether a system is a robotic swarm, a taxonomy of five hybrid SR–SI–ML architecture types, and feasibility conditions for combining methods on a given platform. Across 17 coded studies, SI optimizers such as Ant Colony Optimization and Particle Swarm Optimization are evaluated mainly on benchmarks or in simulation and reach hardware only with supporting infrastructure; hardware experiments, with one exception, use twenty robots or fewer, and learned controllers transfer to hardware in some studies but show a large simulation-to-reality gap in others. Layered hybrid architectures, in which SR provides coordination, SI provides optimization and ML provides adaptation, remain a design hypothesis. The review proposes a reporting checklist for future studies.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Swarm Robotics, Swarm Intelligence and Machine Learning: A Classification Framework and Review of Hybrid Swarm Architectures",
+      "authors": [
+        "Tiago Gameiro",
+        "Salviano Soares",
+        "Carlos Viegas",
+        "Nuno Ferreira",
+        "Antonio Valente"
+      ],
+      "published": "2026-10-23",
+      "venue": "Electronics",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "review",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 4.9
+    },
+    {
+      "id": "doi:10.4018/ijismd.426031",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Multi-Robot Path Planning Based on an Improved Bag Spider Algorithm",
+      "url": "https://doi.org/10.4018/ijismd.426031",
+      "doi": "10.4018/ijismd.426031",
+      "doi_url": "https://doi.org/10.4018/ijismd.426031",
+      "summary": "Multi-robot path planning is a complex, multi-constraint optimization problem where multiple robots must reach their targets while avoiding obstacles and each other. Metaheuristic planners are appealing for these challenges because they can explore large continuous spaces without relying on an explicit cost landscape model. However, they often face issues like premature convergence and unstable collision handling in...",
+      "abstract": "Multi-robot path planning is a complex, multi-constraint optimization problem where multiple robots must reach their targets while avoiding obstacles and each other. Metaheuristic planners are appealing for these challenges because they can explore large continuous spaces without relying on an explicit cost landscape model. However, they often face issues like premature convergence and unstable collision handling in cluttered environments. In this paper, the authors introduced an improved bag spider algorithm for coordinated robot path planning. Two complementary mechanisms are proposed: (a) an adaptive exploration–exploitation schedule that adjusts based on iteration progress and population diversity and (b) an obstacle-aware repair operator that locally bypasses infeasible segments and smooths the resulting paths. Three variants are tested—adaptive, enhanced obstacle avoidance, and a combined version—and compared with the original bag spider algorithm and particle swarm optimization in a 2D environment with five robots and multiple circular obstacles.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-Robot Path Planning Based on an Improved Bag Spider Algorithm",
+      "authors": [
+        "Zhipeng Zhang",
+        "Gao Xu"
+      ],
+      "published": "2026-10-23",
+      "venue": "International Journal of Information System Modeling and Design",
+      "publisher": "IGI Global Scientific Publishing",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "swarm",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.68
+    },
+    {
+      "id": "doi:10.1142/s0219686728500473",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Dynamic Scheduling Optimization of Multi-Robot Collaborative Assembly Systems Combining GraphSAGE and Digital Twins",
+      "url": "https://doi.org/10.1142/s0219686728500473",
+      "doi": "10.1142/s0219686728500473",
+      "doi_url": "https://doi.org/10.1142/s0219686728500473",
+      "summary": "Scheduling lag, path conflicts and resource overload are the common problems that a multi-robot collaborative assembly system faces under task dynamics changes, strong resource coupling and unexpected interruptions; scheduling mechanisms struggle to capture dynamic relations among entities and to verify strategy feasibility promptly. To tackle the problem, this paper proposes a dynamic scheduling optimization framew...",
+      "abstract": "Scheduling lag, path conflicts and resource overload are the common problems that a multi-robot collaborative assembly system faces under task dynamics changes, strong resource coupling and unexpected interruptions; scheduling mechanisms struggle to capture dynamic relations among entities and to verify strategy feasibility promptly. To tackle the problem, this paper proposes a dynamic scheduling optimization framework based on GraphSAGE (Graph Sample And aggreGatE) and digital twins. Through inductive learning, the framework embeds the dynamic relations of heterogeneous entities online and handles the real-time representation and scheduling of unseen nodes. A high-fidelity closed-loop simulation environment based on a digital twin verifies the feasibility and pre-evaluates the performance of each strategy before deployment, which prevents invalid or harmful scheduling instructions from reaching the physical system. Experiments evaluate the proposed approach under different task loads, robot counts and fault disturbance scenarios against five scheduling methods. The results indicate that for high task frequency, the average task response time is 2.6 s; the average task success rate is 95.0%; the number of path conflicts is less than 3; the rate of resource contention is less than 10%; and and the average rescheduling time under a 25% sudden failure rate is 0.85 s. Ablation experiments validate the graph embedding mechanism and the twin erification module separately. This study offers a secure and robust scheduling technique for multi-robot cooperation in high-speed dynamic intelligent manufacturing environments",
+      "figure_url": "",
+      "figure_alt": "Main figure for Dynamic Scheduling Optimization of Multi-Robot Collaborative Assembly Systems Combining GraphSAGE and Digital Twins",
+      "authors": [
+        "Yunzhen Zhang",
+        "Lili Han",
+        "Cunying Zhang",
+        "Yu Liu"
+      ],
+      "published": "2026-10-23",
+      "venue": "Journal of Advanced Manufacturing Systems",
+      "publisher": "World Scientific Pub Co Pte Ltd",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.48
+    },
+    {
+      "id": "doi:10.26418/elkha.v18i2.98723",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Trajectory Planning for Multi-Robot Formation Control with the Artificial Potential Field",
+      "url": "https://doi.org/10.26418/elkha.v18i2.98723",
+      "doi": "10.26418/elkha.v18i2.98723",
+      "doi_url": "https://doi.org/10.26418/elkha.v18i2.98723",
+      "summary": "In multi-robot formation control systems, trajectory planning plays a crucial role as it determines the ability of a formation to follow desired paths smoothly and accurately. This study presents a framework for Mecanum-wheeled robot teams, combining quintic-polynomial waypoint generation, a virtual-structure model, an artificial potential field for tracking and obstacle avoidance. The polynomial trajectories genera...",
+      "abstract": "In multi-robot formation control systems, trajectory planning plays a crucial role as it determines the ability of a formation to follow desired paths smoothly and accurately. This study presents a framework for Mecanum-wheeled robot teams, combining quintic-polynomial waypoint generation, a virtual-structure model, an artificial potential field for tracking and obstacle avoidance. The polynomial trajectories generate smooth references that satisfy position, velocity, and acceleration constraints at selected waypoints. Mecanum-wheel omnidirectional motion improves maneuverability in complex environments. The virtual rigid-body model assigns each robot a fixed formation offset to support coordinated movement. Artificial potential field methods attract robots toward their formation targets while repelling them from nearby robots and obstacles. The simulation results show that the generated waypoint trajectories are continuous and smooth. The robots successfully tracked their assigned formation positions while avoiding nearby obstacles. The mean Euclidean tracking errors between the desired and actual positions for Robots 1–3 were 0.268, 0.153, and 0.118 m, respectively. Additionally, three fixed circular obstacles with a diameter of 0.2 m were positioned at (3, 2), (5, 3.5), and (7, 2.5) m. During the simulation, the minimum distances from each robot's reference point to the center of its nearest obstacle were 0.642, 0.811, and 0.822 m, respectively. The inverse-kinematic transformation generated individual wheel angular velocities, which will be utilized for physical experiments in the next phase. The simulation results demonstrate the integrated performance of the trajectory generation, virtual-structure model, and artificial potential field, validating the approach prior to physical implementation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Trajectory Planning for Multi-Robot Formation Control with the Artificial Potential Field",
+      "authors": [
+        "Faisal Wahab",
+        "Jonathan Chandra"
+      ],
+      "published": "2026-10-23",
+      "venue": "ELKHA",
+      "publisher": "Tanjungpura University",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.08
+    },
+    {
       "id": "doi:10.1126/scirobotics.adr9578",
-      "report_id": "robotics_research_20261023_011616",
+      "report_id": "robotics_research_20261028_144850",
       "title": "Hearing the shape of an arena with spectral swarm robotics",
       "url": "https://doi.org/10.1126/scirobotics.adr9578",
       "doi": "10.1126/scirobotics.adr9578",
@@ -50,13 +298,13 @@
     },
     {
       "id": "doi:10.1126/scirobotics.adw4624",
-      "report_id": "robotics_research_20261023_011616",
+      "report_id": "robotics_research_20261028_144850",
       "title": "Structural bias enables reliable sim-to-real transfer in reinforcement learning for robot swarms",
       "url": "https://doi.org/10.1126/scirobotics.adw4624",
       "doi": "10.1126/scirobotics.adw4624",
       "doi_url": "https://doi.org/10.1126/scirobotics.adw4624",
       "summary": "Reinforcement learning offers a powerful framework for automatically generating control policies for robot swarms, yet its application to physical multirobot systems has been limited by the simulation-to-reality gap. Despite substantial advances in multiagent reinforcement learning, systematic demonstrations of gradient-based sim-to-real transfer to physical robot swarms remain scarce. Most work remains confined to...",
-      "abstract": "Reinforcement learning offers a powerful framework for automatically generating control policies for robot swarms, yet its application to physical multirobot systems has been limited by the simulation-to-reality gap. Despite substantial advances in multiagent reinforcement learning, systematic demonstrations of gradient-based sim-to-real transfer to physical robot swarms remain scarce. Most work remains confined to simulation, and the few real-robot demonstrations lack evaluation across multiple runs and tasks. We show that this barrier can be overcome by embedding structural constraints into policy learning. We introduce attention-based counterfactual policy gradients for behavior selection in robot swarms (SwarmACB), a multiagent actor-critic method in which robots arbitrate among predefined behavior modules—reactive sensorimotor routines such as phototaxis or aggregation—rather than learning low-level motor commands. This architectural choice reduces the variance of learned solutions, which we argue mitigates overfitting to simulation artifacts. Through systematic evaluation on five collective missions using 20 physical e-puck robots (250 real-robot runs), we demonstrate that SwarmACB transfers successfully from simulation to reality, substantially outperforming continuous-action baselines. By progressively constraining policy architecture, perception, and model capacity, we show that smaller, structured policies transfer more reliably than large, unconstrained ones. These findings challenge the assumption that scale is necessary for successful transfer, suggesting instead that principled structural design enables reinforcement learning to produce control software for robot swarms that is both learned automatically and directly deployable in the physical world.",
+      "abstract": "Reinforcement learning offers a powerful framework for automatically generating control policies for robot swarms, yet its application to physical multirobot systems has been limited by the simulation-to-reality gap. Despite substantial advances in multiagent reinforcement learning, systematic demonstrations of gradient-based sim-to-real transfer to physical robot swarms remain scarce. Most work remains confined to simulation, and the few real-robot demonstrations lack evaluation across multiple runs and tasks. We show that this barrier can be overcome by embedding structural constraints into policy learning. We introduce attention-based counterfactual policy gradients for behavior selection in robot swarms (SwarmACB), a multiagent actor-critic method in which robots arbitrate among predefined behavior modules-reactive sensorimotor routines such as phototaxis or aggregation-rather than learning low-level motor commands. This architectural choice reduces the variance of learned solutions, which we argue mitigates overfitting to simulation artifacts. Through systematic evaluation on five collective missions using 20 physical e-puck robots (250 real-robot runs), we demonstrate that SwarmACB transfers successfully from simulation to reality, substantially outperforming continuous-action baselines. By progressively constraining policy architecture, perception, and model capacity, we show that smaller, structured policies transfer more reliably than large, unconstrained ones. These findings challenge the assumption that scale is necessary for successful transfer, suggesting instead that principled structural design enables reinforcement learning to produce control software for robot swarms that is both learned automatically and directly deployable in the physical world.",
       "figure_url": "",
       "figure_alt": "Main figure for Structural bias enables reliable sim-to-real transfer in reinforcement learning for robot swarms",
       "authors": [
@@ -69,8 +317,8 @@
       ],
       "published": "2026-10-21",
       "venue": "Science Robotics",
-      "publisher": "American Association for the Advancement of Science (AAAS)",
-      "source": "crossref",
+      "publisher": "American Association for the Advancement of Science",
+      "source": "openalex",
       "topics": [
         "swarm_intelligence_robotics",
         "engineering_system_design"
@@ -92,7 +340,7 @@
     },
     {
       "id": "doi:10.1002/rob.70365",
-      "report_id": "robotics_research_20261023_011616",
+      "report_id": "robotics_research_20261028_144850",
       "title": "A Modular Vision‐Based Robot for Efficient Noninvasive Inspection of External Pipeline Surfaces",
       "url": "https://doi.org/10.1002/rob.70365",
       "doi": "10.1002/rob.70365",
@@ -125,6 +373,82 @@
         "structure_design"
       ],
       "score": 8.48
+    },
+    {
+      "id": "doi:10.1007/s10999-026-09998-y",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Pneumatic modulation of stability and stiffness for a modular robotic skeleton",
+      "url": "https://doi.org/10.1007/s10999-026-09998-y",
+      "doi": "10.1007/s10999-026-09998-y",
+      "doi_url": "https://doi.org/10.1007/s10999-026-09998-y",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Pneumatic modulation of stability and stiffness for a modular robotic skeleton",
+      "authors": [
+        "Kangjia Fu",
+        "Xuesong Wu",
+        "Qi Zhang",
+        "Sunquan Yu",
+        "Di Chen",
+        "Haopeng Liang",
+        "Yanjie Yang",
+        "Hua Li",
+        "Xiang Zhang"
+      ],
+      "published": "2026-10-21",
+      "venue": "International Journal of Mechanics and Materials in Design",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "reconfiguration",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.5
+    },
+    {
+      "id": "doi:10.3390/met16101159",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Task Allocation for Gantry-Type Multi-Robot Systems with Heterogeneous Welding Tasks",
+      "url": "https://doi.org/10.3390/met16101159",
+      "doi": "10.3390/met16101159",
+      "doi_url": "https://doi.org/10.3390/met16101159",
+      "summary": "To address the task allocation problem of a gantry-type dual-arm welding robotic system subject to heavy and diverse welding workloads as well as limited operating span, a Dynamic Small-World Genetic Algorithm (DSWGA) for multi-objective optimization is proposed to obtain optimal welding task allocation. To meet the operational requirements of workload balancing and high-efficiency welding for ship multi-subassembly...",
+      "abstract": "To address the task allocation problem of a gantry-type dual-arm welding robotic system subject to heavy and diverse welding workloads as well as limited operating span, a Dynamic Small-World Genetic Algorithm (DSWGA) for multi-objective optimization is proposed to obtain optimal welding task allocation. To meet the operational requirements of workload balancing and high-efficiency welding for ship multi-subassembly components, a multi-objective optimization model is established to minimize the system makespan and the load imbalance rate, and the small-world genetic algorithm is adopted to solve this model. To tackle the drawback of fixed parameters in the small-world network, a dynamic network parameter adjustment mechanism is developed. By dynamically tuning the connectivity among individuals in the population, the scope of information exchange is adjusted throughout the optimization process to enhance the global search capability of the algorithm. To overcome the limitation of fixed crossover and mutation probabilities in conventional genetic operations, adaptive crossover and mutation strategies are designed based on the structural differences between parents and the structural similarity between offspring and non-dominated solutions, which improves the search efficiency and solution-set quality. Test results for each improvement strategy demonstrate that the three strategies show potential complementary effects, and their combination yields better overall performance in terms of the mean values of HV, GD, and Spread, with a statistically significant advantage in HV. Task allocation experiments are conducted in three typical welding scenarios with different task scales and constraint characteristics. The results indicate that DSWGA achieves competitive overall performance in convergence, solution set quality, and distribution uniformity compared with NSGA-II, SPEA2, and MOPSO. In the more complex test scenario, the makespan of the selected compromise solution obtained by DSWGA is reduced by approximately 1.03%, 3.72%, and 2.68% compared with NSGA-II, SPEA2, and MOPSO, respectively, while the robot load balancing rate reaches 99.7%.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Task Allocation for Gantry-Type Multi-Robot Systems with Heterogeneous Welding Tasks",
+      "authors": [
+        "Yu Lu",
+        "Lijia Tao",
+        "Tao Ma",
+        "Zhenhua Zhang",
+        "Mingxin Yuan"
+      ],
+      "published": "2026-10-21",
+      "venue": "Metals",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "structure",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.38
     },
     {
       "id": "doi:10.3390/app162010393",
@@ -3130,6 +3454,42 @@
       "score": 9.55
     },
     {
+      "id": "doi:10.1109/access.2025.3559424",
+      "report_id": "robotics_research_20261023_011616",
+      "title": "Multi-Layered Distributed Control for Collective Movement and Coverage of Robot Swarms in Unknown Structured Environments",
+      "url": "https://doi.org/10.1109/ACCESS.2025.3559424",
+      "doi": "10.1109/ACCESS.2025.3559424",
+      "doi_url": "https://doi.org/10.1109/ACCESS.2025.3559424",
+      "summary": "IEEE Access 提出多层分布式控制框架，将部署、覆盖与撤离策略构建于保持网络连通和避碰的行为控制之上，并以仿真和实机实验验证。",
+      "abstract": "This work presents a multi-layer distributed-control framework for swarm deployment, coverage, and withdrawal in unknown structured environments. The behavior layer preserves network integrity and collision avoidance, while higher layers select collective strategies; simulations and real-world experiments evaluate performance and scalability.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-Layered Distributed Control for Collective Movement and Coverage of Robot Swarms in Unknown Structured Environments",
+      "authors": [
+        "Pham Duy Hung",
+        "Trung Dung Ngo"
+      ],
+      "published": "2025-04-10",
+      "venue": "IEEE Access",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "swarm",
+        "distributed_control",
+        "coverage",
+        "network_connectivity",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.2,
+      "citation_count": 7
+    },
+    {
       "id": "doi:10.1002/rob.70092",
       "report_id": "robotics_research_20260827_152738",
       "title": "CONCERT: A Modular Reconfigurable Robot for Construction",
@@ -3484,48 +3844,88 @@
       "score": 7.6
     },
     {
-      "id": "doi:10.1126/scirobotics.ado5888",
-      "report_id": "robotics_research_20261023_011616",
-      "title": "Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
-      "url": "https://doi.org/10.1126/scirobotics.ado5888",
-      "doi": "10.1126/scirobotics.ado5888",
-      "doi_url": "https://doi.org/10.1126/scirobotics.ado5888",
-      "summary": "Science Robotics 通过反事实奖励为个体受控微型机器人分配集体搬运贡献，训练最多 200 个机器人协同运输物体，并在噪声、故障单元和群体规模变化下验证鲁棒性。",
-      "abstract": "The paper uses multi-agent reinforcement learning with counterfactual rewards to train individually laser-controlled microrobots for collective cargo transport. It demonstrates robust coordinated transport up to 200 robots despite thermal noise, varying swarm sizes, and malfunctioning units.",
+      "id": "doi:10.1126/sciadv.aeg9191",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Evolutionary diversification via modular compliance for self-reconfigurable continuum robots",
+      "url": "https://doi.org/10.1126/sciadv.aeg9191",
+      "doi": "10.1126/sciadv.aeg9191",
+      "doi_url": "https://doi.org/10.1126/sciadv.aeg9191",
+      "summary": "A compliant modular self-reconfigurable continuum robot combines quasi-freeform docking grippers, a morphology-conditioned gait library, and geometric-topological planning for embodied loco-manipulation.",
+      "abstract": "The Science Advances study demonstrates hardware self-reconfiguration across multiple assembled morphologies, using compliant tendon-driven modules and a planner that combines discrete grasp/release actions with continuous deformation.",
       "figure_url": "",
-      "figure_alt": "Main figure for Counterfactual rewards promote collective transport using individually controlled swarm microrobots",
-      "authors": ["Veit-Lorenz Heuthe", "Emanuele Panizon", "Hongri Gu", "Clemens Bechinger"],
-      "published": "2024-12-18",
-      "venue": "Science Robotics",
-      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "figure_alt": "Main figure for Evolutionary diversification via modular compliance for self-reconfigurable continuum robots",
+      "authors": ["Yi-Lin Cai", "Zhefeng Huang", "Yifan Wang", "Haokai Xu", "Yue Chen"],
+      "published": "2026-08-19",
+      "venue": "Science Advances",
+      "publisher": "American Association for the Advancement of Science",
       "source": "consensus",
-      "topics": ["swarm_intelligence_robotics", "swarm_self_organization_emergence"],
-      "tags": ["swarm", "algorithm", "control", "collective_transport", "reinforcement_learning"],
-      "content_types": ["algorithm_design"],
-      "score": 9.4,
-      "citation_count": 53
+      "topics": ["modular_reconfigurable_robotics", "biomimetic_structure_design"],
+      "tags": ["structure", "docking", "morphology", "reconfiguration", "planning"],
+      "content_types": ["structure_design", "algorithm_design"],
+      "score": 9.2
     },
     {
-      "id": "doi:10.1109/access.2025.3559424",
-      "report_id": "robotics_research_20261023_011616",
-      "title": "Multi-Layered Distributed Control for Collective Movement and Coverage of Robot Swarms in Unknown Structured Environments",
-      "url": "https://doi.org/10.1109/ACCESS.2025.3559424",
-      "doi": "10.1109/ACCESS.2025.3559424",
-      "doi_url": "https://doi.org/10.1109/ACCESS.2025.3559424",
-      "summary": "IEEE Access 提出多层分布式控制框架，将部署、覆盖与撤离策略构建于保持网络连通和避碰的行为控制之上，并以仿真和实机实验验证。",
-      "abstract": "This work presents a multi-layer distributed-control framework for swarm deployment, coverage, and withdrawal in unknown structured environments. The behavior layer preserves network integrity and collision avoidance, while higher layers select collective strategies; simulations and real-world experiments evaluate performance and scalability.",
+      "id": "doi:10.1177/02783649251360360",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Locomotion and self-reconfiguration autonomy for spherical freeform modular robots",
+      "url": "https://doi.org/10.1177/02783649251360360",
+      "doi": "10.1177/02783649251360360",
+      "doi_url": "https://doi.org/10.1177/02783649251360360",
+      "summary": "An IJRR autonomy framework for spherical freeform modular robots combines skeletal kinematics, configuration matching, iterative inverse kinematics, and a behavior library for locomotion and reconfiguration.",
+      "abstract": "The FreeSN system validates the framework with up to 18 modules and 48 joint motors, addressing docking misalignment tolerance and library-driven self-reconfiguration for freeform modular robots.",
       "figure_url": "",
-      "figure_alt": "Main figure for Multi-Layered Distributed Control for Collective Movement and Coverage of Robot Swarms in Unknown Structured Environments",
-      "authors": ["Pham Duy Hung", "Trung Dung Ngo"],
-      "published": "2025-04-10",
-      "venue": "IEEE Access",
-      "publisher": "IEEE",
+      "figure_alt": "Main figure for Locomotion and self-reconfiguration autonomy for spherical freeform modular robots",
+      "authors": ["Yuxiao Tu", "Guanqi Liang", "Di Wu", "Xinzhuo Li", "Tin-Lun Lam"],
+      "published": "2026-03-18",
+      "venue": "The International Journal of Robotics Research",
+      "publisher": "SAGE Publications",
       "source": "consensus",
-      "topics": ["swarm_intelligence_robotics", "engineering_system_design"],
-      "tags": ["swarm", "distributed_control", "coverage", "network_connectivity", "system"],
+      "topics": ["modular_reconfigurable_robotics"],
+      "tags": ["structure", "docking", "locomotion", "reconfiguration", "planning"],
+      "content_types": ["structure_design", "algorithm_design"],
+      "score": 8.9
+    },
+    {
+      "id": "doi:10.1126/sciadv.aec6153",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Self-organized criticality in aquatic robot swarm",
+      "url": "https://doi.org/10.1126/sciadv.aec6153",
+      "doi": "10.1126/sciadv.aec6153",
+      "doi_url": "https://doi.org/10.1126/sciadv.aec6153",
+      "summary": "An aquatic robot swarm realizes self-organized criticality through optical attraction and hydrodynamic repulsion, measuring power-law avalanches, finite-size scaling, and adaptive collective pushing.",
+      "abstract": "The physical robot platform provides an experimental setting for collective dynamics: local optical and environmental hydrodynamic interactions drive the swarm to a robust critical state with scale-invariant behavior.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Self-organized criticality in aquatic robot swarm",
+      "authors": ["Shiji Zhao", "Jiajun Huang", "Chao-Qun Li", "Sheng-Li Mi"],
+      "published": "2026-05-13",
+      "venue": "Science Advances",
+      "publisher": "American Association for the Advancement of Science",
+      "source": "consensus",
+      "topics": ["swarm_intelligence_robotics", "swarm_self_organization_emergence"],
+      "tags": ["swarm", "self-organization", "criticality", "collective-behavior", "theory"],
+      "content_types": ["structure_design", "algorithm_design"],
+      "score": 9.3
+    },
+    {
+      "id": "doi:10.1007/s10846-026-02382-0",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Decentralized Emergent Behavior Design in Robotic Swarms Using Gibbs Random Fields",
+      "url": "https://doi.org/10.1007/s10846-026-02382-0",
+      "doi": "10.1007/s10846-026-02382-0",
+      "doi_url": "https://doi.org/10.1007/s10846-026-02382-0",
+      "summary": "A Gibbs-random-field formulation turns local sampled velocity commands into decentralized flocking, cooperative transport, and pattern-formation behavior in a robot swarm.",
+      "abstract": "Simulation and physical experiments evaluate a probabilistic graph-based controller that uses only local information and remains adaptable under environmental changes and robot failures.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Decentralized Emergent Behavior Design in Robotic Swarms Using Gibbs Random Fields",
+      "authors": ["Paulo A. F. Rezeck", "Luiz Chaimowicz"],
+      "published": "2026-03-25",
+      "venue": "Journal of Intelligent & Robotic Systems",
+      "publisher": "Springer Nature",
+      "source": "consensus",
+      "topics": ["swarm_intelligence_robotics", "swarm_self_organization_emergence"],
+      "tags": ["swarm", "graph-theory", "decentralized-control", "collective-behavior", "emergence"],
       "content_types": ["algorithm_design"],
-      "score": 8.2,
-      "citation_count": 7
+      "score": 8.8
     }
   ]
 }
