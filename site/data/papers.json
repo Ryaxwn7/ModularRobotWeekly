@@ -1,10 +1,84 @@
 {
-  "updated_at": "2026-10-28T14:48:50",
+  "updated_at": "2026-10-29T09:01:39",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
+      "id": "doi:10.1109/iros60139.2025.11246025",
+      "report_id": "robotics_research_20261029_090139",
+      "title": "MODUR: A Modular Dual-reconfigurable Robot",
+      "url": "https://doi.org/10.1109/IROS60139.2025.11246025",
+      "doi": "10.1109/IROS60139.2025.11246025",
+      "doi_url": "https://doi.org/10.1109/IROS60139.2025.11246025",
+      "summary": "MODUR is a modular self-reconfigurable robot with two coupled levels of morphology change: modules reconfigure their interconnection topology while each module changes shape for basic motion. Its compact connector and scissor-linkage parallel mechanism decouple connector motion and support adjacent-position migration; workspace analysis and physical experiments validate the design.",
+      "abstract": "MODUR is a modular self-reconfigurable robot with two coupled levels of morphology change: modules reconfigure their interconnection topology while each module changes shape for basic motion. Its compact connector and scissor-linkage parallel mechanism decouple connector motion and support adjacent-position migration; workspace analysis and physical experiments validate the design.",
+      "figure_url": "",
+      "figure_alt": "Main figure for MODUR: A Modular Dual-reconfigurable Robot",
+      "authors": [
+        "Jie Gu",
+        "Tin Lun Lam",
+        "Chunxu Tian",
+        "Zhihao Xia",
+        "Yongheng Xing",
+        "Dan Zhang"
+      ],
+      "published": "2025-10-25",
+      "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "structure",
+        "algorithm",
+        "connector",
+        "reconfiguration",
+        "system"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.2,
+      "citation_count": 3
+    },
+    {
+      "id": "doi:10.1142/s230138502850080x",
+      "report_id": "robotics_research_20261029_090139",
+      "title": "CAIR-MMOEA-DL: Contribution-Aware Inter-Robot Reallocation for Multimodal Multi-objective Multi-Robot Task Allocation",
+      "url": "https://doi.org/10.1142/s230138502850080x",
+      "doi": "10.1142/s230138502850080x",
+      "doi_url": "https://doi.org/10.1142/s230138502850080x",
+      "summary": "Multi-robot task allocation (MRTA) is a fundamental problem in collaborative robot systems, where task allocation and route planning are tightly coupled. In static, offline MRTA problems, relying on a single assignment scheme can limit the flexibility of task allocation. Therefore, it is necessary to obtain high-quality Pareto front approximations and multiple alternative task allocation schemes. Although MMOEA-DL,...",
+      "abstract": "Multi-robot task allocation (MRTA) is a fundamental problem in collaborative robot systems, where task allocation and route planning are tightly coupled. In static, offline MRTA problems, relying on a single assignment scheme can limit the flexibility of task allocation. Therefore, it is necessary to obtain high-quality Pareto front approximations and multiple alternative task allocation schemes. Although MMOEA-DL, a multimodal multi-objective evolutionary algorithm based on deep reinforcement learning (DRL) and large neighborhood search (LNS), addresses this problem effectively, some solutions may still suffer from workload imbalance, with a few robots becoming routing bottlenecks. To address this issue, this paper proposes Contribution-Aware Inter-Robot Reallocation MMOEA-DL (CAIR-MMOEA-DL). The method retains the bilevel structure of MMOEA-DL, where the upper level evolves task allocations and the lower level evaluates routes using a pretrained deep reinforcement learning planner. After the evolutionary search, a contribution-aware inter-robot reallocation strategy with coverage-guided target selection is applied to each solution on the first nondominated front of the final population. It identifies the robot with the longest route, ranks its tasks according to their removal contributions, and attempts to transfer selected tasks to lightly loaded or positive-coverage target robots. Large neighborhood search is then used to refine the task-visiting order. Experiments on 16 simulated MRTA instances with 10 independent runs show that CAIR-MMOEA-DL significantly improves hypervolume (HV) and Pareto-set proximity (PSP) compared with four baseline algorithms. Ablation results further show that the performance gains are accompanied by additional post-search assignment evaluations and longer computation time.",
+      "figure_url": "",
+      "figure_alt": "Main figure for CAIR-MMOEA-DL: Contribution-Aware Inter-Robot Reallocation for Multimodal Multi-objective Multi-Robot Task Allocation",
+      "authors": [
+        "Kangding Dong",
+        "Lele Xi",
+        "Ning Zhou"
+      ],
+      "published": "2026-10-28",
+      "venue": "Unmanned Systems",
+      "publisher": "World Scientific Pub Co Pte Ltd",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.7
+    },
+    {
       "id": "doi:10.1007/s12065-026-01284-2",
-      "report_id": "robotics_research_20261028_144850",
+      "report_id": "robotics_research_20261029_090139",
       "title": "Competitive learning-based atom search optimization with parameter adaptation for numerical optimization and multi-robot path planning",
       "url": "https://doi.org/10.1007/s12065-026-01284-2",
       "doi": "10.1007/s12065-026-01284-2",
@@ -34,7 +108,7 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 4.98
+      "score": 5.08
     },
     {
       "id": "doi:10.1038/s41598-026-76756-7",
@@ -3095,39 +3169,114 @@
     },
     {
       "id": "doi:10.1126/sciadv.aec6153",
-      "report_id": "robotics_research_20260907_170035",
+      "report_id": "robotics_research_20261028_144850",
       "title": "Self-organized criticality in aquatic robot swarm",
       "url": "https://doi.org/10.1126/sciadv.aec6153",
       "doi": "10.1126/sciadv.aec6153",
       "doi_url": "https://doi.org/10.1126/sciadv.aec6153",
-      "summary": "An aquatic robot swarm with optical attraction and hydrodynamic repulsion demonstrates self-organized criticality, including power-law avalanches, stable scaling exponents under upscaling, and self-organized convergence to steady state. Under external stimuli it preserves criticality while forming directed structures and collective pushing behaviors.",
-      "abstract": "An aquatic robot swarm with optical attraction and hydrodynamic repulsion demonstrates self-organized criticality, including power-law avalanches, stable scaling exponents under upscaling, and self-organized convergence to steady state. Under external stimuli it preserves criticality while forming directed structures and collective pushing behaviors.",
+      "summary": "An aquatic robot swarm realizes self-organized criticality through optical attraction and hydrodynamic repulsion, measuring power-law avalanches, finite-size scaling, and adaptive collective pushing.",
+      "abstract": "The physical robot platform provides an experimental setting for collective dynamics: local optical and environmental hydrodynamic interactions drive the swarm to a robust critical state with scale-invariant behavior.",
       "figure_url": "",
       "figure_alt": "Main figure for Self-organized criticality in aquatic robot swarm",
       "authors": [
         "Shiji Zhao",
         "Jiajun Huang",
-        "Chaoqun Li",
-        "Shengli Mi"
+        "Chao-Qun Li",
+        "Sheng-Li Mi"
       ],
       "published": "2026-05-13",
       "venue": "Science Advances",
-      "publisher": "",
+      "publisher": "American Association for the Advancement of Science",
       "source": "consensus",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
       ],
       "tags": [
-        "theory",
         "swarm",
-        "self_organization",
-        "emergence",
-        "collective_dynamics"
+        "self-organization",
+        "criticality",
+        "collective-behavior",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 9.3
+    },
+    {
+      "id": "doi:10.1007/s10846-026-02382-0",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Decentralized Emergent Behavior Design in Robotic Swarms Using Gibbs Random Fields",
+      "url": "https://doi.org/10.1007/s10846-026-02382-0",
+      "doi": "10.1007/s10846-026-02382-0",
+      "doi_url": "https://doi.org/10.1007/s10846-026-02382-0",
+      "summary": "A Gibbs-random-field formulation turns local sampled velocity commands into decentralized flocking, cooperative transport, and pattern-formation behavior in a robot swarm.",
+      "abstract": "Simulation and physical experiments evaluate a probabilistic graph-based controller that uses only local information and remains adaptable under environmental changes and robot failures.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Decentralized Emergent Behavior Design in Robotic Swarms Using Gibbs Random Fields",
+      "authors": [
+        "Paulo A. F. Rezeck",
+        "Luiz Chaimowicz"
+      ],
+      "published": "2026-03-25",
+      "venue": "Journal of Intelligent & Robotic Systems",
+      "publisher": "Springer Nature",
+      "source": "consensus",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "swarm",
+        "graph-theory",
+        "decentralized-control",
+        "collective-behavior",
+        "emergence"
       ],
       "content_types": [
         "algorithm_design"
       ],
-      "score": 9.0
+      "score": 8.8
+    },
+    {
+      "id": "doi:10.1177/02783649251360360",
+      "report_id": "robotics_research_20261028_144850",
+      "title": "Locomotion and self-reconfiguration autonomy for spherical freeform modular robots",
+      "url": "https://doi.org/10.1177/02783649251360360",
+      "doi": "10.1177/02783649251360360",
+      "doi_url": "https://doi.org/10.1177/02783649251360360",
+      "summary": "An IJRR autonomy framework for spherical freeform modular robots combines skeletal kinematics, configuration matching, iterative inverse kinematics, and a behavior library for locomotion and reconfiguration.",
+      "abstract": "The FreeSN system validates the framework with up to 18 modules and 48 joint motors, addressing docking misalignment tolerance and library-driven self-reconfiguration for freeform modular robots.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Locomotion and self-reconfiguration autonomy for spherical freeform modular robots",
+      "authors": [
+        "Yuxiao Tu",
+        "Guanqi Liang",
+        "Di Wu",
+        "Xinzhuo Li",
+        "Tin-Lun Lam"
+      ],
+      "published": "2026-03-18",
+      "venue": "The International Journal of Robotics Research",
+      "publisher": "SAGE Publications",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "structure",
+        "docking",
+        "locomotion",
+        "reconfiguration",
+        "planning"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.9
     },
     {
       "id": "doi:10.1073/pnas.2519129123",
@@ -3236,6 +3385,9 @@
         "system",
         "reconfiguration"
       ],
+      "content_types": [
+        "review"
+      ],
       "score": 8.8
     },
     {
@@ -3338,6 +3490,9 @@
         "reconfiguration",
         "graph"
       ],
+      "content_types": [
+        "algorithm_design"
+      ],
       "score": 8.3,
       "citation_count": 0,
       "report_id": "robotics_weekly_research_20260727",
@@ -3371,6 +3526,10 @@
         "multi_robot_system",
         "planning",
         "optimization"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
       ],
       "score": 8.1,
       "citation_count": 2,
@@ -3450,6 +3609,9 @@
         "distributed",
         "control",
         "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
       ],
       "score": 9.55
     },
@@ -3534,6 +3696,10 @@
         "system",
         "co_design"
       ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
       "score": 8.7,
       "citation_count": 5
     },
@@ -3564,6 +3730,10 @@
         "reconfiguration",
         "hardware",
         "planning"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
       ],
       "score": 8.6,
       "citation_count": 3
@@ -3596,6 +3766,9 @@
       "doi": "10.3390/s25051353",
       "summary": "A 2025 Sensors review connecting multi-robot coordination with soft robotics, highlighting locomotion, manipulation, simulation, nonlinear dynamics, hyper-redundancy, and adaptive control challenges.",
       "publisher": "",
+      "content_types": [
+        "review"
+      ],
       "score": 8.1,
       "venue": "Sensors",
       "figure_alt": "Main figure for multi-robot systems and soft robotics review",
@@ -3673,6 +3846,10 @@
         "control",
         "system"
       ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
       "score": 8.0
     },
     {
@@ -3706,6 +3883,9 @@
         "hardware",
         "system"
       ],
+      "content_types": [
+        "structure_design"
+      ],
       "score": 9.65
     },
     {
@@ -3736,6 +3916,9 @@
         "connector",
         "amphibious",
         "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design"
       ],
       "score": 8.7,
       "citation_count": 12,
@@ -3777,6 +3960,10 @@
         "structure",
         "system"
       ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
       "score": 8.6
     },
     {
@@ -3803,6 +3990,9 @@
         "planning",
         "optimization",
         "reconfiguration"
+      ],
+      "content_types": [
+        "algorithm_design"
       ],
       "score": 8.4,
       "citation_count": 3,
@@ -3841,91 +4031,10 @@
         "planning",
         "scalability"
       ],
+      "content_types": [
+        "algorithm_design"
+      ],
       "score": 7.6
-    },
-    {
-      "id": "doi:10.1126/sciadv.aeg9191",
-      "report_id": "robotics_research_20261028_144850",
-      "title": "Evolutionary diversification via modular compliance for self-reconfigurable continuum robots",
-      "url": "https://doi.org/10.1126/sciadv.aeg9191",
-      "doi": "10.1126/sciadv.aeg9191",
-      "doi_url": "https://doi.org/10.1126/sciadv.aeg9191",
-      "summary": "A compliant modular self-reconfigurable continuum robot combines quasi-freeform docking grippers, a morphology-conditioned gait library, and geometric-topological planning for embodied loco-manipulation.",
-      "abstract": "The Science Advances study demonstrates hardware self-reconfiguration across multiple assembled morphologies, using compliant tendon-driven modules and a planner that combines discrete grasp/release actions with continuous deformation.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Evolutionary diversification via modular compliance for self-reconfigurable continuum robots",
-      "authors": ["Yi-Lin Cai", "Zhefeng Huang", "Yifan Wang", "Haokai Xu", "Yue Chen"],
-      "published": "2026-08-19",
-      "venue": "Science Advances",
-      "publisher": "American Association for the Advancement of Science",
-      "source": "consensus",
-      "topics": ["modular_reconfigurable_robotics", "biomimetic_structure_design"],
-      "tags": ["structure", "docking", "morphology", "reconfiguration", "planning"],
-      "content_types": ["structure_design", "algorithm_design"],
-      "score": 9.2
-    },
-    {
-      "id": "doi:10.1177/02783649251360360",
-      "report_id": "robotics_research_20261028_144850",
-      "title": "Locomotion and self-reconfiguration autonomy for spherical freeform modular robots",
-      "url": "https://doi.org/10.1177/02783649251360360",
-      "doi": "10.1177/02783649251360360",
-      "doi_url": "https://doi.org/10.1177/02783649251360360",
-      "summary": "An IJRR autonomy framework for spherical freeform modular robots combines skeletal kinematics, configuration matching, iterative inverse kinematics, and a behavior library for locomotion and reconfiguration.",
-      "abstract": "The FreeSN system validates the framework with up to 18 modules and 48 joint motors, addressing docking misalignment tolerance and library-driven self-reconfiguration for freeform modular robots.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Locomotion and self-reconfiguration autonomy for spherical freeform modular robots",
-      "authors": ["Yuxiao Tu", "Guanqi Liang", "Di Wu", "Xinzhuo Li", "Tin-Lun Lam"],
-      "published": "2026-03-18",
-      "venue": "The International Journal of Robotics Research",
-      "publisher": "SAGE Publications",
-      "source": "consensus",
-      "topics": ["modular_reconfigurable_robotics"],
-      "tags": ["structure", "docking", "locomotion", "reconfiguration", "planning"],
-      "content_types": ["structure_design", "algorithm_design"],
-      "score": 8.9
-    },
-    {
-      "id": "doi:10.1126/sciadv.aec6153",
-      "report_id": "robotics_research_20261028_144850",
-      "title": "Self-organized criticality in aquatic robot swarm",
-      "url": "https://doi.org/10.1126/sciadv.aec6153",
-      "doi": "10.1126/sciadv.aec6153",
-      "doi_url": "https://doi.org/10.1126/sciadv.aec6153",
-      "summary": "An aquatic robot swarm realizes self-organized criticality through optical attraction and hydrodynamic repulsion, measuring power-law avalanches, finite-size scaling, and adaptive collective pushing.",
-      "abstract": "The physical robot platform provides an experimental setting for collective dynamics: local optical and environmental hydrodynamic interactions drive the swarm to a robust critical state with scale-invariant behavior.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Self-organized criticality in aquatic robot swarm",
-      "authors": ["Shiji Zhao", "Jiajun Huang", "Chao-Qun Li", "Sheng-Li Mi"],
-      "published": "2026-05-13",
-      "venue": "Science Advances",
-      "publisher": "American Association for the Advancement of Science",
-      "source": "consensus",
-      "topics": ["swarm_intelligence_robotics", "swarm_self_organization_emergence"],
-      "tags": ["swarm", "self-organization", "criticality", "collective-behavior", "theory"],
-      "content_types": ["structure_design", "algorithm_design"],
-      "score": 9.3
-    },
-    {
-      "id": "doi:10.1007/s10846-026-02382-0",
-      "report_id": "robotics_research_20261028_144850",
-      "title": "Decentralized Emergent Behavior Design in Robotic Swarms Using Gibbs Random Fields",
-      "url": "https://doi.org/10.1007/s10846-026-02382-0",
-      "doi": "10.1007/s10846-026-02382-0",
-      "doi_url": "https://doi.org/10.1007/s10846-026-02382-0",
-      "summary": "A Gibbs-random-field formulation turns local sampled velocity commands into decentralized flocking, cooperative transport, and pattern-formation behavior in a robot swarm.",
-      "abstract": "Simulation and physical experiments evaluate a probabilistic graph-based controller that uses only local information and remains adaptable under environmental changes and robot failures.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Decentralized Emergent Behavior Design in Robotic Swarms Using Gibbs Random Fields",
-      "authors": ["Paulo A. F. Rezeck", "Luiz Chaimowicz"],
-      "published": "2026-03-25",
-      "venue": "Journal of Intelligent & Robotic Systems",
-      "publisher": "Springer Nature",
-      "source": "consensus",
-      "topics": ["swarm_intelligence_robotics", "swarm_self_organization_emergence"],
-      "tags": ["swarm", "graph-theory", "decentralized-control", "collective-behavior", "emergence"],
-      "content_types": ["algorithm_design"],
-      "score": 8.8
     }
   ]
 }
