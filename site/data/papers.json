@@ -1,50 +1,728 @@
 {
-  "updated_at": "2026-10-29T09:01:39",
+  "updated_at": "2026-11-05T09:17:07",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
-      "id": "doi:10.1109/iros60139.2025.11246025",
-      "report_id": "robotics_research_20261029_090139",
-      "title": "MODUR: A Modular Dual-reconfigurable Robot",
-      "url": "https://doi.org/10.1109/IROS60139.2025.11246025",
-      "doi": "10.1109/IROS60139.2025.11246025",
-      "doi_url": "https://doi.org/10.1109/IROS60139.2025.11246025",
-      "summary": "MODUR is a modular self-reconfigurable robot with two coupled levels of morphology change: modules reconfigure their interconnection topology while each module changes shape for basic motion. Its compact connector and scissor-linkage parallel mechanism decouple connector motion and support adjacent-position migration; workspace analysis and physical experiments validate the design.",
-      "abstract": "MODUR is a modular self-reconfigurable robot with two coupled levels of morphology change: modules reconfigure their interconnection topology while each module changes shape for basic motion. Its compact connector and scissor-linkage parallel mechanism decouple connector motion and support adjacent-position migration; workspace analysis and physical experiments validate the design.",
+      "id": "doi:10.3390/app162110915",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Study on a Modular and Reconfigurable Robot That Can Be Used in Natural Disaster Events",
+      "url": "https://doi.org/10.3390/app162110915",
+      "doi": "10.3390/app162110915",
+      "doi_url": "https://doi.org/10.3390/app162110915",
+      "summary": "This paper presents a modular reconfigurable robotic system for search-and-rescue operations in natural catastrophe scenarios, addressing the structural rigidity, limited energy autonomy, and restricted victim-support capabilities of conventional rescue robots. The contributions are organized into four dimensions. First, a modular mechanical architecture is proposed in which modules operate independently or are inte...",
+      "abstract": "This paper presents a modular reconfigurable robotic system for search-and-rescue operations in natural catastrophe scenarios, addressing the structural rigidity, limited energy autonomy, and restricted victim-support capabilities of conventional rescue robots. The contributions are organized into four dimensions. First, a modular mechanical architecture is proposed in which modules operate independently or are interconnected through a multifunctional flexible tube providing mechanical coupling, shielded communication, wireless power transfer, and transport of vital supplies; a two-degree-of-freedom leg module enables star-, snake-, worm-, and chain-like configurations. Second, a unified locomotion model for both wheeled and legged configurations is developed through an equivalent-radius formulation, and stability is analyzed using the Zero-Moment Point (ZMP) criterion and the Linear Inverted Pendulum Model (LIPM). Third, a linear control law is formulated to compensate for longitudinal, lateral-slip, and orientation errors, while module coordination is achieved through a de-centralized, fault-tolerant status-message protocol. Fourth, three proof-of-concept prototype versions of modular reconfigurable robots with servo-driven active interconnections were manufactured by additive technologies. For Version 3, a Virtual Reality workflow integrating SolidWorks (version SOLIDWORKS 2023), Blender (version Blender 4.4.3, Unreal Engine 5 version 5.8), and Unreal Engine 5, with full-body inverse kinematics and physics-based simulation, was used to evaluate sensor-driven motion and obstacle avoidance. The results demonstrate the feasibility of a scalable platform able to adapt its locomotion and functional configuration to post-disaster environments",
       "figure_url": "",
-      "figure_alt": "Main figure for MODUR: A Modular Dual-reconfigurable Robot",
+      "figure_alt": "Main figure for Study on a Modular and Reconfigurable Robot That Can Be Used in Natural Disaster Events",
       "authors": [
-        "Jie Gu",
-        "Tin Lun Lam",
-        "Chunxu Tian",
-        "Zhihao Xia",
-        "Yongheng Xing",
-        "Dan Zhang"
+        "Andreea Dana Alionte",
+        "Lucian Bogatu",
+        "Cristian Gabriel Alionte",
+        "Marius-Valentin Gheorghe",
+        "Vlad Andrei Stanescu",
+        "Robert Ciobanu"
       ],
-      "published": "2025-10-25",
-      "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-      "publisher": "IEEE",
-      "source": "consensus",
+      "published": "2026-11-03",
+      "venue": "Applied Sciences",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "reconfiguration",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 9.06
+    },
+    {
+      "id": "doi:10.1016/j.ast.2026.113061",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Dynamic coverage of self-organized robotic swarm via anti-flocking mechanism",
+      "url": "https://doi.org/10.1016/j.ast.2026.113061",
+      "doi": "10.1016/j.ast.2026.113061",
+      "doi_url": "https://doi.org/10.1016/j.ast.2026.113061",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Dynamic coverage of self-organized robotic swarm via anti-flocking mechanism",
+      "authors": [
+        "Xianzheng Sun",
+        "Xiuyu Duan",
+        "Jiahui Dai",
+        "Zhi Qu",
+        "Xingkai Yu",
+        "Gumin Jin",
+        "Jianxun Li"
+      ],
+      "published": "2026-11-01",
+      "venue": "Aerospace Science and Technology",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "structure",
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 7.8
+    },
+    {
+      "id": "doi:10.1016/j.cnsns.2026.110525",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Safe approximate optimal control for modular robot manipulators in physical human-robot interaction: A hierarchical game approach with control barrier functions",
+      "url": "https://doi.org/10.1016/j.cnsns.2026.110525",
+      "doi": "10.1016/j.cnsns.2026.110525",
+      "doi_url": "https://doi.org/10.1016/j.cnsns.2026.110525",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Safe approximate optimal control for modular robot manipulators in physical human-robot interaction: A hierarchical game approach with control barrier functions",
+      "authors": [
+        "Xinye Zhu",
+        "Tianjiao An",
+        "Hucheng Jiang",
+        "Bing Ma",
+        "Bo Dong"
+      ],
+      "published": "2026-11-01",
+      "venue": "Communications in Nonlinear Science and Numerical Simulation",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
       "topics": [
         "modular_reconfigurable_robotics"
       ],
       "tags": [
-        "structure",
+        "control",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.58
+    },
+    {
+      "id": "doi:10.1016/j.ins.2026.123832",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Aerodynamic-aware bi-level co-optimization for aerial swarm robotics: Bridging discrete routing and continuous execution",
+      "url": "https://doi.org/10.1016/j.ins.2026.123832",
+      "doi": "10.1016/j.ins.2026.123832",
+      "doi_url": "https://doi.org/10.1016/j.ins.2026.123832",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Aerodynamic-aware bi-level co-optimization for aerial swarm robotics: Bridging discrete routing and continuous execution",
+      "authors": [
+        "Xinyu Liu",
+        "Longfei Wang",
+        "Yusheng Liu"
+      ],
+      "published": "2026-11-01",
+      "venue": "Information Sciences",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
         "algorithm",
-        "connector",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.48
+    },
+    {
+      "id": "doi:10.1016/j.engappai.2026.116216",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Verification-gated agentic mission-state governance for intelligent industrial multi-robot systems",
+      "url": "https://doi.org/10.1016/j.engappai.2026.116216",
+      "doi": "10.1016/j.engappai.2026.116216",
+      "doi_url": "https://doi.org/10.1016/j.engappai.2026.116216",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Verification-gated agentic mission-state governance for intelligent industrial multi-robot systems",
+      "authors": [
+        "Guoqin Tang",
+        "Qingxuan Jia",
+        "Yichen Tan",
+        "Zeyuan Huang",
+        "Ning Ji",
+        "Gang Chen"
+      ],
+      "published": "2026-11-01",
+      "venue": "Engineering Applications of Artificial Intelligence",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm",
+        "system"
+      ],
+      "content_types": [],
+      "score": 7.4
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105677",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "A multi-robot path planning method based on multi-scale perception and experience enhancement",
+      "url": "https://doi.org/10.1016/j.robot.2026.105677",
+      "doi": "10.1016/j.robot.2026.105677",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105677",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A multi-robot path planning method based on multi-scale perception and experience enhancement",
+      "authors": [
+        "Xianchang Liu",
+        "Peng Wang",
+        "Cui Ni",
+        "Chongguang Ren",
+        "Haoyuan Shan",
+        "Hongyu Li",
+        "Qingxu Han"
+      ],
+      "published": "2026-11-01",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "perception",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.2
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105664",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "SGA-TS: A Seeding Genetic Algorithm with TaskShift for task allocation in multi-robot systems",
+      "url": "https://doi.org/10.1016/j.robot.2026.105664",
+      "doi": "10.1016/j.robot.2026.105664",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105664",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for SGA-TS: A Seeding Genetic Algorithm with TaskShift for task allocation in multi-robot systems",
+      "authors": [
+        "JangHo Seo",
+        "Joonwoo Lee"
+      ],
+      "published": "2026-11-01",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.2
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3730392",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning",
+      "url": "https://doi.org/10.1109/lra.2026.3730392",
+      "doi": "10.1109/lra.2026.3730392",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3730392",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning",
+      "authors": [
+        "James D. Motes",
+        "Marco Morales",
+        "Nancy M. Amato"
+      ],
+      "published": "2026-11-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.1
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105674",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Layered woven-structure soft actuators for reconfigurable robot",
+      "url": "https://doi.org/10.1016/j.robot.2026.105674",
+      "doi": "10.1016/j.robot.2026.105674",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105674",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Layered woven-structure soft actuators for reconfigurable robot",
+      "authors": [
+        "Junsang Jeon",
+        "Yuvin Jun",
+        "Duck-Ho Kim",
+        "Kahye Song"
+      ],
+      "published": "2026-11-01",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
         "reconfiguration",
+        "structure"
+      ],
+      "content_types": [],
+      "score": 7.0
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105648",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "A compositional approach to verifying modular robotic systems",
+      "url": "https://doi.org/10.1016/j.robot.2026.105648",
+      "doi": "10.1016/j.robot.2026.105648",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105648",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A compositional approach to verifying modular robotic systems",
+      "authors": [
+        "Matt Luckcuck",
+        "Marie Farrell",
+        "Angelo Ferrando",
+        "Rafael C. Cardoso",
+        "Louise A. Dennis",
+        "Michael Fisher"
+      ],
+      "published": "2026-11-01",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "reconfiguration",
+        "system"
+      ],
+      "content_types": [],
+      "score": 7.0
+    },
+    {
+      "id": "doi:10.1016/j.robot.2026.105613",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "A heterogeneous task allocation method for multi-robot processing systems with spatial-process hybrid constraints",
+      "url": "https://doi.org/10.1016/j.robot.2026.105613",
+      "doi": "10.1016/j.robot.2026.105613",
+      "doi_url": "https://doi.org/10.1016/j.robot.2026.105613",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A heterogeneous task allocation method for multi-robot processing systems with spatial-process hybrid constraints",
+      "authors": [
+        "Te Li",
+        "Yu Li",
+        "Tianyi Zhang",
+        "Haibo Liu",
+        "Yongqing Wang"
+      ],
+      "published": "2026-11-01",
+      "venue": "Robotics and Autonomous Systems",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 6.9
+    },
+    {
+      "id": "doi:10.1109/lra.2026.3730218",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "HRI Grounding: Evidence That Operators Authorize and Correct AI Multi-Robot Plans Through a Generated Supervisory Interface",
+      "url": "https://doi.org/10.1109/lra.2026.3730218",
+      "doi": "10.1109/lra.2026.3730218",
+      "doi_url": "https://doi.org/10.1109/lra.2026.3730218",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for HRI Grounding: Evidence That Operators Authorize and Correct AI Multi-Robot Plans Through a Generated Supervisory Interface",
+      "authors": [
+        "Pattaraorn Yu",
+        "Ishaan Nair",
+        "Youngbin Song",
+        "Gim Song Soh"
+      ],
+      "published": "2026-11-01",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [],
+      "score": 6.5
+    },
+    {
+      "id": "doi:10.1016/j.oceaneng.2026.129113",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "The multi-USV mission management problem: Formalization and literature review",
+      "url": "https://doi.org/10.1016/j.oceaneng.2026.129113",
+      "doi": "10.1016/j.oceaneng.2026.129113",
+      "doi_url": "https://doi.org/10.1016/j.oceaneng.2026.129113",
+      "summary": "Unmanned Surface Vehicles (USVs) have gained prominence in recent years due to their versatility and their ability to operate in hazardous maritime environments, thereby reducing human exposure to risk. As mission complexity increases, the deployment of multiple USVs becomes necessary to achieve scalability, robustness, and operational efficiency. Such multi-USV systems require advanced coordination and cooperation...",
+      "abstract": "Unmanned Surface Vehicles (USVs) have gained prominence in recent years due to their versatility and their ability to operate in hazardous maritime environments, thereby reducing human exposure to risk. As mission complexity increases, the deployment of multiple USVs becomes necessary to achieve scalability, robustness, and operational efficiency. Such multi-USV systems require advanced coordination and cooperation mechanisms to ensure successful mission execution. This paper starts by providing a comprehensive formalization of a decision-making and mission management framework for heterogeneous multi-robot teams in general, particularizing for multi-USV teams where relevant. The proposed formulation systematically covers all stages of the decision-making hierarchy, including goal definition, sub-goal specification and decomposition, task allocation, task planning, and task execution. Framed within this formulation, we present a detailed and structured review of recent advances in task allocation and task planning methodologies, with particular emphasis on approaches developed for maritime applications. To place these contributions in a broader context, we also examine relevant literature from the general multi-robot systems domain, enabling the identification of conceptual similarities, methodological differences, existing research gaps, and promising directions that can be effectively transferred to the maritime environment.",
+      "figure_url": "",
+      "figure_alt": "Main figure for The multi-USV mission management problem: Formalization and literature review",
+      "authors": [
+        "Félix Orjales",
+        "Enrique Fernández-Pérez",
+        "Alejandro Romero",
+        "Julián Rodríguez-Cortegoso",
+        "William F. Infante",
+        "Richard José Duro"
+      ],
+      "published": "2026-11-01",
+      "venue": "Ocean Engineering",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "review",
+        "structure",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 5.9
+    },
+    {
+      "id": "doi:10.1016/j.aei.2026.105169",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "LLM-augmented progressive search for efficient multi-robot task planning",
+      "url": "https://doi.org/10.1016/j.aei.2026.105169",
+      "doi": "10.1016/j.aei.2026.105169",
+      "doi_url": "https://doi.org/10.1016/j.aei.2026.105169",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for LLM-augmented progressive search for efficient multi-robot task planning",
+      "authors": [
+        "Liming Xin",
+        "Jiale Wang",
+        "Weiran Yao",
+        "Juntong Qi",
+        "Yuehua Liu"
+      ],
+      "published": "2026-11-01",
+      "venue": "Advanced Engineering Informatics",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.6
+    },
+    {
+      "id": "doi:10.1016/j.jfranklin.2026.109166",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Safety-constrained hierarchical approximate optimal control for modular robot manipulators in physical human-robot interaction: A Stackelberg game approach enhanced by control barrier functions",
+      "url": "https://doi.org/10.1016/j.jfranklin.2026.109166",
+      "doi": "10.1016/j.jfranklin.2026.109166",
+      "doi_url": "https://doi.org/10.1016/j.jfranklin.2026.109166",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Safety-constrained hierarchical approximate optimal control for modular robot manipulators in physical human-robot interaction: A Stackelberg game approach enhanced by control barrier functions",
+      "authors": [
+        "Xinye Zhu",
+        "Tianjiao An",
+        "Bing Ma",
+        "Hucheng Jiang",
+        "Bo Dong"
+      ],
+      "published": "2026-11-01",
+      "venue": "Journal of the Franklin Institute",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "control",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.58
+    },
+    {
+      "id": "doi:10.1016/j.oceaneng.2026.129074",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "A non-centrosymmetric reconfigurable robot for center-accumulated obstacle crossing in subsea pipelines",
+      "url": "https://doi.org/10.1016/j.oceaneng.2026.129074",
+      "doi": "10.1016/j.oceaneng.2026.129074",
+      "doi_url": "https://doi.org/10.1016/j.oceaneng.2026.129074",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for A non-centrosymmetric reconfigurable robot for center-accumulated obstacle crossing in subsea pipelines",
+      "authors": [
+        "Liwei Chen",
+        "Weijie Zhu",
+        "Kevin Huang"
+      ],
+      "published": "2026-11-01",
+      "venue": "Ocean Engineering",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "reconfiguration"
+      ],
+      "content_types": [],
+      "score": 4.5
+    },
+    {
+      "id": "doi:10.1016/j.measurement.2026.122976",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "LSTM neural network-based resilient cooperative localization for multi-robot systems under stealthy FDI attacks",
+      "url": "https://doi.org/10.1016/j.measurement.2026.122976",
+      "doi": "10.1016/j.measurement.2026.122976",
+      "doi_url": "https://doi.org/10.1016/j.measurement.2026.122976",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for LSTM neural network-based resilient cooperative localization for multi-robot systems under stealthy FDI attacks",
+      "authors": [
+        "Chuanhai Yang",
+        "Jingyi Huang",
+        "Yanling Zheng",
+        "Qingshan Liu",
+        "Xueyong Xu"
+      ],
+      "published": "2026-11-01",
+      "venue": "Measurement",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "perception",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.4
+    },
+    {
+      "id": "doi:10.1016/j.autcon.2026.107203",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "LLM-assisted quality-aware GA–multi-agent deep deterministic policy gradient framework for multi-robot collaborative scheduling in construction quality control",
+      "url": "https://doi.org/10.1016/j.autcon.2026.107203",
+      "doi": "10.1016/j.autcon.2026.107203",
+      "doi_url": "https://doi.org/10.1016/j.autcon.2026.107203",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for LLM-assisted quality-aware GA–multi-agent deep deterministic policy gradient framework for multi-robot collaborative scheduling in construction quality control",
+      "authors": [
+        "Meihao Zhu",
+        "Zhansheng Liu",
+        "Hao Zhou",
+        "Weiyi Li",
+        "Song Wang",
+        "Qingwen Zhang"
+      ],
+      "published": "2026-11-01",
+      "venue": "Automation in Construction",
+      "publisher": "Elsevier BV",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.38
+    },
+    {
+      "id": "doi:10.22214/ijraset.2026.85516",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Design and Development of an Arduino-Based Autonomous Fire Fighter Robot",
+      "url": "https://doi.org/10.22214/ijraset.2026.85516",
+      "doi": "10.22214/ijraset.2026.85516",
+      "doi_url": "https://doi.org/10.22214/ijraset.2026.85516",
+      "summary": "Fire incidents can expose people to high temperatures, smoke, and other hazards. This paper presents the design and operating principle of a compact Arduino-based fire fighter robot developed as an educational prototype for flame detection, directional movement, and water spraying. The project uses three flame sensors positioned to observe the left, front, and right directions; an Arduino UNO as the main controller;...",
+      "abstract": "Fire incidents can expose people to high temperatures, smoke, and other hazards. This paper presents the design and operating principle of a compact Arduino-based fire fighter robot developed as an educational prototype for flame detection, directional movement, and water spraying. The project uses three flame sensors positioned to observe the left, front, and right directions; an Arduino UNO as the main controller; an L298 motor driver; four BO geared DC motors; a servo-operated nozzle; and a small water pump supplied from an onboard tank. Sensor readings are processed by the controller to select a movement response. When a flame is detected, the robot stops or turns according to the programmed thresholds, positions the nozzle, and activates the pump. Related work has examined Arduino-based firefighting robots, multi-robot assistance, and sensor-fusionbased fire detection [1], [7]–[9], [11]. The controller and motor-driver choices are supported by the relevant hardware documentation [2], [3], while the sensor-reading method uses Arduino’s analog input functionality [12]. No quantitative experimental results were provided; therefore, detection range, response time, extinguishing time, success rate, and battery endurance are not claimed. The robot is an educational demonstrator, not a certified firefighting appliance, and must not be used on structural, electrical, chemical, or spreading fires.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design and Development of an Arduino-Based Autonomous Fire Fighter Robot",
+      "authors": [
+        "Aakriti Kumari",
+        "Vishnupriya Kumari",
+        "Chhoti Kumari",
+        "Mansha Kumari",
+        "Er. Shwetabh",
+        "Ankita Sinha",
+        "Arpita Kumari ,"
+      ],
+      "published": "2026-10-31",
+      "venue": "International Journal for Research in Applied Science and Engineering Technology",
+      "publisher": "International Journal for Research in Applied Science and Engineering Technology",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "structure",
+        "swarm",
         "system"
       ],
       "content_types": [
         "structure_design",
         "algorithm_design"
       ],
-      "score": 8.2,
-      "citation_count": 3
+      "score": 8.48
+    },
+    {
+      "id": "doi:10.7840/kics.2026.51.10.1899",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Multi-Robot Task Allocation under Shared Resource Congestion: A Game-Theoretic Approach",
+      "url": "https://doi.org/10.7840/kics.2026.51.10.1899",
+      "doi": "10.7840/kics.2026.51.10.1899",
+      "doi_url": "https://doi.org/10.7840/kics.2026.51.10.1899",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Multi-Robot Task Allocation under Shared Resource Congestion: A Game-Theoretic Approach",
+      "authors": [
+        "Jaewoo Cho",
+        "Soyi Jung"
+      ],
+      "published": "2026-10-31",
+      "venue": "The Journal of Korean Institute of Communications and Information Sciences",
+      "publisher": "Korea Information and Communications Society",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 7.3
+    },
+    {
+      "id": "doi:10.1145/3846183",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Level of Autonomy and Reliability in Co-located Multiple Robot Operation: A Five-Level Framework and Practical Design Guidance",
+      "url": "https://doi.org/10.1145/3846183",
+      "doi": "10.1145/3846183",
+      "doi_url": "https://doi.org/10.1145/3846183",
+      "summary": "Teleoperated robots augmented with autonomous assistance are increasingly used for conversational customer service in co-located deployments; we need a systematic method for determining which functions to automate and which to retain for the operator. We introduce a Level of Autonomy (LOA) framework with five levels and empirically examine how LOA and autonomy reliability jointly affect outcomes in co-located deploy...",
+      "abstract": "Teleoperated robots augmented with autonomous assistance are increasingly used for conversational customer service in co-located deployments; we need a systematic method for determining which functions to automate and which to retain for the operator. We introduce a Level of Autonomy (LOA) framework with five levels and empirically examine how LOA and autonomy reliability jointly affect outcomes in co-located deployments. We conducted a laboratory study in which participants ( N = 32) acted as robot operators and, via a teleoperated robot in a simulated shop, engaged in conversational product recommendation interactions using a teleoperation interface. We compared five LOA conditions across multiple reliability conditions and measured the NASA-TLX, System Usability Scale, interpersonal effects, and task performance. The results show that when reliability is high, the most effective strategy was either to fully automate the target function or to keep operator control minimal and clearly bounded; designs that required operators to both supervise the automation and intervene frequently tended to increase workload. In addition, in early deployments, when operators are unfamiliar with teleoperation, avoid designs that require frequent operator decisions. When reliability is limited, a lower LOA is preferable, reducing mode-switching between error recovery and normal teleoperation. This study provides a five-level LOA framework for co-located multi-robot customer service and suggests that effective customer-facing HRI in such settings requires aligning LOA with autonomy reliability and clear human–robot role allocation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Level of Autonomy and Reliability in Co-located Multiple Robot Operation: A Five-Level Framework and Practical Design Guidance",
+      "authors": [
+        "Yota Hatano",
+        "Jun Baba",
+        "Junya Nakanishi",
+        "Yuichiro Yoshikawa",
+        "Hiroshi Ishiguro"
+      ],
+      "published": "2026-10-30",
+      "venue": "ACM Transactions on Human-Robot Interaction",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "control",
+        "system",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.58
     },
     {
       "id": "doi:10.1142/s230138502850080x",
-      "report_id": "robotics_research_20261029_090139",
+      "report_id": "robotics_research_20261105_091707",
       "title": "CAIR-MMOEA-DL: Contribution-Aware Inter-Robot Reallocation for Multimodal Multi-objective Multi-Robot Task Allocation",
       "url": "https://doi.org/10.1142/s230138502850080x",
       "doi": "10.1142/s230138502850080x",
@@ -74,11 +752,77 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 4.7
+      "score": 4.6
+    },
+    {
+      "id": "doi:10.1007/s12065-026-01282-4",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "SPARC: spatial policy-conditioned actor-critic for multi-robot path planning under partial observability",
+      "url": "https://doi.org/10.1007/s12065-026-01282-4",
+      "doi": "10.1007/s12065-026-01282-4",
+      "doi_url": "https://doi.org/10.1007/s12065-026-01282-4",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for SPARC: spatial policy-conditioned actor-critic for multi-robot path planning under partial observability",
+      "authors": [
+        "Lianqun Zhang",
+        "Jingwei Zhao",
+        "Chunxiu Xiao"
+      ],
+      "published": "2026-10-28",
+      "venue": "Evolutionary Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.6
+    },
+    {
+      "id": "doi:10.1080/00207721.2026.2740741",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "FISC: a Fluid-Inspired framework for decentralised and scalable Swarm Control",
+      "url": "https://doi.org/10.1080/00207721.2026.2740741",
+      "doi": "10.1080/00207721.2026.2740741",
+      "doi_url": "https://doi.org/10.1080/00207721.2026.2740741",
+      "summary": "Achieving scalable coordination in large robotic swarms is often constrained by reliance on inter-agent communication, which introduces latency, bandwidth limitations, and vulnerability to failure. To address this gap, a decentralised approach for outer-loop control of large multi-agent systems based on the paradigm of how a fluid moves through a volume is proposed and evaluated. A relationship between fundamental f...",
+      "abstract": "Achieving scalable coordination in large robotic swarms is often constrained by reliance on inter-agent communication, which introduces latency, bandwidth limitations, and vulnerability to failure. To address this gap, a decentralised approach for outer-loop control of large multi-agent systems based on the paradigm of how a fluid moves through a volume is proposed and evaluated. A relationship between fundamental fluidic element properties and individual robotic agent states is developed such that the corresponding swarm ‘flows’ through a space, akin to a fluid when forced via a pressure boundary condition. By ascribing fluid-like properties to subsets of agents, the swarm evolves collectively while maintaining desirable structure and coherence without explicit communication of agent states within or outside of the swarm. The approach is evaluated using simulations involving O(103) quadcopter agents and compared against Computational Fluid Dynamics (CFD) solutions for a converging-diverging domain. Quantitative agreement between swarm-derived and CFD fields is assessed using Root-Mean-Square Error (RMSE), yielding normalised errors of 0.15–0.9 for velocity, 0.61–0.98 for density, 0–0.937 for pressure. These results demonstrate the feasibility of treating large robotic swarms as continuum systems that retain the macroscopic structure derived from first principles, providing a basis for scalable and decentralised control.",
+      "figure_url": "",
+      "figure_alt": "Main figure for FISC: a Fluid-Inspired framework for decentralised and scalable Swarm Control",
+      "authors": [
+        "Mohini Priya Kolluri",
+        "Ammar Waheed",
+        "Zohaib Hasnain"
+      ],
+      "published": "2026-10-27",
+      "venue": "International Journal of Systems Science",
+      "publisher": "Taylor & Francis",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "control",
+        "swarm",
+        "system"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.28
     },
     {
       "id": "doi:10.1007/s12065-026-01284-2",
-      "report_id": "robotics_research_20261029_090139",
+      "report_id": "robotics_research_20261105_091707",
       "title": "Competitive learning-based atom search optimization with parameter adaptation for numerical optimization and multi-robot path planning",
       "url": "https://doi.org/10.1007/s12065-026-01284-2",
       "doi": "10.1007/s12065-026-01284-2",
@@ -108,7 +852,7 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 5.08
+      "score": 4.78
     },
     {
       "id": "doi:10.1038/s41598-026-76756-7",
@@ -1705,41 +2449,6 @@
         "algorithm_design"
       ],
       "score": 8.4
-    },
-    {
-      "id": "doi:10.1145/3846183",
-      "report_id": "robotics_research_20261023_011616",
-      "title": "Level of Autonomy and Reliability in Co-located Multiple Robot Operation: A Five-Level Framework and Practical Design Guidance",
-      "url": "https://doi.org/10.1145/3846183",
-      "doi": "10.1145/3846183",
-      "doi_url": "https://doi.org/10.1145/3846183",
-      "summary": "Teleoperated robots augmented with autonomous assistance are increasingly used for conversational customer service in co-located deployments; we need a systematic method for determining which functions to automate and which to retain for the operator. We introduce a Level of Autonomy (LOA) framework with five levels and empirically examine how LOA and autonomy reliability jointly affect outcomes in co-located deploy...",
-      "abstract": "Teleoperated robots augmented with autonomous assistance are increasingly used for conversational customer service in co-located deployments; we need a systematic method for determining which functions to automate and which to retain for the operator. We introduce a Level of Autonomy (LOA) framework with five levels and empirically examine how LOA and autonomy reliability jointly affect outcomes in co-located deployments. We conducted a laboratory study in which participants (N=32) acted as robot operators and, via a teleoperated robot in a simulated shop, engaged in conversational product recommendation interactions using a teleoperation interface. We compared five LOA conditions across multiple reliability conditions and measured the NASA-TLX, System Usability Scale (SUS), interpersonal effects, and task performance. The results show that when reliability is high, the most effective strategy was either to fully automate the target function or to keep operator control minimal and clearly bounded; designs that required operators to both supervise the automation and intervene frequently tended to increase workload. In addition, in early deployments, when operators are unfamiliar with teleoperation, avoid designs that require frequent operator decisions. When reliability is limited, lower LOA was preferable, reducing mode-switching between error recovery and normal teleoperation. This study provides a five-level LOA framework for co-located multi-robot customer service and suggests that effective customer-facing HRI in such settings requires aligning LOA with autonomy reliability and clear human-robot role allocation.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Level of Autonomy and Reliability in Co-located Multiple Robot Operation: A Five-Level Framework and Practical Design Guidance",
-      "authors": [
-        "Yota Hatano",
-        "Jun Baba",
-        "Junya Nakanishi",
-        "Yuichiro Yoshikawa",
-        "Hiroshi Ishiguro"
-      ],
-      "published": "2026-09-15",
-      "venue": "ACM Transactions on Human-Robot Interaction",
-      "publisher": "Association for Computing Machinery (ACM)",
-      "source": "crossref",
-      "topics": [
-        "swarm_intelligence_robotics"
-      ],
-      "tags": [
-        "control",
-        "swarm",
-        "system"
-      ],
-      "content_types": [
-        "algorithm_design"
-      ],
-      "score": 5.58
     },
     {
       "id": "doi:10.64235/40fkfs25",
@@ -3580,6 +4289,46 @@
       "score": 7.8
     },
     {
+      "id": "doi:10.1109/iros60139.2025.11246025",
+      "report_id": "robotics_research_20261029_090139",
+      "title": "MODUR: A Modular Dual-reconfigurable Robot",
+      "url": "https://doi.org/10.1109/IROS60139.2025.11246025",
+      "doi": "10.1109/IROS60139.2025.11246025",
+      "doi_url": "https://doi.org/10.1109/IROS60139.2025.11246025",
+      "summary": "MODUR is a modular self-reconfigurable robot with two coupled levels of morphology change: modules reconfigure their interconnection topology while each module changes shape for basic motion. Its compact connector and scissor-linkage parallel mechanism decouple connector motion and support adjacent-position migration; workspace analysis and physical experiments validate the design.",
+      "abstract": "MODUR is a modular self-reconfigurable robot with two coupled levels of morphology change: modules reconfigure their interconnection topology while each module changes shape for basic motion. Its compact connector and scissor-linkage parallel mechanism decouple connector motion and support adjacent-position migration; workspace analysis and physical experiments validate the design.",
+      "figure_url": "",
+      "figure_alt": "Main figure for MODUR: A Modular Dual-reconfigurable Robot",
+      "authors": [
+        "Jie Gu",
+        "Tin Lun Lam",
+        "Chunxu Tian",
+        "Zhihao Xia",
+        "Yongheng Xing",
+        "Dan Zhang"
+      ],
+      "published": "2025-10-25",
+      "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "structure",
+        "algorithm",
+        "connector",
+        "reconfiguration",
+        "system"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.2,
+      "citation_count": 3
+    },
+    {
       "id": "doi:10.1038/s41467-025-61985-7",
       "report_id": "robotics_research_20260824_072451",
       "title": "A collective intelligence model for swarm robotics applications",
@@ -4002,6 +4751,123 @@
       "figure_url": "",
       "figure_alt": "Main figure for Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "publisher": ""
+    },
+    {
+      "id": "doi:10.3390/biomimetics11070506",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "An Underactuated Omnidirectional Docking Mechanism for Modular Serpentine Robots with DNA-Inspired Helical Continuum Units",
+      "url": "https://doi.org/10.3390/biomimetics11070506",
+      "doi": "10.3390/biomimetics11070506",
+      "doi_url": "https://doi.org/10.3390/biomimetics11070506",
+      "summary": "MOSR integrates a tendon-driven helical continuum module with a linkage-spring-slider spherical gripper to achieve compliant locomotion and robust one-to-one or one-to-many omnidirectional docking. Physical tests quantify the feasible docking region and validate terrain traversal, grasping, and reconfiguration.",
+      "abstract": "The modular serpentine platform combines a DNA-inspired continuum unit, an underactuated spherical docking mechanism, and adaptive fingers. Kinematic, stiffness, and docking-angle analyses are verified through finite-element and prototype experiments.",
+      "figure_url": "",
+      "figure_alt": "Main figure for An Underactuated Omnidirectional Docking Mechanism for Modular Serpentine Robots with DNA-Inspired Helical Continuum Units",
+      "authors": [
+        "Yiqi Zhang",
+        "Tuo Zhang",
+        "Gengbiao Chen",
+        "Lairong Yin",
+        "Amin Ye"
+      ],
+      "published": "2026-07-18",
+      "venue": "Biomimetics",
+      "publisher": "MDPI AG",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "biomimetic_structure_design"
+      ],
+      "tags": [
+        "structure",
+        "connector",
+        "docking",
+        "reconfiguration",
+        "biomimetic"
+      ],
+      "content_types": [
+        "structure_design"
+      ],
+      "score": 8.6
+    },
+    {
+      "id": "doi:10.1109/isparo66239.2025.11436187",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Designing for Distributed Heterogeneous Modularity: On Software Architecture and Deployment of the MoonBots",
+      "url": "https://doi.org/10.1109/ISPARO66239.2025.11436187",
+      "doi": "10.1109/ISPARO66239.2025.11436187",
+      "doi_url": "https://doi.org/10.1109/ISPARO66239.2025.11436187",
+      "summary": "MoonBots presents a distributed software and deployment architecture for heterogeneous modular space robots. Component-based design, ROS 2/Zenoh communication, and deployment orchestration support dynamic reconfiguration, decentralized control, and multi-module cooperation.",
+      "abstract": "The work develops scalable software architecture for modular space robotics and reports field deployment with self-assembling robots, inter-robot cooperation, and remote operation.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Designing for Distributed Heterogeneous Modularity: On Software Architecture and Deployment of the MoonBots",
+      "authors": [
+        "Elian Neppel",
+        "Shamistan Karimov",
+        "Ashutosh Mishra",
+        "Gustavo H. Diaz",
+        "Hazal Gozbasi",
+        "Shreya Santra",
+        "Kentaro Uno",
+        "Kazuya Yoshida"
+      ],
+      "published": "2025-11-03",
+      "venue": "IEEE International Conference on Space Robotics (iSpaRo)",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "software-architecture",
+        "distributed-control",
+        "system",
+        "reconfiguration",
+        "modular"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 8.3
+    },
+    {
+      "id": "arxiv:2503.13674",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
+      "url": "https://arxiv.org/abs/2503.13674",
+      "doi": "",
+      "doi_url": "",
+      "summary": "A transformable modular robot equips every module with actuation, power, and control, then uses a hierarchical central-pattern-generator controller to switch between independent and synchronized collective locomotion. Simulation and hardware experiments evaluate single-, two-, and four-module configurations.",
+      "abstract": "The system combines independently mobile modules with high-level CPG synchronization for coordinated multi-module locomotion and autonomous reconfiguration.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
+      "authors": [
+        "Jiayu Ding",
+        "Rohit Jakkula",
+        "Tom Xiao",
+        "Zhenyu Gan"
+      ],
+      "published": "2025-03-17",
+      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "structure",
+        "algorithm",
+        "collective-locomotion",
+        "cpg",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.4
     },
     {
       "id": "doi:10.1109/lra.2024.3355756",
