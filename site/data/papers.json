@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-05T09:17:07",
+  "updated_at": "2026-11-05T21:57:49",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
       "id": "doi:10.3390/app162110915",
-      "report_id": "robotics_research_20261105_091707",
+      "report_id": "robotics_research_20261105_215749",
       "title": "Study on a Modular and Reconfigurable Robot That Can Be Used in Natural Disaster Events",
       "url": "https://doi.org/10.3390/app162110915",
       "doi": "10.3390/app162110915",
@@ -41,6 +41,39 @@
         "algorithm_design"
       ],
       "score": 9.06
+    },
+    {
+      "id": "doi:10.1016/j.eswa.2026.134903",
+      "report_id": "robotics_research_20261105_215749",
+      "title": "Behavior-Driven hierarchical path planning for autonomous Multi-Robot navigation with Task-Adaptive mode switching",
+      "url": "https://doi.org/10.1016/j.eswa.2026.134903",
+      "doi": "10.1016/j.eswa.2026.134903",
+      "doi_url": "https://doi.org/10.1016/j.eswa.2026.134903",
+      "summary": "",
+      "abstract": "",
+      "figure_url": "",
+      "figure_alt": "Main figure for Behavior-Driven hierarchical path planning for autonomous Multi-Robot navigation with Task-Adaptive mode switching",
+      "authors": [
+        "Wan Qiang Xu",
+        "Zheng Liu",
+        "Shize Wang",
+        "Chun-Yi Su"
+      ],
+      "published": "2026-11-03",
+      "venue": "Expert Systems with Applications",
+      "publisher": "Elsevier BV",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.6
     },
     {
       "id": "doi:10.1016/j.ast.2026.113061",
@@ -4401,6 +4434,43 @@
       "citation_count": 7
     },
     {
+      "id": "arxiv:2503.13674",
+      "report_id": "robotics_research_20261105_091707",
+      "title": "Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
+      "url": "https://arxiv.org/abs/2503.13674",
+      "doi": "",
+      "doi_url": "",
+      "summary": "A transformable modular robot equips every module with actuation, power, and control, then uses a hierarchical central-pattern-generator controller to switch between independent and synchronized collective locomotion. Simulation and hardware experiments evaluate single-, two-, and four-module configurations.",
+      "abstract": "The system combines independently mobile modules with high-level CPG synchronization for coordinated multi-module locomotion and autonomous reconfiguration.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
+      "authors": [
+        "Jiayu Ding",
+        "Rohit Jakkula",
+        "Tom Xiao",
+        "Zhenyu Gan"
+      ],
+      "published": "2025-03-17",
+      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics"
+      ],
+      "tags": [
+        "structure",
+        "algorithm",
+        "collective-locomotion",
+        "cpg",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.4
+    },
+    {
       "id": "doi:10.1002/rob.70092",
       "report_id": "robotics_research_20260827_152738",
       "title": "CONCERT: A Modular Reconfigurable Robot for Construction",
@@ -4751,123 +4821,6 @@
       "figure_url": "",
       "figure_alt": "Main figure for Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "publisher": ""
-    },
-    {
-      "id": "doi:10.3390/biomimetics11070506",
-      "report_id": "robotics_research_20261105_091707",
-      "title": "An Underactuated Omnidirectional Docking Mechanism for Modular Serpentine Robots with DNA-Inspired Helical Continuum Units",
-      "url": "https://doi.org/10.3390/biomimetics11070506",
-      "doi": "10.3390/biomimetics11070506",
-      "doi_url": "https://doi.org/10.3390/biomimetics11070506",
-      "summary": "MOSR integrates a tendon-driven helical continuum module with a linkage-spring-slider spherical gripper to achieve compliant locomotion and robust one-to-one or one-to-many omnidirectional docking. Physical tests quantify the feasible docking region and validate terrain traversal, grasping, and reconfiguration.",
-      "abstract": "The modular serpentine platform combines a DNA-inspired continuum unit, an underactuated spherical docking mechanism, and adaptive fingers. Kinematic, stiffness, and docking-angle analyses are verified through finite-element and prototype experiments.",
-      "figure_url": "",
-      "figure_alt": "Main figure for An Underactuated Omnidirectional Docking Mechanism for Modular Serpentine Robots with DNA-Inspired Helical Continuum Units",
-      "authors": [
-        "Yiqi Zhang",
-        "Tuo Zhang",
-        "Gengbiao Chen",
-        "Lairong Yin",
-        "Amin Ye"
-      ],
-      "published": "2026-07-18",
-      "venue": "Biomimetics",
-      "publisher": "MDPI AG",
-      "source": "consensus",
-      "topics": [
-        "modular_reconfigurable_robotics",
-        "biomimetic_structure_design"
-      ],
-      "tags": [
-        "structure",
-        "connector",
-        "docking",
-        "reconfiguration",
-        "biomimetic"
-      ],
-      "content_types": [
-        "structure_design"
-      ],
-      "score": 8.6
-    },
-    {
-      "id": "doi:10.1109/isparo66239.2025.11436187",
-      "report_id": "robotics_research_20261105_091707",
-      "title": "Designing for Distributed Heterogeneous Modularity: On Software Architecture and Deployment of the MoonBots",
-      "url": "https://doi.org/10.1109/ISPARO66239.2025.11436187",
-      "doi": "10.1109/ISPARO66239.2025.11436187",
-      "doi_url": "https://doi.org/10.1109/ISPARO66239.2025.11436187",
-      "summary": "MoonBots presents a distributed software and deployment architecture for heterogeneous modular space robots. Component-based design, ROS 2/Zenoh communication, and deployment orchestration support dynamic reconfiguration, decentralized control, and multi-module cooperation.",
-      "abstract": "The work develops scalable software architecture for modular space robotics and reports field deployment with self-assembling robots, inter-robot cooperation, and remote operation.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Designing for Distributed Heterogeneous Modularity: On Software Architecture and Deployment of the MoonBots",
-      "authors": [
-        "Elian Neppel",
-        "Shamistan Karimov",
-        "Ashutosh Mishra",
-        "Gustavo H. Diaz",
-        "Hazal Gozbasi",
-        "Shreya Santra",
-        "Kentaro Uno",
-        "Kazuya Yoshida"
-      ],
-      "published": "2025-11-03",
-      "venue": "IEEE International Conference on Space Robotics (iSpaRo)",
-      "publisher": "IEEE",
-      "source": "consensus",
-      "topics": [
-        "modular_reconfigurable_robotics",
-        "engineering_system_design"
-      ],
-      "tags": [
-        "software-architecture",
-        "distributed-control",
-        "system",
-        "reconfiguration",
-        "modular"
-      ],
-      "content_types": [
-        "algorithm_design"
-      ],
-      "score": 8.3
-    },
-    {
-      "id": "arxiv:2503.13674",
-      "report_id": "robotics_research_20261105_091707",
-      "title": "Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
-      "url": "https://arxiv.org/abs/2503.13674",
-      "doi": "",
-      "doi_url": "",
-      "summary": "A transformable modular robot equips every module with actuation, power, and control, then uses a hierarchical central-pattern-generator controller to switch between independent and synchronized collective locomotion. Simulation and hardware experiments evaluate single-, two-, and four-module configurations.",
-      "abstract": "The system combines independently mobile modules with high-level CPG synchronization for coordinated multi-module locomotion and autonomous reconfiguration.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
-      "authors": [
-        "Jiayu Ding",
-        "Rohit Jakkula",
-        "Tom Xiao",
-        "Zhenyu Gan"
-      ],
-      "published": "2025-03-17",
-      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-      "publisher": "IEEE",
-      "source": "consensus",
-      "topics": [
-        "modular_reconfigurable_robotics",
-        "swarm_intelligence_robotics"
-      ],
-      "tags": [
-        "structure",
-        "algorithm",
-        "collective-locomotion",
-        "cpg",
-        "reconfiguration"
-      ],
-      "content_types": [
-        "structure_design",
-        "algorithm_design"
-      ],
-      "score": 8.4
     },
     {
       "id": "doi:10.1109/lra.2024.3355756",
