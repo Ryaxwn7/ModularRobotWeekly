@@ -146,7 +146,7 @@ function renderPapers() {
       title.removeAttribute("href");
       original.remove();
     }
-    node.querySelector(".paper-summary").textContent = paper.summary || paper.abstract || "暂无摘要。";
+    node.querySelector(".paper-summary").textContent = String(paper.abstract || "").trim() || paper.summary || "暂无摘要。";
 
     // Only locally cached, validated image assets are eligible for preview.
     // A failed image removes its entire block instead of leaving a broken tile.

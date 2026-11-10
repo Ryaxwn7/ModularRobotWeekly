@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .models import Paper
+from .models import Paper, retain_richer_abstract
 
 
 class PaperStore:
@@ -33,11 +33,14 @@ def merge_papers(existing: dict[str, Paper], incoming: list[Paper]) -> dict[str,
     for paper in incoming:
         key = paper.identity
         current = merged.get(key)
-        if current is None or paper.score > current.score:
+        if current is None:
             merged[key] = paper
         else:
-            current.topics = sorted(set(current.topics + paper.topics))
-            current.tags = sorted(set(current.tags + paper.tags))
-            current.reasons = sorted(set(current.reasons + paper.reasons))
+            preferred, supplement = (paper, current) if paper.score > current.score else (current, paper)
+            retain_richer_abstract(preferred, supplement)
+            preferred.topics = sorted(set(preferred.topics + supplement.topics))
+            preferred.tags = sorted(set(preferred.tags + supplement.tags))
+            preferred.reasons = sorted(set(preferred.reasons + supplement.reasons))
+            merged[key] = preferred
     return merged
 

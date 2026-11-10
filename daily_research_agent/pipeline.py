@@ -6,7 +6,7 @@ from typing import Any
 from urllib.error import HTTPError
 
 from .llm import build_summarizer
-from .models import Paper, PipelineResult
+from .models import Paper, PipelineResult, retain_richer_abstract
 from .reporting import write_report
 from .run_state import iter_date_chunks, resolve_search_window, save_successful_run
 from .scoring import (
@@ -253,8 +253,7 @@ class ResearchPipeline:
         OpenAlex and Semantic Scholar often supply one for the same DOI.  Losing
         that text makes an otherwise valid website card appear empty.
         """
-        if len(supplement.abstract or "") > len(preferred.abstract or ""):
-            preferred.abstract = supplement.abstract
+        retain_richer_abstract(preferred, supplement)
         if len(supplement.authors) > len(preferred.authors):
             preferred.authors = supplement.authors
         for field in ("published", "venue", "publisher", "url", "doi"):

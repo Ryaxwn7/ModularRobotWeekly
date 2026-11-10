@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
-from .models import Paper
+from .models import Paper, retain_richer_abstract
 from .scoring import classify_content_types, classify_scope_topics, has_robotics_relevance
 
 
@@ -119,6 +119,8 @@ def paper_to_site_item(paper: Paper, report_id: str) -> dict[str, Any]:
         "doi_url": doi_url,
         "summary": paper_summary(paper),
         "abstract": paper.abstract,
+        "abstract_source": paper.raw.get("abstract_source") or paper.source if paper.abstract else "",
+        "abstract_source_url": paper.raw.get("abstract_source_url") or paper.url if paper.abstract else "",
         "figure_url": figure_url(paper),
         "figure_alt": f"Main figure for {paper.title}",
         "authors": paper.authors,
@@ -158,6 +160,18 @@ def upsert_site_papers(
         item = paper_to_site_item(paper, report_id=report_id)
         current = existing.get(item["id"])
         if current:
+            # Preserve a fuller abstract already stored in a previous report.
+            incoming = Paper.from_dict(item)
+            previous = Paper.from_dict(current)
+            previous.raw = {
+                "abstract_source": current.get("abstract_source"),
+                "abstract_source_url": current.get("abstract_source_url"),
+            }
+            retain_richer_abstract(incoming, previous)
+            item["abstract"] = incoming.abstract
+            if incoming.raw.get("abstract_source"):
+                item["abstract_source"] = incoming.raw["abstract_source"]
+                item["abstract_source_url"] = incoming.raw.get("abstract_source_url", "")
             current.update({key: value for key, value in item.items() if value not in ("", [], None)})
         else:
             existing[item["id"]] = item

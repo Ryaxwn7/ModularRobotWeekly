@@ -102,6 +102,17 @@ class SiteExportTests(unittest.TestCase):
             data = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual([item["id"] for item in data["papers"]], ["swarm"])
 
+    def test_export_does_not_replace_full_abstract_with_shorter_text(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "papers.json"
+            full = "A modular robot uses autonomous docking. " * 30
+            original = Paper(title="Modular robot docking", doi="10.1000/a", abstract=full, source="openalex")
+            upsert_site_papers(path, [original], "first")
+            upsert_site_papers(path, [Paper(title=original.title, doi=original.doi, abstract="Short modular robot description.", source="crossref")], "second")
+            result = json.loads(path.read_text(encoding="utf-8"))["papers"][0]
+            self.assertEqual(result["abstract"], full)
+            self.assertEqual(result["abstract_source"], "openalex")
+
 
 if __name__ == "__main__":
     unittest.main()
