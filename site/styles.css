@@ -141,6 +141,28 @@ select {
   box-shadow: var(--shadow);
 }
 
+.paper-figure {
+  width: min(100%, 760px);
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+  background: #edf2f7;
+}
+
+.paper-figure-image {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.paper-figure figcaption {
+  padding: 7px 12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .paper-body {
   padding: 20px 22px;
 }

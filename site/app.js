@@ -62,6 +62,13 @@ function originalPaperUrl(paper) {
     .find((value) => value && !isConsensusUrl(value)) || "";
 }
 
+function localFigureUrl(paper) {
+  const value = String(paper.figure_url || "").trim();
+  return /^\.\/assets\/papers\/[a-z0-9][a-z0-9._-]*\.(?:png|jpe?g|webp)$/i.test(value)
+    ? value
+    : "";
+}
+
 function renderTopicOptions(papers) {
   const select = document.querySelector("#topicFilter");
   const topics = new Set();
@@ -125,6 +132,9 @@ function renderPapers() {
     const doi = node.querySelector(".doi-link");
 
     const url = originalPaperUrl(paper);
+    const figure = node.querySelector(".paper-figure");
+    const image = node.querySelector(".paper-figure-image");
+    const figureUrl = localFigureUrl(paper);
     node.querySelector(".paper-date").textContent = formatDate(paper.published);
     node.querySelector(".paper-venue").textContent = paper.venue || paper.source || "Unknown venue";
     node.querySelector(".paper-score").textContent = paper.score ? `Score ${paper.score}` : "";
@@ -137,6 +147,17 @@ function renderPapers() {
       original.remove();
     }
     node.querySelector(".paper-summary").textContent = paper.summary || paper.abstract || "暂无摘要。";
+
+    // Only locally cached, validated image assets are eligible for preview.
+    // A failed image removes its entire block instead of leaving a broken tile.
+    if (figureUrl) {
+      image.src = figureUrl;
+      image.alt = paper.figure_alt || `论文主图：${paper.title}`;
+      image.addEventListener("error", () => figure.remove(), { once: true });
+      figure.hidden = false;
+    } else {
+      figure.remove();
+    }
 
     const tags = node.querySelector(".paper-tags");
     const paperContentTypes = contentTypes(paper);

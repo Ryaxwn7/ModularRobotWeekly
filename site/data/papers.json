@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T21:57:49",
+  "updated_at": "2026-11-10T12:44:05",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
@@ -49,7 +49,7 @@
       "url": "https://doi.org/10.1016/j.eswa.2026.134903",
       "doi": "10.1016/j.eswa.2026.134903",
       "doi_url": "https://doi.org/10.1016/j.eswa.2026.134903",
-      "summary": "",
+      "summary": "该记录由 openalex 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Behavior-Driven hierarchical path planning for autonomous Multi-Robot navigation with Task-Adaptive mode switching",
@@ -82,7 +82,7 @@
       "url": "https://doi.org/10.1016/j.ast.2026.113061",
       "doi": "10.1016/j.ast.2026.113061",
       "doi_url": "https://doi.org/10.1016/j.ast.2026.113061",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Dynamic coverage of self-organized robotic swarm via anti-flocking mechanism",
@@ -116,7 +116,7 @@
       "url": "https://doi.org/10.1016/j.cnsns.2026.110525",
       "doi": "10.1016/j.cnsns.2026.110525",
       "doi_url": "https://doi.org/10.1016/j.cnsns.2026.110525",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：modular_reconfigurable_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Safe approximate optimal control for modular robot manipulators in physical human-robot interaction: A hierarchical game approach with control barrier functions",
@@ -150,7 +150,7 @@
       "url": "https://doi.org/10.1016/j.ins.2026.123832",
       "doi": "10.1016/j.ins.2026.123832",
       "doi_url": "https://doi.org/10.1016/j.ins.2026.123832",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Aerodynamic-aware bi-level co-optimization for aerial swarm robotics: Bridging discrete routing and continuous execution",
@@ -182,7 +182,7 @@
       "url": "https://doi.org/10.1016/j.engappai.2026.116216",
       "doi": "10.1016/j.engappai.2026.116216",
       "doi_url": "https://doi.org/10.1016/j.engappai.2026.116216",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Verification-gated agentic mission-state governance for intelligent industrial multi-robot systems",
@@ -215,7 +215,7 @@
       "url": "https://doi.org/10.1016/j.robot.2026.105677",
       "doi": "10.1016/j.robot.2026.105677",
       "doi_url": "https://doi.org/10.1016/j.robot.2026.105677",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for A multi-robot path planning method based on multi-scale perception and experience enhancement",
@@ -252,7 +252,7 @@
       "url": "https://doi.org/10.1016/j.robot.2026.105664",
       "doi": "10.1016/j.robot.2026.105664",
       "doi_url": "https://doi.org/10.1016/j.robot.2026.105664",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics、engineering_system_design。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for SGA-TS: A Seeding Genetic Algorithm with TaskShift for task allocation in multi-robot systems",
@@ -285,8 +285,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3730392",
       "doi": "10.1109/lra.2026.3730392",
       "doi_url": "https://doi.org/10.1109/lra.2026.3730392",
-      "summary": "",
-      "abstract": "",
+      "summary": "This paper presents Parallel ARC (P-ARC), a parallel formulation of the Adaptive Robot Coordination (ARC) approach to multi-robot motion planning (MRMP) which exploits subproblem independence. ARC's adaptive (de)composition of the multi-robot planning space exposes parallelism: single-robot paths are solved independently and iterative conflict detection and resolution create locally coupled subproblems. While distri...",
+      "abstract": "This paper presents Parallel ARC (P-ARC), a parallel formulation of the Adaptive Robot Coordination (ARC) approach to multi-robot motion planning (MRMP) which exploits subproblem independence. ARC's adaptive (de)composition of the multi-robot planning space exposes parallelism: single-robot paths are solved independently and iterative conflict detection and resolution create locally coupled subproblems. While distributing single-robot queries is trivial, not all conflicts are independent, so P-ARC proposes robot-disjoint conflict batches which enable efficient distributed detection and concurrent repair. Additionally, OR-multi-start strategies are employed at the global and subproblem resolution levels, creating a hybrid parallel strategy OR-P-ARC. We evaluate the methods against sequential ARC, multi-start OR-ARC, and coupled and prioritized parallel baselines on controlled 2D mobile robot and planar-manipulator problems with up to 256 robots and 3D Panda manipulator problems with up to 16 robots. On 16-robot Panda tasks, with 16 workers, P-ARC and OR-P-ARC achieve 3.48X and 6.67X speedups, respectively.",
       "figure_url": "",
       "figure_alt": "Main figure for P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning",
       "authors": [
@@ -299,7 +299,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "algorithm",
@@ -317,8 +318,8 @@
       "url": "https://doi.org/10.1016/j.robot.2026.105674",
       "doi": "10.1016/j.robot.2026.105674",
       "doi_url": "https://doi.org/10.1016/j.robot.2026.105674",
-      "summary": "",
-      "abstract": "",
+      "summary": "Traditional fixed-shape robots face limitations when interacting with objects of varying surface materials, shapes, and stiffness. This study proposes a design that uses origami-inspired technology and soft pneumatic actuators (SPAs) within a woven structure to enable shape transformations and improve adaptability. The layered SPA design, characterized by a dual-axis actuator and an interwoven structure, provides en...",
+      "abstract": "Traditional fixed-shape robots face limitations when interacting with objects of varying surface materials, shapes, and stiffness. This study proposes a design that uses origami-inspired technology and soft pneumatic actuators (SPAs) within a woven structure to enable shape transformations and improve adaptability. The layered SPA design, characterized by a dual-axis actuator and an interwoven structure, provides enhanced mechanical strength, increased payload capacity, and expanded degrees of freedom (DOF) without adding additional joints. The developed actuator, inspired by origami and woven structures, was integrated into the reconfigurable wheels of a mobile robot to enable axis-switchable locomotion and compliant ground contact in unstructured environments. As a proof-of-concept, this approach demonstrates the potential to improve the adaptability and performance of mobile robots, with possible applications in transportation, personal assistance, and exploration.",
       "figure_url": "",
       "figure_alt": "Main figure for Layered woven-structure soft actuators for reconfigurable robot",
       "authors": [
@@ -348,8 +349,8 @@
       "url": "https://doi.org/10.1016/j.robot.2026.105648",
       "doi": "10.1016/j.robot.2026.105648",
       "doi_url": "https://doi.org/10.1016/j.robot.2026.105648",
-      "summary": "",
-      "abstract": "",
+      "summary": "Robotic systems used in safety-critical scenarios often rely on modular software architectures, and increasingly include autonomous components. Verifying that these modular robotic systems behave as expected requires approaches that can cope with, and preferably take advantage of, this inherent modularity. This paper describes a compositional approach to specifying the nodes in robotic systems built using the Robot...",
+      "abstract": "Robotic systems used in safety-critical scenarios often rely on modular software architectures, and increasingly include autonomous components. Verifying that these modular robotic systems behave as expected requires approaches that can cope with, and preferably take advantage of, this inherent modularity. This paper describes a compositional approach to specifying the nodes in robotic systems built using the Robot Operating System (ROS), where each node is specified using First-Order Logic (FOL) assume-guarantee contracts that link the specification to the ROS implementation. We introduce inference rules that facilitate the composition of these node-level contracts to derive system-level properties. We also present a novel Domain-Specific Language, the ROS Contract Language (RCL), which captures a node’s FOL specification and links this contract to its implementation. RCL contracts can be automatically translated, by our tool Vanda , into executable monitors; which we use to verify the contracts at runtime. We illustrate our approach through the specification and verification of an autonomous rover engaged in the remote inspection of a nuclear site, and finish with smaller examples that illustrate other useful features of our framework.",
       "figure_url": "",
       "figure_alt": "Main figure for A compositional approach to verifying modular robotic systems",
       "authors": [
@@ -381,7 +382,7 @@
       "url": "https://doi.org/10.1016/j.robot.2026.105613",
       "doi": "10.1016/j.robot.2026.105613",
       "doi_url": "https://doi.org/10.1016/j.robot.2026.105613",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics、engineering_system_design。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for A heterogeneous task allocation method for multi-robot processing systems with spatial-process hybrid constraints",
@@ -416,8 +417,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3730218",
       "doi": "10.1109/lra.2026.3730218",
       "doi_url": "https://doi.org/10.1109/lra.2026.3730218",
-      "summary": "",
-      "abstract": "",
+      "summary": "AI planners can now generate a task plan for a team of robots, yet a human operator must stay in control of what the robots do. Doing so requires an interface that makes the plan visible and each step actionable, so mistakes can be caught before they reach the robots. Today, such an interface is developed for each specific application. This letter shows that non-expert operators can supervise an AI-generated multi-r...",
+      "abstract": "AI planners can now generate a task plan for a team of robots, yet a human operator must stay in control of what the robots do. Doing so requires an interface that makes the plan visible and each step actionable, so mistakes can be caught before they reach the robots. Today, such an interface is developed for each specific application. This letter shows that non-expert operators can supervise an AI-generated multi-robot plan, authorizing sound plans and correcting faulty ones before any robot acts. The interface is generated automatically by HRI grounding, an architecture that renders any plan in a pre-defined format as one control per step, each showing in plain language what a robot will do to which target and holding the command it runs on the operator’s confirmation. Across 100 generated plans over two domains, five planner models, and two interface engines, HRI grounding produced a working interface and dispatchable ROS commands for nearly every plan, with no specific interface developed for any particular plan, domain, or planner. About one in five plans contained a semantic fault. In a study with sixteen operators, participants distinguished correct plans from faulty ones with high sensitivity and few false alarms ($d^{\\prime }\\!=\\!2.90$), and through the interface recovered 85 of the 96 missions that would otherwise have failed unsupervised. Operating a mission through the HRI grounding interface also lowered completion time, interactions, errors, and workload relative to a manual baseline. Commands dispatched by HRI grounding also drive a physical Unitree Go2 under ROS with live plan regeneration.",
       "figure_url": "",
       "figure_alt": "Main figure for HRI Grounding: Evidence That Operators Authorize and Correct AI Multi-Robot Plans Through a Generated Supervisory Interface",
       "authors": [
@@ -431,7 +432,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "swarm"
@@ -486,7 +488,7 @@
       "url": "https://doi.org/10.1016/j.aei.2026.105169",
       "doi": "10.1016/j.aei.2026.105169",
       "doi_url": "https://doi.org/10.1016/j.aei.2026.105169",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for LLM-augmented progressive search for efficient multi-robot task planning",
@@ -520,7 +522,7 @@
       "url": "https://doi.org/10.1016/j.jfranklin.2026.109166",
       "doi": "10.1016/j.jfranklin.2026.109166",
       "doi_url": "https://doi.org/10.1016/j.jfranklin.2026.109166",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：modular_reconfigurable_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Safety-constrained hierarchical approximate optimal control for modular robot manipulators in physical human-robot interaction: A Stackelberg game approach enhanced by control barrier functions",
@@ -554,7 +556,7 @@
       "url": "https://doi.org/10.1016/j.oceaneng.2026.129074",
       "doi": "10.1016/j.oceaneng.2026.129074",
       "doi_url": "https://doi.org/10.1016/j.oceaneng.2026.129074",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：modular_reconfigurable_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for A non-centrosymmetric reconfigurable robot for center-accumulated obstacle crossing in subsea pipelines",
@@ -583,7 +585,7 @@
       "url": "https://doi.org/10.1016/j.measurement.2026.122976",
       "doi": "10.1016/j.measurement.2026.122976",
       "doi_url": "https://doi.org/10.1016/j.measurement.2026.122976",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for LSTM neural network-based resilient cooperative localization for multi-robot systems under stealthy FDI attacks",
@@ -618,7 +620,7 @@
       "url": "https://doi.org/10.1016/j.autcon.2026.107203",
       "doi": "10.1016/j.autcon.2026.107203",
       "doi_url": "https://doi.org/10.1016/j.autcon.2026.107203",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for LLM-assisted quality-aware GA–multi-agent deep deterministic policy gradient framework for multi-robot collaborative scheduling in construction quality control",
@@ -694,8 +696,8 @@
       "url": "https://doi.org/10.7840/kics.2026.51.10.1899",
       "doi": "10.7840/kics.2026.51.10.1899",
       "doi_url": "https://doi.org/10.7840/kics.2026.51.10.1899",
-      "summary": "",
-      "abstract": "",
+      "summary": "다중 로봇 작업 할당(multi-robot task allocation, MRTA)은 자동화된 창고 및 물류 시스템에서 효율을 좌우하는 핵심 문제이다. 특히 다수의 에이전트가 제한된 공간과 컨베이어 같은 공유 자원을 동시에 사용하는 환경에서는 혼잡으로 인한 대기 시간 증가와 에너지 비효율이 발생한다. 본 논문은 MRTA를 상태 전이를 포함한 Markov game으로 정식화하고, 각 상태의 의사결정을 공유 자원 혼잡을 고려한 stage game으로 모델링하는 게임이론적 강화학습 프레임워크를 제안한다. 에이전트의 이동 에너지와 혼잡 비용 간의 상충 관계를 비용 함수에 반영하여 전략적 의사결정을 학습하도록 설계하였다. Unity 기반 창고 시뮬레이션 실험 결과, 제안 기법은 기존 방법 대비 작업 효율과 에너지 측면에서 우수한 성능을 보였으며, 혼...",
+      "abstract": "다중 로봇 작업 할당(multi-robot task allocation, MRTA)은 자동화된 창고 및 물류 시스템에서 효율을 좌우하는 핵심 문제이다. 특히 다수의 에이전트가 제한된 공간과 컨베이어 같은 공유 자원을 동시에 사용하는 환경에서는 혼잡으로 인한 대기 시간 증가와 에너지 비효율이 발생한다. 본 논문은 MRTA를 상태 전이를 포함한 Markov game으로 정식화하고, 각 상태의 의사결정을 공유 자원 혼잡을 고려한 stage game으로 모델링하는 게임이론적 강화학습 프레임워크를 제안한다. 에이전트의 이동 에너지와 혼잡 비용 간의 상충 관계를 비용 함수에 반영하여 전략적 의사결정을 학습하도록 설계하였다. Unity 기반 창고 시뮬레이션 실험 결과, 제안 기법은 기존 방법 대비 작업 효율과 에너지 측면에서 우수한 성능을 보였으며, 혼잡 환경에서도 안정적인 작업 수행이 가능함을 확인하였다. 이는 공유 자원 혼잡을 명시적으로 고려한 접근이 복잡한 MRTA 문제 해결에 효과적임을 시사한다.",
       "figure_url": "",
       "figure_alt": "Main figure for Multi-Robot Task Allocation under Shared Resource Congestion: A Game-Theoretic Approach",
       "authors": [
@@ -794,7 +796,7 @@
       "url": "https://doi.org/10.1007/s12065-026-01282-4",
       "doi": "10.1007/s12065-026-01282-4",
       "doi_url": "https://doi.org/10.1007/s12065-026-01282-4",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for SPARC: spatial policy-conditioned actor-critic for multi-robot path planning under partial observability",
@@ -860,7 +862,7 @@
       "url": "https://doi.org/10.1007/s12065-026-01284-2",
       "doi": "10.1007/s12065-026-01284-2",
       "doi_url": "https://doi.org/10.1007/s12065-026-01284-2",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Competitive learning-based atom search optimization with parameter adaptation for numerical optimization and multi-robot path planning",
@@ -1232,7 +1234,7 @@
       "url": "https://doi.org/10.1007/s10999-026-09998-y",
       "doi": "10.1007/s10999-026-09998-y",
       "doi_url": "https://doi.org/10.1007/s10999-026-09998-y",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：modular_reconfigurable_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Pneumatic modulation of stability and stiffness for a modular robotic skeleton",
@@ -1642,7 +1644,7 @@
       "url": "https://doi.org/10.1016/j.engappai.2026.115568",
       "doi": "10.1016/j.engappai.2026.115568",
       "doi_url": "https://doi.org/10.1016/j.engappai.2026.115568",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics、engineering_system_design。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Multi-robot coordination for effective anomaly handling in self-driving laboratories",
@@ -1677,7 +1679,7 @@
       "url": "https://doi.org/10.1016/j.engappai.2026.115720",
       "doi": "10.1016/j.engappai.2026.115720",
       "doi_url": "https://doi.org/10.1016/j.engappai.2026.115720",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Neural-guided symbolic evolution: From symbolic control search to mechanism discovery in swarm robotics",
@@ -1712,7 +1714,7 @@
       "url": "https://doi.org/10.1016/j.ast.2026.114081",
       "doi": "10.1016/j.ast.2026.114081",
       "doi_url": "https://doi.org/10.1016/j.ast.2026.114081",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Robust Mixed-Integer Predictive Planning for Multi-Robot Lunar Construction",
@@ -1745,7 +1747,7 @@
       "url": "https://doi.org/10.1016/j.cnsns.2026.110169",
       "doi": "10.1016/j.cnsns.2026.110169",
       "doi_url": "https://doi.org/10.1016/j.cnsns.2026.110169",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：modular_reconfigurable_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Model predictive control based on generalized fuzzy hyperbolic model applied to modular and reconfigurable robots with full-state constraints via adaptive dynamic programming",
@@ -1780,8 +1782,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3728375",
       "doi": "10.1109/lra.2026.3728375",
       "doi_url": "https://doi.org/10.1109/lra.2026.3728375",
-      "summary": "",
-      "abstract": "",
+      "summary": "Multi-robot patrol path planning is conventionally formulated as the min-max multiple traveling salesman problem (min-max mTSP). Existing formulations typically assume robots must physically visit each target, overlooking their visual perception capabilities. However, in many scenarios, targets are considered covered once they fall within a robot's field-of-view (FOV). To exploit this, we introduce a novel variant,...",
+      "abstract": "Multi-robot patrol path planning is conventionally formulated as the min-max multiple traveling salesman problem (min-max mTSP). Existing formulations typically assume robots must physically visit each target, overlooking their visual perception capabilities. However, in many scenarios, targets are considered covered once they fall within a robot's field-of-view (FOV). To exploit this, we introduce a novel variant, the min-max mTSP with FOV, incorporating viewing directions into the optimization process. To efficiently solve this, we propose FoM, a sequential planning framework powered by a graph neural network (GNN) trained via reinforcement learning (RL). Instead of optimizing paths from scratch for each specific instance, FoM functions as a sequential decision-maker that iteratively selects nodes and sensing directions, achieving robust zero-shot generalization to unseen maps without retraining. Evaluations on synthetic and real-world maps demonstrate that FoM achieves remarkable performance, highlighting its practical effectiveness for multi-robot coordination.",
       "figure_url": "",
       "figure_alt": "Main figure for FoM: Field-of-View-Aware Graph Neural Learning for Min–Max Multi-Robot Patrol Path Planning",
       "authors": [
@@ -1802,7 +1804,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "algorithm",
@@ -1820,7 +1823,7 @@
       "url": "https://doi.org/10.1016/j.robot.2026.105592",
       "doi": "10.1016/j.robot.2026.105592",
       "doi_url": "https://doi.org/10.1016/j.robot.2026.105592",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Integration of the collision risk index and dynamic priority in multi-robot cooperative path planning",
@@ -1854,8 +1857,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3730349",
       "doi": "10.1109/lra.2026.3730349",
       "doi_url": "https://doi.org/10.1109/lra.2026.3730349",
-      "summary": "",
-      "abstract": "",
+      "summary": "Multi-robot cooperative navigation is important in various applications, such as warehouse automation and large-scale manufacturing. However, the coupling between dynamic interactions and static environmental constraints often causes deadlock and loss of efficiency in decentralized multi-robot navigation. To address this issue, this letter proposes a decoupled-state dual-stream framework for distributed multi-robot...",
+      "abstract": "Multi-robot cooperative navigation is important in various applications, such as warehouse automation and large-scale manufacturing. However, the coupling between dynamic interactions and static environmental constraints often causes deadlock and loss of efficiency in decentralized multi-robot navigation. To address this issue, this letter proposes a decoupled-state dual-stream framework for distributed multi-robot navigation in static-obstacle environments (DS-MRNav). Different from existing methods that mix heterogeneous observations directly, the proposed approach decouples dynamic interaction constraints and static obstacle constraints at the state level, and adopts a dual-stream architecture to process these two types of local perception. The dynamic and static streams are each fused with the ego-state, and the resulting features are further fused to generate cooperative actions, while the policy is trained via curriculum learning and a safety-aware hybrid reward. In simulation, DS-MRNav shows strong robot-density scalability: in the empty-scenario scalability test, it generalizes to 20 robots and achieves a 99% episode success rate. On static-obstacle maps, it maintains high robot-level success and low timeout rates on both in-distribution and unseen maps. Ablation studies validate the contributions of the decoupled architecture, ORCA half-plane representation, safety-aware reward terms, and frozen pretrained static encoder. Real-robot experiments further show stable cooperative avoidance and obstacle circumnavigation without additional fine-tuning, indicating the promising sim-to-real transferability of the proposed approach.",
       "figure_url": "",
       "figure_alt": "Main figure for DS-MRNav: Distributed Multi-Robot Navigation With Static Obstacles via a Decoupled-State Dual-Stream Framework",
       "authors": [
@@ -1870,7 +1873,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "control",
@@ -1888,7 +1892,7 @@
       "url": "https://doi.org/10.1016/j.rcim.2026.103308",
       "doi": "10.1016/j.rcim.2026.103308",
       "doi_url": "https://doi.org/10.1016/j.rcim.2026.103308",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Dynamic reconfiguration in multi-robot agent systems using embedded language models",
@@ -1920,8 +1924,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3729488",
       "doi": "10.1109/lra.2026.3729488",
       "doi_url": "https://doi.org/10.1109/lra.2026.3729488",
-      "summary": "",
-      "abstract": "",
+      "summary": "Limited connectivity poses a critical challenge for multi-robot cooperative localization, as delayed or out-of-order measurements often cause conventional algorithms to misalign and diverge. Existing methods typically struggle to balance real-time constraints with the computational cost of retrospectively fusing latent data. To address this, a parallel graph inference framework is proposed for decentralized and asyn...",
+      "abstract": "Limited connectivity poses a critical challenge for multi-robot cooperative localization, as delayed or out-of-order measurements often cause conventional algorithms to misalign and diverge. Existing methods typically struggle to balance real-time constraints with the computational cost of retrospectively fusing latent data. To address this, a parallel graph inference framework is proposed for decentralized and asynchronous cooperative localization. Each robot constructs a local sparse factor graph to uniformly represent state variables and measurements. Crucially, a multi-thread architecture is introduced to decouple high-frequency real-time estimation from the latency-prone fusion of inter-robot measurements. This allows the system to maintain control-rate state feedback while asynchronously integrating historical relative measurements via Gaussian belief propagation. Extensive evaluations on simulated and real-world datasets validate the system across varying sensor configurations, scales, and connectivity conditions. The results demonstrate that the proposed method remains robust under significant communication delays, achieving the accuracy of optimization-based approaches with the runtime efficiency of filter-based methods.",
       "figure_url": "",
       "figure_alt": "Main figure for Parallel Graph Inference for Decentralized and Asynchronous Multi-Robot Cooperative Localization Under Limited Connectivity",
       "authors": [
@@ -1935,7 +1939,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "perception",
@@ -1953,8 +1958,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3728333",
       "doi": "10.1109/lra.2026.3728333",
       "doi_url": "https://doi.org/10.1109/lra.2026.3728333",
-      "summary": "",
-      "abstract": "",
+      "summary": "This paper presents a transformer-based reinforcement learning framework for time-critical multi-robot task allocation, where the objective is to minimize mission completion time (i.e., makespan) by formulating the problem as a min–max multi-depot open vehicle routing problem. In this problem, conventional methods often do not scale well to large instances. Standard transformer policies scale better but are sensitiv...",
+      "abstract": "This paper presents a transformer-based reinforcement learning framework for time-critical multi-robot task allocation, where the objective is to minimize mission completion time (i.e., makespan) by formulating the problem as a min–max multi-depot open vehicle routing problem. In this problem, conventional methods often do not scale well to large instances. Standard transformer policies scale better but are sensitive to the order in which robots are allocated, since early allocations constrain later choices and can produce imbalanced workloads that lead to a prolonged makespan. To address this, we propose Balance-Aware Pointerformer (BAP), which adapts problem augmentation and multi-start decoding into a diverse-order exploration strategy with a shared baseline, supported by a memory-efficient encoder that keeps this exploration tractable. In addition, BAP incorporates a balance-aware context embedding that explicitly encodes global and per-robot progress, guiding the policy toward workload-balanced allocations. Experimental results on uniform and clustered task distributions demonstrate that BAP remains competitive with a time-limited MILP solver on small instances, improves solution quality on larger-scale problems, and achieves lower makespan than representative heuristic and learning-based baselines across nearly all tested settings.",
       "figure_url": "",
       "figure_alt": "Main figure for Makespan Minimization for Multi-Robot Task Allocation With Balance-Aware Pointerformer",
       "authors": [
@@ -1985,7 +1990,7 @@
       "url": "https://doi.org/10.1016/j.rcim.2026.103301",
       "doi": "10.1016/j.rcim.2026.103301",
       "doi_url": "https://doi.org/10.1016/j.rcim.2026.103301",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for An efficient occlusion-aware visibility assurance method for multi-robot vision-integrated manufacturing",
@@ -2018,8 +2023,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3723332",
       "doi": "10.1109/lra.2026.3723332",
       "doi_url": "https://doi.org/10.1109/lra.2026.3723332",
-      "summary": "",
-      "abstract": "",
+      "summary": "Coordinating a team of robots in aircraft skin fabrication requires allocating and sequencing tightly coupled subtasks under spatio-temporal constraints, while the fleet must react to runtime disturbances such as robot failures and urgent task arrivals. Mixed-Integer Linear Programming (MILP) yields provably optimal coordination, but a disturbance often introduces new constraint logic rather than a mere parameter ch...",
+      "abstract": "Coordinating a team of robots in aircraft skin fabrication requires allocating and sequencing tightly coupled subtasks under spatio-temporal constraints, while the fleet must react to runtime disturbances such as robot failures and urgent task arrivals. Mixed-Integer Linear Programming (MILP) yields provably optimal coordination, but a disturbance often introduces new constraint logic rather than a mere parameter change, leaving the existing formulation structurally inadequate and requiring expert-led reformulation to accommodate the new logic. This letter proposes a Large Language Model (LLM)-based framework that automates the path from natural-language scheduling requirements to MILP formulation, executable solver code, and event-driven rescheduling, so that the optimization model can be restructured online without expert intervention. Two compact LLMs are specialized for complementary roles: a modeling LLM, empowered via knowledge augmentation, supervised fine-tuning on industrial constraint descriptions, and direct preference optimization on self-generated negatives; and a code LLM, trained via sandbox-validated knowledge distillation. On ten industrial constraint classes, the 8B modeling LLM reaches 100% constraint-level accuracy, exceeding cloud-scale general-purpose LLMs equipped with retrieval over the same knowledge base, while the 8B code LLM attains 86% under fully on-premises deployment. When a disturbance occurs, an event-triggered mechanism regenerates only the affected constraints. A case study on multi-robot scheduling for aircraft skin fabrication shows that the framework matches the schedule quality of baselines while shifting adaptation cost from offline expert labour to a bounded online inference budget.",
       "figure_url": "",
       "figure_alt": "Main figure for An LLM Based Framework for Automated MILP Modeling in Dynamic Multi-Robot Task Scheduling",
       "authors": [
@@ -2035,7 +2040,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "swarm",
@@ -2566,7 +2572,7 @@
       "url": "https://doi.org/10.1007/s12065-026-01257-5",
       "doi": "10.1007/s12065-026-01257-5",
       "doi_url": "https://doi.org/10.1007/s12065-026-01257-5",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics、engineering_system_design。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Survival probability-weighted clustering for UAV-based multi-robot task allocation in disaster response",
@@ -2671,8 +2677,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3711507",
       "doi": "10.1109/lra.2026.3711507",
       "doi_url": "https://doi.org/10.1109/lra.2026.3711507",
-      "summary": "",
-      "abstract": "",
+      "summary": "In multi-robot collaborative task scenarios, congestion in bottleneck areas and the resulting execution delays can invalidate the solutions of task planning optimization, leading to potential instabilities and safety risks. This letter presents a congestion-aware invocation-pruning planning (CAIPP) method, which accurately quantifies the impact of congestion to ensure the effectiveness of task planning. For high-lev...",
+      "abstract": "In multi-robot collaborative task scenarios, congestion in bottleneck areas and the resulting execution delays can invalidate the solutions of task planning optimization, leading to potential instabilities and safety risks. This letter presents a congestion-aware invocation-pruning planning (CAIPP) method, which accurately quantifies the impact of congestion to ensure the effectiveness of task planning. For high-level task allocation, the congestion-aware method addresses the influence of inter-robot trajectories on task utility evaluation by invoking spatiotemporal path planning to reduce evaluation inaccuracy. Considering the computational burden of path planning, a conflict-free validation strategy and a pruning evaluation strategy are designed to schedule invocations for path planning, thereby reducing unnecessary computation. A channel graph is adopted to construct a lightweight representation of the accessible space, and building on this, spatial and spatiotemporal path planning methods are designed for the initial and corrected estimation of task utility, respectively. Simulation and experimental results verify that the presented method achieves efficient task planning and congestion avoidance, and outperforms the benchmark methods in terms of solution quality and planning efficiency.",
       "figure_url": "",
       "figure_alt": "Main figure for Congestion-Aware Efficient Multi-Robot Task Planning via Invocation-Pruning Task Evaluation",
       "authors": [
@@ -2687,7 +2693,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "algorithm",
@@ -2705,8 +2712,8 @@
       "url": "https://doi.org/10.1109/lra.2026.3711857",
       "doi": "10.1109/lra.2026.3711857",
       "doi_url": "https://doi.org/10.1109/lra.2026.3711857",
-      "summary": "",
-      "abstract": "",
+      "summary": "We present WiSER-X (Wireless Signal-based Efficient multi-Robot eXploration), a fully decentralized algorithm that enables a team of autonomous robots to coordinate the exploration of unknown environments under severe communication limitations, using only signal ping packets. WiSER-X uses inter-robot relative position estimates, obtained from onboard wireless signal–based sensors, to guide exploration decisions and...",
+      "abstract": "We present WiSER-X (Wireless Signal-based Efficient multi-Robot eXploration), a fully decentralized algorithm that enables a team of autonomous robots to coordinate the exploration of unknown environments under severe communication limitations, using only signal ping packets. WiSER-X uses inter-robot relative position estimates, obtained from onboard wireless signal–based sensors, to guide exploration decisions and minimize redundant coverage, resulting in global coordination from local decision-making. The algorithm supports asynchronous exploration termination without requiring a shared global map, adapts to heterogeneous robot behaviors, and remains robust to complete failures while ensuring full coverage. Simulation results show that WiSER-X achieves 58% less overlap than a zero-information-sharing baseline and only 23% more overlap than a full-information-sharing baseline. Hardware experiments further validate the feasibility of WiSER-X using onboard sensing.",
       "figure_url": "",
       "figure_alt": "Main figure for WiSER-X: Wireless Signal-Based Decentralized Multi-Robot Exploration Without Explicit Information Exchange",
       "authors": [
@@ -2720,7 +2727,8 @@
       "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "swarm"
@@ -2769,7 +2777,7 @@
       "url": "https://doi.org/10.1016/j.isatra.2026.05.023",
       "doi": "10.1016/j.isatra.2026.05.023",
       "doi_url": "https://doi.org/10.1016/j.isatra.2026.05.023",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Observer-based hierarchical distributed optimal robust safety consensus control of multi-robot systems under actuator faults",
@@ -2803,8 +2811,8 @@
       "url": "https://doi.org/10.1016/j.ohx.2026.e00806",
       "doi": "10.1016/j.ohx.2026.e00806",
       "doi_url": "https://doi.org/10.1016/j.ohx.2026.e00806",
-      "summary": "",
-      "abstract": "",
+      "summary": "Soft robotic grippers are attractive for cooperative object transport in multi-robot systems because they tolerate positioning errors and reduce the risk of damage to fragile items. However, many Fin-Ray effect grippers lack integrated force feedback, require empirical tuning of geometry, and are not documented as open hardware, which limits their adoption in research and teaching platforms. This work presents the d...",
+      "abstract": "Soft robotic grippers are attractive for cooperative object transport in multi-robot systems because they tolerate positioning errors and reduce the risk of damage to fragile items. However, many Fin-Ray effect grippers lack integrated force feedback, require empirical tuning of geometry, and are not documented as open hardware, which limits their adoption in research and teaching platforms. This work presents the design, fabrication, instrumentation, and validation of an open-source Fin-Ray soft gripper tailored for caging-based manipulation with mobile robots. The gripper combines 3D-printed TPU fingers optimized via finite element analysis, a thin-film piezo-resistive force sensor, and an STM32-based proportional controller that regulates gripping force in real time. The complete hardware stack, including mechanical models, firmware, and a Python graphical interface for monitoring and control, is released as open design files. The sensor was characterized in the range from approximately 0.1 N to 5 N. A third-order polynomial calibration yields an average accuracy of 70.8 % over this interval, with reduced accuracy at very low forces, and an average coefficient of variation of 1.10 %, which indicates highly repeatable measurements. Static closed-loop tests against a rigid object show convergence to a 0.981 N force setpoint with small steady-state error. Dynamic interaction tests confirm that the controller compensates for external perturbations by adjusting the gripper aperture. Energy measurements reveal an average current consumption near 250 mA during regulation, with peaks around 1 A when rejecting disturbances. These results indicate that the proposed gripper is suitable as a low-cost, reproducible end-effector for cooperative manipulation experiments in multi-robot systems.",
       "figure_url": "",
       "figure_alt": "Main figure for Fin-Ray soft gripper for object manipulation with multi-robot systems",
       "authors": [
@@ -2823,7 +2831,8 @@
       "publisher": "Elsevier BV",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "swarm",
@@ -2841,7 +2850,7 @@
       "url": "https://doi.org/10.1016/j.eswa.2026.132587",
       "doi": "10.1016/j.eswa.2026.132587",
       "doi_url": "https://doi.org/10.1016/j.eswa.2026.132587",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics、engineering_system_design。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Sector -scanning with energy-aware anchoring algorithm for task allocation of electric multi-robot systems",
@@ -2880,8 +2889,8 @@
       "url": "https://doi.org/10.1016/j.cja.2025.103962",
       "doi": "10.1016/j.cja.2025.103962",
       "doi_url": "https://doi.org/10.1016/j.cja.2025.103962",
-      "summary": "",
-      "abstract": "",
+      "summary": "Using moving robots to assemble space structures is one of the most promising methods for building large spacecraft. This paper aims to reveal the coupling effect among the robots, space environment, and assembly structure, and to provide an optimal multi-robot collaborative assembly strategy, improving assembly accuracy as well as efficiency. First, we construct an assembly dynamic model using the dynamic substruct...",
+      "abstract": "Using moving robots to assemble space structures is one of the most promising methods for building large spacecraft. This paper aims to reveal the coupling effect among the robots, space environment, and assembly structure, and to provide an optimal multi-robot collaborative assembly strategy, improving assembly accuracy as well as efficiency. First, we construct an assembly dynamic model using the dynamic substructure method, wherein both the vibrations induced by robot movements on the structure surface and the thermal-induced vibrations are considered. In this paper, three-branch robots are adopted to carry out the on-orbit assembly tasks, and the generated force is derived via the Newton-Euler method. The heat load achieved by the space structure is formulated in terms of the relative motions between the sun and the space structures. Then, based on the proposed assembly dynamic model, the vibrations induced by the heat load and the multi-robot movements versus time are deliberately investigated. To improve the accuracy of the assembly structures and assembly efficiency, the genetic algorithm is used to determine the installation position and the path that the robots move from the storage location to the installation one is generated by the A* algorithm and the CBS algorithm, ensuring that (A) global vibrations of space structures are small and do not increase with the increase in the number of robots; (B) computational costs of the assembly process are economic; (C) path conflicts can be avoided when multiple robots conduct assembly task. Finally, numerical experiments validate the advantages of the proposed multi-robot collaborative assembly strategy in the rapid and precise assembly of space structures.",
       "figure_url": "",
       "figure_alt": "Main figure for Multi-robot collaborative assembly strategy for large space structure",
       "authors": [
@@ -2911,8 +2920,8 @@
       "url": "https://doi.org/10.1016/j.oceaneng.2026.127392",
       "doi": "10.1016/j.oceaneng.2026.127392",
       "doi_url": "https://doi.org/10.1016/j.oceaneng.2026.127392",
-      "summary": "",
-      "abstract": "",
+      "summary": "This paper addresses an extension of the classical heterogeneous Vehicle Routing Problem (VRP) tailored to cooperative missions involving Autonomous Underwater Vehicles (AUVs) and Unmanned Aerial Vehicles (UAVs) in monitoring scenarios characterized by heterogeneous task requirements and shoreline-avoidance constraints. The proposed formulation considers alternative coverage patterns for area and line inspection tas...",
+      "abstract": "This paper addresses an extension of the classical heterogeneous Vehicle Routing Problem (VRP) tailored to cooperative missions involving Autonomous Underwater Vehicles (AUVs) and Unmanned Aerial Vehicles (UAVs) in monitoring scenarios characterized by heterogeneous task requirements and shoreline-avoidance constraints. The proposed formulation considers alternative coverage patterns for area and line inspection tasks, vehicle-type compatibility constraints, and temporal synchronization requirements between UAVs and AUVs. In particular, monitoring time windows are introduced to enable UAV supervision of AUV activities while ensuring coordinated mission execution. To solve this problem, a routing algorithm is developed and evaluated through two realistic case studies of increasing complexity. The approach integrates path-planning techniques to improve travel-time estimation and mission coordination. Its performance is assessed through comparisons with a Greedy Nearest Task baseline, considering mission makespan, task feasibility, workload balance, computational time, and robustness to positioning uncertainty. The results show that the proposed method reduces mission makespan by 21.26%, improves task feasibility, and enhances workload balance compared with the baseline approach. Furthermore, the synchronization mechanism enables effective coordination between heterogeneous vehicles while maintaining feasible mission schedules. High-quality solutions are obtained with computational times of up to 22 s, demonstrating that the proposed framework can address cooperative inspection missions with manageable computational effort.",
       "figure_url": "",
       "figure_alt": "Main figure for Cooperative multi-robot routing for AUV–UAV inspection with inter-vehicle synchronization",
       "authors": [
@@ -2925,7 +2934,8 @@
       "publisher": "Elsevier BV",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "swarm"
@@ -2940,7 +2950,7 @@
       "url": "https://doi.org/10.1016/j.asoc.2026.115505",
       "doi": "10.1016/j.asoc.2026.115505",
       "doi_url": "https://doi.org/10.1016/j.asoc.2026.115505",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics、engineering_system_design。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for A knowledge-driven collaborative discrete Jaya algorithm for energy-efficient multi-robot task allocation and scheduling problem",
@@ -2975,8 +2985,8 @@
       "url": "https://doi.org/10.1016/j.ohx.2026.e00819",
       "doi": "10.1016/j.ohx.2026.e00819",
       "doi_url": "https://doi.org/10.1016/j.ohx.2026.e00819",
-      "summary": "",
-      "abstract": "",
+      "summary": "Commercial educational kits for technology instruction often operate as closed \"black boxes,\" presenting high import costs that limit their adoption in developing regions such as South America. This work presents an open-source, 5-module modular experimentation kit designed for STEM education in embedded systems and automation. Centered around an Arduino UNO core, the kit features progressive difficulty levels acros...",
+      "abstract": "Commercial educational kits for technology instruction often operate as closed \"black boxes,\" presenting high import costs that limit their adoption in developing regions such as South America. This work presents an open-source, 5-module modular experimentation kit designed for STEM education in embedded systems and automation. Centered around an Arduino UNO core, the kit features progressive difficulty levels across five distinct modules: an environmental smart pot, an automated parking lot, an electromechanical drawbridge, a timed food dispenser, and a high-density home automation hub. The physical infrastructure combines low-cost FDM 3D printing with single-layer custom PCBs developed in Altium Designer. The total hardware cost is approximately $548.00 USD, optimized for localized manufacturing. Field validation with 40 s ondary school students in Cuenca, Ecuador, over a station-based collaborative rotation workshop demonstrated 100% hardware reliability under continuous operation. Quantitative post-workshop evaluations using a 5-point Likert scale indicated notable student engagement, curiosity, and positive motivation towards automation engineering concepts across all design modules. Complete parametric CAD files, manufacturing-ready Gerbers, firmware, and user manuals are fully open-access to promote global educational replication.",
       "figure_url": "",
       "figure_alt": "Main figure for Open-source hardware design and construction of a modular robotics kit for STEM education",
       "authors": [
@@ -3006,8 +3016,8 @@
       "url": "https://doi.org/10.1109/jsyst.2026.3706478",
       "doi": "10.1109/jsyst.2026.3706478",
       "doi_url": "https://doi.org/10.1109/jsyst.2026.3706478",
-      "summary": "",
-      "abstract": "",
+      "summary": "This work addresses the fault-tolerant formation control problem involving heterogeneous wheeled mobile robots (WMRs) under undirected network graphs, with predefined-time (PdT) convergence guaranteed. To tackle the system heterogeneity and reduce the complexity of cooperative control design, a distributed control architecture with an embedded reference signal generator is proposed. By introducing the reference gene...",
+      "abstract": "This work addresses the fault-tolerant formation control problem involving heterogeneous wheeled mobile robots (WMRs) under undirected network graphs, with predefined-time (PdT) convergence guaranteed. To tackle the system heterogeneity and reduce the complexity of cooperative control design, a distributed control architecture with an embedded reference signal generator is proposed. By introducing the reference generator layer, the original formation control problem is decoupled into two relatively independent subproblems: 1) formation achievement among reference generators and 2) reference tracking for individual robots. PdT control strategies are developed for both layers. Subsequent stability analysis demonstrates that the entire system achieves the desired formation within a specific, user-defined timeframe. Because this duration is completely unaffected by the agents' initial states, the convergence process is fully predictable. In addition, an adaptive fault-tolerant control scheme is designed for the purpose of handling actuator degradations. This scheme estimates and compensates for fault effects in PdT, ensuring the system remains robust even under actuator faults. The proposed controller guarantees that fault-tolerant formation control is achieved within a PdTframe, maintaining system stability and performance despite actuator failures. To validate these theoretical contributions, comprehensive numerical simulations are conducted using a coordinated group of six WMRs.",
       "figure_url": "",
       "figure_alt": "Main figure for Predefined-Time Fault-Tolerant Formation Control for Large-Scale Heterogeneous Wheeled Mobile Robot Swarms",
       "authors": [
@@ -3039,8 +3049,8 @@
       "url": "https://doi.org/10.1016/j.eij.2026.101006",
       "doi": "10.1016/j.eij.2026.101006",
       "doi_url": "https://doi.org/10.1016/j.eij.2026.101006",
-      "summary": "",
-      "abstract": "",
+      "summary": "In field ecological monitoring, search and rescue, and disaster prevention missions, carpet search strategies are typically employed. The importance and quantity of tasks often change dynamically, requiring multi-robot systems to possess the capability to flexibly respond to dynamic variations. However, traditional task allocation methods are predominantly designed for static small-scale environments and struggle to...",
+      "abstract": "In field ecological monitoring, search and rescue, and disaster prevention missions, carpet search strategies are typically employed. The importance and quantity of tasks often change dynamically, requiring multi-robot systems to possess the capability to flexibly respond to dynamic variations. However, traditional task allocation methods are predominantly designed for static small-scale environments and struggle to meet the demands of large-scale dynamic task scenarios, nor are they optimized for carpet search strategies. To address this issue, this paper formulates carpet search as the sequential execution of multiple tasks within elongated regions and proposes a Two-stage Adaptive Sampling Rolling Task Reallocation (TASRTRA). In TASRTRA, to resolve the problem of high-importance tasks being overlooked due to random probability sampling, an adaptive probability sampling mechanism is constructed that dynamically adjusts the sampling probability distribution to increase the sampling probability of high-importance tasks, thereby ensuring a balance between task value maximization and computational efficiency. Considering the time-varying characteristics of task importance during execution, the marginal cost calculation method is improved by introducing a dynamic importance variation factor, enabling real-time perception of task importance evolution and dynamic reconstruction of task allocation schemes in multi-robot systems. Furthermore, to mitigate the elevated collision risk caused by intersecting task paths, an intersecting path exchange strategy is introduced to optimize the task allocation scheme, reducing collision probability while enhancing overall system performance. Experimental results demonstrate that TASRTRA exhibits superior performance under dynamic and various task-scale scenarios. Compared with traditional methods, it achieves an average reward improvement of 7.62% and an average runtime reduction of 15.15%. The method adapts effectively to various dynamic task conditions, demonstrates strong robustness, and significantly optimizes task allocation efficiency.",
       "figure_url": "",
       "figure_alt": "Main figure for A multi-robot two-stage adaptive sampling and rolling task reallocation method for carpet-like search",
       "authors": [
@@ -3055,7 +3065,8 @@
       "publisher": "Elsevier BV",
       "source": "crossref",
       "topics": [
-        "swarm_intelligence_robotics"
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
       ],
       "tags": [
         "swarm"
@@ -3070,8 +3081,8 @@
       "url": "https://doi.org/10.1007/s10791-026-10499-x",
       "doi": "10.1007/s10791-026-10499-x",
       "doi_url": "https://doi.org/10.1007/s10791-026-10499-x",
-      "summary": "",
-      "abstract": "",
+      "summary": "The field of swarm robotics has become more and more popular as a decentralised solution to problems of coordination among multiple independent agents. The recent developments in multi-agent reinforcement learning (MARL) have made it possible for agents to learn cooperative behaviours when operating in a dynamic environment and even outperform the traditional rule-based or heuristic coordination strategies. However,...",
+      "abstract": "The field of swarm robotics has become more and more popular as a decentralised solution to problems of coordination among multiple independent agents. The recent developments in multi-agent reinforcement learning (MARL) have made it possible for agents to learn cooperative behaviours when operating in a dynamic environment and even outperform the traditional rule-based or heuristic coordination strategies. However, coordination in practical MARL-based swarms is still difficult, as many approaches are not scalable, have high communication cost, unstable coordination with high swarm density, and lack integration of efficiency, robustness, and adaptability. This paper introduces a multi-agent reinforcement learning framework for scalable and communication-efficient swarm coordination called RoboSwarmCoordAI, which surpasses the limitations of the above approaches. The proposed framework uses three major components: a state-encoding module that is aware of the coordination requirements, an adaptive neighbourhood-filtering module to avoid redundant inter-agent communication and a hybrid reward function that weights local robot goals with respect to the global swarm performance. RoboSwarmCoordAI uses a centralised training and decentralised execution approach where agents can leverage global information for training, but local information for execution. The framework was tested in simulation in cooperative exploration, distributed target search and task allocation scenarios. When evaluated within the range of simulations tested, RoboSwarmCoordAI outperformed baseline methods with a task success rate of 95.8%, 2.7 collisions per episode, and an efficiency score of 91.6. The analyses of scalability and communication efficiency also demonstrate the stable coordination performance up to 50 robots, at a lower communications cost. As a result, it was found that RoboSwarmCoordAI is a promising simulation-validated framework for adaptive swarm coordination, and future work will further validate RoboSwarmCoordAI on larger swarms and physical robotic platforms.",
       "figure_url": "",
       "figure_alt": "Main figure for RoboSwarmCoordAI enables scalable swarm robotics coordination using multi agent reinforcement learning",
       "authors": [
@@ -3296,7 +3307,7 @@
       "url": "https://doi.org/10.1007/s11432-025-4909-6",
       "doi": "10.1007/s11432-025-4909-6",
       "doi_url": "https://doi.org/10.1007/s11432-025-4909-6",
-      "summary": "",
+      "summary": "该记录由 crossref 的公开元数据收录，原始索引未提供摘要。本站依据标题与书目信息将其归入：swarm_intelligence_robotics。请通过 DOI 或原文链接查看完整摘要。",
       "abstract": "",
       "figure_url": "",
       "figure_alt": "Main figure for Wireless communication empowers online scheduling of partially-observable transportation multi-robot systems in a smart factory",
@@ -3466,8 +3477,8 @@
       "url": "https://doi.org/10.34133/cesci.0025",
       "doi": "10.34133/cesci.0025",
       "doi_url": "https://doi.org/10.34133/cesci.0025",
-      "summary": "",
-      "abstract": "",
+      "summary": "The successful integration of mobile robots in human-centric environments requires navigation that is not only safe and efficient but also consistent and compliant with social conventions—key precursors for human comfort and acceptance. Most human-aware navigation research targets the local planner, generating short-horizon, sensing-dependent reactive behavior around nearby humans. However, some social conventions a...",
+      "abstract": "The successful integration of mobile robots in human-centric environments requires navigation that is not only safe and efficient but also consistent and compliant with social conventions—key precursors for human comfort and acceptance. Most human-aware navigation research targets the local planner, generating short-horizon, sensing-dependent reactive behavior around nearby humans. However, some social conventions are long-horizon routing choices that are better established at the global planning level, where the positions of individual humans are either unobservable or likely to be stale by the time that the robot arrives. We develop a partially decentralized global planning system that encodes social conventions and coordinates multiple robots, complementing local planners that react to dynamically sensed humans. First, we introduce a general mechanism for embedding sensing-independent social conventions into a modified A* cost function. Planned paths are shared across the fleet to collaboratively build a shared social graph of established routes, enforcing path consistency and reducing future planning effort. Second, we leverage the resulting structure of these socially consistent paths to formulate multi-robot trajectory coordination as a mixed-integer convex program. While the underlying optimization is solved centrally, the constraint generation is distributed across the fleet, enabling efficient computation of conflict-free trajectories. Through simulation and hardware experiments, we demonstrate that viewing global social path planning and multi-robot trajectory coordination as a single system, rather than independent problems, produces socially consistent, repeatable paths and simplifies multi-robot coordination.",
       "figure_url": "",
       "figure_alt": "Main figure for Socially Consistent Multi-Robot Navigation Using Decoupled Planning and Trajectory Coordination",
       "authors": [
@@ -3805,7 +3816,7 @@
       "doi_url": "https://doi.org/10.1038/s41467-026-74527-6",
       "summary": "FloatForm由可自主航行和磁连接的模块化微型机器人船组成，通过以分布式协调为主、轻量集中规划为辅的混合架构，实现水面自组装、自重构与整体运输；实物系统验证8模块，仿真扩展到64模块。",
       "abstract": "FloatForm is a group of miniature modular robotic boats capable of self-assembling into physically connected structures, self-reconfiguring, and collectively traveling as larger assemblies through a hybrid coordination framework with distributed onboard control and minimal centralized planning.",
-      "figure_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-74527-6/MediaObjects/41467_2026_74527_Fig1_HTML.png",
+      "figure_url": "./assets/papers/2930cfab42dd0693b077.png",
       "figure_alt": "FloatForm modular robotic boat platform and applications",
       "authors": [
         "Wei Wang",
@@ -4029,7 +4040,7 @@
       "doi_url": "https://doi.org/10.1073/pnas.2519129123",
       "summary": "提出可自由组合的自主模块化单自由度腿单元，并通过学习与自动设计构建可快速重组、修复和承受结构损伤的敏捷多足机器人，将动态足式运动与模块化可重构形态结合。",
       "abstract": "Legged machines are agile but usually retain fixed body plans. This work introduces autonomous single-degree-of-freedom modular legs that can be freely combined into reconfigurable multilegged machines. The modules learn dynamic behaviors, support rapid repair and redesign, tolerate structural damage, and enable automatic exploration of a compact latent design space for diverse agile morphologies.",
-      "figure_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/instance/12974426/bin/pnas.2519129123fig01.jpg",
+      "figure_url": "",
       "figure_alt": "Main figure for Agile legged locomotion in reconfigurable modular robots",
       "authors": [
         "Chen Yu",

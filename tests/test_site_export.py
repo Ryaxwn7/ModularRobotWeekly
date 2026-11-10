@@ -72,6 +72,15 @@ class SiteExportTests(unittest.TestCase):
             data = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual(len(data["papers"]), 1)
 
+    def test_site_item_without_source_abstract_gets_transparent_fallback(self) -> None:
+        item = paper_to_site_item(
+            Paper(title="Modular reconfigurable robot", source="crossref"),
+            "report",
+        )
+
+        self.assertIn("crossref", item["summary"])
+        self.assertIn("未提供摘要", item["summary"])
+
     def test_upsert_removes_legacy_humanoid_and_out_of_scope_items(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "papers.json"

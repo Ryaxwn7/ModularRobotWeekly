@@ -88,6 +88,13 @@ def sanitize_site_item(item: dict[str, Any]) -> dict[str, Any]:
         abstract=str(item.get("abstract") or item.get("summary") or ""),
     )
     item["topics"] = classify_scope_topics(paper)
+    if not str(item.get("summary") or "").strip() and not str(item.get("abstract") or "").strip():
+        source = str(item.get("source") or "元数据来源")
+        topics = "、".join(item["topics"]) or "机器人研究范围"
+        item["summary"] = (
+            f"该记录由 {source} 的公开元数据收录，原始索引未提供摘要。"
+            f"本站依据标题与书目信息将其归入：{topics}。请通过 DOI 或原文链接查看完整摘要。"
+        )
     return item
 
 

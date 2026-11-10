@@ -9,7 +9,15 @@ from .llm import build_summarizer
 from .models import Paper, PipelineResult
 from .reporting import write_report
 from .run_state import iter_date_chunks, resolve_search_window, save_successful_run
-from .scoring import has_robotics_relevance, is_future_paper, parse_published_date, score_paper
+from .scoring import (
+    classify_content_types,
+    classify_scope_topics,
+    classify_tags,
+    has_robotics_relevance,
+    is_future_paper,
+    parse_published_date,
+    score_paper,
+)
 from .site_export import upsert_site_papers
 from .sources import build_sources
 from .store import PaperStore, merge_papers
@@ -232,13 +240,34 @@ class ResearchPipeline:
             if current is None:
                 unique[key] = paper
                 continue
-            if paper.score > current.score:
-                paper.topics = sorted(set(paper.topics + current.topics))
-                paper.tags = sorted(set(paper.tags + current.tags))
-                paper.reasons = sorted(set(paper.reasons + current.reasons))
-                unique[key] = paper
-            else:
-                current.topics = sorted(set(current.topics + paper.topics))
-                current.tags = sorted(set(current.tags + paper.tags))
-                current.reasons = sorted(set(current.reasons + paper.reasons))
+            preferred, supplement = (paper, current) if paper.score > current.score else (current, paper)
+            ResearchPipeline._merge_duplicate_metadata(preferred, supplement)
+            unique[key] = preferred
         return unique
+
+    @staticmethod
+    def _merge_duplicate_metadata(preferred: Paper, supplement: Paper) -> None:
+        """Keep the ranking winner while retaining richer source metadata.
+
+        Crossref frequently has the best bibliographic metadata but no abstract;
+        OpenAlex and Semantic Scholar often supply one for the same DOI.  Losing
+        that text makes an otherwise valid website card appear empty.
+        """
+        if len(supplement.abstract or "") > len(preferred.abstract or ""):
+            preferred.abstract = supplement.abstract
+        if len(supplement.authors) > len(preferred.authors):
+            preferred.authors = supplement.authors
+        for field in ("published", "venue", "publisher", "url", "doi"):
+            if not getattr(preferred, field) and getattr(supplement, field):
+                setattr(preferred, field, getattr(supplement, field))
+        if preferred.year is None and supplement.year is not None:
+            preferred.year = supplement.year
+        preferred.raw = {**supplement.raw, **preferred.raw}
+        preferred.topics = sorted(
+            set(preferred.topics + supplement.topics + classify_scope_topics(preferred))
+        )
+        preferred.tags = sorted(set(preferred.tags + supplement.tags + classify_tags(preferred)))
+        preferred.content_types = sorted(
+            set(preferred.content_types + supplement.content_types + classify_content_types(preferred))
+        )
+        preferred.reasons = sorted(set(preferred.reasons + supplement.reasons))
