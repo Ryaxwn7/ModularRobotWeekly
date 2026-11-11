@@ -12,7 +12,13 @@ if ($LASTEXITCODE -ne 0) {
     throw "git pull --rebase failed. Resolve conflicts before publishing."
 }
 
-& $git add site/data/papers.json outputs/weekly_reports docs/consensus_quota_policy.md prompts/weekly_consensus_report.md consensus_usage.example.json config.weekly.json
+$python = "C:\Users\len\.pyenv\pyenv-win\versions\3.13.1\python.EXE"
+& $python .\scripts\discover_paper_figures.py
+if ($LASTEXITCODE -ne 0) {
+    throw "Figure discovery failed. Review outputs/figure_diagnostics.json before publishing."
+}
+
+& $git add site/data/papers.json site/assets/papers docs/consensus_quota_policy.md prompts/weekly_consensus_report.md consensus_usage.example.json config.weekly.json
 
 $status = & $git status --porcelain
 if (-not $status) {

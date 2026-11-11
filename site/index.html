@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Robotics Research Weekly</title>
     <meta name="description" content="机器人领域周报：模块化可重构机器人、群体智能、多机器人系统工程。" />
-    <link rel="stylesheet" href="./styles.css?v=20260829-2" />
+    <link rel="stylesheet" href="./styles.css?v=20261111-figures" />
   </head>
   <body>
     <header class="site-header">
@@ -39,6 +39,13 @@
           </select>
         </label>
         <label>
+          <span>配图</span>
+          <select id="figureFilter">
+            <option value="">全部论文</option>
+            <option value="available">有配图预览</option>
+          </select>
+        </label>
+        <label>
           <span>排序</span>
           <select id="sortSelect">
             <option value="date">最新优先</option>
@@ -69,7 +76,9 @@
     <template id="paperTemplate">
       <article class="paper-card">
         <figure class="paper-figure" hidden>
-          <img class="paper-figure-image" loading="lazy" decoding="async" />
+          <a class="paper-figure-link" target="_blank" rel="noreferrer" aria-label="打开论文插图原尺寸预览">
+            <img class="paper-figure-image" loading="lazy" decoding="async" />
+          </a>
           <figcaption>论文主图预览</figcaption>
         </figure>
         <div class="paper-body">
@@ -89,6 +98,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20261110-full-abstract"></script>
+    <script src="./app.js?v=20261111-publisher-figures"></script>
   </body>
 </html>

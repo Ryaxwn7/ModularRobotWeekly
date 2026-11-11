@@ -85,6 +85,7 @@ function applyFilters() {
   const query = normalize(document.querySelector("#searchInput").value);
   const topic = document.querySelector("#topicFilter").value;
   const contentType = document.querySelector("#contentTypeFilter").value;
+  const withFigure = document.querySelector("#figureFilter").value;
   const sort = document.querySelector("#sortSelect").value;
 
   state.filtered = state.papers.filter((paper) => {
@@ -100,7 +101,7 @@ function applyFilters() {
     const matchesQuery = !query || haystack.includes(query);
     const matchesTopic = !topic || (paper.topics || []).includes(topic);
     const matchesContentType = !contentType || contentTypes(paper).includes(contentType);
-    return matchesQuery && matchesTopic && matchesContentType;
+    return matchesQuery && matchesTopic && matchesContentType && (!withFigure || Boolean(localFigureUrl(paper)));
   });
 
   state.filtered.sort((a, b) => {
@@ -151,9 +152,11 @@ function renderPapers() {
     // Only locally cached, validated image assets are eligible for preview.
     // A failed image removes its entire block instead of leaving a broken tile.
     if (figureUrl) {
-      image.src = figureUrl;
-      image.alt = paper.figure_alt || `论文主图：${paper.title}`;
       image.addEventListener("error", () => figure.remove(), { once: true });
+      image.alt = paper.figure_alt || `论文主图：${paper.title}`;
+      node.querySelector(".paper-figure-link").href = figureUrl;
+      figure.querySelector("figcaption").textContent = paper.figure_alt || "论文插图预览（点击放大）";
+      image.src = figureUrl;
       figure.hidden = false;
     } else {
       figure.remove();
@@ -195,7 +198,7 @@ async function init() {
   }
 
   renderTopicOptions(state.papers);
-  ["#searchInput", "#topicFilter", "#contentTypeFilter", "#sortSelect"].forEach((selector) => {
+  ["#searchInput", "#topicFilter", "#contentTypeFilter", "#figureFilter", "#sortSelect"].forEach((selector) => {
     document.querySelector(selector).addEventListener("input", applyFilters);
   });
   applyFilters();

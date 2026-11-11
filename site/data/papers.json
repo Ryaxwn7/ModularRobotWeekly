@@ -1534,8 +1534,8 @@
       "doi_url": "https://doi.org/10.1186/s40648-026-00357-2",
       "summary": "We propose a task-priority-aware motion-control method that links task progress to online modification of model predictive path integral (MPPI) control parameters. Human–robot collaborative assembly with multiple robotic arms requires both task-level coordination and reactive motion generation in a shared workspace. A task planner can determine which robot should proceed first, whereas a motion controller must conti...",
       "abstract": "We propose a task-priority-aware motion-control method that links task progress to online modification of model predictive path integral (MPPI) control parameters. Human–robot collaborative assembly with multiple robotic arms requires both task-level coordination and reactive motion generation in a shared workspace. A task planner can determine which robot should proceed first, whereas a motion controller must continuously respond to the positions of the human and the other robot. However, if these functions are designed independently, fixed avoidance settings can cause symmetric yielding, deadlock, or unnecessary suspension of robot motion in spatially conflicting tasks. Therefore, we propose a method in which a task-management layer determines the current priority relation between two robotic arms and updates selected goal-tracking and collision-related cost weights, together with the scales of the robot collision models used by the local MPPI controllers. This mechanism creates task-dependent asymmetric yielding while retaining reactive avoidance of the operator and the other robot. The method does not jointly optimize the trajectories of all controllers; instead, each robot computes its motion locally under task-level priority coordination. The proposed method was implemented in a collaborative assembly-support system involving one operator and two robotic arms. The experiments demonstrate inter-robot conflict resolution, avoidance of an unexpected human approach, and concurrent task execution during human-guided positioning of a heavy object. In the demonstrated task, the mean completion time was 203.7 s under the proposed control condition and 255.4 s under manual sequential control, corresponding to a 20.2% reduction for this specific experimental workflow. Finally, we discuss the practical implementation requirements, current limitations, and scope of applicability of the proposed framework. The current method relies on predefined task sequences, event-based sequence detection, and task-specific parameter design.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Task-priority-aware MPPI control for human–multi-robot collaborative assembly",
+      "figure_url": "./assets/papers/35ea5fd9097ec121b9e8.png",
+      "figure_alt": "Fig. 1",
       "authors": [
         "Satoshi Nakamura"
       ],
@@ -1557,7 +1557,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 5.78
+      "score": 5.78,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs40648-026-00357-2/MediaObjects/40648_2026_357_Fig1_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1186/s40648-026-00357-2"
     },
     {
       "id": "doi:10.1016/j.jss.2026.113113",
@@ -2206,8 +2208,8 @@
       "doi_url": "https://doi.org/10.1038/s41467-026-77681-z",
       "summary": "Active systems across scales, ranging from molecular machines to human crowds, are usually modeled as assemblies of self-propelled particles driven by internally generated forces. However, these models often assume memoryless dynamics. Here, guided by the example of living cells, which have recently been shown to display multi-timescale memory effects, we introduce a minimal theoretical framework that incorporates i...",
       "abstract": "Active systems across scales, ranging from molecular machines to human crowds, are usually modeled as assemblies of self-propelled particles driven by internally generated forces. However, these models often assume memoryless dynamics. Here, guided by the example of living cells, which have recently been shown to display multi-timescale memory effects, we introduce a minimal theoretical framework that incorporates internal state dynamics and environmental sensing into overdamped active particle models of cell migration. We show that when the self-propulsion depends on internal variables with their own complex dynamics–modulated by local environmental cues– environmental memory spontaneously emerges and gives rise to new classes of behaviours. These include memory-induced responses, adaptable localization in complex landscapes, suppression of motility-induced phase separation, and enhanced jamming transitions. Our results demonstrate how minimal information processing capabilities, intrinsic to nonequilibrium agents with internal states like living cells, can profoundly influence both individual and collective behaviours. This framework bridges cell-scale activity and large-scale intelligent motion in cell assemblies, and opens the way to the quantitative analysis and design of systems ranging from synthetic colloids to biological collectives and robotic swarms. Living cells can exhibit complex, multi-timescale memory effects influencing their motility and responses to environmental cues. Here, the authors introduce a minimal theoretical framework demonstrating that when active particles, modeled after cells, incorporate internal state dynamics and environmental sensing, emergent environmental memory spontaneously arises.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Emergent memory in cell-like active systems",
+      "figure_url": "./assets/papers/2e9edbd2daeeca52b305.png",
+      "figure_alt": "Fig. 3: Localization of memory particles in complex environments.",
       "authors": [
         "Marc Besse",
         "Raphaël Voituriez"
@@ -2229,7 +2231,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 8.4
+      "score": 8.4,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-77681-z/MediaObjects/41467_2026_77681_Fig3_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s41467-026-77681-z?error=cookies_not_supported&code=d6b964c1-56c4-424f-93dc-37c3ae991dc3"
     },
     {
       "id": "doi:10.1186/s43067-026-00407-0",
@@ -2240,8 +2244,8 @@
       "doi_url": "https://doi.org/10.1186/s43067-026-00407-0",
       "summary": "Abstract In recent years, the proliferation of autonomous systems at the edge—including robotic swarms, autonomous vehicles, and intelligent sensor networks—has highlighted the urgent need for resilient multi-agent planning under uncertain, decentralized conditions. Traditional multi-agent planning architectures typically assume stable communication links and complete observability, conditions that are rarely met in...",
       "abstract": "Abstract In recent years, the proliferation of autonomous systems at the edge—including robotic swarms, autonomous vehicles, and intelligent sensor networks—has highlighted the urgent need for resilient multi-agent planning under uncertain, decentralized conditions. Traditional multi-agent planning architectures typically assume stable communication links and complete observability, conditions that are rarely met in real-world deployments marked by dynamic network topologies, delayed information exchange, and partial observability. This paper introduces Dynamic Federated Multi-Agent Planning (DFMAP), a novel framework that integrates federated reinforcement learning (FRL) with partially observable Markov decision processes (POMDPs) for real-time decision-making in volatile edge environments. The proposed architecture enables agents to learn locally, share model updates without centralized coordination, and collaboratively build global planning policies even under intermittent connectivity. A probabilistic graph-based model tracks dynamic communication topology shifts, while an asynchronous aggregation strategy with staleness correction ensures robustness to network instability. Experiments conducted in both simulated and semi-realistic edge environments—covering decentralized robotic navigation and collaborative search—demonstrate DFMAP’s consistent superiority over centralized and naively decentralized baselines. Specifically, DFMAP achieves a task success rate of 92.5%, a cumulative reward of 121.8 ± 5.4 by training round 100, and a per-round communication overhead of only 15.2 MB, representing more than a 66% reduction relative to the centralized baseline. Under severe communication stress with 50% link dropout, reward degradation is held to just 11.0%, substantially below the 22.4% and 30.0% observed for competing methods.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Dynamic federated multi-agent planning under partial observability and network instability for real-time edge applications",
+      "figure_url": "./assets/papers/5872611e45e1b71bb0b4.png",
+      "figure_alt": "Fig. 1",
       "authors": [
         "Milad Rahmati",
         "Nima Rahmati"
@@ -2264,7 +2268,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 6.08
+      "score": 6.08,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs43067-026-00407-0/MediaObjects/43067_2026_407_Fig1_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1186/s43067-026-00407-0"
     },
     {
       "id": "doi:10.1038/s41598-026-71833-3",
@@ -2422,8 +2428,8 @@
       "doi_url": "https://doi.org/10.1038/s41467-026-77743-2",
       "summary": "Morphological computing-the use of a robot’s physical design to facilitate task execution-has emerged as a promising strategy in swarm robotics. Here, through experiments and simulations, we show that its success critically depends on both the robots’ control policy and the details of their physical design. We study a swarm of Kilobots embedded in an exoskeleton whose geometry controls the propensity of robots to al...",
       "abstract": "Morphological computing-the use of a robot’s physical design to facilitate task execution-has emerged as a promising strategy in swarm robotics. Here, through experiments and simulations, we show that its success critically depends on both the robots’ control policy and the details of their physical design. We study a swarm of Kilobots embedded in an exoskeleton whose geometry controls the propensity of robots to align or anti-align with the external force they experience. Experimentally, the contrast between the two morphologies in the success rate of a simple phototactic task becomes dramatic when stopping is forbidden and robots can only slow down. Using a faithful physical model of the robots’ self-aligning dynamics, numerical simulations reveal that efficient phototaxis requires fine tuning of the self-alignment strength around a sweet spot. More broadly, varying this parameter unlocks a rich repertoire of collective behaviors. Careful design of robots morphology leverage interactions for collective behaviors from little computation as demonstrated through experimental realizations and faithful simulations of a swarm of robots performing phototaxis.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Leveraging design for collective phototaxis in morphological swarm robotics",
+      "figure_url": "./assets/papers/409d3cc90c65413cfcba.png",
+      "figure_alt": "Fig. 3: Fraction of the swarm in the light region (red) and mean alignment (blue), averaged over the last 100τ of a 1000τ duration experiment, as a function of ϵ/τn, for the simulated phototactic aggregation task.",
       "authors": [
         "Jérémy Fersula",
         "Nicolas Bredèche",
@@ -2448,7 +2454,9 @@
         "structure_design",
         "algorithm_design"
       ],
-      "score": 8.78
+      "score": 8.78,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-77743-2/MediaObjects/41467_2026_77743_Fig3_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s41467-026-77743-2?error=cookies_not_supported&code=83cea69a-6d55-48e4-9b3d-708f2efb3dc1"
     },
     {
       "id": "doi:10.1007/s42979-026-05297-7",
@@ -2459,8 +2467,8 @@
       "doi_url": "https://doi.org/10.1007/s42979-026-05297-7",
       "summary": "Abstract Visual Place Recognition (VPR) is a cornerstone of long-term robotic autonomy; however, maintaining performance in non-stationary environments requires robust Continual Learning (CL) to mitigate catastrophic forgetting. While conventional CL paradigms often assume internal access to prior models, the emergence of decentralized multi-robot ecosystems demands a transition toward knowledge transfer between het...",
       "abstract": "Abstract Visual Place Recognition (VPR) is a cornerstone of long-term robotic autonomy; however, maintaining performance in non-stationary environments requires robust Continual Learning (CL) to mitigate catastrophic forgetting. While conventional CL paradigms often assume internal access to prior models, the emergence of decentralized multi-robot ecosystems demands a transition toward knowledge transfer between heterogeneous, black-box systems. This study proposes a sophisticated multi-robot CL framework that facilitates autonomous knowledge acquisition from black-box VPR models encountered during exploration. To ensure the framework’s relevance to state-of-the-art systems, we integrate a combinatorial partitioning strategy inspired by CPlaNet, which enables high-resolution spatial discretization while maintaining training data density, and leverage the \"place-aware\" Stage 1 encoder of Pair-VPR as a robust visual backbone. Central to our methodology is the strategic application of Membership Inference Attacks (MIA) to reconstruct high-fidelity pseudo-training sets, thereby enabling data-free knowledge distillation. To circumvent the sampling inefficiency inherent in high-dimensional latent spaces, we introduce specialized sampling strategies, including Reciprocal Rank and Entropy-based filtering. Extensive experimental validation using the NCLT dataset demonstrates that our approach not only effectively mitigates forgetting but also exhibits remarkable resilience to complex spatial partitions and advanced transformer-based feature representations. These findings confirm the framework’s capacity to facilitate decentralized collaborative learning under strict data-exclusive and black-box constraints in the next generation of autonomous robotic networks.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Collaborative Continual Communicative Learning for Black-Box Visual Place Recognition via Place-Aware Distillation",
+      "figure_url": "./assets/papers/3f97fc852c7e7dca8ccc.png",
+      "figure_alt": "Fig. 1",
       "authors": [
         "Kenta Tsukahara",
         "Tanaka Kanji",
@@ -2487,7 +2495,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 8.4
+      "score": 8.4,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs42979-026-05297-7/MediaObjects/42979_2026_5297_Fig1_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1007/s42979-026-05297-7"
     },
     {
       "id": "doi:10.64235/40fkfs25",
@@ -3083,8 +3093,8 @@
       "doi_url": "https://doi.org/10.1007/s10791-026-10499-x",
       "summary": "The field of swarm robotics has become more and more popular as a decentralised solution to problems of coordination among multiple independent agents. The recent developments in multi-agent reinforcement learning (MARL) have made it possible for agents to learn cooperative behaviours when operating in a dynamic environment and even outperform the traditional rule-based or heuristic coordination strategies. However,...",
       "abstract": "The field of swarm robotics has become more and more popular as a decentralised solution to problems of coordination among multiple independent agents. The recent developments in multi-agent reinforcement learning (MARL) have made it possible for agents to learn cooperative behaviours when operating in a dynamic environment and even outperform the traditional rule-based or heuristic coordination strategies. However, coordination in practical MARL-based swarms is still difficult, as many approaches are not scalable, have high communication cost, unstable coordination with high swarm density, and lack integration of efficiency, robustness, and adaptability. This paper introduces a multi-agent reinforcement learning framework for scalable and communication-efficient swarm coordination called RoboSwarmCoordAI, which surpasses the limitations of the above approaches. The proposed framework uses three major components: a state-encoding module that is aware of the coordination requirements, an adaptive neighbourhood-filtering module to avoid redundant inter-agent communication and a hybrid reward function that weights local robot goals with respect to the global swarm performance. RoboSwarmCoordAI uses a centralised training and decentralised execution approach where agents can leverage global information for training, but local information for execution. The framework was tested in simulation in cooperative exploration, distributed target search and task allocation scenarios. When evaluated within the range of simulations tested, RoboSwarmCoordAI outperformed baseline methods with a task success rate of 95.8%, 2.7 collisions per episode, and an efficiency score of 91.6. The analyses of scalability and communication efficiency also demonstrate the stable coordination performance up to 50 robots, at a lower communications cost. As a result, it was found that RoboSwarmCoordAI is a promising simulation-validated framework for adaptive swarm coordination, and future work will further validate RoboSwarmCoordAI on larger swarms and physical robotic platforms.",
-      "figure_url": "",
-      "figure_alt": "Main figure for RoboSwarmCoordAI enables scalable swarm robotics coordination using multi agent reinforcement learning",
+      "figure_url": "./assets/papers/ed297e030ef074a9c8cd.png",
+      "figure_alt": "Fig. 1",
       "authors": [
         "Surendra Reddy Vinta",
         "Rakesh Phanindra Akula",
@@ -3111,7 +3121,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 5.0
+      "score": 5.0,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10791-026-10499-x/MediaObjects/10791_2026_10499_Fig1_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1007/s10791-026-10499-x"
     },
     {
       "id": "doi:10.3390/s26175514",
@@ -3271,8 +3283,8 @@
       "doi_url": "https://doi.org/10.1038/s41467-026-76768-x",
       "summary": "Collective robotic systems can exhibit emergent behaviors through local interactions among individual robots, yet most existing platforms rely on sophisticated individuals or complex control strategies to achieve diverse functionalities. Here, we present TriHex, a minimalist robotic unit capable of shape-shifting between triangular and hexagonal shapes using single-motor actuation. Despite its simplicity, collective...",
       "abstract": "Collective robotic systems can exhibit emergent behaviors through local interactions among individual robots, yet most existing platforms rely on sophisticated individuals or complex control strategies to achieve diverse functionalities. Here, we present TriHex, a minimalist robotic unit capable of shape-shifting between triangular and hexagonal shapes using single-motor actuation. Despite its simplicity, collectives of TriHex units display remarkable behavioral diversity through two control dimensions: system configuration and individual unit’s shape-shifting phase. By adjusting these parameters, a static tessellated assembly’s stiffness can be programmed. In discrete assemblies, the system transitions between solid-like and liquid-like states and achieves programmable viscosity. When arranged in cellular configurations with a pre-designed phase difference, the system realizes controllable porosity. Additionally, shape changes enable coordinated collective locomotion, reconfiguration and integrating capabilities of object gripping and transportation. Analytical models and numerical simulations are developed that successfully capture and predict the TriHex collective’s behavior. This work demonstrates that complex collective behaviors can emerge from relatively simple individual units, offering insights for designing scalable and adaptive robotic matter. TriHex robots employ a single-motor mechanism to dynamically transform between triangular and hexagonal shapes, enabling diverse and adaptive collective behaviors in robotic materials.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Anisotropic shape-shifting robotic matter enabling versatile collective behaviors",
+      "figure_url": "./assets/papers/2712cca1a514428de3a4.png",
+      "figure_alt": "Fig. 1: Overview of the TriHex system and its capabilities.",
       "authors": [
         "Yunjia Zhang",
         "Chenxuan Huang",
@@ -3298,7 +3310,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 9.18
+      "score": 9.18,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-76768-x/MediaObjects/41467_2026_76768_Fig1_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s41467-026-76768-x?error=cookies_not_supported&code=21c09d3a-6eb6-4ab5-b9a2-465cfc13e29a"
     },
     {
       "id": "doi:10.1007/s11432-025-4909-6",
@@ -3377,8 +3391,8 @@
       "doi_url": "https://doi.org/10.1007/s44443-026-01192-6",
       "summary": "Multi-robot task allocation (MRTA) is an essential problem in multi-robot systems. It is worth noting that letting the robots replace humans to perform some tasks in severe environments has long been an important expectation. In severe environments, the abilities of the robots may also be influenced. Some previous studies have analyzed the influence of environments on the abilities of robots. However, they just try...",
       "abstract": "Multi-robot task allocation (MRTA) is an essential problem in multi-robot systems. It is worth noting that letting the robots replace humans to perform some tasks in severe environments has long been an important expectation. In severe environments, the abilities of the robots may also be influenced. Some previous studies have analyzed the influence of environments on the abilities of robots. However, they just try to present robust task allocation strategy instead of discussing the situation where the ability of a robot can be recovered after the robot is repaired. In this paper, we analyze the multi-robot task allocation problem where the abilities of robots will decay over time but the robots can select to return to the base and be repaired. There are two new challenges: (1) the size of the solution space becomes much larger because of the additional decisions about repairs; (2) the plan and expected time cost of a robot will be influenced by other robots because of repair resource preemption. The second challenge means that the time complexity of accurately calculating the expected time cost will be larger. We fully analyze this problem and present a hybrid algorithm based on collaborative discrete bee colony algorithm, simulated annealing and two heuristic modules. In experiments, the comparative analyses show that the hybrid algorithm significantly outperforms the benchmark strategies. The ablation experiments show that different modules of the hybrid algorithm respectively play the most important role in different cases.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Task allocation and robot repair strategy optimization in multi-robot system with ability decay",
+      "figure_url": "./assets/papers/ab4da3599c6f63e78ea1.png",
+      "figure_alt": "figure a",
       "authors": [
         "Fuhan Yan",
         "Yang Wang",
@@ -3400,7 +3414,9 @@
         "swarm",
         "system"
       ],
-      "score": 8.78
+      "score": 8.78,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs44443-026-01192-6/MediaObjects/44443_2026_1192_Figa_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1007/s44443-026-01192-6"
     },
     {
       "id": "doi:10.1038/s44182-026-00111-1",
@@ -3411,8 +3427,8 @@
       "doi_url": "https://doi.org/10.1038/s44182-026-00111-1",
       "summary": "Achieving coordinated collective behaviors in modular robotic systems under a single global input remains challenging, particularly for forming and manipulating structures beyond planar configurations. Here, we introduce magnetic modular cubes with face-specific magnetic encoding across all six faces and investigate their assembly and locomotion under uniform global magnetic field control. Two cube types, each with...",
       "abstract": "Achieving coordinated collective behaviors in modular robotic systems under a single global input remains challenging, particularly for forming and manipulating structures beyond planar configurations. Here, we introduce magnetic modular cubes with face-specific magnetic encoding across all six faces and investigate their assembly and locomotion under uniform global magnetic field control. Two cube types, each with a 2 mm edge length and embedded with ten Neodymium micro-magnets, are designed with complementary face-specific encoding that enables multimodal locomotion, selective 2D assembly, and 3D assembly through vertical stacking. To coordinate multiple module groups, we introduce a multiplex workspace that exploits boundary-mediated symmetry breaking to generate differentiated manipulation and assembly behaviors without local sensing or agent-specific control. Using a triaxial Helmholtz coil system, we demonstrate parallel 2D assembly, structure-level pivot walking with per-cycle displacement approaching half the structure length, controlled in-plane rotation, rolling locomotion reaching approximately three body lengths per cycle, and tilted pivot walking for vertical stacking of assembled structures. Dipole interaction modeling and quantitative locomotion analysis relate these behaviors to actuation geometry and magnetic interactions. These results establish a framework for coordinated multimodal assembly and locomotion of modular structures under global magnetic control with applications in programmable matter and collective microrobotic systems.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Collective assembly and shape formation of modular cubes under uniform global magnetic control",
+      "figure_url": "./assets/papers/d0ebe6ca3a0181acc1f2.png",
+      "figure_alt": "Fig. 1: Modular cubes and multiplex experimental workspace.",
       "authors": [
         "Anuruddha Bhattacharjee",
         "Min Jun Kim"
@@ -3433,7 +3449,9 @@
         "system",
         "theory"
       ],
-      "score": 7.58
+      "score": 7.58,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44182-026-00111-1/MediaObjects/44182_2026_111_Fig1_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s44182-026-00111-1?error=cookies_not_supported&code=da45f92d-beb2-450b-bf00-2e600dce14ee"
     },
     {
       "id": "doi:10.1007/s44430-026-00039-z",
@@ -3444,8 +3462,8 @@
       "doi_url": "https://doi.org/10.1007/s44430-026-00039-z",
       "summary": "Abstract Industrial cyber-physical systems increasingly rely on coordinated multi-robot fleets to perform manufacturing, logistics, and assembly tasks within shared workspaces. Achieving efficient task completion while limiting inter-robot collisions remains challenging as fleet size and interaction density increase. This paper presents a safety-aware heuristic coordination framework evaluated in a simulated industr...",
       "abstract": "Abstract Industrial cyber-physical systems increasingly rely on coordinated multi-robot fleets to perform manufacturing, logistics, and assembly tasks within shared workspaces. Achieving efficient task completion while limiting inter-robot collisions remains challenging as fleet size and interaction density increase. This paper presents a safety-aware heuristic coordination framework evaluated in a simulated industrial CPS environment based on the Multi-Agent Particle Environment. Five coordination policies are examined: Random navigation, Greedy nearest-workstation navigation, Greedy navigation with artificial potential-field repulsion, Optimal Reciprocal Collision Avoidance, and a composite Safety-Augmented Coordination Policy combining proportional navigation, static workstation assignment, artificial potential-field repulsion, and a manually defined four-dimensional communication vector. Experiments conducted over 30 paired episodes with four robots showed that Greedy achieved 100% ever-reached workstation coverage and simultaneous full coverage in 97% of the episodes. SACP achieved 85% ever-reached coverage and a 50% full-coverage success rate but recorded a higher collision frequency than Random and Greedy, indicating that its repulsion and communication mechanisms did not consistently improve collision avoidance under the tested configuration. Greedy+APF and ORCA provided stronger reactive baselines for interpreting the task-performance and collision behavior of SACP. Communication activity varied across navigation, collision-proximity, and workstation-arrival phases. Scalability experiments involving two to six robots showed increasingly negative normalized reward and higher collision exposure in the larger tested configurations, although no formal scaling law was established. The findings demonstrate the limitations of the current heuristic integration and support further research on dynamic task assignment, controlled component evaluation, stronger collision-avoidance mechanisms, learned communication, and end-to-end MARL training.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Safety-aware multi-robot coordination in industrial cyber-physical systems using potential fields and handcrafted communication",
+      "figure_url": "./assets/papers/1ce7329788f93fe37103.png",
+      "figure_alt": "Fig. 2",
       "authors": [
         "Bernard Kyiewu",
         "Clinton Amponsah",
@@ -3468,7 +3486,9 @@
         "swarm",
         "system"
       ],
-      "score": 5.98
+      "score": 5.98,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs44430-026-00039-z/MediaObjects/44430_2026_39_Fig2_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1007/s44430-026-00039-z"
     },
     {
       "id": "doi:10.34133/cesci.0025",
@@ -3613,8 +3633,8 @@
       "doi_url": "https://doi.org/10.1038/s41467-026-76408-4",
       "summary": "Abstract To operate autonomously, minimal robot swarms must make timely and reliable collective decisions despite noisy individual sensing and severe constraints on communication, computation, and memory. Achieving this capability could expand their use in applications such as healthcare, disaster response, and environmental monitoring. Here, we study how such swarms can rapidly and reliably reach consensus on the b...",
       "abstract": "Abstract To operate autonomously, minimal robot swarms must make timely and reliable collective decisions despite noisy individual sensing and severe constraints on communication, computation, and memory. Achieving this capability could expand their use in applications such as healthcare, disaster response, and environmental monitoring. Here, we study how such swarms can rapidly and reliably reach consensus on the best among n discrete options by comparing two canonical mechanisms of opinion dynamics—direct-switch and cross-inhibition—simple yet effective rules for collective information processing observed in biological systems across scales, from neural populations to insect colonies. We generalise existing mean-field models by incorporating asocial biases that influence opinion dynamics. While swarms using direct-switch reliably select the best option in the absence of asocial dynamics, their performance deteriorates when such biases are introduced, often leading to decision deadlocks. In contrast, bio-inspired cross-inhibition enables faster, more cohesive, robust, and scalable decisions across a wide range of biased conditions. Our findings provide theoretical and practical insights into the coordination of minimal swarms, with implications for a broad class of decentralised decision-making systems across biology and engineering.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Bio-inspired decision making in robot swarms under biases",
+      "figure_url": "./assets/papers/3eba23a4d47bfbcfc8a0.png",
+      "figure_alt": "Fig. 1: Asocial dynamics in robot collective decision-making.",
       "authors": [
         "Raina Zakir",
         "Timotéo Carletti",
@@ -3638,7 +3658,9 @@
         "system",
         "theory"
       ],
-      "score": 9.2
+      "score": 9.2,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-026-76408-4/MediaObjects/41467_2026_76408_Fig1_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s41467-026-76408-4?error=cookies_not_supported&code=2e747176-3c59-4004-a250-d287cf6ed7ef"
     },
     {
       "id": "doi:10.1016/j.tcs.2026.116196",
@@ -3683,8 +3705,8 @@
       "doi_url": "https://doi.org/10.1007/s10514-026-10261-8",
       "summary": "Abstract In swarm robotics, stigmergy (indirect communication through changes to the environment) offers an alternative to direct communication and centralised control when these are unavailable. We investigate whether stigmergy alone can solve a group-formation task, namely controlling the number of robots that gather into a group. To this end, a leader robot lays a phosphorescent trail by exciting the arena surfac...",
       "abstract": "Abstract In swarm robotics, stigmergy (indirect communication through changes to the environment) offers an alternative to direct communication and centralised control when these are unavailable. We investigate whether stigmergy alone can solve a group-formation task, namely controlling the number of robots that gather into a group. To this end, a leader robot lays a phosphorescent trail by exciting the arena surface with ultraviolet light; the brightness of the trail decays over time, and its initial intensity encodes the target group size. Following robots join the trail and leave it once the measured brightness falls below a threshold, so that the group size is regulated without any direct inter-robot communication. We demonstrate this mechanism as a proof of concept on real hardware, using a swarm of small Dezibot robots, and show that groups of a specified size form and are maintained over an extended period of time.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Robotic group formation with phosphorescent trails",
+      "figure_url": "./assets/papers/c1c9b9215f86f1ba58e1.png",
+      "figure_alt": "Fig. 1",
       "authors": [
         "Tobias Jagla",
         "David Schulte",
@@ -3706,7 +3728,9 @@
         "system",
         "theory"
       ],
-      "score": 8.38
+      "score": 8.38,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10514-026-10261-8/MediaObjects/10514_2026_10261_Fig1_HTML.png",
+      "figure_page_url": "https://link.springer.com/article/10.1007/s10514-026-10261-8"
     },
     {
       "id": "doi:10.1002/advs.76898",
@@ -3852,8 +3876,8 @@
       "doi_url": "",
       "summary": "A phase-decomposed reinforcement learning framework for cooperative lunar cargo transport with distributed robot units, evaluated in simulation and hardware experiments.",
       "abstract": "Modular reconfigurable robotic systems provide a scalable solution for cooperative surface operations in future lunar missions.",
-      "figure_url": "",
-      "figure_alt": "Main figure for distributed multi robot lunar cargo transportation",
+      "figure_url": "./assets/papers/a8b071f289e645217980.png",
+      "figure_alt": "Refer to caption",
       "authors": [
         "Ashutosh Mishra",
         "Elian Neppel",
@@ -3876,7 +3900,9 @@
         "control",
         "system"
       ],
-      "score": 4.5
+      "score": 4.5,
+      "figure_source_url": "https://arxiv.org/html/2607.00160v1/figures/Fig1.png",
+      "figure_page_url": "https://arxiv.org/html/2607.00160v1"
     },
     {
       "id": "doi:10.48550/arxiv.2606.01597",
@@ -4381,8 +4407,8 @@
       "doi_url": "https://doi.org/10.1038/s41467-025-61985-7",
       "summary": "Nature Communications 提出 Swarm Cooperation Model，把元启发式优化与共识理论合并为可作为虚拟优化器和多车控制器的群体协作模型，并在 AUV 污染物定位任务中验证概念。",
       "abstract": "The paper proposes a swarm cooperation model that can act as both virtual optimizer and vehicle controller by merging meta-heuristic methods with consensus theory. It reports higher or equal success rates than benchmark methods on many low-dimensional landscapes for small swarms, and demonstrates a computational proof of concept for autonomous underwater vehicles localizing contaminants in a dynamic marine environment.",
-      "figure_url": "",
-      "figure_alt": "Main figure for A collective intelligence model for swarm robotics applications",
+      "figure_url": "./assets/papers/b92318d610517bc4d363.png",
+      "figure_alt": "Fig. 1: Example of swarm cooperation process.",
       "authors": [
         "A. Nitti",
         "M. D. de Tullio",
@@ -4406,7 +4432,9 @@
       "content_types": [
         "algorithm_design"
       ],
-      "score": 9.55
+      "score": 9.55,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-61985-7/MediaObjects/41467_2025_61985_Fig1_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s41467-025-61985-7?error=cookies_not_supported&code=07d9bc38-b163-4384-9b5d-5702e138911e"
     },
     {
       "id": "doi:10.1109/access.2025.3559424",
@@ -4453,8 +4481,8 @@
       "doi_url": "",
       "summary": "A transformable modular robot equips every module with actuation, power, and control, then uses a hierarchical central-pattern-generator controller to switch between independent and synchronized collective locomotion. Simulation and hardware experiments evaluate single-, two-, and four-module configurations.",
       "abstract": "The system combines independently mobile modules with high-level CPG synchronization for coordinated multi-module locomotion and autonomous reconfiguration.",
-      "figure_url": "",
-      "figure_alt": "Main figure for Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion",
+      "figure_url": "./assets/papers/972245c57eaf55900a73.png",
+      "figure_alt": "Refer to caption",
       "authors": [
         "Jiayu Ding",
         "Rohit Jakkula",
@@ -4479,7 +4507,9 @@
         "structure_design",
         "algorithm_design"
       ],
-      "score": 8.4
+      "score": 8.4,
+      "figure_source_url": "https://arxiv.org/html/2503.13674v2/Fig2_Kinematic.png",
+      "figure_page_url": "https://arxiv.org/html/2503.13674"
     },
     {
       "id": "doi:10.1002/rob.70092",
@@ -4768,8 +4798,8 @@
       "doi_url": "https://doi.org/10.1038/s41467-024-47788-2",
       "summary": "A Nature Communications paper on snail-inspired robotic swarms with a hybrid connector that balances free mobility and strong adhesion for outdoor unstructured environments.",
       "abstract": "This work presents a snail-inspired robotic swarm system with a two-mode connector.",
-      "figure_url": "",
-      "figure_alt": "Main figure for snail-inspired robotic swarms",
+      "figure_url": "./assets/papers/31cce64ef7d77739adb4.png",
+      "figure_alt": "Fig. 2: Overview of the inspiration.",
       "authors": [
         "Da Zhao",
         "Haobo Luo",
@@ -4794,7 +4824,9 @@
         "structure_design",
         "algorithm_design"
       ],
-      "score": 8.6
+      "score": 8.6,
+      "figure_source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-024-47788-2/MediaObjects/41467_2024_47788_Fig2_HTML.png",
+      "figure_page_url": "https://www.nature.com/articles/s41467-024-47788-2?error=cookies_not_supported&code=c0acfdf0-c21b-4a60-bb35-c0d171377ba8"
     },
     {
       "id": "doi:10.1177/02783649241286491",
