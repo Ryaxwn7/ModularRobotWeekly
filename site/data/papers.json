@@ -1,10 +1,234 @@
 {
-  "updated_at": "2026-11-10T12:44:05",
+  "updated_at": "2026-11-12T20:38:50",
   "repository_url": "https://github.com/Ryaxwn7/ModularRobotWeekly",
   "papers": [
     {
+      "id": "doi:10.1007/s10846-026-02477-8",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "Deep Learning-Based Fast Inference of Team Performance in Heterogeneous Multi-Robot Systems",
+      "url": "https://doi.org/10.1007/s10846-026-02477-8",
+      "doi": "10.1007/s10846-026-02477-8",
+      "doi_url": "https://doi.org/10.1007/s10846-026-02477-8",
+      "summary": "Abstract The effectiveness of multi-robot teams depends on various factors, including the size of the team, the capabilities of each individual robot, the synergies between them, and the coordination strategies employed. However, current studies on multi-robot task allocation often assume pre-established teams, which results in a focus on optimizing resources rather than designing teams from a diverse range of robot...",
+      "abstract": "Abstract The effectiveness of multi-robot teams depends on various factors, including the size of the team, the capabilities of each individual robot, the synergies between them, and the coordination strategies employed. However, current studies on multi-robot task allocation often assume pre-established teams, which results in a focus on optimizing resources rather than designing teams from a diverse range of robots or selecting the most suitable team from a set of potential configurations. Our research focuses on predicting a team’s performance in a given mission based on its composition. This task has significant implications for selecting or designing multi-robot teams, as it helps to optimize performance while minimizing costs. To this end, we propose a novel fast inference method for estimating team performance using supervised learning in multi-robot task allocation situations. We considered a general multi-robot task allocation issue for spatially distributed missions. For evaluation purposes, we used a large dataset of varied problem instances, two different solvers, and five different team performance metrics derived from the solutions computed by these solvers. The results demonstrate that long short-term memory recurrent neural networks, aided by convolutional layers, can accurately predict team performance metrics such as makespans and intra-team communication metrics derived from the solutions obtained by the two solvers. We also highlight the efficacy of transfer learning in fine-tuning models from a simpler sub-optimal solver to a more complex, optimal solver, demonstrating improved accuracy with reduced training set size and computational burden.",
+      "abstract_source": "crossref",
+      "abstract_source_url": "https://doi.org/10.1007/s10846-026-02477-8",
+      "figure_url": "",
+      "figure_alt": "Main figure for Deep Learning-Based Fast Inference of Team Performance in Heterogeneous Multi-Robot Systems",
+      "authors": [
+        "Mohammed Yusuf Ansari",
+        "Eduardo Feo Flushing",
+        "Mohammed Ishaq",
+        "Mohammed Yaqoob",
+        "Gianni A. Di Caro"
+      ],
+      "published": "2026-11-11",
+      "venue": "Journal of Intelligent &amp; Robotic Systems",
+      "publisher": "Springer Science and Business Media LLC",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 5.8
+    },
+    {
+      "id": "doi:10.3390/buildings16224496",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "A Techno-Economic Decision Support Framework for Construction Swarm Robotics: An Analysis of Value-Blind vs. Value-Aware Control Algorithms",
+      "url": "https://doi.org/10.3390/buildings16224496",
+      "doi": "10.3390/buildings16224496",
+      "doi_url": "https://doi.org/10.3390/buildings16224496",
+      "summary": "While the adoption of swarm robotics is accelerating in the dynamic and uncertain environment of the construction industry, conventional path-planning algorithms based on shortest physical distance induce severe bottlenecks and schedule delays during large-scale swarm operations. To expand the control paradigm of smart construction automation by integrating ‘physical shortest-distance optimization’ with ‘financial v...",
+      "abstract": "While the adoption of swarm robotics is accelerating in the dynamic and uncertain environment of the construction industry, conventional path-planning algorithms based on shortest physical distance induce severe bottlenecks and schedule delays during large-scale swarm operations. To expand the control paradigm of smart construction automation by integrating ‘physical shortest-distance optimization’ with ‘financial value maximization,’ this study proposes a ‘Cost-Topology Map’ that translates site uncertainties into economic risk costs. An evaluation pipeline is established by integrating Techno-Economic Assessment (TEA) techniques with a Quantitative Technology-Organization-Environment (TOE) Framework, directly linking engineering simulation metrics (makespan, success rate) to corporate financial cash flows (net profit, ROI). A total of 875,000 macroscopic, scenario-based Monte Carlo simulations were conducted to evaluate the techno-economic consequences of the literature-informed behavioral parameterizations representing seven major swarm control paradigms (Random Walk, APF, Voronoi, Flocking, Digital Pheromone, Market-based, and MARL) under varying sensor noise levels (5–30%) and swarm sizes (50–1000 units). The analysis reveals that only the value-aware Market-based and MARL models preemptively secured high-value tasks, achieving meaningful profitability up to the 500-unit scale (N = 500) and indicating a comparative techno-economic advantage over value-blind classic profiles within the modeled framework. Conversely, in a 1000-unit scale-up environment (N = 1000), exponentially increasing fleet operating costs and bottleneck delay penalties drove even the value-aware MARL profile beyond its break-even threshold into a financial deficit, quantitatively demonstrating the financial impact of the ‘Scale-up Trap’. Furthermore, under complex extreme conditions with severe sensor noise (30%), the Market-based profile experienced a pronounced financial deficit (−93.4 million KRW) due to distorted bidding information, whereas the MARL profile demonstrated stronger downside-risk mitigation by limiting the deficit (−64.5 million KRW) under the parameterized nonlinear policy assumptions. This study holds academic significance by proposing an objective evaluation model that supports practical executive decision-making when adopting large-scale swarm robotics, translating engineering performance gaps into projected financial outcomes.",
+      "abstract_source": "crossref",
+      "abstract_source_url": "https://doi.org/10.3390/buildings16224496",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Techno-Economic Decision Support Framework for Construction Swarm Robotics: An Analysis of Value-Blind vs. Value-Aware Control Algorithms",
+      "authors": [
+        "Sanggyu Lee",
+        "Jihae Suh",
+        "Bum-Soo Kim"
+      ],
+      "published": "2026-11-11",
+      "venue": "Buildings",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "swarm",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.16
+    },
+    {
+      "id": "doi:10.54254/2755-2721/2026.38719",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "A Review of Path Planning Methods for Mobile Robots",
+      "url": "https://doi.org/10.54254/2755-2721/2026.38719",
+      "doi": "10.54254/2755-2721/2026.38719",
+      "doi_url": "https://doi.org/10.54254/2755-2721/2026.38719",
+      "summary": "Path planning is an indispensable core problem in the autonomous navigation of mobile robots. Whether a safe and efficient trajectory can be planned directly determines the usability of robots in scenarios such as warehousing, delivery, medical assistance and autonomous driving. Scholars at home and abroad have accumulated abundant research results on this problem. Nevertheless, existing methods have respective trad...",
+      "abstract": "Path planning is an indispensable core problem in the autonomous navigation of mobile robots. Whether a safe and efficient trajectory can be planned directly determines the usability of robots in scenarios such as warehousing, delivery, medical assistance and autonomous driving. Scholars at home and abroad have accumulated abundant research results on this problem. Nevertheless, existing methods have respective trade-offs in application scope and performance limits, and no universally recognized optimal solution has been reached so far. This paper sorts out relevant methods. These methods are divided into two categories: traditional methods and intelligent methods. The traditional category includes graph search algorithms (Dijkstra, A*, D*), artificial potential field methods and sampling-based planning algorithms (PRM, RRT, RRT*). The intelligent category covers intelligent optimization methods represented by genetic algorithms, particle swarm optimization and ant colony optimization, as well as two data-driven approaches: reinforcement learning and deep learning. The core idea, typical application scenarios and limitations of each type of method are elaborated one by one. Finally, a horizontal comparison table is provided, and the author puts forward observations on several noteworthy research directions including hybrid planning frameworks, multi-robot coordination and uncertainty modelling.",
+      "abstract_source": "openalex",
+      "abstract_source_url": "https://doi.org/10.54254/2755-2721/2026.38719",
+      "figure_url": "",
+      "figure_alt": "Main figure for A Review of Path Planning Methods for Mobile Robots",
+      "authors": [
+        "Liyuan Wang"
+      ],
+      "published": "2026-11-10",
+      "venue": "Applied and Computational Engineering",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "review",
+        "swarm",
+        "theory"
+      ],
+      "content_types": [
+        "review"
+      ],
+      "score": 4.8
+    },
+    {
+      "id": "doi:10.3390/machines14111322",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "PC-MAPPO: Phase-Conditioned Rollout Buffering for Multi-Robot Collaborative Motion Planning",
+      "url": "https://doi.org/10.3390/machines14111322",
+      "doi": "10.3390/machines14111322",
+      "doi_url": "https://doi.org/10.3390/machines14111322",
+      "summary": "Phase-dependent experience creates a practical tension between formation maintenance and obstacle-aware navigation in multi-robot motion planning. This paper presents PC-MAPPO, a phase-conditioned rollout framework for multi-robot formation and obstacle-aware navigation in the evaluated simulation setting. The method retains the Multi-Agent Proximal Policy Optimization (MAPPO) optimizer and reorganizes on-policy dat...",
+      "abstract": "Phase-dependent experience creates a practical tension between formation maintenance and obstacle-aware navigation in multi-robot motion planning. This paper presents PC-MAPPO, a phase-conditioned rollout framework for multi-robot formation and obstacle-aware navigation in the evaluated simulation setting. The method retains the Multi-Agent Proximal Policy Optimization (MAPPO) optimizer and reorganizes on-policy data through separate formation and navigation buffers, concatenated batch updates, and effective 0.5/0.5 transition weights whenever an update follows formation detection. Graph Attention Networks (GATs) encode a fixed scenario-specific interaction graph, while an Artificial Potential Field (APF)-inspired directional layer blends target and repulsive directions during obstacle-aware training and decentralized execution. The methodological contribution is an end-to-end phase-conditioned MAPPO formulation that carries an environment-derived phase label through rollout storage, phase-wise Generalized Advantage Estimation (GAE), advantage normalization, and loss aggregation, and couples this formulation to fixed-graph relational encoding and directional guidance. We evaluate the complete implementation in static fields with 0, 3, 5, and 7 obstacles, dynamic-obstacle scenes, and three- and four-agent narrow passages, using combined-implementation ablations. Additional multi-run ablations, coordination-pressure tests, topology comparisons, APF-mechanism comparisons, and static stress tests characterize the contribution, the conditions in which it is supported, and its operating boundaries.",
+      "abstract_source": "crossref",
+      "abstract_source_url": "https://doi.org/10.3390/machines14111322",
+      "figure_url": "",
+      "figure_alt": "Main figure for PC-MAPPO: Phase-Conditioned Rollout Buffering for Multi-Robot Collaborative Motion Planning",
+      "authors": [
+        "Siqi Sun",
+        "Hualong Yu",
+        "Boyin Jin",
+        "Qi Wang"
+      ],
+      "published": "2026-11-08",
+      "venue": "Machines",
+      "publisher": "MDPI AG",
+      "source": "crossref",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "algorithm",
+        "control",
+        "structure",
+        "swarm"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.38
+    },
+    {
+      "id": "title:design and development of a reconfigurable multi-mode transformer robot for ground and aerial operations",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "Design and Development of a Reconfigurable Multi-Mode Transformer Robot for Ground and Aerial Operations",
+      "url": "https://ijerst.org/index.php/ijerst/article/view/4825",
+      "doi": "",
+      "doi_url": "",
+      "summary": "The TRANSFORMER-X combines the engineering design of a reconfigurable robotic platform, with the normal ground model, expanded ground model and aerial model. The final system level architecture comprises a set of requirements for mechanical reconfiguration, operator controlled transition between states, ground drive coordination, aerial stabilisation and safety checks based on orientation. It also co-ordinates a com...",
+      "abstract": "The TRANSFORMER-X combines the engineering design of a reconfigurable robotic platform, with the normal ground model, expanded ground model and aerial model. The final system level architecture comprises a set of requirements for mechanical reconfiguration, operator controlled transition between states, ground drive coordination, aerial stabilisation and safety checks based on orientation. It also co-ordinates a common supervisory control mechanism to stop motion, to verify the setup and to switch subsystems on. The design study is conducted based on kinematic, centre of gravity, thrust to weight and energy relations. The operator interface looks like a website, and allows you to choose operating modes, send control commands, check status and see the transformation. The paper describes the known architecture, interface design and requirements for formal verification. The hardware performance of mobility and experimental flight needs to be measured with instrumented prototypes and cannot be derived from the illustration of the interface.",
+      "abstract_source": "openalex",
+      "abstract_source_url": "https://ijerst.org/index.php/ijerst/article/view/4825",
+      "figure_url": "",
+      "figure_alt": "Main figure for Design and Development of a Reconfigurable Multi-Mode Transformer Robot for Ground and Aerial Operations",
+      "authors": [
+        "J. Prakash Patil,Goutha Swagath,Gattadi Abhinay,Mohd. Faizan,Mohd. Arsalan Ali"
+      ],
+      "published": "2026-11-06",
+      "venue": "International Journal of Engineering Research and Science & Technology",
+      "publisher": "",
+      "source": "openalex",
+      "topics": [],
+      "tags": [
+        "control",
+        "reconfiguration",
+        "structure",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design",
+        "structure_design"
+      ],
+      "score": 9.0
+    },
+    {
+      "id": "doi:10.1145/3859280",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "Path Refinement for Large-Scale Heterogeneous Multi-UAV Coverage",
+      "url": "https://doi.org/10.1145/3859280",
+      "doi": "10.1145/3859280",
+      "doi_url": "https://doi.org/10.1145/3859280",
+      "summary": "The emergence of Unmanned Aerial Vehicles (UAVs) has transformed static Wireless Sensor Networks (WSNs) into dynamic mobile sensing networks, enabling large-scale data acquisition for applications such as surveillance and precision agriculture. In these missions, multiple heterogeneous UAVs equipped with onboard sensors (e.g., cameras, multispectral sensors or LiDAR units) must collaboratively perform area coverage....",
+      "abstract": "The emergence of Unmanned Aerial Vehicles (UAVs) has transformed static Wireless Sensor Networks (WSNs) into dynamic mobile sensing networks, enabling large-scale data acquisition for applications such as surveillance and precision agriculture. In these missions, multiple heterogeneous UAVs equipped with onboard sensors (e.g., cameras, multispectral sensors or LiDAR units) must collaboratively perform area coverage. The efficiency of the planned paths, governed by the Heterogeneous Multi-robot Coverage Path Planning (HMCPP) problem, directly impacts mission success. However, existing approaches to HMCPP are often limited by either prohibitive computational complexity or suboptimal path efficiency. To address this challenge, the HMCPP problem is modeled from a graph-based perspective, and a novel framework, termed Heterogeneous Cost Balancing (HCB), is introduced to efficiently generate high-quality solutions. HCB transforms existing solutions into HMCPP solutions by integrating fine-grained planning with cost-balancing strategies. Specifically, the proposed fine-grained planning approach refines traditional spiral routes, reducing path redundancy and enhancing coverage efficiency. Experimental results demonstrate that HCB outperforms baseline methods in most instances while maintaining high computation efficiency. Notably, on a large-scale real-world map (366 × 376 with 40 UAVs), HCB achieves improvements in makespan of 33.82%, 9.79%, 6.37%, and 12.34% over four heuristic-based baselines, and an 86.66% improvement over MIP-based approach.",
+      "abstract_source": "openalex",
+      "abstract_source_url": "https://doi.org/10.1145/3859280",
+      "figure_url": "",
+      "figure_alt": "Main figure for Path Refinement for Large-Scale Heterogeneous Multi-UAV Coverage",
+      "authors": [
+        "Chenxin Cai",
+        "Hao Zhang",
+        "Mingrui Yin",
+        "Dongbo Li",
+        "Jianxing Liu"
+      ],
+      "published": "2026-11-06",
+      "venue": "ACM Transactions on Sensor Networks",
+      "publisher": "Association for Computing Machinery",
+      "source": "openalex",
+      "topics": [
+        "swarm_intelligence_robotics",
+        "swarm_self_organization_emergence"
+      ],
+      "tags": [
+        "algorithm",
+        "emergence",
+        "swarm",
+        "system",
+        "theory"
+      ],
+      "content_types": [
+        "algorithm_design"
+      ],
+      "score": 4.2
+    },
+    {
       "id": "doi:10.3390/app162110915",
-      "report_id": "robotics_research_20261105_215749",
+      "report_id": "robotics_research_20261112_203850",
       "title": "Study on a Modular and Reconfigurable Robot That Can Be Used in Natural Disaster Events",
       "url": "https://doi.org/10.3390/app162110915",
       "doi": "10.3390/app162110915",
@@ -37,14 +261,16 @@
         "theory"
       ],
       "content_types": [
-        "structure_design",
-        "algorithm_design"
+        "algorithm_design",
+        "structure_design"
       ],
-      "score": 9.06
+      "score": 9.06,
+      "abstract_source": "crossref",
+      "abstract_source_url": "https://doi.org/10.3390/app162110915"
     },
     {
       "id": "doi:10.1016/j.eswa.2026.134903",
-      "report_id": "robotics_research_20261105_215749",
+      "report_id": "robotics_research_20261112_203850",
       "title": "Behavior-Driven hierarchical path planning for autonomous Multi-Robot navigation with Task-Adaptive mode switching",
       "url": "https://doi.org/10.1016/j.eswa.2026.134903",
       "doi": "10.1016/j.eswa.2026.134903",
@@ -4864,6 +5090,46 @@
       "figure_url": "",
       "figure_alt": "Main figure for Linear-time quasi-static stability detection for modular self-reconfigurable robots",
       "publisher": ""
+    },
+    {
+      "id": "consensus:icra-2026-morphogenetic-assembly",
+      "report_id": "robotics_research_20261112_203850",
+      "title": "Morphogenetic Assembly and Adaptive Control for Heterogeneous Modular Robots",
+      "url": "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Morphogenetic%20Assembly%20and%20Adaptive%20Control%20for%20Heterogeneous%20Modular%20Robots",
+      "summary": "A closed-loop heterogeneous modular-robot framework joins morphology construction, hierarchical assembly planning, and adaptive control, validated through module assembly, merging, splitting, and locomotion generation.",
+      "abstract": "This work uses a mobile manipulator to assemble structural, joint, and wheeled modules into robot configurations. A bidirectional heuristic high-level planner and A* execution planner address assembly, while an annealed-variance MPPI controller provides configuration-agnostic real-time motion control.",
+      "figure_url": "",
+      "figure_alt": "Main figure for Morphogenetic Assembly and Adaptive Control for Heterogeneous Modular Robots",
+      "authors": [
+        "Chongxi Meng",
+        "Zhao Da",
+        "Yifei Zhao",
+        "Minghao Zeng",
+        "Yanmin Zhou",
+        "Zhipeng Wang",
+        "Bin He"
+      ],
+      "published": "2026",
+      "venue": "IEEE International Conference on Robotics and Automation",
+      "publisher": "IEEE",
+      "source": "consensus",
+      "topics": [
+        "modular_reconfigurable_robotics",
+        "engineering_system_design"
+      ],
+      "tags": [
+        "assembly",
+        "control",
+        "morphology",
+        "planning",
+        "reconfiguration"
+      ],
+      "content_types": [
+        "structure_design",
+        "algorithm_design"
+      ],
+      "score": 8.7,
+      "citation_count": 1
     },
     {
       "id": "doi:10.1109/lra.2024.3355756",
